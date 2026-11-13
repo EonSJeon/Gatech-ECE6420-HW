@@ -1,0 +1,14 @@
+# Project-scoped Zotero access; credentials are neither needed nor stored here.
+[mcp_servers.zotero]
+command = "/bin/bash"
+args = ["/Users/jeonsang-eon/Gatech-ECE6420/tools/start-zotero-mcp.sh"]
+cwd = "/Users/jeonsang-eon/Gatech-ECE6420"
+enabled = true
+startup_timeout_sec = 30
+tool_timeout_sec = 90
+enabled_tools = ["zotero_status", "zotero_search_items", "zotero_get_item", "zotero_get_annotations", "zotero_read_pdf_pages", "zotero_prepare_pdf_edit"]
+
+[mcp_servers.zotero.env]
+ZOTERO_COLLECTION_NAME = "ECE6420 Wireless IC Design"
+ZOTERO_COLLECTION_KEY = "8J2MG92V"
+TZ = "America/New_York"

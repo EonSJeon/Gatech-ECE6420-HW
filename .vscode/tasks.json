@@ -1,0 +1,33 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Zotero: Start ECE6420 collection mirror",
+      "type": "process",
+      "command": "${workspaceFolder}/tools/start-zotero-collection-sync.sh",
+      "args": ["--start"],
+      "problemMatcher": []
+    },
+    {
+      "label": "Zotero: Pull collection PDFs and annotations",
+      "type": "process",
+      "command": "${workspaceFolder}/tools/zotero-project.sh",
+      "args": ["pull-papers"],
+      "problemMatcher": []
+    },
+    {
+      "label": "Zotero: Collection mirror status",
+      "type": "process",
+      "command": "${workspaceFolder}/tools/start-zotero-collection-sync.sh",
+      "args": ["--status"],
+      "problemMatcher": []
+    },
+    {
+      "label": "Zotero: Stop collection mirror",
+      "type": "process",
+      "command": "${workspaceFolder}/tools/start-zotero-collection-sync.sh",
+      "args": ["--stop"],
+      "problemMatcher": []
+    }
+  ]
+}

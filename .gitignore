@@ -7,3 +7,7 @@ __pycache__/
 HW05/simulation/*
 !HW05/simulation/.gitkeep
 HW05/results/figures/
+
+# Zotero runtime, private snapshots, and generated collection PDFs
+.local/
+docs/zotero/papers/
