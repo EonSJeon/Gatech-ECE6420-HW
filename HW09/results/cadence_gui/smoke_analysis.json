@@ -1,0 +1,135 @@
+{
+  "origin": "actual_GUI_smoke_only",
+  "status": "analyzed_not_full_campaign",
+  "history": "Interactive.0",
+  "completed_utc": "2026-11-13T03:18:07.756830+00:00",
+  "circuits": {
+    "active": {
+      "gui": {
+        "origin": "actual_psf_numerical_analysis",
+        "pin_dbm": -55,
+        "open_peak_v": 0.0011246826503806982,
+        "fund_vpk": [
+          0.0030596814258966164
+        ],
+        "rf_node_vpk": [
+          0.001119949493597095
+        ],
+        "im3_vpk": [],
+        "if_frequencies_hz": [
+          200000000.0
+        ],
+        "im3_frequencies_hz": [],
+        "gain_db": [
+          8.692924288393229
+        ],
+        "rf_node_gain_db": [
+          8.72955544731688
+        ],
+        "power_gain_db": [
+          1.7032242450330402
+        ],
+        "power_mw": 0.6859353556669413,
+        "mean_rf_v": 0.6500000154708923,
+        "mean_outp_v": 0.8285159236377376,
+        "mean_outn_v": 0.8285163985287918,
+        "max_output_v": 1.0096011385406882,
+        "min_output_v": 0.6243816055273806,
+        "lo_diff_vpp": 0.7999368353633657,
+        "sample_count": 4000,
+        "window_s": 2e-08,
+        "settle_s": 5e-09,
+        "strobe_s": 5e-12,
+        "measurement_start_s": 5e-09,
+        "raw_transient_psf": "simulation/cadence_gui/HW09_Mixers/mixer_campaign/maestro/results/maestro/Interactive.0/1/active_single_tone/ascii/tran.tran.tran",
+        "raw_file_sha256": "70f2eb55babe8d8483b95cd8b9cd602cbb4a6c3b3963126f9aa91fb404f8e176",
+        "completed_utc": "2026-11-13T03:19:10.662013+00:00",
+        "psf_header_reltol": 0.001,
+        "psf_header_maxstep": 5e-10,
+        "psf_header_tolerance_relative": 0.001,
+        "psf_header_abstol(V)": 1e-06,
+        "psf_header_abstol(I)": 1e-12,
+        "psf_header_errpreset": "moderate",
+        "psf_header_method": "trap",
+        "settings_match_intended_limits": false,
+        "tail_min_v": 0.19669569277732274,
+        "tail_max_v": 0.3052293708307857,
+        "tail_mean_v": 0.2574537910314526
+      },
+      "baseline": {
+        "gain_db": [
+          8.573326509984069
+        ],
+        "power_mw": 0.685075201414658,
+        "mean_rf_v": 0.6500000055680349,
+        "lo_diff_vpp": 0.7999368353633657
+      },
+      "gain_delta_db": 0.11959777840915997,
+      "power_delta_mw": 0.0008601542522832517
+    },
+    "passive": {
+      "gui": {
+        "origin": "actual_psf_numerical_analysis",
+        "pin_dbm": -55,
+        "open_peak_v": 0.0011246826503806982,
+        "fund_vpk": [
+          0.0005670835311733902
+        ],
+        "rf_node_vpk": [
+          0.0010179241947305883
+        ],
+        "im3_vpk": [],
+        "if_frequencies_hz": [
+          200000000.0
+        ],
+        "im3_frequencies_hz": [],
+        "gain_db": [
+          -5.947659213173308
+        ],
+        "rf_node_gain_db": [
+          -5.081368041911917
+        ],
+        "power_gain_db": [
+          -12.937359256533496
+        ],
+        "power_mw": 0.0,
+        "mean_rf_v": 0.00037484910855751884,
+        "mean_outp_v": -0.0018782741884668947,
+        "mean_outn_v": -0.0018783106095893193,
+        "max_output_v": 0.02234449193000227,
+        "min_output_v": -0.02290466960291577,
+        "lo_diff_vpp": 0.7999368353633658,
+        "sample_count": 4000,
+        "window_s": 2e-08,
+        "settle_s": 5e-09,
+        "strobe_s": 5e-12,
+        "measurement_start_s": 5e-09,
+        "raw_transient_psf": "simulation/cadence_gui/HW09_Mixers/mixer_campaign/maestro/results/maestro/Interactive.0/1/passive_single_tone/ascii/tran.tran.tran",
+        "raw_file_sha256": "f92944b99cec0fb04fd1f5277119ac623fecf6032209074145979a920d4f6548",
+        "completed_utc": "2026-11-13T03:19:10.740502+00:00",
+        "psf_header_reltol": 0.001,
+        "psf_header_maxstep": 5e-10,
+        "psf_header_tolerance_relative": 0.001,
+        "psf_header_abstol(V)": 1e-06,
+        "psf_header_abstol(I)": 1e-12,
+        "psf_header_errpreset": "moderate",
+        "psf_header_method": "trap",
+        "settings_match_intended_limits": false
+      },
+      "baseline": {
+        "gain_db": [
+          -5.975240900839839
+        ],
+        "power_mw": 0.0,
+        "mean_rf_v": 0.00037393568592777274,
+        "lo_diff_vpp": 0.7999368353633657
+      },
+      "gain_delta_db": 0.027581687666530463,
+      "power_delta_mw": 0.0
+    }
+  },
+  "solver_settings_accepted": false,
+  "notes": [
+    "Actual GUI smoke used Spectre X. Native log SPECTRE-592 reports maxstep ignored; effective maxstep500ps, reltol1e-3, errpreset moderate. These measurements are diagnostic and must be rerun under the intended solver/settings before acceptance."
+  ]
+}

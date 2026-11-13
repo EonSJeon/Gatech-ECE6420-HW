@@ -1,0 +1,16 @@
+; Native display rebuild only: re-evaluate retained actual PSF, never simulate.
+; Preserve the old graph handles until the replacement set is inspected.
+hw09PreviousPlotWindows=if(boundp('hw09PlotWindows) then hw09PlotWindows else nil)
+envSetVal("viva.application" "vivaWindowMode" 'string "window")
+envSetVal("viva.graphFrame" "graphLayoutType" 'string "Vertical")
+envSetVal("viva.axis" "font" 'string "Open Sans,32,-1,5,50,0,0,0,0,0")
+envSetVal("viva.graph" "titleFont" 'string "Open Sans,36,-1,5,63,0,0,0,0,0")
+envSetVal("viva.graph" "subTitleFont" 'string "Open Sans,32,-1,5,50,0,0,0,0,0")
+envSetVal("viva.traceLegend" "font" 'string "Open Sans,32,-1,5,50,0,0,0,0,0")
+envSetVal("viva.traceLegend" "printSaveImageFont" 'string "Open Sans,32,-1,5,50,0,0,0,0,0")
+envSetVal("viva.trace" "lineStyle" 'string "solid")
+load("/nethome/sjeon84/Gatech-ECE6420/HW09/cadence/plots.il")
+hw09PlotCircuit("active")
+hw09PlotCircuit("passive")
+load("/nethome/sjeon84/Gatech-ECE6420/HW09/cadence/finalstyle.il")
+printf("HW09 twelve fresh native graphs are ready for inspection; no new simulation or export was performed.\n")

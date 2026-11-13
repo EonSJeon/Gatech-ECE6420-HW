@@ -1,0 +1,2 @@
+# PDF files are binary artifacts, including ASCII-encoded generated PDFs.
+*.pdf binary

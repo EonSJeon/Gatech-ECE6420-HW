@@ -1,0 +1,2641 @@
+{
+  "schema_version": 1,
+  "status": "passed",
+  "origin": "independent_actual_GUI_audit",
+  "run_id": "cadence_gui_ab6a7104f23d",
+  "config_fingerprint": "ab6a7104f23d7959fe600c43b1b6a7078f76eef3e32892f988efbe167b81e92c",
+  "campaign_json_sha256": "b2a15147f5c0d7ef6c1679661034dffe5d0e512118fa95eb00a53c8a455c770a",
+  "completed_utc": "2026-11-13T18:20:00.795662+00:00",
+  "checks_count": 142,
+  "failures_count": 0,
+  "checks": [
+    {
+      "check": "gui_campaign.provenance",
+      "passed": true,
+      "detail": {
+        "origin": "cadence_ade_gui",
+        "run_id": "cadence_gui_ab6a7104f23d",
+        "baseline_preserved": true
+      }
+    },
+    {
+      "check": "gui_campaign.native_ViVA_export_figures",
+      "passed": true,
+      "detail": {
+        "origin": "cadence_gui_export",
+        "figure_count": 12,
+        "roles": [
+          [
+            "active",
+            "compression"
+          ],
+          [
+            "active",
+            "iip3"
+          ],
+          [
+            "active",
+            "noise"
+          ],
+          [
+            "active",
+            "spectrum"
+          ],
+          [
+            "active",
+            "transient"
+          ],
+          [
+            "active",
+            "twotone_spectrum"
+          ],
+          [
+            "passive",
+            "compression"
+          ],
+          [
+            "passive",
+            "iip3"
+          ],
+          [
+            "passive",
+            "noise"
+          ],
+          [
+            "passive",
+            "spectrum"
+          ],
+          [
+            "passive",
+            "transient"
+          ],
+          [
+            "passive",
+            "twotone_spectrum"
+          ]
+        ]
+      }
+    },
+    {
+      "check": "active.native_OA_source",
+      "passed": true,
+      "detail": {
+        "status": "passed",
+        "kind": "active",
+        "source_audit": "/Users/jeonsang-eon/Gatech-ECE6420/HW09/cadence/active_tb_audit.tsv",
+        "source_sha256": "461346d957db85d3e16a571a295c50a8631a1711a8813d4d493f31ce19bb099c",
+        "checks_count": 91,
+        "checks": [
+          {
+            "check": "schCheck errors/warnings",
+            "passed": true
+          },
+          {
+            "check": "MOS count",
+            "passed": true
+          },
+          {
+            "check": "M1 unique actual native instance",
+            "passed": true
+          },
+          {
+            "check": "M1 library",
+            "passed": true
+          },
+          {
+            "check": "M1 model",
+            "passed": true
+          },
+          {
+            "check": "M1 w",
+            "passed": true
+          },
+          {
+            "check": "M1 l",
+            "passed": true
+          },
+          {
+            "check": "M1 m",
+            "passed": true
+          },
+          {
+            "check": "M1 ls",
+            "passed": true
+          },
+          {
+            "check": "M1 ld",
+            "passed": true
+          },
+          {
+            "check": "M1 as",
+            "passed": true
+          },
+          {
+            "check": "M1 ad",
+            "passed": true
+          },
+          {
+            "check": "M1 ps",
+            "passed": true
+          },
+          {
+            "check": "M1 pd",
+            "passed": true
+          },
+          {
+            "check": "M2 unique actual native instance",
+            "passed": true
+          },
+          {
+            "check": "M2 library",
+            "passed": true
+          },
+          {
+            "check": "M2 model",
+            "passed": true
+          },
+          {
+            "check": "M2 w",
+            "passed": true
+          },
+          {
+            "check": "M2 l",
+            "passed": true
+          },
+          {
+            "check": "M2 m",
+            "passed": true
+          },
+          {
+            "check": "M2 ls",
+            "passed": true
+          },
+          {
+            "check": "M2 ld",
+            "passed": true
+          },
+          {
+            "check": "M2 as",
+            "passed": true
+          },
+          {
+            "check": "M2 ad",
+            "passed": true
+          },
+          {
+            "check": "M2 ps",
+            "passed": true
+          },
+          {
+            "check": "M2 pd",
+            "passed": true
+          },
+          {
+            "check": "M3 unique actual native instance",
+            "passed": true
+          },
+          {
+            "check": "M3 library",
+            "passed": true
+          },
+          {
+            "check": "M3 model",
+            "passed": true
+          },
+          {
+            "check": "M3 w",
+            "passed": true
+          },
+          {
+            "check": "M3 l",
+            "passed": true
+          },
+          {
+            "check": "M3 m",
+            "passed": true
+          },
+          {
+            "check": "M3 ls",
+            "passed": true
+          },
+          {
+            "check": "M3 ld",
+            "passed": true
+          },
+          {
+            "check": "M3 as",
+            "passed": true
+          },
+          {
+            "check": "M3 ad",
+            "passed": true
+          },
+          {
+            "check": "M3 ps",
+            "passed": true
+          },
+          {
+            "check": "M3 pd",
+            "passed": true
+          },
+          {
+            "check": "Resistor count",
+            "passed": true
+          },
+          {
+            "check": "Capacitor count",
+            "passed": true
+          },
+          {
+            "check": "R1 unique actual native instance",
+            "passed": true
+          },
+          {
+            "check": "R1 resistance",
+            "passed": true
+          },
+          {
+            "check": "R2 unique actual native instance",
+            "passed": true
+          },
+          {
+            "check": "R2 resistance",
+            "passed": true
+          },
+          {
+            "check": "CLP unique actual native instance",
+            "passed": true
+          },
+          {
+            "check": "CLP capacitance",
+            "passed": true
+          },
+          {
+            "check": "CLN unique actual native instance",
+            "passed": true
+          },
+          {
+            "check": "CLN capacitance",
+            "passed": true
+          },
+          {
+            "check": "RFPORT unique actual native instance",
+            "passed": true
+          },
+          {
+            "check": "RFPORT r",
+            "passed": true
+          },
+          {
+            "check": "RFPORT vdc",
+            "passed": true
+          },
+          {
+            "check": "RFPORT pacm",
+            "passed": true
+          },
+          {
+            "check": "RFPORT noisetemp",
+            "passed": true
+          },
+          {
+            "check": "RFPORT num",
+            "passed": true
+          },
+          {
+            "check": "RFPORT sinephase",
+            "passed": true
+          },
+          {
+            "check": "RFPORT is noisy",
+            "passed": true
+          },
+          {
+            "check": "RFPORT sine type",
+            "passed": true
+          },
+          {
+            "check": "RFSECOND unique actual native instance",
+            "passed": true
+          },
+          {
+            "check": "RFSECOND DC",
+            "passed": true
+          },
+          {
+            "check": "RFSECOND sine type",
+            "passed": true
+          },
+          {
+            "check": "RFPORT matched amplitude at -60 dBm",
+            "passed": true
+          },
+          {
+            "check": "RFSECOND amplitude at -60 dBm",
+            "passed": true
+          },
+          {
+            "check": "LO-only RF amplitudes at -60 dBm",
+            "passed": true
+          },
+          {
+            "check": "RFPORT matched amplitude at -55 dBm",
+            "passed": true
+          },
+          {
+            "check": "RFSECOND amplitude at -55 dBm",
+            "passed": true
+          },
+          {
+            "check": "LO-only RF amplitudes at -55 dBm",
+            "passed": true
+          },
+          {
+            "check": "RFPORT matched amplitude at -35 dBm",
+            "passed": true
+          },
+          {
+            "check": "RFSECOND amplitude at -35 dBm",
+            "passed": true
+          },
+          {
+            "check": "LO-only RF amplitudes at -35 dBm",
+            "passed": true
+          },
+          {
+            "check": "LOP unique actual native instance",
+            "passed": true
+          },
+          {
+            "check": "LOP sine type",
+            "passed": true
+          },
+          {
+            "check": "LOP freq",
+            "passed": true
+          },
+          {
+            "check": "LOP va",
+            "passed": true
+          },
+          {
+            "check": "LOP vdc",
+            "passed": true
+          },
+          {
+            "check": "LOP sinephase",
+            "passed": true
+          },
+          {
+            "check": "LON unique actual native instance",
+            "passed": true
+          },
+          {
+            "check": "LON sine type",
+            "passed": true
+          },
+          {
+            "check": "LON freq",
+            "passed": true
+          },
+          {
+            "check": "LON va",
+            "passed": true
+          },
+          {
+            "check": "LON vdc",
+            "passed": true
+          },
+          {
+            "check": "LON sinephase",
+            "passed": true
+          },
+          {
+            "check": "VDD unique actual native instance",
+            "passed": true
+          },
+          {
+            "check": "VDD",
+            "passed": true
+          },
+          {
+            "check": "VDD DC type",
+            "passed": true
+          },
+          {
+            "check": "RFPORT frequency design-variable mapping",
+            "passed": true
+          },
+          {
+            "check": "RFSECOND frequency design-variable mapping",
+            "passed": true
+          },
+          {
+            "check": "RFPORT frequency design-variable mapping",
+            "passed": true
+          },
+          {
+            "check": "RFSECOND frequency design-variable mapping",
+            "passed": true
+          },
+          {
+            "check": "No unreviewed extra device",
+            "passed": true
+          },
+          {
+            "check": "Analog primitive libraries",
+            "passed": true
+          },
+          {
+            "check": "Intended readable native instance names",
+            "passed": true
+          }
+        ],
+        "actual_native_role_names": {
+          "M1": "M1",
+          "M2": "M2",
+          "M3": "M3",
+          "R1": "R1",
+          "R2": "R2",
+          "CLP": "CLP",
+          "CLN": "CLN",
+          "RFPORT": "RFPORT",
+          "RFSECOND": "RFSECOND",
+          "LOP": "LOP",
+          "LON": "LON",
+          "VDD": "VDD"
+        },
+        "instance_count": 22,
+        "connection_count": 40
+      }
+    },
+    {
+      "check": "active.curve.transient",
+      "passed": true,
+      "detail": {
+        "path": "results/cadence_gui/curves/active_transient.npz",
+        "sha256": "3c40704243a1d3139dd13751789b41df05facd021125bb0778ad5e0c4c5d18ed"
+      }
+    },
+    {
+      "check": "active.curve.spectrum",
+      "passed": true,
+      "detail": {
+        "path": "results/cadence_gui/curves/active_spectrum.npz",
+        "sha256": "1b39b923cde6cf95c28f89da54be9bd7d928df3b519d97228d5ba511d2a341cf"
+      }
+    },
+    {
+      "check": "active.curve.twotone",
+      "passed": true,
+      "detail": {
+        "path": "results/cadence_gui/curves/active_twotone.npz",
+        "sha256": "e333edcc9f80a103017a99c5a3f3d6b5b9838475532ccd710fbcffdf570ca363"
+      }
+    },
+    {
+      "check": "active.curve.twotone_spectrum",
+      "passed": true,
+      "detail": {
+        "path": "results/cadence_gui/curves/active_twotone_spectrum.npz",
+        "sha256": "33ce2f74ab1a6c82bd23ef4b033babf8a18bae3f4eee1bb5ed9ad33cd54b5ff6"
+      }
+    },
+    {
+      "check": "active.curve.compression",
+      "passed": true,
+      "detail": {
+        "path": "results/cadence_gui/curves/active_compression.npz",
+        "sha256": "f29c0c588ab6c6b3b73e8c1bb1bb949812906f20e28a1cf75ea41b4e0a6a688d"
+      }
+    },
+    {
+      "check": "active.curve.iip3",
+      "passed": true,
+      "detail": {
+        "path": "results/cadence_gui/curves/active_iip3.npz",
+        "sha256": "eaf3494de6079a505687290f0f659da3c6d1f8658201c11775f08e712224b7d4"
+      }
+    },
+    {
+      "check": "active.curve.noise",
+      "passed": true,
+      "detail": {
+        "path": "results/cadence_gui/curves/active_noise.npz",
+        "sha256": "f481224086bc862c1b1d5635f2baac58a6f79230e12ee35924a69a44fbf912cc"
+      }
+    },
+    {
+      "check": "active.metrics_and_reference",
+      "passed": true,
+      "detail": {
+        "required_metrics": [
+          "voltage_gain_db",
+          "rf_node_gain_db",
+          "power_gain_db",
+          "conversion_loss_db",
+          "power_conversion_loss_db",
+          "power_mw",
+          "p1db_dbm",
+          "iip3_dbm",
+          "iip3_lower_dbm",
+          "iip3_upper_dbm",
+          "ssb_nf_db",
+          "dsb_nf_db"
+        ],
+        "differential_load_ohm": 1000.0
+      }
+    },
+    {
+      "check": "active.transient.grid_fft_lo",
+      "passed": true,
+      "detail": {
+        "sample_count": 4000,
+        "settle_s": 5e-09,
+        "window_s": 2e-08,
+        "actual_differential_lo_vpp": 0.7999368353633657,
+        "FFT_recomputed": true
+      }
+    },
+    {
+      "check": "active.twotone.grid_fft_lo",
+      "passed": true,
+      "detail": {
+        "sample_count": 20000,
+        "settle_s": 2e-08,
+        "window_s": 1e-07,
+        "actual_differential_lo_vpp": 0.7999368353844634,
+        "FFT_recomputed": true
+      }
+    },
+    {
+      "check": "active.single_projection",
+      "passed": true,
+      "detail": {
+        "open_vpk": 0.0011246826503806982,
+        "rf_node_vpk": 0.0011179537403598302,
+        "if_vpk": 0.0030178407682712118,
+        "rf_dc_v": 0.6500000055680349
+      }
+    },
+    {
+      "check": "active.compression",
+      "passed": true,
+      "detail": {
+        "baseline_db": 8.572646897075147,
+        "baseline_spread_db": 0.002534782463170515,
+        "p1db_dbm": -15.546875,
+        "bracket_dbm": [
+          -15.625,
+          -15.46875
+        ],
+        "actual_endpoint_compression_db": [
+          0.9894167320611764,
+          1.056468737710186
+        ]
+      }
+    },
+    {
+      "check": "active.iip3_fits",
+      "passed": true,
+      "detail": {
+        "selected_pins_dbm": [
+          -40,
+          -35,
+          -30
+        ],
+        "fundamental_slopes": [
+          0.9957325176524137,
+          0.9957268547515712
+        ],
+        "im3_slopes": [
+          3.0586939973970417,
+          3.0635733824273053
+        ],
+        "minimum_empty_bin_margin_db": 35.628871680489034,
+        "iip3_dbm": [
+          -2.7133931442740304,
+          -2.7177206658717927
+        ],
+        "tightened_delta_db": [
+          0.05072257229637955,
+          0.051645627592066035
+        ]
+      }
+    },
+    {
+      "check": "active.noise_normalization",
+      "passed": true,
+      "detail": {
+        "sidebands": [
+          15,
+          31,
+          63
+        ],
+        "max_last_delta_db": 1.3130829756846651e-11,
+        "ssb_nf_db": 11.146078010718469,
+        "dsb_nf_db": 8.123825167025998,
+        "normalization_recomputed": true
+      }
+    },
+    {
+      "check": "active.window_convergence",
+      "passed": true,
+      "detail": {
+        "voltage_gain_delta_db": 3.4285942973610872e-09,
+        "power_gain_delta_db": 3.4285934091826675e-09,
+        "short_sample_count": 4000,
+        "long_sample_count": 20000
+      }
+    },
+    {
+      "check": "active.actual_source.active_single_tone.single_tone",
+      "passed": true,
+      "detail": {
+        "native_DGSB_and_values_checked": true,
+        "actual_design_variables": {
+          "temperature": 27.0,
+          "rfScale": 1.0,
+          "tone2Scale": 0.0,
+          "fRF2": 5800000000.0,
+          "fRF": 5800000000.0,
+          "pinDbm": -55.0
+        }
+      }
+    },
+    {
+      "check": "active.raw_projection.active_single_tone.single_tone",
+      "passed": true,
+      "detail": {
+        "sample_count": 4000,
+        "fundamental_from_actual_PSF": [
+          0.0030178407682712118
+        ],
+        "IM3_from_actual_PSF": []
+      }
+    },
+    {
+      "check": "active.actual_source.active_single_window_check.single_reference",
+      "passed": true,
+      "detail": {
+        "native_DGSB_and_values_checked": true,
+        "actual_design_variables": {
+          "temperature": 27.0,
+          "rfScale": 1.0,
+          "tone2Scale": 0.0,
+          "fRF2": 5800000000.0,
+          "fRF": 5800000000.0,
+          "pinDbm": -55.0
+        }
+      }
+    },
+    {
+      "check": "active.raw_projection.active_single_window_check.single_reference",
+      "passed": true,
+      "detail": {
+        "sample_count": 20000,
+        "fundamental_from_actual_PSF": [
+          0.003017840769462448
+        ],
+        "IM3_from_actual_PSF": []
+      }
+    },
+    {
+      "check": "active.actual_source.active_compression_00.compression",
+      "passed": true,
+      "detail": {
+        "native_DGSB_and_values_checked": true,
+        "actual_design_variables": {
+          "temperature": 27.0,
+          "rfScale": 1.0,
+          "tone2Scale": 0.0,
+          "fRF2": 5800000000.0,
+          "fRF": 5800000000.0,
+          "pinDbm": -60.0
+        }
+      }
+    },
+    {
+      "check": "active.raw_projection.active_compression_00.compression",
+      "passed": true,
+      "detail": {
+        "sample_count": 4000,
+        "fundamental_from_actual_PSF": [
+          0.0016971539351038365
+        ],
+        "IM3_from_actual_PSF": []
+      }
+    },
+    {
+      "check": "active.actual_source.active_compression_01.compression",
+      "passed": true,
+      "detail": {
+        "native_DGSB_and_values_checked": true,
+        "actual_design_variables": {
+          "temperature": 27.0,
+          "rfScale": 1.0,
+          "tone2Scale": 0.0,
+          "fRF2": 5800000000.0,
+          "fRF": 5800000000.0,
+          "pinDbm": -50.0
+        }
+      }
+    },
+    {
+      "check": "active.raw_projection.active_compression_01.compression",
+      "passed": true,
+      "detail": {
+        "sample_count": 4000,
+        "fundamental_from_actual_PSF": [
+          0.005366254797960583
+        ],
+        "IM3_from_actual_PSF": []
+      }
+    },
+    {
+      "check": "active.actual_source.active_compression_02.compression",
+      "passed": true,
+      "detail": {
+        "native_DGSB_and_values_checked": true,
+        "actual_design_variables": {
+          "temperature": 27.0,
+          "rfScale": 1.0,
+          "tone2Scale": 0.0,
+          "fRF2": 5800000000.0,
+          "fRF": 5800000000.0,
+          "pinDbm": -40.0
+        }
+      }
+    },
+    {
+      "check": "active.raw_projection.active_compression_02.compression",
+      "passed": true,
+      "detail": {
+        "sample_count": 4000,
+        "fundamental_from_actual_PSF": [
+          0.016966587309781404
+        ],
+        "IM3_from_actual_PSF": []
+      }
+    },
+    {
+      "check": "active.actual_source.active_compression_03.compression",
+      "passed": true,
+      "detail": {
+        "native_DGSB_and_values_checked": true,
+        "actual_design_variables": {
+          "temperature": 27.0,
+          "rfScale": 1.0,
+          "tone2Scale": 0.0,
+          "fRF2": 5800000000.0,
+          "fRF": 5800000000.0,
+          "pinDbm": -35.0
+        }
+      }
+    },
+    {
+      "check": "active.raw_projection.active_compression_03.compression",
+      "passed": true,
+      "detail": {
+        "sample_count": 4000,
+        "fundamental_from_actual_PSF": [
+          0.030160855698973223
+        ],
+        "IM3_from_actual_PSF": []
+      }
+    },
+    {
+      "check": "active.actual_source.active_compression_04.compression",
+      "passed": true,
+      "detail": {
+        "native_DGSB_and_values_checked": true,
+        "actual_design_variables": {
+          "temperature": 27.0,
+          "rfScale": 1.0,
+          "tone2Scale": 0.0,
+          "fRF2": 5800000000.0,
+          "fRF": 5800000000.0,
+          "pinDbm": -30.0
+        }
+      }
+    },
+    {
+      "check": "active.raw_projection.active_compression_04.compression",
+      "passed": true,
+      "detail": {
+        "sample_count": 4000,
+        "fundamental_from_actual_PSF": [
+          0.05356898735290913
+        ],
+        "IM3_from_actual_PSF": []
+      }
+    },
+    {
+      "check": "active.actual_source.active_compression_05.compression",
+      "passed": true,
+      "detail": {
+        "native_DGSB_and_values_checked": true,
+        "actual_design_variables": {
+          "temperature": 27.0,
+          "rfScale": 1.0,
+          "tone2Scale": 0.0,
+          "fRF2": 5800000000.0,
+          "fRF": 5800000000.0,
+          "pinDbm": -25.0
+        }
+      }
+    },
+    {
+      "check": "active.raw_projection.active_compression_05.compression",
+      "passed": true,
+      "detail": {
+        "sample_count": 4000,
+        "fundamental_from_actual_PSF": [
+          0.09488519016501587
+        ],
+        "IM3_from_actual_PSF": []
+      }
+    },
+    {
+      "check": "active.actual_source.active_compression_06.compression",
+      "passed": true,
+      "detail": {
+        "native_DGSB_and_values_checked": true,
+        "actual_design_variables": {
+          "temperature": 27.0,
+          "rfScale": 1.0,
+          "tone2Scale": 0.0,
+          "fRF2": 5800000000.0,
+          "fRF": 5800000000.0,
+          "pinDbm": -20.0
+        }
+      }
+    },
+    {
+      "check": "active.raw_projection.active_compression_06.compression",
+      "passed": true,
+      "detail": {
+        "sample_count": 4000,
+        "fundamental_from_actual_PSF": [
+          0.16614935967088737
+        ],
+        "IM3_from_actual_PSF": []
+      }
+    },
+    {
+      "check": "active.actual_source.active_compression_07.compression",
+      "passed": true,
+      "detail": {
+        "native_DGSB_and_values_checked": true,
+        "actual_design_variables": {
+          "temperature": 27.0,
+          "rfScale": 1.0,
+          "tone2Scale": 0.0,
+          "fRF2": 5800000000.0,
+          "fRF": 5800000000.0,
+          "pinDbm": -17.5
+        }
+      }
+    },
+    {
+      "check": "active.raw_projection.active_compression_07.compression",
+      "passed": true,
+      "detail": {
+        "sample_count": 4000,
+        "fundamental_from_actual_PSF": [
+          0.2149093513220661
+        ],
+        "IM3_from_actual_PSF": []
+      }
+    },
+    {
+      "check": "active.actual_source.active_compression_08.compression",
+      "passed": true,
+      "detail": {
+        "native_DGSB_and_values_checked": true,
+        "actual_design_variables": {
+          "temperature": 27.0,
+          "rfScale": 1.0,
+          "tone2Scale": 0.0,
+          "fRF2": 5800000000.0,
+          "fRF": 5800000000.0,
+          "pinDbm": -16.25
+        }
+      }
+    },
+    {
+      "check": "active.raw_projection.active_compression_08.compression",
+      "passed": true,
+      "detail": {
+        "sample_count": 4000,
+        "fundamental_from_actual_PSF": [
+          0.23948111971520764
+        ],
+        "IM3_from_actual_PSF": []
+      }
+    },
+    {
+      "check": "active.actual_source.active_compression_09.compression",
+      "passed": true,
+      "detail": {
+        "native_DGSB_and_values_checked": true,
+        "actual_design_variables": {
+          "temperature": 27.0,
+          "rfScale": 1.0,
+          "tone2Scale": 0.0,
+          "fRF2": 5800000000.0,
+          "fRF": 5800000000.0,
+          "pinDbm": -15.625
+        }
+      }
+    },
+    {
+      "check": "active.raw_projection.active_compression_09.compression",
+      "passed": true,
+      "detail": {
+        "sample_count": 4000,
+        "fundamental_from_actual_PSF": [
+          0.2505771722360042
+        ],
+        "IM3_from_actual_PSF": []
+      }
+    },
+    {
+      "check": "active.actual_source.active_compression_10.compression",
+      "passed": true,
+      "detail": {
+        "native_DGSB_and_values_checked": true,
+        "actual_design_variables": {
+          "temperature": 27.0,
+          "rfScale": 1.0,
+          "tone2Scale": 0.0,
+          "fRF2": 5800000000.0,
+          "fRF": 5800000000.0,
+          "pinDbm": -15.46875
+        }
+      }
+    },
+    {
+      "check": "active.raw_projection.active_compression_10.compression",
+      "passed": true,
+      "detail": {
+        "sample_count": 4000,
+        "fundamental_from_actual_PSF": [
+          0.25316368213200013
+        ],
+        "IM3_from_actual_PSF": []
+      }
+    },
+    {
+      "check": "active.actual_source.active_compression_11.compression",
+      "passed": true,
+      "detail": {
+        "native_DGSB_and_values_checked": true,
+        "actual_design_variables": {
+          "temperature": 27.0,
+          "rfScale": 1.0,
+          "tone2Scale": 0.0,
+          "fRF2": 5800000000.0,
+          "fRF": 5800000000.0,
+          "pinDbm": -15.15625
+        }
+      }
+    },
+    {
+      "check": "active.raw_projection.active_compression_11.compression",
+      "passed": true,
+      "detail": {
+        "sample_count": 4000,
+        "fundamental_from_actual_PSF": [
+          0.2580860232900461
+        ],
+        "IM3_from_actual_PSF": []
+      }
+    },
+    {
+      "check": "active.actual_source.active_compression_12.compression",
+      "passed": true,
+      "detail": {
+        "native_DGSB_and_values_checked": true,
+        "actual_design_variables": {
+          "temperature": 27.0,
+          "rfScale": 1.0,
+          "tone2Scale": 0.0,
+          "fRF2": 5800000000.0,
+          "fRF": 5800000000.0,
+          "pinDbm": -15.0
+        }
+      }
+    },
+    {
+      "check": "active.raw_projection.active_compression_12.compression",
+      "passed": true,
+      "detail": {
+        "sample_count": 4000,
+        "fundamental_from_actual_PSF": [
+          0.26041674645091456
+        ],
+        "IM3_from_actual_PSF": []
+      }
+    },
+    {
+      "check": "active.actual_source.active_compression_13.compression",
+      "passed": true,
+      "detail": {
+        "native_DGSB_and_values_checked": true,
+        "actual_design_variables": {
+          "temperature": 27.0,
+          "rfScale": 1.0,
+          "tone2Scale": 0.0,
+          "fRF2": 5800000000.0,
+          "fRF": 5800000000.0,
+          "pinDbm": -10.0
+        }
+      }
+    },
+    {
+      "check": "active.raw_projection.active_compression_13.compression",
+      "passed": true,
+      "detail": {
+        "sample_count": 4000,
+        "fundamental_from_actual_PSF": [
+          0.29604280199285504
+        ],
+        "IM3_from_actual_PSF": []
+      }
+    },
+    {
+      "check": "active.actual_source.active_two_tone_00.two_tone",
+      "passed": true,
+      "detail": {
+        "native_DGSB_and_values_checked": true,
+        "actual_design_variables": {
+          "temperature": 27.0,
+          "rfScale": 1.0,
+          "tone2Scale": 1.0,
+          "fRF2": 5810000000.0,
+          "fRF": 5790000000.0,
+          "pinDbm": -50.0
+        }
+      }
+    },
+    {
+      "check": "active.raw_projection.active_two_tone_00.two_tone",
+      "passed": true,
+      "detail": {
+        "sample_count": 20000,
+        "fundamental_from_actual_PSF": [
+          0.005366399331602964,
+          0.005365468346370381
+        ],
+        "IM3_from_actual_PSF": [
+          1.4932302605374396e-07,
+          1.5217207857424182e-07
+        ]
+      }
+    },
+    {
+      "check": "active.actual_source.active_two_tone_01.two_tone",
+      "passed": true,
+      "detail": {
+        "native_DGSB_and_values_checked": true,
+        "actual_design_variables": {
+          "temperature": 27.0,
+          "rfScale": 1.0,
+          "tone2Scale": 1.0,
+          "fRF2": 5810000000.0,
+          "fRF": 5790000000.0,
+          "pinDbm": -45.0
+        }
+      }
+    },
+    {
+      "check": "active.raw_projection.active_two_tone_01.two_tone",
+      "passed": true,
+      "detail": {
+        "sample_count": 20000,
+        "fundamental_from_actual_PSF": [
+          0.009541954142591864,
+          0.009540294661301274
+        ],
+        "IM3_from_actual_PSF": [
+          4.878704879632372e-07,
+          4.912468139163806e-07
+        ]
+      }
+    },
+    {
+      "check": "active.actual_source.active_two_tone_02.two_tone",
+      "passed": true,
+      "detail": {
+        "native_DGSB_and_values_checked": true,
+        "actual_design_variables": {
+          "temperature": 27.0,
+          "rfScale": 1.0,
+          "tone2Scale": 1.0,
+          "fRF2": 5810000000.0,
+          "fRF": 5790000000.0,
+          "pinDbm": -40.0
+        }
+      }
+    },
+    {
+      "check": "active.raw_projection.active_two_tone_02.two_tone",
+      "passed": true,
+      "detail": {
+        "sample_count": 20000,
+        "fundamental_from_actual_PSF": [
+          0.01696257631446343,
+          0.016959658160970704
+        ],
+        "IM3_from_actual_PSF": [
+          3.045581617171497e-06,
+          3.0371016419319446e-06
+        ]
+      }
+    },
+    {
+      "check": "active.actual_source.active_two_tone_03.two_tone",
+      "passed": true,
+      "detail": {
+        "native_DGSB_and_values_checked": true,
+        "actual_design_variables": {
+          "temperature": 27.0,
+          "rfScale": 1.0,
+          "tone2Scale": 1.0,
+          "fRF2": 5810000000.0,
+          "fRF": 5790000000.0,
+          "pinDbm": -35.0
+        }
+      }
+    },
+    {
+      "check": "active.raw_projection.active_two_tone_03.two_tone",
+      "passed": true,
+      "detail": {
+        "sample_count": 20000,
+        "fundamental_from_actual_PSF": [
+          0.030129372042325627,
+          0.030124099515405813
+        ],
+        "IM3_from_actual_PSF": [
+          1.7913086695516864e-05,
+          1.7956535361522514e-05
+        ]
+      }
+    },
+    {
+      "check": "active.actual_source.active_two_tone_04.two_tone",
+      "passed": true,
+      "detail": {
+        "native_DGSB_and_values_checked": true,
+        "actual_design_variables": {
+          "temperature": 27.0,
+          "rfScale": 1.0,
+          "tone2Scale": 1.0,
+          "fRF2": 5810000000.0,
+          "fRF": 5790000000.0,
+          "pinDbm": -30.0
+        }
+      }
+    },
+    {
+      "check": "active.raw_projection.active_two_tone_04.two_tone",
+      "passed": true,
+      "detail": {
+        "sample_count": 20000,
+        "fundamental_from_actual_PSF": [
+          0.05337748084707706,
+          0.053367950120832564
+        ],
+        "IM3_from_actual_PSF": [
+          0.00010304270267839729,
+          0.00010333466069998886
+        ]
+      }
+    },
+    {
+      "check": "active.actual_source.active_two_tone_05.two_tone",
+      "passed": true,
+      "detail": {
+        "native_DGSB_and_values_checked": true,
+        "actual_design_variables": {
+          "temperature": 27.0,
+          "rfScale": 1.0,
+          "tone2Scale": 1.0,
+          "fRF2": 5810000000.0,
+          "fRF": 5790000000.0,
+          "pinDbm": -25.0
+        }
+      }
+    },
+    {
+      "check": "active.raw_projection.active_two_tone_05.two_tone",
+      "passed": true,
+      "detail": {
+        "sample_count": 20000,
+        "fundamental_from_actual_PSF": [
+          0.09348783847188946,
+          0.09346949352328239
+        ],
+        "IM3_from_actual_PSF": [
+          0.0007573860275775044,
+          0.0007600282549888242
+        ]
+      }
+    },
+    {
+      "check": "active.actual_source.active_two_tone_06.two_tone",
+      "passed": true,
+      "detail": {
+        "native_DGSB_and_values_checked": true,
+        "actual_design_variables": {
+          "temperature": 27.0,
+          "rfScale": 1.0,
+          "tone2Scale": 1.0,
+          "fRF2": 5810000000.0,
+          "fRF": 5790000000.0,
+          "pinDbm": -20.0
+        }
+      }
+    },
+    {
+      "check": "active.raw_projection.active_two_tone_06.two_tone",
+      "passed": true,
+      "detail": {
+        "sample_count": 20000,
+        "fundamental_from_actual_PSF": [
+          0.1475118428357081,
+          0.14746814985164675
+        ],
+        "IM3_from_actual_PSF": [
+          0.01005691147737682,
+          0.010072922739509766
+        ]
+      }
+    },
+    {
+      "check": "active.actual_source.active_two_tone_tight.tight_two_tone",
+      "passed": true,
+      "detail": {
+        "native_DGSB_and_values_checked": true,
+        "actual_design_variables": {
+          "temperature": 27.0,
+          "rfScale": 1.0,
+          "tone2Scale": 1.0,
+          "fRF2": 5810000000.0,
+          "fRF": 5790000000.0,
+          "pinDbm": -35.0
+        }
+      }
+    },
+    {
+      "check": "active.raw_projection.active_two_tone_tight.tight_two_tone",
+      "passed": true,
+      "detail": {
+        "sample_count": 20000,
+        "fundamental_from_actual_PSF": [
+          0.03013018735424367,
+          0.030124922426432978
+        ],
+        "IM3_from_actual_PSF": [
+          1.7705570403829974e-05,
+          1.774474840139144e-05
+        ]
+      }
+    },
+    {
+      "check": "active.actual_source.active_noise_sb15.pnoise",
+      "passed": true,
+      "detail": {
+        "native_DGSB_and_values_checked": true,
+        "actual_design_variables": {
+          "temperature": 27.0,
+          "tone2Scale": 0.0,
+          "rfScale": 0.0,
+          "fRF2": 5800000000.0,
+          "fRF": 5800000000.0,
+          "pinDbm": -55.0
+        }
+      }
+    },
+    {
+      "check": "active.actual_source.active_noise_sb31.pnoise",
+      "passed": true,
+      "detail": {
+        "native_DGSB_and_values_checked": true,
+        "actual_design_variables": {
+          "temperature": 27.0,
+          "tone2Scale": 0.0,
+          "rfScale": 0.0,
+          "fRF2": 5800000000.0,
+          "fRF": 5800000000.0,
+          "pinDbm": -55.0
+        }
+      }
+    },
+    {
+      "check": "active.actual_source.active_noise_sb63.pnoise",
+      "passed": true,
+      "detail": {
+        "native_DGSB_and_values_checked": true,
+        "actual_design_variables": {
+          "temperature": 27.0,
+          "tone2Scale": 0.0,
+          "rfScale": 0.0,
+          "fRF2": 5800000000.0,
+          "fRF": 5800000000.0,
+          "pinDbm": -55.0
+        }
+      }
+    },
+    {
+      "check": "active.actual_source.active_noise_sb63.pac_usb",
+      "passed": true,
+      "detail": {
+        "native_DGSB_and_values_checked": true,
+        "actual_design_variables": {
+          "temperature": 27.0,
+          "tone2Scale": 0.0,
+          "rfScale": 0.0,
+          "fRF2": 5800000000.0,
+          "fRF": 5800000000.0,
+          "pinDbm": -55.0
+        }
+      }
+    },
+    {
+      "check": "active.actual_source.active_noise_image.pac_image",
+      "passed": true,
+      "detail": {
+        "native_DGSB_and_values_checked": true,
+        "actual_design_variables": {
+          "temperature": 27.0,
+          "tone2Scale": 0.0,
+          "rfScale": 0.0,
+          "fRF2": 5800000000.0,
+          "fRF": 5800000000.0,
+          "pinDbm": -55.0
+        }
+      }
+    },
+    {
+      "check": "active.raw_periodic_noise",
+      "passed": true,
+      "detail": {
+        "raw_PAC_and_PNOISE_recomputed": true
+      }
+    },
+    {
+      "check": "passive.native_OA_source",
+      "passed": true,
+      "detail": {
+        "status": "passed",
+        "kind": "passive",
+        "source_audit": "/Users/jeonsang-eon/Gatech-ECE6420/HW09/cadence/passive_tb_audit.tsv",
+        "source_sha256": "e1923d30a2a1fcd7e5110d824170145023487930b3953f606a6a88a31bc315b8",
+        "checks_count": 76,
+        "checks": [
+          {
+            "check": "schCheck errors/warnings",
+            "passed": true
+          },
+          {
+            "check": "MOS count",
+            "passed": true
+          },
+          {
+            "check": "M1 unique actual native instance",
+            "passed": true
+          },
+          {
+            "check": "M1 library",
+            "passed": true
+          },
+          {
+            "check": "M1 model",
+            "passed": true
+          },
+          {
+            "check": "M1 w",
+            "passed": true
+          },
+          {
+            "check": "M1 l",
+            "passed": true
+          },
+          {
+            "check": "M1 m",
+            "passed": true
+          },
+          {
+            "check": "M1 ls",
+            "passed": true
+          },
+          {
+            "check": "M1 ld",
+            "passed": true
+          },
+          {
+            "check": "M1 as",
+            "passed": true
+          },
+          {
+            "check": "M1 ad",
+            "passed": true
+          },
+          {
+            "check": "M1 ps",
+            "passed": true
+          },
+          {
+            "check": "M1 pd",
+            "passed": true
+          },
+          {
+            "check": "M2 unique actual native instance",
+            "passed": true
+          },
+          {
+            "check": "M2 library",
+            "passed": true
+          },
+          {
+            "check": "M2 model",
+            "passed": true
+          },
+          {
+            "check": "M2 w",
+            "passed": true
+          },
+          {
+            "check": "M2 l",
+            "passed": true
+          },
+          {
+            "check": "M2 m",
+            "passed": true
+          },
+          {
+            "check": "M2 ls",
+            "passed": true
+          },
+          {
+            "check": "M2 ld",
+            "passed": true
+          },
+          {
+            "check": "M2 as",
+            "passed": true
+          },
+          {
+            "check": "M2 ad",
+            "passed": true
+          },
+          {
+            "check": "M2 ps",
+            "passed": true
+          },
+          {
+            "check": "M2 pd",
+            "passed": true
+          },
+          {
+            "check": "Resistor count",
+            "passed": true
+          },
+          {
+            "check": "Capacitor count",
+            "passed": true
+          },
+          {
+            "check": "R1 unique actual native instance",
+            "passed": true
+          },
+          {
+            "check": "R1 resistance",
+            "passed": true
+          },
+          {
+            "check": "R2 unique actual native instance",
+            "passed": true
+          },
+          {
+            "check": "R2 resistance",
+            "passed": true
+          },
+          {
+            "check": "CLP unique actual native instance",
+            "passed": true
+          },
+          {
+            "check": "CLP capacitance",
+            "passed": true
+          },
+          {
+            "check": "CLN unique actual native instance",
+            "passed": true
+          },
+          {
+            "check": "CLN capacitance",
+            "passed": true
+          },
+          {
+            "check": "RFPORT unique actual native instance",
+            "passed": true
+          },
+          {
+            "check": "RFPORT r",
+            "passed": true
+          },
+          {
+            "check": "RFPORT vdc",
+            "passed": true
+          },
+          {
+            "check": "RFPORT pacm",
+            "passed": true
+          },
+          {
+            "check": "RFPORT noisetemp",
+            "passed": true
+          },
+          {
+            "check": "RFPORT num",
+            "passed": true
+          },
+          {
+            "check": "RFPORT sinephase",
+            "passed": true
+          },
+          {
+            "check": "RFPORT is noisy",
+            "passed": true
+          },
+          {
+            "check": "RFPORT sine type",
+            "passed": true
+          },
+          {
+            "check": "RFSECOND unique actual native instance",
+            "passed": true
+          },
+          {
+            "check": "RFSECOND DC",
+            "passed": true
+          },
+          {
+            "check": "RFSECOND sine type",
+            "passed": true
+          },
+          {
+            "check": "RFPORT matched amplitude at -60 dBm",
+            "passed": true
+          },
+          {
+            "check": "RFSECOND amplitude at -60 dBm",
+            "passed": true
+          },
+          {
+            "check": "LO-only RF amplitudes at -60 dBm",
+            "passed": true
+          },
+          {
+            "check": "RFPORT matched amplitude at -55 dBm",
+            "passed": true
+          },
+          {
+            "check": "RFSECOND amplitude at -55 dBm",
+            "passed": true
+          },
+          {
+            "check": "LO-only RF amplitudes at -55 dBm",
+            "passed": true
+          },
+          {
+            "check": "RFPORT matched amplitude at -35 dBm",
+            "passed": true
+          },
+          {
+            "check": "RFSECOND amplitude at -35 dBm",
+            "passed": true
+          },
+          {
+            "check": "LO-only RF amplitudes at -35 dBm",
+            "passed": true
+          },
+          {
+            "check": "LOP unique actual native instance",
+            "passed": true
+          },
+          {
+            "check": "LOP sine type",
+            "passed": true
+          },
+          {
+            "check": "LOP freq",
+            "passed": true
+          },
+          {
+            "check": "LOP va",
+            "passed": true
+          },
+          {
+            "check": "LOP vdc",
+            "passed": true
+          },
+          {
+            "check": "LOP sinephase",
+            "passed": true
+          },
+          {
+            "check": "LON unique actual native instance",
+            "passed": true
+          },
+          {
+            "check": "LON sine type",
+            "passed": true
+          },
+          {
+            "check": "LON freq",
+            "passed": true
+          },
+          {
+            "check": "LON va",
+            "passed": true
+          },
+          {
+            "check": "LON vdc",
+            "passed": true
+          },
+          {
+            "check": "LON sinephase",
+            "passed": true
+          },
+          {
+            "check": "RFPORT frequency design-variable mapping",
+            "passed": true
+          },
+          {
+            "check": "RFSECOND frequency design-variable mapping",
+            "passed": true
+          },
+          {
+            "check": "RFPORT frequency design-variable mapping",
+            "passed": true
+          },
+          {
+            "check": "RFSECOND frequency design-variable mapping",
+            "passed": true
+          },
+          {
+            "check": "No unreviewed extra device",
+            "passed": true
+          },
+          {
+            "check": "Analog primitive libraries",
+            "passed": true
+          },
+          {
+            "check": "Intended readable native instance names",
+            "passed": true
+          }
+        ],
+        "actual_native_role_names": {
+          "M1": "M1",
+          "M2": "M2",
+          "R1": "R1",
+          "R2": "R2",
+          "CLP": "CLP",
+          "CLN": "CLN",
+          "RFPORT": "RFPORT",
+          "RFSECOND": "RFSECOND",
+          "LOP": "LOP",
+          "LON": "LON"
+        },
+        "instance_count": 19,
+        "connection_count": 33
+      }
+    },
+    {
+      "check": "passive.curve.transient",
+      "passed": true,
+      "detail": {
+        "path": "results/cadence_gui/curves/passive_transient.npz",
+        "sha256": "e370d34474070751fc3b4ac1e3fe8df81cd8dd16f0df740171f862d762ba61dc"
+      }
+    },
+    {
+      "check": "passive.curve.spectrum",
+      "passed": true,
+      "detail": {
+        "path": "results/cadence_gui/curves/passive_spectrum.npz",
+        "sha256": "97a3a959efea42bdcd81c4cc7d60b8750cd05a8224f31072d559c45f0b9d4432"
+      }
+    },
+    {
+      "check": "passive.curve.twotone",
+      "passed": true,
+      "detail": {
+        "path": "results/cadence_gui/curves/passive_twotone.npz",
+        "sha256": "d41558952a4dfb77ef7374e0eadcb6655e577cd6c821d62769078e6d2346442c"
+      }
+    },
+    {
+      "check": "passive.curve.twotone_spectrum",
+      "passed": true,
+      "detail": {
+        "path": "results/cadence_gui/curves/passive_twotone_spectrum.npz",
+        "sha256": "13bb0f6336e1639747af44e2cd1009d843992950147951f067043ec27c06eda9"
+      }
+    },
+    {
+      "check": "passive.curve.compression",
+      "passed": true,
+      "detail": {
+        "path": "results/cadence_gui/curves/passive_compression.npz",
+        "sha256": "24a3c8aabba581e0deb4c16ef39224243c3f3c5855d8e2afc9c740f7e005a03f"
+      }
+    },
+    {
+      "check": "passive.curve.iip3",
+      "passed": true,
+      "detail": {
+        "path": "results/cadence_gui/curves/passive_iip3.npz",
+        "sha256": "289638c0ebfe8556afbffe56a6f7f0851b72cf228e591ac90fce5cbc00b01c5a"
+      }
+    },
+    {
+      "check": "passive.curve.noise",
+      "passed": true,
+      "detail": {
+        "path": "results/cadence_gui/curves/passive_noise.npz",
+        "sha256": "a4142cb01e5d09b848de4b2f8695d5158254859902c243f7df3e64c4c62f7f84"
+      }
+    },
+    {
+      "check": "passive.metrics_and_reference",
+      "passed": true,
+      "detail": {
+        "required_metrics": [
+          "voltage_gain_db",
+          "rf_node_gain_db",
+          "power_gain_db",
+          "conversion_loss_db",
+          "power_conversion_loss_db",
+          "power_mw",
+          "p1db_dbm",
+          "iip3_dbm",
+          "iip3_lower_dbm",
+          "iip3_upper_dbm",
+          "ssb_nf_db",
+          "dsb_nf_db"
+        ],
+        "differential_load_ohm": 1000.0
+      }
+    },
+    {
+      "check": "passive.transient.grid_fft_lo",
+      "passed": true,
+      "detail": {
+        "sample_count": 4000,
+        "settle_s": 5e-09,
+        "window_s": 2e-08,
+        "actual_differential_lo_vpp": 0.7999368353633658,
+        "FFT_recomputed": true
+      }
+    },
+    {
+      "check": "passive.twotone.grid_fft_lo",
+      "passed": true,
+      "detail": {
+        "sample_count": 20000,
+        "settle_s": 2e-08,
+        "window_s": 1e-07,
+        "actual_differential_lo_vpp": 0.7999368353844634,
+        "FFT_recomputed": true
+      }
+    },
+    {
+      "check": "passive.single_projection",
+      "passed": true,
+      "detail": {
+        "open_vpk": 0.0011246826503806982,
+        "rf_node_vpk": 0.0010150433454222583,
+        "if_vpk": 0.000565285636664708,
+        "rf_dc_v": 0.0003739356859252138
+      }
+    },
+    {
+      "check": "passive.compression",
+      "passed": true,
+      "detail": {
+        "baseline_db": -5.976432544933107,
+        "baseline_spread_db": 0.002835290427917414,
+        "p1db_dbm": -15.078125,
+        "bracket_dbm": [
+          -15.15625,
+          -15.0
+        ],
+        "actual_endpoint_compression_db": [
+          0.9686156386023344,
+          1.0048939757910054
+        ]
+      }
+    },
+    {
+      "check": "passive.iip3_fits",
+      "passed": true,
+      "detail": {
+        "selected_pins_dbm": [
+          -40,
+          -35,
+          -30
+        ],
+        "fundamental_slopes": [
+          0.9917840037551278,
+          0.9917839680162858
+        ],
+        "im3_slopes": [
+          2.9834189999000884,
+          2.9838152976102927
+        ],
+        "minimum_empty_bin_margin_db": 44.68136754529528,
+        "iip3_dbm": [
+          -5.470790428264643,
+          -5.4724276271271854
+        ],
+        "tightened_delta_db": [
+          -0.002678114939346443,
+          -0.0036040326318946825
+        ]
+      }
+    },
+    {
+      "check": "passive.noise_normalization",
+      "passed": true,
+      "detail": {
+        "sidebands": [
+          15,
+          31,
+          63
+        ],
+        "max_last_delta_db": 3.787015145917394e-09,
+        "ssb_nf_db": 16.69435780385285,
+        "dsb_nf_db": 13.708005399717775,
+        "normalization_recomputed": true
+      }
+    },
+    {
+      "check": "passive.window_convergence",
+      "passed": true,
+      "detail": {
+        "voltage_gain_delta_db": -3.007271098809383e-07,
+        "power_gain_delta_db": -3.007271125454736e-07,
+        "short_sample_count": 4000,
+        "long_sample_count": 20000
+      }
+    },
+    {
+      "check": "passive.actual_source.passive_single_tone.single_tone",
+      "passed": true,
+      "detail": {
+        "native_DGSB_and_values_checked": true,
+        "actual_design_variables": {
+          "temperature": 27.0,
+          "rfScale": 1.0,
+          "tone2Scale": 0.0,
+          "fRF2": 5800000000.0,
+          "fRF": 5800000000.0,
+          "pinDbm": -55.0
+        }
+      }
+    },
+    {
+      "check": "passive.raw_projection.passive_single_tone.single_tone",
+      "passed": true,
+      "detail": {
+        "sample_count": 4000,
+        "fundamental_from_actual_PSF": [
+          0.000565285636664708
+        ],
+        "IM3_from_actual_PSF": []
+      }
+    },
+    {
+      "check": "passive.actual_source.passive_single_window_check.single_reference",
+      "passed": true,
+      "detail": {
+        "native_DGSB_and_values_checked": true,
+        "actual_design_variables": {
+          "temperature": 27.0,
+          "rfScale": 1.0,
+          "tone2Scale": 0.0,
+          "fRF2": 5800000000.0,
+          "fRF": 5800000000.0,
+          "pinDbm": -55.0
+        }
+      }
+    },
+    {
+      "check": "passive.raw_projection.passive_single_window_check.single_reference",
+      "passed": true,
+      "detail": {
+        "sample_count": 20000,
+        "fundamental_from_actual_PSF": [
+          0.0005652856170931132
+        ],
+        "IM3_from_actual_PSF": []
+      }
+    },
+    {
+      "check": "passive.actual_source.passive_compression_00.compression",
+      "passed": true,
+      "detail": {
+        "native_DGSB_and_values_checked": true,
+        "actual_design_variables": {
+          "temperature": 27.0,
+          "rfScale": 1.0,
+          "tone2Scale": 0.0,
+          "fRF2": 5800000000.0,
+          "fRF": 5800000000.0,
+          "pinDbm": -60.0
+        }
+      }
+    },
+    {
+      "check": "passive.raw_projection.passive_compression_00.compression",
+      "passed": true,
+      "detail": {
+        "sample_count": 4000,
+        "fundamental_from_actual_PSF": [
+          0.0003178740669120025
+        ],
+        "IM3_from_actual_PSF": []
+      }
+    },
+    {
+      "check": "passive.actual_source.passive_compression_01.compression",
+      "passed": true,
+      "detail": {
+        "native_DGSB_and_values_checked": true,
+        "actual_design_variables": {
+          "temperature": 27.0,
+          "rfScale": 1.0,
+          "tone2Scale": 0.0,
+          "fRF2": 5800000000.0,
+          "fRF": 5800000000.0,
+          "pinDbm": -50.0
+        }
+      }
+    },
+    {
+      "check": "passive.raw_projection.passive_compression_01.compression",
+      "passed": true,
+      "detail": {
+        "sample_count": 4000,
+        "fundamental_from_actual_PSF": [
+          0.0010052078829257997
+        ],
+        "IM3_from_actual_PSF": []
+      }
+    },
+    {
+      "check": "passive.actual_source.passive_compression_02.compression",
+      "passed": true,
+      "detail": {
+        "native_DGSB_and_values_checked": true,
+        "actual_design_variables": {
+          "temperature": 27.0,
+          "rfScale": 1.0,
+          "tone2Scale": 0.0,
+          "fRF2": 5800000000.0,
+          "fRF": 5800000000.0,
+          "pinDbm": -40.0
+        }
+      }
+    },
+    {
+      "check": "passive.raw_projection.passive_compression_02.compression",
+      "passed": true,
+      "detail": {
+        "sample_count": 4000,
+        "fundamental_from_actual_PSF": [
+          0.0031777089794332507
+        ],
+        "IM3_from_actual_PSF": []
+      }
+    },
+    {
+      "check": "passive.actual_source.passive_compression_03.compression",
+      "passed": true,
+      "detail": {
+        "native_DGSB_and_values_checked": true,
+        "actual_design_variables": {
+          "temperature": 27.0,
+          "rfScale": 1.0,
+          "tone2Scale": 0.0,
+          "fRF2": 5800000000.0,
+          "fRF": 5800000000.0,
+          "pinDbm": -35.0
+        }
+      }
+    },
+    {
+      "check": "passive.raw_projection.passive_compression_03.compression",
+      "passed": true,
+      "detail": {
+        "sample_count": 4000,
+        "fundamental_from_actual_PSF": [
+          0.005646581658422239
+        ],
+        "IM3_from_actual_PSF": []
+      }
+    },
+    {
+      "check": "passive.actual_source.passive_compression_04.compression",
+      "passed": true,
+      "detail": {
+        "native_DGSB_and_values_checked": true,
+        "actual_design_variables": {
+          "temperature": 27.0,
+          "rfScale": 1.0,
+          "tone2Scale": 0.0,
+          "fRF2": 5800000000.0,
+          "fRF": 5800000000.0,
+          "pinDbm": -30.0
+        }
+      }
+    },
+    {
+      "check": "passive.raw_projection.passive_compression_04.compression",
+      "passed": true,
+      "detail": {
+        "sample_count": 4000,
+        "fundamental_from_actual_PSF": [
+          0.010017440413354893
+        ],
+        "IM3_from_actual_PSF": []
+      }
+    },
+    {
+      "check": "passive.actual_source.passive_compression_05.compression",
+      "passed": true,
+      "detail": {
+        "native_DGSB_and_values_checked": true,
+        "actual_design_variables": {
+          "temperature": 27.0,
+          "rfScale": 1.0,
+          "tone2Scale": 0.0,
+          "fRF2": 5800000000.0,
+          "fRF": 5800000000.0,
+          "pinDbm": -25.0
+        }
+      }
+    },
+    {
+      "check": "passive.raw_projection.passive_compression_05.compression",
+      "passed": true,
+      "detail": {
+        "sample_count": 4000,
+        "fundamental_from_actual_PSF": [
+          0.017678921595287424
+        ],
+        "IM3_from_actual_PSF": []
+      }
+    },
+    {
+      "check": "passive.actual_source.passive_compression_06.compression",
+      "passed": true,
+      "detail": {
+        "native_DGSB_and_values_checked": true,
+        "actual_design_variables": {
+          "temperature": 27.0,
+          "rfScale": 1.0,
+          "tone2Scale": 0.0,
+          "fRF2": 5800000000.0,
+          "fRF": 5800000000.0,
+          "pinDbm": -20.0
+        }
+      }
+    },
+    {
+      "check": "passive.raw_projection.passive_compression_06.compression",
+      "passed": true,
+      "detail": {
+        "sample_count": 4000,
+        "fundamental_from_actual_PSF": [
+          0.030672193339622785
+        ],
+        "IM3_from_actual_PSF": []
+      }
+    },
+    {
+      "check": "passive.actual_source.passive_compression_07.compression",
+      "passed": true,
+      "detail": {
+        "native_DGSB_and_values_checked": true,
+        "actual_design_variables": {
+          "temperature": 27.0,
+          "rfScale": 1.0,
+          "tone2Scale": 0.0,
+          "fRF2": 5800000000.0,
+          "fRF": 5800000000.0,
+          "pinDbm": -17.5
+        }
+      }
+    },
+    {
+      "check": "passive.raw_projection.passive_compression_07.compression",
+      "passed": true,
+      "detail": {
+        "sample_count": 4000,
+        "fundamental_from_actual_PSF": [
+          0.0397486131067223
+        ],
+        "IM3_from_actual_PSF": []
+      }
+    },
+    {
+      "check": "passive.actual_source.passive_compression_08.compression",
+      "passed": true,
+      "detail": {
+        "native_DGSB_and_values_checked": true,
+        "actual_design_variables": {
+          "temperature": 27.0,
+          "rfScale": 1.0,
+          "tone2Scale": 0.0,
+          "fRF2": 5800000000.0,
+          "fRF": 5800000000.0,
+          "pinDbm": -16.25
+        }
+      }
+    },
+    {
+      "check": "passive.raw_projection.passive_compression_08.compression",
+      "passed": true,
+      "detail": {
+        "sample_count": 4000,
+        "fundamental_from_actual_PSF": [
+          0.04490267602840989
+        ],
+        "IM3_from_actual_PSF": []
+      }
+    },
+    {
+      "check": "passive.actual_source.passive_compression_09.compression",
+      "passed": true,
+      "detail": {
+        "native_DGSB_and_values_checked": true,
+        "actual_design_variables": {
+          "temperature": 27.0,
+          "rfScale": 1.0,
+          "tone2Scale": 0.0,
+          "fRF2": 5800000000.0,
+          "fRF": 5800000000.0,
+          "pinDbm": -15.625
+        }
+      }
+    },
+    {
+      "check": "passive.raw_projection.passive_compression_09.compression",
+      "passed": true,
+      "detail": {
+        "sample_count": 4000,
+        "fundamental_from_actual_PSF": [
+          0.047597979962166304
+        ],
+        "IM3_from_actual_PSF": []
+      }
+    },
+    {
+      "check": "passive.actual_source.passive_compression_10.compression",
+      "passed": true,
+      "detail": {
+        "native_DGSB_and_values_checked": true,
+        "actual_design_variables": {
+          "temperature": 27.0,
+          "rfScale": 1.0,
+          "tone2Scale": 0.0,
+          "fRF2": 5800000000.0,
+          "fRF": 5800000000.0,
+          "pinDbm": -15.46875
+        }
+      }
+    },
+    {
+      "check": "passive.raw_projection.passive_compression_10.compression",
+      "passed": true,
+      "detail": {
+        "sample_count": 4000,
+        "fundamental_from_actual_PSF": [
+          0.04828095805270198
+        ],
+        "IM3_from_actual_PSF": []
+      }
+    },
+    {
+      "check": "passive.actual_source.passive_compression_11.compression",
+      "passed": true,
+      "detail": {
+        "native_DGSB_and_values_checked": true,
+        "actual_design_variables": {
+          "temperature": 27.0,
+          "rfScale": 1.0,
+          "tone2Scale": 0.0,
+          "fRF2": 5800000000.0,
+          "fRF": 5800000000.0,
+          "pinDbm": -15.15625
+        }
+      }
+    },
+    {
+      "check": "passive.raw_projection.passive_compression_11.compression",
+      "passed": true,
+      "detail": {
+        "sample_count": 4000,
+        "fundamental_from_actual_PSF": [
+          0.049655240133574995
+        ],
+        "IM3_from_actual_PSF": []
+      }
+    },
+    {
+      "check": "passive.actual_source.passive_compression_12.compression",
+      "passed": true,
+      "detail": {
+        "native_DGSB_and_values_checked": true,
+        "actual_design_variables": {
+          "temperature": 27.0,
+          "rfScale": 1.0,
+          "tone2Scale": 0.0,
+          "fRF2": 5800000000.0,
+          "fRF": 5800000000.0,
+          "pinDbm": -15.0
+        }
+      }
+    },
+    {
+      "check": "passive.raw_projection.passive_compression_12.compression",
+      "passed": true,
+      "detail": {
+        "sample_count": 4000,
+        "fundamental_from_actual_PSF": [
+          0.05034584908237047
+        ],
+        "IM3_from_actual_PSF": []
+      }
+    },
+    {
+      "check": "passive.actual_source.passive_compression_13.compression",
+      "passed": true,
+      "detail": {
+        "native_DGSB_and_values_checked": true,
+        "actual_design_variables": {
+          "temperature": 27.0,
+          "rfScale": 1.0,
+          "tone2Scale": 0.0,
+          "fRF2": 5800000000.0,
+          "fRF": 5800000000.0,
+          "pinDbm": -10.0
+        }
+      }
+    },
+    {
+      "check": "passive.raw_projection.passive_compression_13.compression",
+      "passed": true,
+      "detail": {
+        "sample_count": 4000,
+        "fundamental_from_actual_PSF": [
+          0.06912067177064765
+        ],
+        "IM3_from_actual_PSF": []
+      }
+    },
+    {
+      "check": "passive.actual_source.passive_two_tone_00.two_tone",
+      "passed": true,
+      "detail": {
+        "native_DGSB_and_values_checked": true,
+        "actual_design_variables": {
+          "temperature": 27.0,
+          "rfScale": 1.0,
+          "tone2Scale": 1.0,
+          "fRF2": 5810000000.0,
+          "fRF": 5790000000.0,
+          "pinDbm": -50.0
+        }
+      }
+    },
+    {
+      "check": "passive.raw_projection.passive_two_tone_00.two_tone",
+      "passed": true,
+      "detail": {
+        "sample_count": 20000,
+        "fundamental_from_actual_PSF": [
+          0.001004985286225438,
+          0.0010052537268704104
+        ],
+        "IM3_from_actual_PSF": [
+          3.31540919139996e-08,
+          3.298790521754521e-08
+        ]
+      }
+    },
+    {
+      "check": "passive.actual_source.passive_two_tone_01.two_tone",
+      "passed": true,
+      "detail": {
+        "native_DGSB_and_values_checked": true,
+        "actual_design_variables": {
+          "temperature": 27.0,
+          "rfScale": 1.0,
+          "tone2Scale": 1.0,
+          "fRF2": 5810000000.0,
+          "fRF": 5790000000.0,
+          "pinDbm": -45.0
+        }
+      }
+    },
+    {
+      "check": "passive.raw_projection.passive_two_tone_01.two_tone",
+      "passed": true,
+      "detail": {
+        "sample_count": 20000,
+        "fundamental_from_actual_PSF": [
+          0.001786756669877515,
+          0.00178723439157627
+        ],
+        "IM3_from_actual_PSF": [
+          1.826889976692916e-07,
+          1.8176956090517388e-07
+        ]
+      }
+    },
+    {
+      "check": "passive.actual_source.passive_two_tone_02.two_tone",
+      "passed": true,
+      "detail": {
+        "native_DGSB_and_values_checked": true,
+        "actual_design_variables": {
+          "temperature": 27.0,
+          "rfScale": 1.0,
+          "tone2Scale": 1.0,
+          "fRF2": 5810000000.0,
+          "fRF": 5790000000.0,
+          "pinDbm": -40.0
+        }
+      }
+    },
+    {
+      "check": "passive.raw_projection.passive_two_tone_02.two_tone",
+      "passed": true,
+      "detail": {
+        "sample_count": 20000,
+        "fundamental_from_actual_PSF": [
+          0.0031750562039416664,
+          0.003175904666571235
+        ],
+        "IM3_from_actual_PSF": [
+          1.1352570126048642e-06,
+          1.1357569820354606e-06
+        ]
+      }
+    },
+    {
+      "check": "passive.actual_source.passive_two_tone_03.two_tone",
+      "passed": true,
+      "detail": {
+        "native_DGSB_and_values_checked": true,
+        "actual_design_variables": {
+          "temperature": 27.0,
+          "rfScale": 1.0,
+          "tone2Scale": 1.0,
+          "fRF2": 5810000000.0,
+          "fRF": 5790000000.0,
+          "pinDbm": -35.0
+        }
+      }
+    },
+    {
+      "check": "passive.raw_projection.passive_two_tone_03.two_tone",
+      "passed": true,
+      "detail": {
+        "sample_count": 20000,
+        "fundamental_from_actual_PSF": [
+          0.005633467388656882,
+          0.0056349725145771225
+        ],
+        "IM3_from_actual_PSF": [
+          6.158995168104557e-06,
+          6.162664280771672e-06
+        ]
+      }
+    },
+    {
+      "check": "passive.actual_source.passive_two_tone_04.two_tone",
+      "passed": true,
+      "detail": {
+        "native_DGSB_and_values_checked": true,
+        "actual_design_variables": {
+          "temperature": 27.0,
+          "rfScale": 1.0,
+          "tone2Scale": 1.0,
+          "fRF2": 5810000000.0,
+          "fRF": 5790000000.0,
+          "pinDbm": -30.0
+        }
+      }
+    },
+    {
+      "check": "passive.raw_projection.passive_two_tone_04.two_tone",
+      "passed": true,
+      "detail": {
+        "sample_count": 20000,
+        "fundamental_from_actual_PSF": [
+          0.009945884678614262,
+          0.009948542084103796
+        ],
+        "IM3_from_actual_PSF": [
+          3.522116307930517e-05,
+          3.525275511207704e-05
+        ]
+      }
+    },
+    {
+      "check": "passive.actual_source.passive_two_tone_05.two_tone",
+      "passed": true,
+      "detail": {
+        "native_DGSB_and_values_checked": true,
+        "actual_design_variables": {
+          "temperature": 27.0,
+          "rfScale": 1.0,
+          "tone2Scale": 1.0,
+          "fRF2": 5810000000.0,
+          "fRF": 5790000000.0,
+          "pinDbm": -25.0
+        }
+      }
+    },
+    {
+      "check": "passive.raw_projection.passive_two_tone_05.two_tone",
+      "passed": true,
+      "detail": {
+        "sample_count": 20000,
+        "fundamental_from_actual_PSF": [
+          0.017278334869895412,
+          0.017282963953022177
+        ],
+        "IM3_from_actual_PSF": [
+          0.000199674198268309,
+          0.00019973566496243566
+        ]
+      }
+    },
+    {
+      "check": "passive.actual_source.passive_two_tone_06.two_tone",
+      "passed": true,
+      "detail": {
+        "native_DGSB_and_values_checked": true,
+        "actual_design_variables": {
+          "temperature": 27.0,
+          "rfScale": 1.0,
+          "tone2Scale": 1.0,
+          "fRF2": 5810000000.0,
+          "fRF": 5790000000.0,
+          "pinDbm": -20.0
+        }
+      }
+    },
+    {
+      "check": "passive.raw_projection.passive_two_tone_06.two_tone",
+      "passed": true,
+      "detail": {
+        "sample_count": 20000,
+        "fundamental_from_actual_PSF": [
+          0.028494836084319866,
+          0.028503028381465012
+        ],
+        "IM3_from_actual_PSF": [
+          0.0010783147769365727,
+          0.0010783760761683418
+        ]
+      }
+    },
+    {
+      "check": "passive.actual_source.passive_two_tone_tight.tight_two_tone",
+      "passed": true,
+      "detail": {
+        "native_DGSB_and_values_checked": true,
+        "actual_design_variables": {
+          "temperature": 27.0,
+          "rfScale": 1.0,
+          "tone2Scale": 1.0,
+          "fRF2": 5810000000.0,
+          "fRF": 5790000000.0,
+          "pinDbm": -35.0
+        }
+      }
+    },
+    {
+      "check": "passive.raw_projection.passive_two_tone_tight.tight_two_tone",
+      "passed": true,
+      "detail": {
+        "sample_count": 20000,
+        "fundamental_from_actual_PSF": [
+          0.00563357408928631,
+          0.005635078372472299
+        ],
+        "IM3_from_actual_PSF": [
+          6.162911064004844e-06,
+          6.167896414063674e-06
+        ]
+      }
+    },
+    {
+      "check": "passive.actual_source.passive_noise_sb15.pnoise",
+      "passed": true,
+      "detail": {
+        "native_DGSB_and_values_checked": true,
+        "actual_design_variables": {
+          "temperature": 27.0,
+          "tone2Scale": 0.0,
+          "rfScale": 0.0,
+          "fRF2": 5800000000.0,
+          "fRF": 5800000000.0,
+          "pinDbm": -55.0
+        }
+      }
+    },
+    {
+      "check": "passive.actual_source.passive_noise_sb31.pnoise",
+      "passed": true,
+      "detail": {
+        "native_DGSB_and_values_checked": true,
+        "actual_design_variables": {
+          "temperature": 27.0,
+          "tone2Scale": 0.0,
+          "rfScale": 0.0,
+          "fRF2": 5800000000.0,
+          "fRF": 5800000000.0,
+          "pinDbm": -55.0
+        }
+      }
+    },
+    {
+      "check": "passive.actual_source.passive_noise_sb63.pnoise",
+      "passed": true,
+      "detail": {
+        "native_DGSB_and_values_checked": true,
+        "actual_design_variables": {
+          "temperature": 27.0,
+          "tone2Scale": 0.0,
+          "rfScale": 0.0,
+          "fRF2": 5800000000.0,
+          "fRF": 5800000000.0,
+          "pinDbm": -55.0
+        }
+      }
+    },
+    {
+      "check": "passive.actual_source.passive_noise_sb63.pac_usb",
+      "passed": true,
+      "detail": {
+        "native_DGSB_and_values_checked": true,
+        "actual_design_variables": {
+          "temperature": 27.0,
+          "tone2Scale": 0.0,
+          "rfScale": 0.0,
+          "fRF2": 5800000000.0,
+          "fRF": 5800000000.0,
+          "pinDbm": -55.0
+        }
+      }
+    },
+    {
+      "check": "passive.actual_source.passive_noise_image.pac_image",
+      "passed": true,
+      "detail": {
+        "native_DGSB_and_values_checked": true,
+        "actual_design_variables": {
+          "temperature": 27.0,
+          "tone2Scale": 0.0,
+          "rfScale": 0.0,
+          "fRF2": 5800000000.0,
+          "fRF": 5800000000.0,
+          "pinDbm": -55.0
+        }
+      }
+    },
+    {
+      "check": "passive.raw_periodic_noise",
+      "passed": true,
+      "detail": {
+        "raw_PAC_and_PNOISE_recomputed": true
+      }
+    }
+  ],
+  "validator_sha256": "069ff6aaf7a32f825eb7f95f977524c9f64aec69732211501cb9e604ec375c61",
+  "reused_pure_validator_sha256": "a1343a26bd459c9ed13aabfe83f16d96b2838233c367bf2be985bcb1fa5a0eeb",
+  "baseline_not_modified": true
+}

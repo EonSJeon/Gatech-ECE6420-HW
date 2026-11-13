@@ -1,0 +1,20 @@
+; Graph handles and containing HI windows can differ in integrated ViVA.
+; IC25.1 vivaxlskill/awvGetHiWindow is the documented conversion.
+procedure(hw09FocusActualViva()
+  let((graph actual out)
+    graph=window(35)
+    actual=awvGetHiWindow(graph)
+    unless(actual error("The actual ViVA HI window could not be found.\n"))
+    awvSetCurrentWindow(graph)
+    hiMapWindow(actual)
+    hiResizeWindow(actual list(list(10 10) list(1590 980)))
+    hiRaiseWindow(actual)
+    out=outfile(strcat(hw09PlotOutput "/native_window_mapping.tsv") "w")
+    fprintf(out "GRAPH\t%L\tHI_WINDOW\t%L\tBBOX\t%L\n"
+      graph actual hiGetAbsWindowScreenBBox(actual t))
+    close(out)
+    printf("HW09 native graph %L corresponds to HI window %L and is mapped/raised.\n" graph actual)
+  )
+)
+hw09FocusActualViva()
+hiRegTimer("hw09FocusActualViva()" 10)

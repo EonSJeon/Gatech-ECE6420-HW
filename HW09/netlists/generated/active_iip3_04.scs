@@ -1,0 +1,23 @@
+// HW09 single-balanced mixer. MOS order: drain gate source body.
+simulator lang=spectre
+global 0
+include "/tools/designkits/NCSU/FreePDK4514/ncsu_basekit/models/hspice/tran_models/models_nom/NMOS_VTH.inc"
+// Spectre port amplitude/DC are matched-load values; open-circuit source values are twice these.
+RFPORT (rfdrive 0) port r=50 num=1 type=sine dc=0.325 ampl=0.01 freq=5790000000 pacmag=0.5 noisetemp=16.85 isnoisy=yes
+RFSECOND (rf rfdrive) vsource dc=0 type=sine ampl=0.02 freq=5810000000
+LOP (lop 0) vsource dc=0.8 type=sine ampl=0.2 freq=5600000000 sinephase=0
+LON (lon 0) vsource dc=0.8 type=sine ampl=0.2 freq=5600000000 sinephase=180
+VDD (vdd 0) vsource dc=1
+M1 (tail rf 0 0) NMOS_VTH w=1.5e-05 l=5e-08 as=1.575e-12 ad=1.575e-12 ps=1.521e-05 pd=1.521e-05 ls=1.05e-07 ld=1.05e-07 m=1
+M2 (outp lop tail 0) NMOS_VTH w=2e-05 l=5e-08 as=2.1e-12 ad=2.1e-12 ps=2.021e-05 pd=2.021e-05 ls=1.05e-07 ld=1.05e-07 m=1
+M3 (outn lon tail 0) NMOS_VTH w=2e-05 l=5e-08 as=2.1e-12 ad=2.1e-12 ps=2.021e-05 pd=2.021e-05 ls=1.05e-07 ld=1.05e-07 m=1
+R1 (vdd outp) resistor r=500
+R2 (vdd outn) resistor r=500
+CLP (outp 0) capacitor c=1e-14
+CLN (outn 0) capacitor c=1e-14
+simulatorOptions options temp=27 tnom=27 reltol=1e-05 vabstol=1e-9 iabstol=1e-13 gmin=1e-12 digits=12
+dcOp dc
+dcOpInfo info what=oppoint where=rawfile
+save rf rfdrive outp outn lop lon tail VDD:p M1:d M2:d M3:d LOP:p LON:p RFPORT:p
+saveOptions options save=selected currents=selected
+tran tran stop=1.2e-07 maxstep=2e-12 strobeperiod=5e-12 errpreset=conservative

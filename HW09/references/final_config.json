@@ -1,0 +1,82 @@
+{
+  "common": {
+    "rf_hz": 5800000000.0,
+    "lo_hz": 5600000000.0,
+    "if_hz": 200000000.0,
+    "vdd_v": 1.0,
+    "rs_ohm": 50.0,
+    "temp_c": 27.0,
+    "source_noise_temp_k": 290.0,
+    "load_cap_f": 1e-14
+  },
+  "active": {
+    "gm_width_um": 15.0,
+    "switch_width_um": 20.0,
+    "length_nm": 50.0,
+    "nf": 1,
+    "m": 1,
+    "rd_ohm": 500.0,
+    "rf_bias_v": 0.65,
+    "lo_common_mode_v": 0.8,
+    "lo_vpp_per_leg": 0.4
+  },
+  "passive": {
+    "switch_width_um": 20.0,
+    "length_nm": 50.0,
+    "nf": 1,
+    "m": 1,
+    "rl_ohm": 500.0,
+    "rf_common_mode_v": 0.0,
+    "lo_common_mode_v": 0.5,
+    "lo_vpp_per_leg": 0.4
+  },
+  "analysis": {
+    "small_signal_pin_dbm": -55.0,
+    "transient_settle_s": 2e-08,
+    "window_s": 1e-07,
+    "strobe_s": 5e-12,
+    "maxstep_s": 2e-12,
+    "reltol": 1e-05,
+    "single_tone_window_s": 2e-08,
+    "single_tone_settle_s": 5e-09,
+    "parallel_jobs": 2,
+    "compression_pin_dbm": [
+      -60,
+      -50,
+      -40,
+      -35,
+      -30,
+      -25,
+      -20,
+      -15,
+      -10,
+      -5,
+      0,
+      5
+    ],
+    "iip3_pin_dbm": [
+      -50,
+      -45,
+      -40,
+      -35,
+      -30,
+      -25,
+      -20
+    ],
+    "rf_tones_hz": [
+      5790000000.0,
+      5810000000.0
+    ],
+    "noise_sidebands": [
+      15,
+      31,
+      63
+    ],
+    "noise_frequency_hz": [
+      100000000.0,
+      200000000.0,
+      300000000.0
+    ],
+    "force": false
+  }
+}

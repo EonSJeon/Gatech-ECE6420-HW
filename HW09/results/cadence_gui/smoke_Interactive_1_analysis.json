@@ -1,0 +1,132 @@
+{
+  "origin": "actual_GUI_smoke_only",
+  "status": "accepted_smoke_not_full_campaign",
+  "history": "Interactive.1",
+  "solver_settings_accepted": true,
+  "completed_utc": "2026-11-13T03:27:36.181475+00:00",
+  "circuits": {
+    "active": {
+      "gui": {
+        "origin": "actual_psf_numerical_analysis",
+        "pin_dbm": -55,
+        "open_peak_v": 0.0011246826503806982,
+        "fund_vpk": [
+          0.0030178407682712118
+        ],
+        "rf_node_vpk": [
+          0.0011179537403598302
+        ],
+        "im3_vpk": [],
+        "if_frequencies_hz": [
+          200000000.0
+        ],
+        "im3_frequencies_hz": [],
+        "gain_db": [
+          8.573326509988187
+        ],
+        "rf_node_gain_db": [
+          8.625449756948662
+        ],
+        "power_gain_db": [
+          1.5836264666279996
+        ],
+        "power_mw": 0.685075201414662,
+        "mean_rf_v": 0.6500000055680349,
+        "mean_outp_v": 0.8287312063145658,
+        "mean_outn_v": 0.8287311929781033,
+        "max_output_v": 1.0095799286856617,
+        "min_output_v": 0.6218980946119315,
+        "lo_diff_vpp": 0.7999368353633657,
+        "sample_count": 4000,
+        "window_s": 2e-08,
+        "settle_s": 5e-09,
+        "strobe_s": 5e-12,
+        "measurement_start_s": 5e-09,
+        "raw_transient_psf": "simulation/cadence_gui/HW09_Mixers/mixer_campaign/maestro/results/maestro/Interactive.1/1/active_single_tone/ascii/tran.tran.tran",
+        "raw_file_sha256": "cb01cda2d980ebb2225982d9e178675bc5cf13a52ff7a8c657cddcdcf38551d7",
+        "completed_utc": "2026-11-13T03:27:33.912447+00:00",
+        "psf_header_reltol": 1.0000000000000002e-06,
+        "psf_header_maxstep": 2e-12,
+        "psf_header_tolerance_relative": 1e-05,
+        "psf_header_abstol(V)": 1e-09,
+        "psf_header_abstol(I)": 1e-13,
+        "psf_header_errpreset": "conservative",
+        "psf_header_method": "gear2only",
+        "settings_match_intended_limits": true,
+        "tail_min_v": 0.19597228580646323,
+        "tail_max_v": 0.3048999189490323,
+        "tail_mean_v": 0.2564559148950671
+      },
+      "baseline": {
+        "gain_db": [
+          8.573326509984069
+        ],
+        "power_mw": 0.685075201414658,
+        "mean_rf_v": 0.6500000055680349,
+        "lo_diff_vpp": 0.7999368353633657
+      },
+      "gain_delta_db": 4.1175951537297806e-12,
+      "power_delta_mw": 3.9968028886505635e-15
+    },
+    "passive": {
+      "gui": {
+        "origin": "actual_psf_numerical_analysis",
+        "pin_dbm": -55,
+        "open_peak_v": 0.0011246826503806982,
+        "fund_vpk": [
+          0.000565285636664708
+        ],
+        "rf_node_vpk": [
+          0.0010150433454222583
+        ],
+        "im3_vpk": [],
+        "if_frequencies_hz": [
+          200000000.0
+        ],
+        "im3_frequencies_hz": [],
+        "gain_db": [
+          -5.975240900928761
+        ],
+        "rf_node_gain_db": [
+          -5.0843327543236505
+        ],
+        "power_gain_db": [
+          -12.964940944288948
+        ],
+        "power_mw": 0.0,
+        "mean_rf_v": 0.0003739356859252138,
+        "mean_outp_v": -0.0018693233753954606,
+        "mean_outn_v": -0.0018693314197247592,
+        "max_output_v": 0.02224745060744273,
+        "min_output_v": -0.02289248400940001,
+        "lo_diff_vpp": 0.7999368353633658,
+        "sample_count": 4000,
+        "window_s": 2e-08,
+        "settle_s": 5e-09,
+        "strobe_s": 5e-12,
+        "measurement_start_s": 5e-09,
+        "raw_transient_psf": "simulation/cadence_gui/HW09_Mixers/mixer_campaign/maestro/results/maestro/Interactive.1/1/passive_single_tone/ascii/tran.tran.tran",
+        "raw_file_sha256": "024a134c4ba61ea0df8c13f65a34f67908d95589f9ac1baf79fd5b3af3c21c9c",
+        "completed_utc": "2026-11-13T03:27:36.168251+00:00",
+        "psf_header_reltol": 1.0000000000000002e-06,
+        "psf_header_maxstep": 2e-12,
+        "psf_header_tolerance_relative": 1e-05,
+        "psf_header_abstol(V)": 1e-09,
+        "psf_header_abstol(I)": 1e-13,
+        "psf_header_errpreset": "conservative",
+        "psf_header_method": "gear2only",
+        "settings_match_intended_limits": true
+      },
+      "baseline": {
+        "gain_db": [
+          -5.975240900839839
+        ],
+        "power_mw": 0.0,
+        "mean_rf_v": 0.00037393568592777274,
+        "lo_diff_vpp": 0.7999368353633657
+      },
+      "gain_delta_db": -8.892264702353714e-11,
+      "power_delta_mw": 0.0
+    }
+  }
+}

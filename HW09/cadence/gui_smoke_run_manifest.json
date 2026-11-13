@@ -1,0 +1,137 @@
+{
+  "schema_version": 1,
+  "origin": "cadence_ade_gui",
+  "status": "smoke_only",
+  "config": {
+    "active": {
+      "gm_width_um": 15.0,
+      "length_nm": 50.0,
+      "lo_common_mode_v": 0.8,
+      "lo_vpp_per_leg": 0.4,
+      "m": 1,
+      "nf": 1,
+      "rd_ohm": 500.0,
+      "rf_bias_v": 0.65,
+      "switch_width_um": 20.0
+    },
+    "analysis": {
+      "compression_pin_dbm": [
+        -60,
+        -50,
+        -40,
+        -35,
+        -30,
+        -25,
+        -20,
+        -15,
+        -10,
+        -5,
+        0,
+        5
+      ],
+      "force": false,
+      "iip3_pin_dbm": [
+        -50,
+        -45,
+        -40,
+        -35,
+        -30,
+        -25,
+        -20
+      ],
+      "maxstep_s": 2e-12,
+      "noise_frequency_hz": [
+        100000000.0,
+        200000000.0,
+        300000000.0
+      ],
+      "noise_sidebands": [
+        15,
+        31,
+        63
+      ],
+      "parallel_jobs": 2,
+      "reltol": 1e-05,
+      "rf_tones_hz": [
+        5790000000.0,
+        5810000000.0
+      ],
+      "single_tone_settle_s": 5e-09,
+      "single_tone_window_s": 2e-08,
+      "small_signal_pin_dbm": -55.0,
+      "strobe_s": 5e-12,
+      "transient_settle_s": 2e-08,
+      "window_s": 1e-07
+    },
+    "common": {
+      "if_hz": 200000000.0,
+      "lo_hz": 5600000000.0,
+      "load_cap_f": 1e-14,
+      "rf_hz": 5800000000.0,
+      "rs_ohm": 50.0,
+      "source_noise_temp_k": 290.0,
+      "temp_c": 27.0,
+      "vdd_v": 1.0
+    },
+    "passive": {
+      "length_nm": 50.0,
+      "lo_common_mode_v": 0.5,
+      "lo_vpp_per_leg": 0.4,
+      "m": 1,
+      "nf": 1,
+      "rf_common_mode_v": 0.0,
+      "rl_ohm": 500.0,
+      "switch_width_um": 20.0
+    }
+  },
+  "history": "Interactive.0",
+  "gui_action_utc": "2026-11-13T03:12:28+00:00",
+  "runs": [
+    {
+      "origin": "cadence_ade_gui",
+      "kind": "active",
+      "stage": "single_tone",
+      "test_name": "active_single_tone",
+      "library": "HW09_Mixers",
+      "cell": "active_tb",
+      "view": "schematic",
+      "pin_dbm": -55,
+      "settle_s": 5e-09,
+      "window_s": 2e-08,
+      "psf": "simulation/cadence_gui/HW09_Mixers/mixer_campaign/maestro/results/maestro/Interactive.0/1/active_single_tone/ascii/tran.tran.tran",
+      "native_psf": "simulation/cadence_gui/HW09_Mixers/mixer_campaign/maestro/results/maestro/Interactive.0/1/active_single_tone/psf/tran.tran.tran",
+      "generated_netlist": "simulation/cadence_gui/HW09_Mixers/mixer_campaign/maestro/results/maestro/Interactive.0/1/active_single_tone/netlist/input.scs",
+      "spectre_log": "simulation/cadence_gui/HW09_Mixers/mixer_campaign/maestro/results/maestro/Interactive.0/1/active_single_tone/psf/spectre.out",
+      "schematic_export": "cadence/active_tb_audit.tsv",
+      "gui_action_utc": "2026-11-13T03:12:28+00:00",
+      "gui_action_description": "Root observed and clicked Assembler Run All, then Update and Run for schematic extraction; two smoke tests enabled, maximum two concurrent jobs.",
+      "spectre_log_sha256": "608e3bca3ffacd227ecd4ab475ec70f1380628a7298c327195d792ce99fc1be3",
+      "generated_netlist_sha256": "f4114a42aa2ec503a177bb3ece258b0ab373af90a35e530bc33254914e2d3625",
+      "schematic_export_sha256": "461346d957db85d3e16a571a295c50a8631a1711a8813d4d493f31ce19bb099c",
+      "psf_sha256": "70f2eb55babe8d8483b95cd8b9cd602cbb4a6c3b3963126f9aa91fb404f8e176"
+    },
+    {
+      "origin": "cadence_ade_gui",
+      "kind": "passive",
+      "stage": "single_tone",
+      "test_name": "passive_single_tone",
+      "library": "HW09_Mixers",
+      "cell": "passive_tb",
+      "view": "schematic",
+      "pin_dbm": -55,
+      "settle_s": 5e-09,
+      "window_s": 2e-08,
+      "psf": "simulation/cadence_gui/HW09_Mixers/mixer_campaign/maestro/results/maestro/Interactive.0/1/passive_single_tone/ascii/tran.tran.tran",
+      "native_psf": "simulation/cadence_gui/HW09_Mixers/mixer_campaign/maestro/results/maestro/Interactive.0/1/passive_single_tone/psf/tran.tran.tran",
+      "generated_netlist": "simulation/cadence_gui/HW09_Mixers/mixer_campaign/maestro/results/maestro/Interactive.0/1/passive_single_tone/netlist/input.scs",
+      "spectre_log": "simulation/cadence_gui/HW09_Mixers/mixer_campaign/maestro/results/maestro/Interactive.0/1/passive_single_tone/psf/spectre.out",
+      "schematic_export": "cadence/passive_tb_audit.tsv",
+      "gui_action_utc": "2026-11-13T03:12:28+00:00",
+      "gui_action_description": "Root observed and clicked Assembler Run All, then Update and Run for schematic extraction; two smoke tests enabled, maximum two concurrent jobs.",
+      "spectre_log_sha256": "97a679d24dd7d44d0559a7b1a15788c0cc8fe48e19eafa2f91d11e0f9f7c76f6",
+      "generated_netlist_sha256": "77ead422f073cbba592f0b541790a553ad0ee4b27646897dbf53f155bf7b2997",
+      "schematic_export_sha256": "e1923d30a2a1fcd7e5110d824170145023487930b3953f606a6a88a31bc315b8",
+      "psf_sha256": "f92944b99cec0fb04fd1f5277119ac623fecf6032209074145979a920d4f6548"
+    }
+  ]
+}

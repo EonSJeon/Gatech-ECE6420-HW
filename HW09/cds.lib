@@ -1,0 +1,3 @@
+INCLUDE /tools/designkits/NCSU/FreePDK4514/ncsu_basekit/cdssetup/cds.lib
+DEFINE HW09_Mixers /nethome/sjeon84/Gatech-ECE6420/HW09/cadence/HW09_Mixers
+DEFINE HW09_Mixers /nethome/sjeon84/Gatech-ECE6420/HW09/cadence/HW09_Mixers

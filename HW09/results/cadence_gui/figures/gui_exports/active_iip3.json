@@ -1,0 +1,123 @@
+{
+  "schema_version": 1,
+  "origin": "cadence_gui_export",
+  "kind": "active",
+  "role": "iip3",
+  "image_path": "cadence/gui_exports/active_iip3.png",
+  "image_sha256": "54be8e878bc6053f49dee1561c492fd9ad35375165e6b4637e08b57c4beb638c",
+  "capture_utc": "2026-11-13T05:01:08+00:00",
+  "capture_app": "Cadence Virtuoso Visualization and Analysis (ViVA), IC25.1, through FastX5",
+  "capture_attachment": "Parent agent directly observed the existing Virtuoso GUI load of the final native ViVA export helper after approving complete above legends and padded axes. The parent and review agents inspected all12 canonical native PNGs. Actual export UTC is recorded from each preserved source PNG modification time.",
+  "export_method": "saveGraphImage",
+  "source_run_id": "cadence_gui_ab6a7104f23d",
+  "source_records": [
+    {
+      "test_name": "active_two_tone_00",
+      "stage": "two_tone",
+      "psf": "simulation/cadence_gui/HW09_Mixers/mixer_campaign/maestro/results/maestro/Interactive.2/1/active_two_tone_00/ascii/tran.tran.tran",
+      "psf_sha256": "34e40b36d24998cea828f86ce51777b6ca52630b440dc343556873fb6731108e",
+      "native_psf": "simulation/cadence_gui/HW09_Mixers/mixer_campaign/maestro/results/maestro/Interactive.2/1/active_two_tone_00/psf/tran.tran.tran",
+      "generated_netlist": "simulation/cadence_gui/HW09_Mixers/mixer_campaign/maestro/results/maestro/Interactive.2/1/active_two_tone_00/netlist/input.scs",
+      "generated_netlist_sha256": "4cb50395fbe7ada90e053e86ebb51d3e4a55cfb13b57d82a8808d8b4c784b68f",
+      "native_psf_sha256": "35a7d1bf542263adb7b124d2b3de33be6cb27c2cf0db1fe8662e8b6124a85ea0",
+      "conversion_evidence": "simulation/cadence_gui/HW09_Mixers/mixer_campaign/maestro/results/maestro/Interactive.2/1/active_two_tone_00/ascii/tran.tran.tran.conversion.json",
+      "conversion_evidence_sha256": "7f20097f1a2fd0dfbc1f2308b0817a208502c03d25e884d4cae2bf6c62e7791c",
+      "pin_dbm": -50
+    },
+    {
+      "test_name": "active_two_tone_01",
+      "stage": "two_tone",
+      "psf": "simulation/cadence_gui/HW09_Mixers/mixer_campaign/maestro/results/maestro/Interactive.2/1/active_two_tone_01/ascii/tran.tran.tran",
+      "psf_sha256": "9c24b2c0e357a74c9e0e35dde002123b6d6437c5822ec75befa8aed1bd4b7aba",
+      "native_psf": "simulation/cadence_gui/HW09_Mixers/mixer_campaign/maestro/results/maestro/Interactive.2/1/active_two_tone_01/psf/tran.tran.tran",
+      "generated_netlist": "simulation/cadence_gui/HW09_Mixers/mixer_campaign/maestro/results/maestro/Interactive.2/1/active_two_tone_01/netlist/input.scs",
+      "generated_netlist_sha256": "3ca6981af8c801931800552cbd1297dd7165423c1b9fae64a8d7dada03035073",
+      "native_psf_sha256": "132252d0a584ca99baaf7a17466e39cb06623192b3f8b1d79dda9d31105cf711",
+      "conversion_evidence": "simulation/cadence_gui/HW09_Mixers/mixer_campaign/maestro/results/maestro/Interactive.2/1/active_two_tone_01/ascii/tran.tran.tran.conversion.json",
+      "conversion_evidence_sha256": "c74481bfa79fa2f13df18cd9c55a819c13e189ecd9bdcf15eb8308c06c2f4764",
+      "pin_dbm": -45
+    },
+    {
+      "test_name": "active_two_tone_02",
+      "stage": "two_tone",
+      "psf": "simulation/cadence_gui/HW09_Mixers/mixer_campaign/maestro/results/maestro/Interactive.2/1/active_two_tone_02/ascii/tran.tran.tran",
+      "psf_sha256": "5f531e22d14cd90d4ba1e745b190a360bc0359de8dcf84d4fe16c00e4e0efd42",
+      "native_psf": "simulation/cadence_gui/HW09_Mixers/mixer_campaign/maestro/results/maestro/Interactive.2/1/active_two_tone_02/psf/tran.tran.tran",
+      "generated_netlist": "simulation/cadence_gui/HW09_Mixers/mixer_campaign/maestro/results/maestro/Interactive.2/1/active_two_tone_02/netlist/input.scs",
+      "generated_netlist_sha256": "13240c033035fad1601c80fcbe9418038baaf9613760b58cf18e780d28666d29",
+      "native_psf_sha256": "183b1833ef4eed4d57c8ef86b294383d06e86b5f6d0a76a65e16510f30450a07",
+      "conversion_evidence": "simulation/cadence_gui/HW09_Mixers/mixer_campaign/maestro/results/maestro/Interactive.2/1/active_two_tone_02/ascii/tran.tran.tran.conversion.json",
+      "conversion_evidence_sha256": "7f5f11b7b4892bcdf402612b82754b70f5a9c3c621f214b8e22d29cfa2ec6d2a",
+      "pin_dbm": -40
+    },
+    {
+      "test_name": "active_two_tone_03",
+      "stage": "two_tone",
+      "psf": "simulation/cadence_gui/HW09_Mixers/mixer_campaign/maestro/results/maestro/Interactive.2/1/active_two_tone_03/ascii/tran.tran.tran",
+      "psf_sha256": "6e1ac8c7cbaf9e939675af71c081e787864f6bb2249168979741e33f8c544c31",
+      "native_psf": "simulation/cadence_gui/HW09_Mixers/mixer_campaign/maestro/results/maestro/Interactive.2/1/active_two_tone_03/psf/tran.tran.tran",
+      "generated_netlist": "simulation/cadence_gui/HW09_Mixers/mixer_campaign/maestro/results/maestro/Interactive.2/1/active_two_tone_03/netlist/input.scs",
+      "generated_netlist_sha256": "b2600c096a7ceafa5d1313753cf6a86ba7f83d1bb5d369f055993a97668f5a48",
+      "native_psf_sha256": "2b72cedc56dc8e023cb607573eb278b8c2eaa2a82b8028d444efe77cf0bc5aae",
+      "conversion_evidence": "simulation/cadence_gui/HW09_Mixers/mixer_campaign/maestro/results/maestro/Interactive.2/1/active_two_tone_03/ascii/tran.tran.tran.conversion.json",
+      "conversion_evidence_sha256": "28779909a3b3168fcd6f30954025c9bbe51b6d6730de0763d2600cb8653e4555",
+      "pin_dbm": -35
+    },
+    {
+      "test_name": "active_two_tone_04",
+      "stage": "two_tone",
+      "psf": "simulation/cadence_gui/HW09_Mixers/mixer_campaign/maestro/results/maestro/Interactive.2/1/active_two_tone_04/ascii/tran.tran.tran",
+      "psf_sha256": "052c23fe2525a76b4dab835d33785d2f1ae3079ee0e9cc9505a9a7509dbc5a52",
+      "native_psf": "simulation/cadence_gui/HW09_Mixers/mixer_campaign/maestro/results/maestro/Interactive.2/1/active_two_tone_04/psf/tran.tran.tran",
+      "generated_netlist": "simulation/cadence_gui/HW09_Mixers/mixer_campaign/maestro/results/maestro/Interactive.2/1/active_two_tone_04/netlist/input.scs",
+      "generated_netlist_sha256": "6f864ed614dd47e0e194d90d3ee0d06d57e2bff383fb29d48b4270b4bcab2f4b",
+      "native_psf_sha256": "4b78c79e52510859024d6d66d94b26716fd77e2bbb450776203020e80821c138",
+      "conversion_evidence": "simulation/cadence_gui/HW09_Mixers/mixer_campaign/maestro/results/maestro/Interactive.2/1/active_two_tone_04/ascii/tran.tran.tran.conversion.json",
+      "conversion_evidence_sha256": "4691d3d2f8d59fc516e36f0680ef95911a0c204668eb51cdf0a071586aa8061a",
+      "pin_dbm": -30
+    },
+    {
+      "test_name": "active_two_tone_05",
+      "stage": "two_tone",
+      "psf": "simulation/cadence_gui/HW09_Mixers/mixer_campaign/maestro/results/maestro/Interactive.2/1/active_two_tone_05/ascii/tran.tran.tran",
+      "psf_sha256": "45bf01ffb31995a73033daf5c56f84aef99bbd9c99079bc5086c9339aa8a1ed5",
+      "native_psf": "simulation/cadence_gui/HW09_Mixers/mixer_campaign/maestro/results/maestro/Interactive.2/1/active_two_tone_05/psf/tran.tran.tran",
+      "generated_netlist": "simulation/cadence_gui/HW09_Mixers/mixer_campaign/maestro/results/maestro/Interactive.2/1/active_two_tone_05/netlist/input.scs",
+      "generated_netlist_sha256": "c63f9fc895041be5d1b2244b8d1096f7aba7205db5eef104c88a5a3ece6e0740",
+      "native_psf_sha256": "4b5e8ce59213b1a8aff1548dadae20232b7c90a4b0c16855d6c9dc49114e9d8b",
+      "conversion_evidence": "simulation/cadence_gui/HW09_Mixers/mixer_campaign/maestro/results/maestro/Interactive.2/1/active_two_tone_05/ascii/tran.tran.tran.conversion.json",
+      "conversion_evidence_sha256": "7cc69c0329b7b63b388bf0a26f19acd901e146cc4d7b8e9086d14a1b064da842",
+      "pin_dbm": -25
+    },
+    {
+      "test_name": "active_two_tone_06",
+      "stage": "two_tone",
+      "psf": "simulation/cadence_gui/HW09_Mixers/mixer_campaign/maestro/results/maestro/Interactive.2/1/active_two_tone_06/ascii/tran.tran.tran",
+      "psf_sha256": "6fbfba997e5d495fa868838a15c57d229450e7886fd8e5c3a3362faad58c3bde",
+      "native_psf": "simulation/cadence_gui/HW09_Mixers/mixer_campaign/maestro/results/maestro/Interactive.2/1/active_two_tone_06/psf/tran.tran.tran",
+      "generated_netlist": "simulation/cadence_gui/HW09_Mixers/mixer_campaign/maestro/results/maestro/Interactive.2/1/active_two_tone_06/netlist/input.scs",
+      "generated_netlist_sha256": "8f890a74d1de3b632b88133c91f72bdf4a54199908fc340bf8af6300de782278",
+      "native_psf_sha256": "04478af99012265f7ea430418b067d1c0fdb8e2453b490d628e2b50c7bcf788a",
+      "conversion_evidence": "simulation/cadence_gui/HW09_Mixers/mixer_campaign/maestro/results/maestro/Interactive.2/1/active_two_tone_06/ascii/tran.tran.tran.conversion.json",
+      "conversion_evidence_sha256": "a51fd3a6876d2089bc8ca5619cd48b7017decfc6ebdc24a6476e346a7b645c6e",
+      "pin_dbm": -20
+    }
+  ],
+  "expression": "Native calibrated DFT at190/210MHz fundamentals and170/230MHz IM3 per7actual named tests;db20(peak V); accepted cubic interval -40,-35,-30dBm",
+  "x_axis": "Available input power per tone (dBm)",
+  "y_axis": "Peak fundamental and IM3 output amplitude (dBV)",
+  "rendering_description": "Active: Native Calculator fundamental and IM3 amplitudes from seven separate actual two-tone tests. The accepted cubic interval is -40, -35 and -30 dBm per tone; the table retains the independently audited IIP3 extraction.",
+  "export_receipt": "cadence/gui_exports/native_export_receipt.tsv",
+  "export_receipt_sha256": "ff44d2e105680c5ce4eae4dd0effc927835676f01a38332362ec0279a4265f25",
+  "calculator_audit": "cadence/gui_exports/native_calculator_audit.tsv",
+  "calculator_audit_sha256": "00ad4219cc8389b8489a27393927db097ef84d5e616ebe90a8d12c45c06466dc",
+  "native_export_time_raw": "Nov 13 00:01:07 2026",
+  "native_window": "window:54",
+  "image_dimensions_px": [
+    2400,
+    1600
+  ],
+  "native_export_options": {
+    "exactCopy": false
+  }
+}

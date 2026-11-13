@@ -1,0 +1,36 @@
+{
+  "origin": "cadence_gui_export",
+  "kind": "passive",
+  "role": "testbench",
+  "view": "actual GUI testbench",
+  "source_sha256": "e1923d30a2a1fcd7e5110d824170145023487930b3953f606a6a88a31bc315b8",
+  "image_sha256": "1decf0bc1564e6c792e308ccc13d2dc147b890c9bc07c2d802e704410ee254b7",
+  "capture_utc": "2026-11-13T04:23:23.195790+00:00",
+  "capture_app": "Cadence Virtuoso Schematic Editor via FastX",
+  "capture_attachment": "cadence/presentation_exports.tsv; observed parent GUI Load of cadence/presentation.il",
+  "rendering_description": "Actual Virtuoso GUI native image export of the saved passive mixer testbench. Exact device values and D/G/S/B connections are listed in the accompanying tables.",
+  "export_method": "hiExportImage",
+  "native_export_record": [
+    "export",
+    "passive",
+    "testbench",
+    "cadence_gui_export",
+    "hiExportImage",
+    "/nethome/sjeon84/Gatech-ECE6420/HW09/cadence/passive_gui_testbench.png",
+    "\"Nov 12 23:23:23 2026\"",
+    "window:23"
+  ],
+  "presentation_electrical_unchanged": true,
+  "image_path": "cadence/passive_gui_testbench.png",
+  "source_audit": "cadence/passive_tb_audit.tsv",
+  "auxiliary_source_audits": [
+    {
+      "source": "cadence/presentation_exports.tsv",
+      "sha256": "d8e5a68b6ad25503fa360c61c061f1c4da47cebf27d99a438879c0ac9ac3b790"
+    },
+    {
+      "source": "cadence/presentation_electrical.tsv",
+      "sha256": "a1c805eb1fac7d6ff4f0ffeca742fdf59b10ad4711854b694075290722447dc7"
+    }
+  ]
+}

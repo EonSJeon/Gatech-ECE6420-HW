@@ -1,0 +1,1294 @@
+{
+  "campaign_completed_utc": "2026-11-13T01:06:18.345569+00:00",
+  "campaign_json_sha256": "fe527e03cad03f230ff52c43c945f7d10d4d48b49cf14bc2fc2e6675aa9ca8f6",
+  "campaign_status": "complete",
+  "checks": [
+    {
+      "check": "campaign.completion_and_provenance",
+      "detail": {
+        "run_id": "ab6a7104f23d",
+        "source_hashes_match": true
+      },
+      "passed": true
+    },
+    {
+      "check": "curve.results/curves/active_compression.npz",
+      "detail": {
+        "arrays": [
+          "completed_utc",
+          "config_fingerprint",
+          "gain_db",
+          "pin_dbm",
+          "vout_vpk"
+        ],
+        "path": "results/curves/active_compression.npz",
+        "sha256": "f89ed4dd9b3b1628f1583e94c85a9908d084509bfd99526a5f614639859c6515"
+      },
+      "passed": true
+    },
+    {
+      "check": "curve.results/curves/active_iip3.npz",
+      "detail": {
+        "arrays": [
+          "completed_utc",
+          "config_fingerprint",
+          "fund_vpk",
+          "im3_vpk",
+          "pin_dbm"
+        ],
+        "path": "results/curves/active_iip3.npz",
+        "sha256": "a7ca8223e76e826af8c490466f10e2c1ed68b7acb8717a6152f627537aff5294"
+      },
+      "passed": true
+    },
+    {
+      "check": "curve.results/curves/active_noise.npz",
+      "detail": {
+        "arrays": [
+          "completed_utc",
+          "config_fingerprint",
+          "dsb_nf_by_sidebands_db",
+          "dsb_nf_db",
+          "frequency_hz",
+          "gain_open",
+          "gain_open_image_complex",
+          "gain_open_usb_complex",
+          "native_dsb_nf_db",
+          "native_ssb_nf_db",
+          "onoise_v_per_rt_hz",
+          "sideband_counts",
+          "ssb_nf_by_sidebands_db",
+          "ssb_nf_db"
+        ],
+        "path": "results/curves/active_noise.npz",
+        "sha256": "e35ba05e53c2a534f1ebf99f28cfa84a57c104ba7fcb9cc528a88e5a6a589f86"
+      },
+      "passed": true
+    },
+    {
+      "check": "curve.results/curves/active_spectrum.npz",
+      "detail": {
+        "arrays": [
+          "amplitude_vpk",
+          "completed_utc",
+          "config_fingerprint",
+          "frequency_hz",
+          "pin_dbm"
+        ],
+        "path": "results/curves/active_spectrum.npz",
+        "sha256": "9fe7c9ea860856ec09bc80507fe3cbe3c39dd23d76058eb767f5227715593fe0"
+      },
+      "passed": true
+    },
+    {
+      "check": "curve.results/curves/active_transient.npz",
+      "detail": {
+        "arrays": [
+          "completed_utc",
+          "config_fingerprint",
+          "tail_v",
+          "time_s",
+          "vif_v",
+          "vlo_n_v",
+          "vlo_p_v",
+          "vout_n_v",
+          "vout_p_v",
+          "vrf_v"
+        ],
+        "path": "results/curves/active_transient.npz",
+        "sha256": "c2678e2b44920c8037cdfe9d2c82cd830aef474403ccca2a6e8b95871908438c"
+      },
+      "passed": true
+    },
+    {
+      "check": "curve.results/curves/active_twotone.npz",
+      "detail": {
+        "arrays": [
+          "completed_utc",
+          "config_fingerprint",
+          "tail_v",
+          "time_s",
+          "vif_v",
+          "vlo_n_v",
+          "vlo_p_v",
+          "vout_n_v",
+          "vout_p_v",
+          "vrf_v"
+        ],
+        "path": "results/curves/active_twotone.npz",
+        "sha256": "204b8ac90da26f00c088baa95b8624121bf9c3b132e39fa8d360ddd370444d38"
+      },
+      "passed": true
+    },
+    {
+      "check": "curve.results/curves/active_twotone_spectrum.npz",
+      "detail": {
+        "arrays": [
+          "amplitude_vpk",
+          "completed_utc",
+          "config_fingerprint",
+          "frequency_hz",
+          "pin_dbm"
+        ],
+        "path": "results/curves/active_twotone_spectrum.npz",
+        "sha256": "ed0fe09cfcfcb88c9a8770f3592f42f1bd98e24812b5a658d673f988e211c1b2"
+      },
+      "passed": true
+    },
+    {
+      "check": "curve.results/curves/passive_compression.npz",
+      "detail": {
+        "arrays": [
+          "completed_utc",
+          "config_fingerprint",
+          "gain_db",
+          "pin_dbm",
+          "vout_vpk"
+        ],
+        "path": "results/curves/passive_compression.npz",
+        "sha256": "17a944e2f732f4ab9bb9a40442c63b7c84e940676c3364df0b9b359fce92f47f"
+      },
+      "passed": true
+    },
+    {
+      "check": "curve.results/curves/passive_iip3.npz",
+      "detail": {
+        "arrays": [
+          "completed_utc",
+          "config_fingerprint",
+          "fund_vpk",
+          "im3_vpk",
+          "pin_dbm"
+        ],
+        "path": "results/curves/passive_iip3.npz",
+        "sha256": "7cdd4bf2c26b2b79d24bf57681249d873a1debcf39464dc7872c53c0904fe653"
+      },
+      "passed": true
+    },
+    {
+      "check": "curve.results/curves/passive_noise.npz",
+      "detail": {
+        "arrays": [
+          "completed_utc",
+          "config_fingerprint",
+          "dsb_nf_by_sidebands_db",
+          "dsb_nf_db",
+          "frequency_hz",
+          "gain_open",
+          "gain_open_image_complex",
+          "gain_open_usb_complex",
+          "native_dsb_nf_db",
+          "native_ssb_nf_db",
+          "onoise_v_per_rt_hz",
+          "sideband_counts",
+          "ssb_nf_by_sidebands_db",
+          "ssb_nf_db"
+        ],
+        "path": "results/curves/passive_noise.npz",
+        "sha256": "315f015e000e8c9b32791cce7ce1d6a60e76973d2108300e0e617e1d9847403f"
+      },
+      "passed": true
+    },
+    {
+      "check": "curve.results/curves/passive_spectrum.npz",
+      "detail": {
+        "arrays": [
+          "amplitude_vpk",
+          "completed_utc",
+          "config_fingerprint",
+          "frequency_hz",
+          "pin_dbm"
+        ],
+        "path": "results/curves/passive_spectrum.npz",
+        "sha256": "647032c9a53ed3eaa05dc76c9fef5b538edf78f429ea4213ad4453c159543f2b"
+      },
+      "passed": true
+    },
+    {
+      "check": "curve.results/curves/passive_transient.npz",
+      "detail": {
+        "arrays": [
+          "completed_utc",
+          "config_fingerprint",
+          "time_s",
+          "vif_v",
+          "vlo_n_v",
+          "vlo_p_v",
+          "vout_n_v",
+          "vout_p_v",
+          "vrf_v"
+        ],
+        "path": "results/curves/passive_transient.npz",
+        "sha256": "ec1d83d44d355b6ac6f5d80d1da29dee776423c99e1a43e4b2a4abedb490fbca"
+      },
+      "passed": true
+    },
+    {
+      "check": "curve.results/curves/passive_twotone.npz",
+      "detail": {
+        "arrays": [
+          "completed_utc",
+          "config_fingerprint",
+          "time_s",
+          "vif_v",
+          "vlo_n_v",
+          "vlo_p_v",
+          "vout_n_v",
+          "vout_p_v",
+          "vrf_v"
+        ],
+        "path": "results/curves/passive_twotone.npz",
+        "sha256": "9bd54df41806db9004947e08218f7051ed65428fc9bd08e16fcf8f017df71a11"
+      },
+      "passed": true
+    },
+    {
+      "check": "curve.results/curves/passive_twotone_spectrum.npz",
+      "detail": {
+        "arrays": [
+          "amplitude_vpk",
+          "completed_utc",
+          "config_fingerprint",
+          "frequency_hz",
+          "pin_dbm"
+        ],
+        "path": "results/curves/passive_twotone_spectrum.npz",
+        "sha256": "98a1d1d90564946192532908f29a0bb54f375f0f9b83a5163630002fd718fb68"
+      },
+      "passed": true
+    },
+    {
+      "check": "active.required_curves",
+      "detail": null,
+      "passed": true
+    },
+    {
+      "check": "active.metrics_and_power_reference",
+      "detail": {
+        "differential_load_ohm": 1000.0,
+        "required_metrics": [
+          "voltage_gain_db",
+          "rf_node_gain_db",
+          "power_gain_db",
+          "conversion_loss_db",
+          "power_conversion_loss_db",
+          "power_mw",
+          "p1db_dbm",
+          "iip3_dbm",
+          "iip3_lower_dbm",
+          "iip3_upper_dbm",
+          "ssb_nf_db",
+          "dsb_nf_db"
+        ]
+      },
+      "passed": true
+    },
+    {
+      "check": "active.single_tone_window_convergence",
+      "detail": {
+        "long_sample_count": 20000,
+        "power_gain_delta_db": 3.4917968516623432e-09,
+        "short_sample_count": 4000,
+        "voltage_gain_delta_db": 3.4917988500637875e-09
+      },
+      "passed": true
+    },
+    {
+      "check": "active.transient.grid_fft_lo",
+      "detail": {
+        "FFT_recomputed": true,
+        "actual_differential_lo_vpp": 0.7999368353633657,
+        "sample_count": 4000,
+        "settle_s": 5e-09,
+        "window_s": 2e-08
+      },
+      "passed": true
+    },
+    {
+      "check": "active.twotone.grid_fft_lo",
+      "detail": {
+        "FFT_recomputed": true,
+        "actual_differential_lo_vpp": 0.7999368353844634,
+        "sample_count": 20000,
+        "settle_s": 2e-08,
+        "window_s": 1e-07
+      },
+      "passed": true
+    },
+    {
+      "check": "active.single_tone_projection",
+      "detail": {
+        "if_vpk": 0.0030178407682697763,
+        "open_vpk": 0.0011246826503806982,
+        "rf_dc_v": 0.6500000055680349,
+        "rf_node_vpk": 0.0011179537403591198
+      },
+      "passed": true
+    },
+    {
+      "check": "active.p1db_bracket",
+      "detail": {
+        "actual_endpoint_compression_db": [
+          0.9894167320534537,
+          1.0564687376823318
+        ],
+        "baseline_db": 8.572646897045894,
+        "baseline_spread_db": 0.002534782405041014,
+        "bracket_dbm": [
+          -15.625,
+          -15.46875
+        ],
+        "p1db_dbm": -15.546875
+      },
+      "passed": true
+    },
+    {
+      "check": "active.iip3_fits_and_convergence",
+      "detail": {
+        "fundamental_slopes": [
+          0.9957325176502951,
+          0.9957268547513686
+        ],
+        "iip3_dbm": [
+          -2.713393126181748,
+          -2.717720781779325
+        ],
+        "im3_slopes": [
+          3.058694012471281,
+          3.0635733232901843
+        ],
+        "minimum_empty_bin_margin_db": 35.62884734323006,
+        "selected_pins_dbm": [
+          -40,
+          -35,
+          -30
+        ],
+        "tightened_delta_db": [
+          0.05072261819724133,
+          0.05164572464028083
+        ]
+      },
+      "passed": true
+    },
+    {
+      "check": "active.noise_normalization",
+      "detail": {
+        "dsb_nf_db": 8.123825167025982,
+        "max_last_delta_db": 1.3129053400007251e-11,
+        "normalization_recomputed": true,
+        "sidebands": [
+          15,
+          31,
+          63
+        ],
+        "ssb_nf_db": 11.146078010718456
+      },
+      "passed": true
+    },
+    {
+      "check": "active.actual_operating_points",
+      "detail": {
+        "MOS_count": 3,
+        "PSF_field_order_checked": true,
+        "static_vds_minus_vdsat_v": {
+          "M1": 0.10056486832455937,
+          "M2": 0.5781598605297694,
+          "M3": 0.5781598605297694
+        }
+      },
+      "passed": true
+    },
+    {
+      "check": "active.reference_topology",
+      "detail": {
+        "D_G_S_B_verified": true,
+        "MOS": [
+          "M1",
+          "M2",
+          "M3"
+        ],
+        "single_finger_geometry_checked": true
+      },
+      "passed": true
+    },
+    {
+      "check": "active.netlist.netlists/generated/active_design.scs",
+      "detail": {
+        "D_G_S_B_verified": true,
+        "MOS": [
+          "M1",
+          "M2",
+          "M3"
+        ],
+        "raw_trace_hash_matches": true,
+        "single_finger_geometry_checked": true
+      },
+      "passed": true
+    },
+    {
+      "check": "active.netlist.netlists/generated/active_compression_00.scs",
+      "detail": {
+        "D_G_S_B_verified": true,
+        "MOS": [
+          "M1",
+          "M2",
+          "M3"
+        ],
+        "raw_trace_hash_matches": true,
+        "single_finger_geometry_checked": true
+      },
+      "passed": true
+    },
+    {
+      "check": "active.netlist.netlists/generated/active_compression_01.scs",
+      "detail": {
+        "D_G_S_B_verified": true,
+        "MOS": [
+          "M1",
+          "M2",
+          "M3"
+        ],
+        "raw_trace_hash_matches": true,
+        "single_finger_geometry_checked": true
+      },
+      "passed": true
+    },
+    {
+      "check": "active.netlist.netlists/generated/active_compression_02.scs",
+      "detail": {
+        "D_G_S_B_verified": true,
+        "MOS": [
+          "M1",
+          "M2",
+          "M3"
+        ],
+        "raw_trace_hash_matches": true,
+        "single_finger_geometry_checked": true
+      },
+      "passed": true
+    },
+    {
+      "check": "active.netlist.netlists/generated/active_compression_03.scs",
+      "detail": {
+        "D_G_S_B_verified": true,
+        "MOS": [
+          "M1",
+          "M2",
+          "M3"
+        ],
+        "raw_trace_hash_matches": true,
+        "single_finger_geometry_checked": true
+      },
+      "passed": true
+    },
+    {
+      "check": "active.netlist.netlists/generated/active_compression_04.scs",
+      "detail": {
+        "D_G_S_B_verified": true,
+        "MOS": [
+          "M1",
+          "M2",
+          "M3"
+        ],
+        "raw_trace_hash_matches": true,
+        "single_finger_geometry_checked": true
+      },
+      "passed": true
+    },
+    {
+      "check": "active.netlist.netlists/generated/active_compression_05.scs",
+      "detail": {
+        "D_G_S_B_verified": true,
+        "MOS": [
+          "M1",
+          "M2",
+          "M3"
+        ],
+        "raw_trace_hash_matches": true,
+        "single_finger_geometry_checked": true
+      },
+      "passed": true
+    },
+    {
+      "check": "active.netlist.netlists/generated/active_compression_06.scs",
+      "detail": {
+        "D_G_S_B_verified": true,
+        "MOS": [
+          "M1",
+          "M2",
+          "M3"
+        ],
+        "raw_trace_hash_matches": true,
+        "single_finger_geometry_checked": true
+      },
+      "passed": true
+    },
+    {
+      "check": "active.netlist.netlists/generated/active_compression_refine_0.scs",
+      "detail": {
+        "D_G_S_B_verified": true,
+        "MOS": [
+          "M1",
+          "M2",
+          "M3"
+        ],
+        "raw_trace_hash_matches": true,
+        "single_finger_geometry_checked": true
+      },
+      "passed": true
+    },
+    {
+      "check": "active.netlist.netlists/generated/active_compression_refine_1.scs",
+      "detail": {
+        "D_G_S_B_verified": true,
+        "MOS": [
+          "M1",
+          "M2",
+          "M3"
+        ],
+        "raw_trace_hash_matches": true,
+        "single_finger_geometry_checked": true
+      },
+      "passed": true
+    },
+    {
+      "check": "active.netlist.netlists/generated/active_compression_refine_2.scs",
+      "detail": {
+        "D_G_S_B_verified": true,
+        "MOS": [
+          "M1",
+          "M2",
+          "M3"
+        ],
+        "raw_trace_hash_matches": true,
+        "single_finger_geometry_checked": true
+      },
+      "passed": true
+    },
+    {
+      "check": "active.netlist.netlists/generated/active_compression_refine_4.scs",
+      "detail": {
+        "D_G_S_B_verified": true,
+        "MOS": [
+          "M1",
+          "M2",
+          "M3"
+        ],
+        "raw_trace_hash_matches": true,
+        "single_finger_geometry_checked": true
+      },
+      "passed": true
+    },
+    {
+      "check": "active.netlist.netlists/generated/active_compression_refine_3.scs",
+      "detail": {
+        "D_G_S_B_verified": true,
+        "MOS": [
+          "M1",
+          "M2",
+          "M3"
+        ],
+        "raw_trace_hash_matches": true,
+        "single_finger_geometry_checked": true
+      },
+      "passed": true
+    },
+    {
+      "check": "active.netlist.netlists/generated/active_compression_07.scs",
+      "detail": {
+        "D_G_S_B_verified": true,
+        "MOS": [
+          "M1",
+          "M2",
+          "M3"
+        ],
+        "raw_trace_hash_matches": true,
+        "single_finger_geometry_checked": true
+      },
+      "passed": true
+    },
+    {
+      "check": "active.netlist.netlists/generated/active_compression_08.scs",
+      "detail": {
+        "D_G_S_B_verified": true,
+        "MOS": [
+          "M1",
+          "M2",
+          "M3"
+        ],
+        "raw_trace_hash_matches": true,
+        "single_finger_geometry_checked": true
+      },
+      "passed": true
+    },
+    {
+      "check": "active.netlist.netlists/generated/active_iip3_00.scs",
+      "detail": {
+        "D_G_S_B_verified": true,
+        "MOS": [
+          "M1",
+          "M2",
+          "M3"
+        ],
+        "raw_trace_hash_matches": true,
+        "single_finger_geometry_checked": true
+      },
+      "passed": true
+    },
+    {
+      "check": "active.netlist.netlists/generated/active_iip3_01.scs",
+      "detail": {
+        "D_G_S_B_verified": true,
+        "MOS": [
+          "M1",
+          "M2",
+          "M3"
+        ],
+        "raw_trace_hash_matches": true,
+        "single_finger_geometry_checked": true
+      },
+      "passed": true
+    },
+    {
+      "check": "active.netlist.netlists/generated/active_iip3_02.scs",
+      "detail": {
+        "D_G_S_B_verified": true,
+        "MOS": [
+          "M1",
+          "M2",
+          "M3"
+        ],
+        "raw_trace_hash_matches": true,
+        "single_finger_geometry_checked": true
+      },
+      "passed": true
+    },
+    {
+      "check": "active.netlist.netlists/generated/active_iip3_03.scs",
+      "detail": {
+        "D_G_S_B_verified": true,
+        "MOS": [
+          "M1",
+          "M2",
+          "M3"
+        ],
+        "raw_trace_hash_matches": true,
+        "single_finger_geometry_checked": true
+      },
+      "passed": true
+    },
+    {
+      "check": "active.netlist.netlists/generated/active_iip3_04.scs",
+      "detail": {
+        "D_G_S_B_verified": true,
+        "MOS": [
+          "M1",
+          "M2",
+          "M3"
+        ],
+        "raw_trace_hash_matches": true,
+        "single_finger_geometry_checked": true
+      },
+      "passed": true
+    },
+    {
+      "check": "active.netlist.netlists/generated/active_iip3_05.scs",
+      "detail": {
+        "D_G_S_B_verified": true,
+        "MOS": [
+          "M1",
+          "M2",
+          "M3"
+        ],
+        "raw_trace_hash_matches": true,
+        "single_finger_geometry_checked": true
+      },
+      "passed": true
+    },
+    {
+      "check": "active.netlist.netlists/generated/active_iip3_06.scs",
+      "detail": {
+        "D_G_S_B_verified": true,
+        "MOS": [
+          "M1",
+          "M2",
+          "M3"
+        ],
+        "raw_trace_hash_matches": true,
+        "single_finger_geometry_checked": true
+      },
+      "passed": true
+    },
+    {
+      "check": "active.netlist.netlists/generated/noise_probe_active.scs",
+      "detail": {
+        "D_G_S_B_verified": true,
+        "MOS": [
+          "M1",
+          "M2",
+          "M3"
+        ],
+        "single_finger_geometry_checked": true
+      },
+      "passed": true
+    },
+    {
+      "check": "active.netlist.netlists/generated/active_single_tone.scs",
+      "detail": {
+        "D_G_S_B_verified": true,
+        "MOS": [
+          "M1",
+          "M2",
+          "M3"
+        ],
+        "raw_trace_hash_matches": true,
+        "single_finger_geometry_checked": true
+      },
+      "passed": true
+    },
+    {
+      "check": "active.netlist.netlists/generated/active_single_window_check.scs",
+      "detail": {
+        "D_G_S_B_verified": true,
+        "MOS": [
+          "M1",
+          "M2",
+          "M3"
+        ],
+        "raw_trace_hash_matches": true,
+        "single_finger_geometry_checked": true
+      },
+      "passed": true
+    },
+    {
+      "check": "active.tighter_numerical_settings",
+      "detail": {
+        "maxstep_s": 1e-12,
+        "reltol": 1e-06
+      },
+      "passed": true
+    },
+    {
+      "check": "active.noise_curve_hash",
+      "detail": null,
+      "passed": true
+    },
+    {
+      "check": "passive.required_curves",
+      "detail": null,
+      "passed": true
+    },
+    {
+      "check": "passive.metrics_and_power_reference",
+      "detail": {
+        "differential_load_ohm": 1000.0,
+        "required_metrics": [
+          "voltage_gain_db",
+          "rf_node_gain_db",
+          "power_gain_db",
+          "conversion_loss_db",
+          "power_conversion_loss_db",
+          "power_mw",
+          "p1db_dbm",
+          "iip3_dbm",
+          "iip3_lower_dbm",
+          "iip3_upper_dbm",
+          "ssb_nf_db",
+          "dsb_nf_db"
+        ]
+      },
+      "passed": true
+    },
+    {
+      "check": "passive.single_tone_window_convergence",
+      "detail": {
+        "long_sample_count": 20000,
+        "power_gain_delta_db": -3.0114178883877685e-07,
+        "short_sample_count": 4000,
+        "voltage_gain_delta_db": -3.0114178795059843e-07
+      },
+      "passed": true
+    },
+    {
+      "check": "passive.transient.grid_fft_lo",
+      "detail": {
+        "FFT_recomputed": true,
+        "actual_differential_lo_vpp": 0.7999368353633657,
+        "sample_count": 4000,
+        "settle_s": 5e-09,
+        "window_s": 2e-08
+      },
+      "passed": true
+    },
+    {
+      "check": "passive.twotone.grid_fft_lo",
+      "detail": {
+        "FFT_recomputed": true,
+        "actual_differential_lo_vpp": 0.7999368353844634,
+        "sample_count": 20000,
+        "settle_s": 2e-08,
+        "window_s": 1e-07
+      },
+      "passed": true
+    },
+    {
+      "check": "passive.single_tone_projection",
+      "detail": {
+        "if_vpk": 0.0005652856366704949,
+        "open_vpk": 0.0011246826503806982,
+        "rf_dc_v": 0.00037393568592777274,
+        "rf_node_vpk": 0.0010150433454137729
+      },
+      "passed": true
+    },
+    {
+      "check": "passive.p1db_bracket",
+      "detail": {
+        "actual_endpoint_compression_db": [
+          0.9686150332295007,
+          1.0048938840867212
+        ],
+        "baseline_db": -5.9764325441968325,
+        "baseline_spread_db": 0.0028352879362314454,
+        "bracket_dbm": [
+          -15.15625,
+          -15.0
+        ],
+        "p1db_dbm": -15.078125
+      },
+      "passed": true
+    },
+    {
+      "check": "passive.iip3_fits_and_convergence",
+      "detail": {
+        "fundamental_slopes": [
+          0.9917840623068759,
+          0.9917840156133226
+        ],
+        "iip3_dbm": [
+          -5.470534677396508,
+          -5.472481506380608
+        ],
+        "im3_slopes": [
+          2.9835124836213605,
+          2.98380967793685
+        ],
+        "minimum_empty_bin_margin_db": 44.685973824419136,
+        "selected_pins_dbm": [
+          -40,
+          -35,
+          -30
+        ],
+        "tightened_delta_db": [
+          -0.0027367627202075084,
+          -0.0036054884744842752
+        ]
+      },
+      "passed": true
+    },
+    {
+      "check": "passive.noise_normalization",
+      "detail": {
+        "dsb_nf_db": 13.708005399717788,
+        "max_last_delta_db": 3.787011593203715e-09,
+        "normalization_recomputed": true,
+        "sidebands": [
+          15,
+          31,
+          63
+        ],
+        "ssb_nf_db": 16.69435780385286
+      },
+      "passed": true
+    },
+    {
+      "check": "passive.actual_operating_points",
+      "detail": {
+        "MOS_count": 2,
+        "PSF_field_order_checked": true,
+        "static_vds_minus_vdsat_v": {
+          "M1": -0.04823264943785831,
+          "M2": -0.04823264943785831
+        }
+      },
+      "passed": true
+    },
+    {
+      "check": "passive.reference_topology",
+      "detail": {
+        "D_G_S_B_verified": true,
+        "MOS": [
+          "M1",
+          "M2"
+        ],
+        "single_finger_geometry_checked": true
+      },
+      "passed": true
+    },
+    {
+      "check": "passive.netlist.netlists/generated/passive_design.scs",
+      "detail": {
+        "D_G_S_B_verified": true,
+        "MOS": [
+          "M1",
+          "M2"
+        ],
+        "raw_trace_hash_matches": true,
+        "single_finger_geometry_checked": true
+      },
+      "passed": true
+    },
+    {
+      "check": "passive.netlist.netlists/generated/passive_compression_00.scs",
+      "detail": {
+        "D_G_S_B_verified": true,
+        "MOS": [
+          "M1",
+          "M2"
+        ],
+        "raw_trace_hash_matches": true,
+        "single_finger_geometry_checked": true
+      },
+      "passed": true
+    },
+    {
+      "check": "passive.netlist.netlists/generated/passive_compression_01.scs",
+      "detail": {
+        "D_G_S_B_verified": true,
+        "MOS": [
+          "M1",
+          "M2"
+        ],
+        "raw_trace_hash_matches": true,
+        "single_finger_geometry_checked": true
+      },
+      "passed": true
+    },
+    {
+      "check": "passive.netlist.netlists/generated/passive_compression_02.scs",
+      "detail": {
+        "D_G_S_B_verified": true,
+        "MOS": [
+          "M1",
+          "M2"
+        ],
+        "raw_trace_hash_matches": true,
+        "single_finger_geometry_checked": true
+      },
+      "passed": true
+    },
+    {
+      "check": "passive.netlist.netlists/generated/passive_compression_03.scs",
+      "detail": {
+        "D_G_S_B_verified": true,
+        "MOS": [
+          "M1",
+          "M2"
+        ],
+        "raw_trace_hash_matches": true,
+        "single_finger_geometry_checked": true
+      },
+      "passed": true
+    },
+    {
+      "check": "passive.netlist.netlists/generated/passive_compression_04.scs",
+      "detail": {
+        "D_G_S_B_verified": true,
+        "MOS": [
+          "M1",
+          "M2"
+        ],
+        "raw_trace_hash_matches": true,
+        "single_finger_geometry_checked": true
+      },
+      "passed": true
+    },
+    {
+      "check": "passive.netlist.netlists/generated/passive_compression_05.scs",
+      "detail": {
+        "D_G_S_B_verified": true,
+        "MOS": [
+          "M1",
+          "M2"
+        ],
+        "raw_trace_hash_matches": true,
+        "single_finger_geometry_checked": true
+      },
+      "passed": true
+    },
+    {
+      "check": "passive.netlist.netlists/generated/passive_compression_06.scs",
+      "detail": {
+        "D_G_S_B_verified": true,
+        "MOS": [
+          "M1",
+          "M2"
+        ],
+        "raw_trace_hash_matches": true,
+        "single_finger_geometry_checked": true
+      },
+      "passed": true
+    },
+    {
+      "check": "passive.netlist.netlists/generated/passive_compression_refine_0.scs",
+      "detail": {
+        "D_G_S_B_verified": true,
+        "MOS": [
+          "M1",
+          "M2"
+        ],
+        "raw_trace_hash_matches": true,
+        "single_finger_geometry_checked": true
+      },
+      "passed": true
+    },
+    {
+      "check": "passive.netlist.netlists/generated/passive_compression_refine_1.scs",
+      "detail": {
+        "D_G_S_B_verified": true,
+        "MOS": [
+          "M1",
+          "M2"
+        ],
+        "raw_trace_hash_matches": true,
+        "single_finger_geometry_checked": true
+      },
+      "passed": true
+    },
+    {
+      "check": "passive.netlist.netlists/generated/passive_compression_refine_2.scs",
+      "detail": {
+        "D_G_S_B_verified": true,
+        "MOS": [
+          "M1",
+          "M2"
+        ],
+        "raw_trace_hash_matches": true,
+        "single_finger_geometry_checked": true
+      },
+      "passed": true
+    },
+    {
+      "check": "passive.netlist.netlists/generated/passive_compression_refine_3.scs",
+      "detail": {
+        "D_G_S_B_verified": true,
+        "MOS": [
+          "M1",
+          "M2"
+        ],
+        "raw_trace_hash_matches": true,
+        "single_finger_geometry_checked": true
+      },
+      "passed": true
+    },
+    {
+      "check": "passive.netlist.netlists/generated/passive_compression_refine_4.scs",
+      "detail": {
+        "D_G_S_B_verified": true,
+        "MOS": [
+          "M1",
+          "M2"
+        ],
+        "raw_trace_hash_matches": true,
+        "single_finger_geometry_checked": true
+      },
+      "passed": true
+    },
+    {
+      "check": "passive.netlist.netlists/generated/passive_compression_07.scs",
+      "detail": {
+        "D_G_S_B_verified": true,
+        "MOS": [
+          "M1",
+          "M2"
+        ],
+        "raw_trace_hash_matches": true,
+        "single_finger_geometry_checked": true
+      },
+      "passed": true
+    },
+    {
+      "check": "passive.netlist.netlists/generated/passive_compression_08.scs",
+      "detail": {
+        "D_G_S_B_verified": true,
+        "MOS": [
+          "M1",
+          "M2"
+        ],
+        "raw_trace_hash_matches": true,
+        "single_finger_geometry_checked": true
+      },
+      "passed": true
+    },
+    {
+      "check": "passive.netlist.netlists/generated/passive_iip3_00.scs",
+      "detail": {
+        "D_G_S_B_verified": true,
+        "MOS": [
+          "M1",
+          "M2"
+        ],
+        "raw_trace_hash_matches": true,
+        "single_finger_geometry_checked": true
+      },
+      "passed": true
+    },
+    {
+      "check": "passive.netlist.netlists/generated/passive_iip3_01.scs",
+      "detail": {
+        "D_G_S_B_verified": true,
+        "MOS": [
+          "M1",
+          "M2"
+        ],
+        "raw_trace_hash_matches": true,
+        "single_finger_geometry_checked": true
+      },
+      "passed": true
+    },
+    {
+      "check": "passive.netlist.netlists/generated/passive_iip3_02.scs",
+      "detail": {
+        "D_G_S_B_verified": true,
+        "MOS": [
+          "M1",
+          "M2"
+        ],
+        "raw_trace_hash_matches": true,
+        "single_finger_geometry_checked": true
+      },
+      "passed": true
+    },
+    {
+      "check": "passive.netlist.netlists/generated/passive_iip3_03.scs",
+      "detail": {
+        "D_G_S_B_verified": true,
+        "MOS": [
+          "M1",
+          "M2"
+        ],
+        "raw_trace_hash_matches": true,
+        "single_finger_geometry_checked": true
+      },
+      "passed": true
+    },
+    {
+      "check": "passive.netlist.netlists/generated/passive_iip3_04.scs",
+      "detail": {
+        "D_G_S_B_verified": true,
+        "MOS": [
+          "M1",
+          "M2"
+        ],
+        "raw_trace_hash_matches": true,
+        "single_finger_geometry_checked": true
+      },
+      "passed": true
+    },
+    {
+      "check": "passive.netlist.netlists/generated/passive_iip3_05.scs",
+      "detail": {
+        "D_G_S_B_verified": true,
+        "MOS": [
+          "M1",
+          "M2"
+        ],
+        "raw_trace_hash_matches": true,
+        "single_finger_geometry_checked": true
+      },
+      "passed": true
+    },
+    {
+      "check": "passive.netlist.netlists/generated/passive_iip3_06.scs",
+      "detail": {
+        "D_G_S_B_verified": true,
+        "MOS": [
+          "M1",
+          "M2"
+        ],
+        "raw_trace_hash_matches": true,
+        "single_finger_geometry_checked": true
+      },
+      "passed": true
+    },
+    {
+      "check": "passive.netlist.netlists/generated/noise_probe_passive.scs",
+      "detail": {
+        "D_G_S_B_verified": true,
+        "MOS": [
+          "M1",
+          "M2"
+        ],
+        "single_finger_geometry_checked": true
+      },
+      "passed": true
+    },
+    {
+      "check": "passive.netlist.netlists/generated/passive_single_tone.scs",
+      "detail": {
+        "D_G_S_B_verified": true,
+        "MOS": [
+          "M1",
+          "M2"
+        ],
+        "raw_trace_hash_matches": true,
+        "single_finger_geometry_checked": true
+      },
+      "passed": true
+    },
+    {
+      "check": "passive.netlist.netlists/generated/passive_single_window_check.scs",
+      "detail": {
+        "D_G_S_B_verified": true,
+        "MOS": [
+          "M1",
+          "M2"
+        ],
+        "raw_trace_hash_matches": true,
+        "single_finger_geometry_checked": true
+      },
+      "passed": true
+    },
+    {
+      "check": "passive.tighter_numerical_settings",
+      "detail": {
+        "maxstep_s": 1e-12,
+        "reltol": 1e-06
+      },
+      "passed": true
+    },
+    {
+      "check": "passive.noise_curve_hash",
+      "detail": null,
+      "passed": true
+    }
+  ],
+  "checks_count": 91,
+  "completed_utc": "2026-11-13T01:06:26.674755+00:00",
+  "config_fingerprint": "ab6a7104f23d7959fe600c43b1b6a7078f76eef3e32892f988efbe167b81e92c",
+  "failures_count": 0,
+  "local_numerical_audit": true,
+  "passed": true,
+  "referenced_npz_sha256": {
+    "results/curves/active_compression.npz": "f89ed4dd9b3b1628f1583e94c85a9908d084509bfd99526a5f614639859c6515",
+    "results/curves/active_iip3.npz": "a7ca8223e76e826af8c490466f10e2c1ed68b7acb8717a6152f627537aff5294",
+    "results/curves/active_noise.npz": "e35ba05e53c2a534f1ebf99f28cfa84a57c104ba7fcb9cc528a88e5a6a589f86",
+    "results/curves/active_spectrum.npz": "9fe7c9ea860856ec09bc80507fe3cbe3c39dd23d76058eb767f5227715593fe0",
+    "results/curves/active_transient.npz": "c2678e2b44920c8037cdfe9d2c82cd830aef474403ccca2a6e8b95871908438c",
+    "results/curves/active_twotone.npz": "204b8ac90da26f00c088baa95b8624121bf9c3b132e39fa8d360ddd370444d38",
+    "results/curves/active_twotone_spectrum.npz": "ed0fe09cfcfcb88c9a8770f3592f42f1bd98e24812b5a658d673f988e211c1b2",
+    "results/curves/passive_compression.npz": "17a944e2f732f4ab9bb9a40442c63b7c84e940676c3364df0b9b359fce92f47f",
+    "results/curves/passive_iip3.npz": "7cdd4bf2c26b2b79d24bf57681249d873a1debcf39464dc7872c53c0904fe653",
+    "results/curves/passive_noise.npz": "315f015e000e8c9b32791cce7ce1d6a60e76973d2108300e0e617e1d9847403f",
+    "results/curves/passive_spectrum.npz": "647032c9a53ed3eaa05dc76c9fef5b538edf78f429ea4213ad4453c159543f2b",
+    "results/curves/passive_transient.npz": "ec1d83d44d355b6ac6f5d80d1da29dee776423c99e1a43e4b2a4abedb490fbca",
+    "results/curves/passive_twotone.npz": "9bd54df41806db9004947e08218f7051ed65428fc9bd08e16fcf8f017df71a11",
+    "results/curves/passive_twotone_spectrum.npz": "98a1d1d90564946192532908f29a0bb54f375f0f9b83a5163630002fd718fb68"
+  },
+  "root": "/Users/jeonsang-eon/Gatech-ECE6420/HW09",
+  "run_id": "ab6a7104f23d",
+  "schema_version": 1,
+  "started_utc": "2026-11-13T01:06:25.677004+00:00",
+  "status": "passed",
+  "validator_sha256": "a1343a26bd459c9ed13aabfe83f16d96b2838233c367bf2be985bcb1fa5a0eeb"
+}

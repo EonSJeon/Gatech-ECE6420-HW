@@ -1,0 +1,504 @@
+cell	active_tb
+check_errors	(0 0)
+instance	RFPORT	analogLib	port	(0.0 6.0)	R0
+connection	RFPORT	PLUS	rfdrive
+connection	RFPORT	MINUS	gnd!
+pin	RFPORT	MINUS	(0.0 5.5)
+pin	RFPORT	PLUS	(0.0 6.0)
+mastershape	RFPORT	rect	((-0.21875 -0.5) (0.13125 0.0))	nil	nil	("instance" "drawing")
+mastershape	RFPORT	label	((-0.63125 -0.5375) (-0.03125 -0.475))	nil	"cdsTerm(\"MINUS\")"	("annotate" "drawing8")
+mastershape	RFPORT	label	((-0.575 -0.04375) (-0.03125 0.01875))	nil	"cdsTerm(\"PLUS\")"	("annotate" "drawing8")
+mastershape	RFPORT	label	((0.09375 -0.10625) (0.425 -0.04375))	nil	"cdsName()"	("annotate" "drawing7")
+mastershape	RFPORT	label	((0.09375 -0.29375) (0.4875 -0.23125))	nil	"cdsParam(3)"	("annotate" "drawing")
+mastershape	RFPORT	label	((0.09375 -0.16875) (0.4875 -0.10625))	nil	"cdsParam(1)"	("annotate" "drawing")
+mastershape	RFPORT	label	((0.09375 -0.23125) (0.4875 -0.16875))	nil	"cdsParam(2)"	("annotate" "drawing")
+mastershape	RFPORT	arc	((-0.15625 -0.3125) (-0.09375 -0.28125))	nil	nil	("device" "drawing")
+mastershape	RFPORT	line	((-0.01875 -0.3125) (0.01875 -0.3125))	((0.01875 -0.3125) (-0.01875 -0.3125))	nil	("device" "drawing")
+mastershape	RFPORT	arc	((-0.21875 -0.34375) (-0.15625 -0.3125))	nil	nil	("device" "drawing")
+mastershape	RFPORT	line	((0.0 -0.5) (0.0 -0.40625))	((0.0 -0.40625) (0.0 -0.5))	nil	("device" "drawing")
+mastershape	RFPORT	line	((-0.03125 -0.28125) (0.03125 0.0))	((0.0 -0.28125) (0.0 -0.25) (0.03125 -0.21875) (-0.03125 -0.1875) (0.03125 -0.15625) (-0.03125 -0.125) (0.03125 -0.09375) (0.0 -0.0625) (0.0 0.0))	nil	("device" "drawing")
+mastershape	RFPORT	line	((-0.01875 -0.375) (0.01875 -0.375))	((0.01875 -0.375) (-0.01875 -0.375))	nil	("device" "drawing")
+mastershape	RFPORT	ellipse	((-0.06875 -0.40625) (0.06875 -0.28125))	nil	nil	("device" "drawing")
+mastershape	RFPORT	line	((0.0 -0.33125) (0.0 -0.29375))	((0.0 -0.33125) (0.0 -0.29375))	nil	("device" "drawing")
+mastershape	RFPORT	line	((-0.21875 -0.21875) (-0.09375 -0.1875))	((-0.21875 -0.21875) (-0.1875 -0.1875) (-0.15625 -0.21875) (-0.125 -0.1875) (-0.09375 -0.21875))	nil	("device" "drawing")
+mastershape	RFPORT	line	((-0.21875 -0.4375) (-0.09375 -0.375))	((-0.21875 -0.4375) (-0.1875 -0.4375) (-0.15625 -0.375) (-0.125 -0.4375) (-0.09375 -0.4375))	nil	("device" "drawing")
+mastershape	RFPORT	arc	((-0.2125 -0.1125) (-0.14375 -0.0625))	nil	nil	("device" "drawing")
+mastershape	RFPORT	arc	((-0.15 -0.125) (-0.08125 -0.075))	nil	nil	("device" "drawing")
+mastershape	RFPORT	rect	((-0.025 -0.025) (0.025 0.025))	nil	nil	("pin" "drawing")
+mastershape	RFPORT	rect	((-0.025 -0.525) (0.025 -0.475))	nil	nil	("pin" "drawing")
+property	RFPORT	pm	"Normal"
+property	RFPORT	hw09IntendedName	"RFPORT"
+property	RFPORT	isnoisyNoiseModel	"yes"
+property	RFPORT	noisetemp	"16.85"
+property	RFPORT	pacm	"0.5"
+property	RFPORT	sinephase	"0"
+property	RFPORT	freq	"fRF"
+property	RFPORT	va	"rfScale*sqrt(8*50*0.001*(10**(pinDbm/10)))/2"
+property	RFPORT	vdc	"0.325"
+property	RFPORT	num	"1"
+property	RFPORT	r	"50"
+property	RFPORT	sourceType	"port"
+property	RFPORT	filenums	"none"
+property	RFPORT	srcType	"sine"
+instance	I9	analogLib	gnd	(9.25 3.5)	R0
+connection	I9	gnd!	gnd!
+pin	I9	gnd!	(9.25 3.5)
+mastershape	I9	label	((0.0625 -0.13125) (0.41875 -0.08125))	nil	"[@cellName]"	("pin" "label")
+mastershape	I9	polygon	((-0.0625 -0.25) (0.0625 -0.1875))	((-0.0625 -0.1875) (0.0625 -0.1875) (0.0 -0.25))	nil	("device" "drawing")
+mastershape	I9	line	((0.0 -0.1875) (0.0 0.0))	((0.0 0.0) (0.0 -0.1875))	nil	("device" "drawing")
+mastershape	I9	rect	((-0.0625 -0.25) (0.0625 0.0))	nil	nil	("instance" "drawing")
+mastershape	I9	rect	((-0.025 -0.025) (0.025 0.025))	nil	nil	("pin" "drawing")
+instance	I8	analogLib	gnd	(7.25 3.5)	R0
+connection	I8	gnd!	gnd!
+pin	I8	gnd!	(7.25 3.5)
+mastershape	I8	label	((0.0625 -0.13125) (0.41875 -0.08125))	nil	"[@cellName]"	("pin" "label")
+mastershape	I8	polygon	((-0.0625 -0.25) (0.0625 -0.1875))	((-0.0625 -0.1875) (0.0625 -0.1875) (0.0 -0.25))	nil	("device" "drawing")
+mastershape	I8	line	((0.0 -0.1875) (0.0 0.0))	((0.0 0.0) (0.0 -0.1875))	nil	("device" "drawing")
+mastershape	I8	rect	((-0.0625 -0.25) (0.0625 0.0))	nil	nil	("instance" "drawing")
+mastershape	I8	rect	((-0.025 -0.025) (0.025 0.025))	nil	nil	("pin" "drawing")
+instance	I7	analogLib	gnd	(9.25 0.5)	R0
+connection	I7	gnd!	gnd!
+pin	I7	gnd!	(9.25 0.5)
+mastershape	I7	label	((0.0625 -0.13125) (0.41875 -0.08125))	nil	"[@cellName]"	("pin" "label")
+mastershape	I7	polygon	((-0.0625 -0.25) (0.0625 -0.1875))	((-0.0625 -0.1875) (0.0625 -0.1875) (0.0 -0.25))	nil	("device" "drawing")
+mastershape	I7	line	((0.0 -0.1875) (0.0 0.0))	((0.0 0.0) (0.0 -0.1875))	nil	("device" "drawing")
+mastershape	I7	rect	((-0.0625 -0.25) (0.0625 0.0))	nil	nil	("instance" "drawing")
+mastershape	I7	rect	((-0.025 -0.025) (0.025 0.025))	nil	nil	("pin" "drawing")
+instance	I6	analogLib	gnd	(8.25 0.3125)	R0
+connection	I6	gnd!	gnd!
+pin	I6	gnd!	(8.25 0.3125)
+mastershape	I6	label	((0.0625 -0.13125) (0.41875 -0.08125))	nil	"[@cellName]"	("pin" "label")
+mastershape	I6	polygon	((-0.0625 -0.25) (0.0625 -0.1875))	((-0.0625 -0.1875) (0.0625 -0.1875) (0.0 -0.25))	nil	("device" "drawing")
+mastershape	I6	line	((0.0 -0.1875) (0.0 0.0))	((0.0 0.0) (0.0 -0.1875))	nil	("device" "drawing")
+mastershape	I6	rect	((-0.0625 -0.25) (0.0625 0.0))	nil	nil	("instance" "drawing")
+mastershape	I6	rect	((-0.025 -0.025) (0.025 0.025))	nil	nil	("pin" "drawing")
+instance	I5	analogLib	gnd	(12.0 4.625)	R0
+connection	I5	gnd!	gnd!
+pin	I5	gnd!	(12.0 4.625)
+mastershape	I5	label	((0.0625 -0.13125) (0.41875 -0.08125))	nil	"[@cellName]"	("pin" "label")
+mastershape	I5	polygon	((-0.0625 -0.25) (0.0625 -0.1875))	((-0.0625 -0.1875) (0.0625 -0.1875) (0.0 -0.25))	nil	("device" "drawing")
+mastershape	I5	line	((0.0 -0.1875) (0.0 0.0))	((0.0 0.0) (0.0 -0.1875))	nil	("device" "drawing")
+mastershape	I5	rect	((-0.0625 -0.25) (0.0625 0.0))	nil	nil	("instance" "drawing")
+mastershape	I5	rect	((-0.025 -0.025) (0.025 0.025))	nil	nil	("pin" "drawing")
+instance	I4	analogLib	gnd	(4.5 4.625)	R0
+connection	I4	gnd!	gnd!
+pin	I4	gnd!	(4.5 4.625)
+mastershape	I4	label	((0.0625 -0.13125) (0.41875 -0.08125))	nil	"[@cellName]"	("pin" "label")
+mastershape	I4	polygon	((-0.0625 -0.25) (0.0625 -0.1875))	((-0.0625 -0.1875) (0.0625 -0.1875) (0.0 -0.25))	nil	("device" "drawing")
+mastershape	I4	line	((0.0 -0.1875) (0.0 0.0))	((0.0 0.0) (0.0 -0.1875))	nil	("device" "drawing")
+mastershape	I4	rect	((-0.0625 -0.25) (0.0625 0.0))	nil	nil	("instance" "drawing")
+mastershape	I4	rect	((-0.025 -0.025) (0.025 0.025))	nil	nil	("pin" "drawing")
+instance	I3	analogLib	gnd	(0.0 -0.875)	R0
+connection	I3	gnd!	gnd!
+pin	I3	gnd!	(0.0 -0.875)
+mastershape	I3	label	((0.0625 -0.13125) (0.41875 -0.08125))	nil	"[@cellName]"	("pin" "label")
+mastershape	I3	polygon	((-0.0625 -0.25) (0.0625 -0.1875))	((-0.0625 -0.1875) (0.0625 -0.1875) (0.0 -0.25))	nil	("device" "drawing")
+mastershape	I3	line	((0.0 -0.1875) (0.0 0.0))	((0.0 0.0) (0.0 -0.1875))	nil	("device" "drawing")
+mastershape	I3	rect	((-0.0625 -0.25) (0.0625 0.0))	nil	nil	("instance" "drawing")
+mastershape	I3	rect	((-0.025 -0.025) (0.025 0.025))	nil	nil	("pin" "drawing")
+instance	I2	analogLib	gnd	(2.0 2.125)	R0
+connection	I2	gnd!	gnd!
+pin	I2	gnd!	(2.0 2.125)
+mastershape	I2	label	((0.0625 -0.13125) (0.41875 -0.08125))	nil	"[@cellName]"	("pin" "label")
+mastershape	I2	polygon	((-0.0625 -0.25) (0.0625 -0.1875))	((-0.0625 -0.1875) (0.0625 -0.1875) (0.0 -0.25))	nil	("device" "drawing")
+mastershape	I2	line	((0.0 -0.1875) (0.0 0.0))	((0.0 0.0) (0.0 -0.1875))	nil	("device" "drawing")
+mastershape	I2	rect	((-0.0625 -0.25) (0.0625 0.0))	nil	nil	("instance" "drawing")
+mastershape	I2	rect	((-0.025 -0.025) (0.025 0.025))	nil	nil	("pin" "drawing")
+instance	I1	analogLib	gnd	(0.0 2.125)	R0
+connection	I1	gnd!	gnd!
+pin	I1	gnd!	(0.0 2.125)
+mastershape	I1	label	((0.0625 -0.13125) (0.41875 -0.08125))	nil	"[@cellName]"	("pin" "label")
+mastershape	I1	polygon	((-0.0625 -0.25) (0.0625 -0.1875))	((-0.0625 -0.1875) (0.0625 -0.1875) (0.0 -0.25))	nil	("device" "drawing")
+mastershape	I1	line	((0.0 -0.1875) (0.0 0.0))	((0.0 0.0) (0.0 -0.1875))	nil	("device" "drawing")
+mastershape	I1	rect	((-0.0625 -0.25) (0.0625 0.0))	nil	nil	("instance" "drawing")
+mastershape	I1	rect	((-0.025 -0.025) (0.025 0.025))	nil	nil	("pin" "drawing")
+instance	I0	analogLib	gnd	(0.0 5.0)	R0
+connection	I0	gnd!	gnd!
+pin	I0	gnd!	(0.0 5.0)
+mastershape	I0	label	((0.0625 -0.13125) (0.41875 -0.08125))	nil	"[@cellName]"	("pin" "label")
+mastershape	I0	polygon	((-0.0625 -0.25) (0.0625 -0.1875))	((-0.0625 -0.1875) (0.0625 -0.1875) (0.0 -0.25))	nil	("device" "drawing")
+mastershape	I0	line	((0.0 -0.1875) (0.0 0.0))	((0.0 0.0) (0.0 -0.1875))	nil	("device" "drawing")
+mastershape	I0	rect	((-0.0625 -0.25) (0.0625 0.0))	nil	nil	("instance" "drawing")
+mastershape	I0	rect	((-0.025 -0.025) (0.025 0.025))	nil	nil	("pin" "drawing")
+instance	LON	analogLib	vsource	(2.0 3.0)	R0
+connection	LON	PLUS	lon
+connection	LON	MINUS	gnd!
+pin	LON	MINUS	(2.0 2.625)
+pin	LON	PLUS	(2.0 3.0)
+mastershape	LON	label	((-0.575 -0.075) (-0.03125 -0.0125))	nil	"cdsTerm(\"PLUS\")"	("annotate" "drawing8")
+mastershape	LON	label	((-0.63125 -0.38125) (-0.03125 -0.31875))	nil	"cdsTerm(\"MINUS\")"	("annotate" "drawing8")
+mastershape	LON	label	((0.0625 -0.075) (0.39375 -0.0125))	nil	"cdsName()"	("annotate" "drawing7")
+mastershape	LON	label	((0.09375 -0.35625) (0.4875 -0.29375))	nil	"cdsParam(3)"	("annotate" "drawing")
+mastershape	LON	label	((0.09375 -0.16875) (0.4875 -0.10625))	nil	"cdsParam(1)"	("annotate" "drawing")
+mastershape	LON	label	((0.09375 -0.2625) (0.4875 -0.2))	nil	"cdsParam(2)"	("annotate" "drawing")
+mastershape	LON	arc	((-0.225 -0.30625) (-0.175 -0.28125))	nil	nil	("device" "drawing")
+mastershape	LON	arc	((-0.175 -0.33125) (-0.125 -0.30625))	nil	nil	("device" "drawing")
+mastershape	LON	line	((-0.01875 -0.15625) (0.01875 -0.15625))	((0.01875 -0.15625) (-0.01875 -0.15625))	nil	("device" "drawing")
+mastershape	LON	line	((0.0 -0.375) (0.0 -0.25))	((0.0 -0.25) (0.0 -0.375))	nil	("device" "drawing")
+mastershape	LON	line	((0.0 -0.125) (0.0 0.0))	((0.0 -0.125) (0.0 0.0))	nil	("device" "drawing")
+mastershape	LON	line	((-0.01875 -0.21875) (0.01875 -0.21875))	((0.01875 -0.21875) (-0.01875 -0.21875))	nil	("device" "drawing")
+mastershape	LON	ellipse	((-0.0625 -0.25) (0.0625 -0.125))	nil	nil	("device" "drawing")
+mastershape	LON	line	((0.0 -0.175) (0.0 -0.1375))	((0.0 -0.175) (0.0 -0.1375))	nil	("device" "drawing")
+mastershape	LON	line	((-0.21875 -0.25) (-0.09375 -0.1875))	((-0.21875 -0.25) (-0.1875 -0.25) (-0.15625 -0.1875) (-0.125 -0.25) (-0.09375 -0.25))	nil	("device" "drawing")
+mastershape	LON	arc	((-0.15 -0.09375) (-0.08125 -0.04375))	nil	nil	("device" "drawing")
+mastershape	LON	arc	((-0.2125 -0.08125) (-0.14375 -0.03125))	nil	nil	("device" "drawing")
+mastershape	LON	line	((-0.21875 -0.15625) (-0.09375 -0.125))	((-0.21875 -0.15625) (-0.1875 -0.125) (-0.15625 -0.15625) (-0.125 -0.125) (-0.09375 -0.15625))	nil	("device" "drawing")
+mastershape	LON	rect	((-0.125 -0.375) (0.125 0.0))	nil	nil	("instance" "drawing")
+mastershape	LON	rect	((-0.025 -0.025) (0.025 0.025))	nil	nil	("pin" "drawing")
+mastershape	LON	rect	((-0.025 -0.4) (0.025 -0.35))	nil	nil	("pin" "drawing")
+property	LON	filenums	"none"
+property	LON	hw09IntendedName	"LON"
+property	LON	sinephase	"180"
+property	LON	freq	"5.6G"
+property	LON	va	"0.2"
+property	LON	vdc	"0.8"
+property	LON	srcType	"sine"
+instance	LOP	analogLib	vsource	(0.0 3.0)	R0
+connection	LOP	PLUS	lop
+connection	LOP	MINUS	gnd!
+pin	LOP	MINUS	(0.0 2.625)
+pin	LOP	PLUS	(0.0 3.0)
+mastershape	LOP	label	((-0.575 -0.075) (-0.03125 -0.0125))	nil	"cdsTerm(\"PLUS\")"	("annotate" "drawing8")
+mastershape	LOP	label	((-0.63125 -0.38125) (-0.03125 -0.31875))	nil	"cdsTerm(\"MINUS\")"	("annotate" "drawing8")
+mastershape	LOP	label	((0.0625 -0.075) (0.39375 -0.0125))	nil	"cdsName()"	("annotate" "drawing7")
+mastershape	LOP	label	((0.09375 -0.35625) (0.4875 -0.29375))	nil	"cdsParam(3)"	("annotate" "drawing")
+mastershape	LOP	label	((0.09375 -0.16875) (0.4875 -0.10625))	nil	"cdsParam(1)"	("annotate" "drawing")
+mastershape	LOP	label	((0.09375 -0.2625) (0.4875 -0.2))	nil	"cdsParam(2)"	("annotate" "drawing")
+mastershape	LOP	arc	((-0.225 -0.30625) (-0.175 -0.28125))	nil	nil	("device" "drawing")
+mastershape	LOP	arc	((-0.175 -0.33125) (-0.125 -0.30625))	nil	nil	("device" "drawing")
+mastershape	LOP	line	((-0.01875 -0.15625) (0.01875 -0.15625))	((0.01875 -0.15625) (-0.01875 -0.15625))	nil	("device" "drawing")
+mastershape	LOP	line	((0.0 -0.375) (0.0 -0.25))	((0.0 -0.25) (0.0 -0.375))	nil	("device" "drawing")
+mastershape	LOP	line	((0.0 -0.125) (0.0 0.0))	((0.0 -0.125) (0.0 0.0))	nil	("device" "drawing")
+mastershape	LOP	line	((-0.01875 -0.21875) (0.01875 -0.21875))	((0.01875 -0.21875) (-0.01875 -0.21875))	nil	("device" "drawing")
+mastershape	LOP	ellipse	((-0.0625 -0.25) (0.0625 -0.125))	nil	nil	("device" "drawing")
+mastershape	LOP	line	((0.0 -0.175) (0.0 -0.1375))	((0.0 -0.175) (0.0 -0.1375))	nil	("device" "drawing")
+mastershape	LOP	line	((-0.21875 -0.25) (-0.09375 -0.1875))	((-0.21875 -0.25) (-0.1875 -0.25) (-0.15625 -0.1875) (-0.125 -0.25) (-0.09375 -0.25))	nil	("device" "drawing")
+mastershape	LOP	arc	((-0.15 -0.09375) (-0.08125 -0.04375))	nil	nil	("device" "drawing")
+mastershape	LOP	arc	((-0.2125 -0.08125) (-0.14375 -0.03125))	nil	nil	("device" "drawing")
+mastershape	LOP	line	((-0.21875 -0.15625) (-0.09375 -0.125))	((-0.21875 -0.15625) (-0.1875 -0.125) (-0.15625 -0.15625) (-0.125 -0.125) (-0.09375 -0.15625))	nil	("device" "drawing")
+mastershape	LOP	rect	((-0.125 -0.375) (0.125 0.0))	nil	nil	("instance" "drawing")
+mastershape	LOP	rect	((-0.025 -0.025) (0.025 0.025))	nil	nil	("pin" "drawing")
+mastershape	LOP	rect	((-0.025 -0.4) (0.025 -0.35))	nil	nil	("pin" "drawing")
+property	LOP	filenums	"none"
+property	LOP	hw09IntendedName	"LOP"
+property	LOP	sinephase	"0"
+property	LOP	freq	"5.6G"
+property	LOP	va	"0.2"
+property	LOP	vdc	"0.8"
+property	LOP	srcType	"sine"
+instance	RFSECOND	analogLib	vsource	(1.5 7.0)	R270
+connection	RFSECOND	PLUS	rf
+connection	RFSECOND	MINUS	rfdrive
+pin	RFSECOND	MINUS	(1.125 7.0)
+pin	RFSECOND	PLUS	(1.5 7.0)
+mastershape	RFSECOND	label	((-0.575 -0.075) (-0.03125 -0.0125))	nil	"cdsTerm(\"PLUS\")"	("annotate" "drawing8")
+mastershape	RFSECOND	label	((-0.63125 -0.38125) (-0.03125 -0.31875))	nil	"cdsTerm(\"MINUS\")"	("annotate" "drawing8")
+mastershape	RFSECOND	label	((0.0625 -0.075) (0.39375 -0.0125))	nil	"cdsName()"	("annotate" "drawing7")
+mastershape	RFSECOND	label	((0.09375 -0.35625) (0.4875 -0.29375))	nil	"cdsParam(3)"	("annotate" "drawing")
+mastershape	RFSECOND	label	((0.09375 -0.16875) (0.4875 -0.10625))	nil	"cdsParam(1)"	("annotate" "drawing")
+mastershape	RFSECOND	label	((0.09375 -0.2625) (0.4875 -0.2))	nil	"cdsParam(2)"	("annotate" "drawing")
+mastershape	RFSECOND	arc	((-0.225 -0.30625) (-0.175 -0.28125))	nil	nil	("device" "drawing")
+mastershape	RFSECOND	arc	((-0.175 -0.33125) (-0.125 -0.30625))	nil	nil	("device" "drawing")
+mastershape	RFSECOND	line	((-0.01875 -0.15625) (0.01875 -0.15625))	((0.01875 -0.15625) (-0.01875 -0.15625))	nil	("device" "drawing")
+mastershape	RFSECOND	line	((0.0 -0.375) (0.0 -0.25))	((0.0 -0.25) (0.0 -0.375))	nil	("device" "drawing")
+mastershape	RFSECOND	line	((0.0 -0.125) (0.0 0.0))	((0.0 -0.125) (0.0 0.0))	nil	("device" "drawing")
+mastershape	RFSECOND	line	((-0.01875 -0.21875) (0.01875 -0.21875))	((0.01875 -0.21875) (-0.01875 -0.21875))	nil	("device" "drawing")
+mastershape	RFSECOND	ellipse	((-0.0625 -0.25) (0.0625 -0.125))	nil	nil	("device" "drawing")
+mastershape	RFSECOND	line	((0.0 -0.175) (0.0 -0.1375))	((0.0 -0.175) (0.0 -0.1375))	nil	("device" "drawing")
+mastershape	RFSECOND	line	((-0.21875 -0.25) (-0.09375 -0.1875))	((-0.21875 -0.25) (-0.1875 -0.25) (-0.15625 -0.1875) (-0.125 -0.25) (-0.09375 -0.25))	nil	("device" "drawing")
+mastershape	RFSECOND	arc	((-0.15 -0.09375) (-0.08125 -0.04375))	nil	nil	("device" "drawing")
+mastershape	RFSECOND	arc	((-0.2125 -0.08125) (-0.14375 -0.03125))	nil	nil	("device" "drawing")
+mastershape	RFSECOND	line	((-0.21875 -0.15625) (-0.09375 -0.125))	((-0.21875 -0.15625) (-0.1875 -0.125) (-0.15625 -0.15625) (-0.125 -0.125) (-0.09375 -0.15625))	nil	("device" "drawing")
+mastershape	RFSECOND	rect	((-0.125 -0.375) (0.125 0.0))	nil	nil	("instance" "drawing")
+mastershape	RFSECOND	rect	((-0.025 -0.025) (0.025 0.025))	nil	nil	("pin" "drawing")
+mastershape	RFSECOND	rect	((-0.025 -0.4) (0.025 -0.35))	nil	nil	("pin" "drawing")
+property	RFSECOND	filenums	"none"
+property	RFSECOND	hw09IntendedName	"RFSECOND"
+property	RFSECOND	sinephase	"0"
+property	RFSECOND	freq	"fRF2"
+property	RFSECOND	va	"tone2Scale*sqrt(8*50*0.001*(10**(pinDbm/10)))"
+property	RFSECOND	vdc	"0"
+property	RFSECOND	srcType	"sine"
+instance	VDD	analogLib	vsource	(0.0 0.0)	R0
+connection	VDD	PLUS	vdd
+connection	VDD	MINUS	gnd!
+pin	VDD	MINUS	(0.0 -0.375)
+pin	VDD	PLUS	(0.0 0.0)
+mastershape	VDD	label	((-0.575 -0.075) (-0.03125 -0.0125))	nil	"cdsTerm(\"PLUS\")"	("annotate" "drawing8")
+mastershape	VDD	label	((-0.63125 -0.38125) (-0.03125 -0.31875))	nil	"cdsTerm(\"MINUS\")"	("annotate" "drawing8")
+mastershape	VDD	label	((0.0625 -0.075) (0.39375 -0.0125))	nil	"cdsName()"	("annotate" "drawing7")
+mastershape	VDD	label	((0.09375 -0.35625) (0.4875 -0.29375))	nil	"cdsParam(3)"	("annotate" "drawing")
+mastershape	VDD	label	((0.09375 -0.16875) (0.4875 -0.10625))	nil	"cdsParam(1)"	("annotate" "drawing")
+mastershape	VDD	label	((0.09375 -0.2625) (0.4875 -0.2))	nil	"cdsParam(2)"	("annotate" "drawing")
+mastershape	VDD	arc	((-0.225 -0.30625) (-0.175 -0.28125))	nil	nil	("device" "drawing")
+mastershape	VDD	arc	((-0.175 -0.33125) (-0.125 -0.30625))	nil	nil	("device" "drawing")
+mastershape	VDD	line	((-0.01875 -0.15625) (0.01875 -0.15625))	((0.01875 -0.15625) (-0.01875 -0.15625))	nil	("device" "drawing")
+mastershape	VDD	line	((0.0 -0.375) (0.0 -0.25))	((0.0 -0.25) (0.0 -0.375))	nil	("device" "drawing")
+mastershape	VDD	line	((0.0 -0.125) (0.0 0.0))	((0.0 -0.125) (0.0 0.0))	nil	("device" "drawing")
+mastershape	VDD	line	((-0.01875 -0.21875) (0.01875 -0.21875))	((0.01875 -0.21875) (-0.01875 -0.21875))	nil	("device" "drawing")
+mastershape	VDD	ellipse	((-0.0625 -0.25) (0.0625 -0.125))	nil	nil	("device" "drawing")
+mastershape	VDD	line	((0.0 -0.175) (0.0 -0.1375))	((0.0 -0.175) (0.0 -0.1375))	nil	("device" "drawing")
+mastershape	VDD	line	((-0.21875 -0.25) (-0.09375 -0.1875))	((-0.21875 -0.25) (-0.1875 -0.25) (-0.15625 -0.1875) (-0.125 -0.25) (-0.09375 -0.25))	nil	("device" "drawing")
+mastershape	VDD	arc	((-0.15 -0.09375) (-0.08125 -0.04375))	nil	nil	("device" "drawing")
+mastershape	VDD	arc	((-0.2125 -0.08125) (-0.14375 -0.03125))	nil	nil	("device" "drawing")
+mastershape	VDD	line	((-0.21875 -0.15625) (-0.09375 -0.125))	((-0.21875 -0.15625) (-0.1875 -0.125) (-0.15625 -0.15625) (-0.125 -0.125) (-0.09375 -0.15625))	nil	("device" "drawing")
+mastershape	VDD	rect	((-0.125 -0.375) (0.125 0.0))	nil	nil	("instance" "drawing")
+mastershape	VDD	rect	((-0.025 -0.025) (0.025 0.025))	nil	nil	("pin" "drawing")
+mastershape	VDD	rect	((-0.025 -0.4) (0.025 -0.35))	nil	nil	("pin" "drawing")
+property	VDD	filenums	"none"
+property	VDD	hw09IntendedName	"VDD"
+property	VDD	vdc	"1"
+property	VDD	srcType	"dc"
+instance	M3	NCSU_Devices_FreePDK45	NMOS_VTH	(10.5 4.0)	MY
+connection	M3	D	outn
+connection	M3	B	gnd!
+connection	M3	G	lon
+connection	M3	S	tail
+pin	M3	S	(10.25 3.8125)
+pin	M3	G	(10.5 4.0)
+pin	M3	B	(10.25 4.0)
+pin	M3	D	(10.25 4.1875)
+mastershape	M3	label	((-0.20625 0.1125) (0.21875 0.175))	nil	"cdsTerm(\"D\")"	("annotate" "drawing8")
+mastershape	M3	label	((0.125 0.025) (0.54375 0.0875))	nil	"cdsTerm(\"B\")"	("annotate" "drawing8")
+mastershape	M3	label	((-0.33125 0.025) (0.09375 0.0875))	nil	"cdsTerm(\"G\")"	("annotate" "drawing8")
+mastershape	M3	label	((-0.19375 -0.19375) (0.21875 -0.13125))	nil	"cdsTerm(\"S\")"	("annotate" "drawing8")
+mastershape	M3	label	((0.28125 0.1125) (0.6125 0.175))	nil	"cdsName()"	("annotate" "drawing7")
+mastershape	M3	label	((0.28125 -0.075) (0.675 -0.0125))	nil	"cdsParam(2)"	("annotate" "drawing")
+mastershape	M3	label	((0.28125 -0.16875) (0.675 -0.10625))	nil	"cdsParam(3)"	("annotate" "drawing")
+mastershape	M3	label	((0.28125 0.01875) (0.675 0.08125))	nil	"cdsParam(1)"	("annotate" "drawing")
+mastershape	M3	line	((0.125 0.09375) (0.25 0.1875))	((0.125 0.09375) (0.25 0.09375) (0.25 0.1875))	nil	("device" "drawing")
+mastershape	M3	line	((0.125 -0.09375) (0.125 0.09375))	((0.125 -0.09375) (0.125 0.09375))	nil	("device" "drawing")
+mastershape	M3	line	((0.1875 -0.125) (0.25 -0.0625))	((0.1875 -0.0625) (0.25 -0.09375) (0.1875 -0.125))	nil	("device" "drawing")
+mastershape	M3	line	((0.0 0.0) (0.09375 0.0))	((0.0 0.0) (0.09375 0.0))	nil	("device" "drawing")
+mastershape	M3	line	((0.09375 -0.09375) (0.09375 0.09375))	((0.09375 0.09375) (0.09375 -0.09375))	nil	("device" "drawing")
+mastershape	M3	line	((0.125 0.0) (0.25 0.0))	((0.125 0.0) (0.25 0.0))	nil	("device" "drawing")
+mastershape	M3	line	((0.125 -0.1875) (0.25 -0.09375))	((0.125 -0.09375) (0.25 -0.09375) (0.25 -0.1875))	nil	("device" "drawing")
+mastershape	M3	rect	((0.0 -0.1875) (0.25 0.1875))	nil	nil	("instance" "drawing")
+mastershape	M3	rect	((0.225 -0.2125) (0.275 -0.1625))	nil	nil	("pin" "drawing")
+mastershape	M3	rect	((-0.025 -0.025) (0.025 0.025))	nil	nil	("pin" "drawing")
+mastershape	M3	rect	((0.225 -0.025) (0.275 0.025))	nil	nil	("pin" "drawing")
+mastershape	M3	rect	((0.225 0.1625) (0.275 0.2125))	nil	nil	("pin" "drawing")
+property	M3	model	"NMOS_VTH"
+property	M3	hw09IntendedName	"M3"
+property	M3	pd	"2.021e-05"
+property	M3	ps	"2.021e-05"
+property	M3	ad	"2.1e-12"
+property	M3	as	"2.1e-12"
+property	M3	ld	"105n"
+property	M3	ls	"105n"
+property	M3	m	"1"
+property	M3	l	"50n"
+property	M3	w	"20u"
+instance	M2	NCSU_Devices_FreePDK45	NMOS_VTH	(6.0 4.0)	R0
+connection	M2	D	outp
+connection	M2	B	gnd!
+connection	M2	G	lop
+connection	M2	S	tail
+pin	M2	S	(6.25 3.8125)
+pin	M2	G	(6.0 4.0)
+pin	M2	B	(6.25 4.0)
+pin	M2	D	(6.25 4.1875)
+mastershape	M2	label	((-0.20625 0.1125) (0.21875 0.175))	nil	"cdsTerm(\"D\")"	("annotate" "drawing8")
+mastershape	M2	label	((0.125 0.025) (0.54375 0.0875))	nil	"cdsTerm(\"B\")"	("annotate" "drawing8")
+mastershape	M2	label	((-0.33125 0.025) (0.09375 0.0875))	nil	"cdsTerm(\"G\")"	("annotate" "drawing8")
+mastershape	M2	label	((-0.19375 -0.19375) (0.21875 -0.13125))	nil	"cdsTerm(\"S\")"	("annotate" "drawing8")
+mastershape	M2	label	((0.28125 0.1125) (0.6125 0.175))	nil	"cdsName()"	("annotate" "drawing7")
+mastershape	M2	label	((0.28125 -0.075) (0.675 -0.0125))	nil	"cdsParam(2)"	("annotate" "drawing")
+mastershape	M2	label	((0.28125 -0.16875) (0.675 -0.10625))	nil	"cdsParam(3)"	("annotate" "drawing")
+mastershape	M2	label	((0.28125 0.01875) (0.675 0.08125))	nil	"cdsParam(1)"	("annotate" "drawing")
+mastershape	M2	line	((0.125 0.09375) (0.25 0.1875))	((0.125 0.09375) (0.25 0.09375) (0.25 0.1875))	nil	("device" "drawing")
+mastershape	M2	line	((0.125 -0.09375) (0.125 0.09375))	((0.125 -0.09375) (0.125 0.09375))	nil	("device" "drawing")
+mastershape	M2	line	((0.1875 -0.125) (0.25 -0.0625))	((0.1875 -0.0625) (0.25 -0.09375) (0.1875 -0.125))	nil	("device" "drawing")
+mastershape	M2	line	((0.0 0.0) (0.09375 0.0))	((0.0 0.0) (0.09375 0.0))	nil	("device" "drawing")
+mastershape	M2	line	((0.09375 -0.09375) (0.09375 0.09375))	((0.09375 0.09375) (0.09375 -0.09375))	nil	("device" "drawing")
+mastershape	M2	line	((0.125 0.0) (0.25 0.0))	((0.125 0.0) (0.25 0.0))	nil	("device" "drawing")
+mastershape	M2	line	((0.125 -0.1875) (0.25 -0.09375))	((0.125 -0.09375) (0.25 -0.09375) (0.25 -0.1875))	nil	("device" "drawing")
+mastershape	M2	rect	((0.0 -0.1875) (0.25 0.1875))	nil	nil	("instance" "drawing")
+mastershape	M2	rect	((0.225 -0.2125) (0.275 -0.1625))	nil	nil	("pin" "drawing")
+mastershape	M2	rect	((-0.025 -0.025) (0.025 0.025))	nil	nil	("pin" "drawing")
+mastershape	M2	rect	((0.225 -0.025) (0.275 0.025))	nil	nil	("pin" "drawing")
+mastershape	M2	rect	((0.225 0.1625) (0.275 0.2125))	nil	nil	("pin" "drawing")
+property	M2	model	"NMOS_VTH"
+property	M2	hw09IntendedName	"M2"
+property	M2	pd	"2.021e-05"
+property	M2	ps	"2.021e-05"
+property	M2	ad	"2.1e-12"
+property	M2	as	"2.1e-12"
+property	M2	ld	"105n"
+property	M2	ls	"105n"
+property	M2	m	"1"
+property	M2	l	"50n"
+property	M2	w	"20u"
+instance	M1	NCSU_Devices_FreePDK45	NMOS_VTH	(8.0 1.0)	R0
+connection	M1	D	tail
+connection	M1	B	gnd!
+connection	M1	G	rf
+connection	M1	S	gnd!
+pin	M1	S	(8.25 0.8125)
+pin	M1	G	(8.0 1.0)
+pin	M1	B	(8.25 1.0)
+pin	M1	D	(8.25 1.1875)
+mastershape	M1	label	((-0.20625 0.1125) (0.21875 0.175))	nil	"cdsTerm(\"D\")"	("annotate" "drawing8")
+mastershape	M1	label	((0.125 0.025) (0.54375 0.0875))	nil	"cdsTerm(\"B\")"	("annotate" "drawing8")
+mastershape	M1	label	((-0.33125 0.025) (0.09375 0.0875))	nil	"cdsTerm(\"G\")"	("annotate" "drawing8")
+mastershape	M1	label	((-0.19375 -0.19375) (0.21875 -0.13125))	nil	"cdsTerm(\"S\")"	("annotate" "drawing8")
+mastershape	M1	label	((0.28125 0.1125) (0.6125 0.175))	nil	"cdsName()"	("annotate" "drawing7")
+mastershape	M1	label	((0.28125 -0.075) (0.675 -0.0125))	nil	"cdsParam(2)"	("annotate" "drawing")
+mastershape	M1	label	((0.28125 -0.16875) (0.675 -0.10625))	nil	"cdsParam(3)"	("annotate" "drawing")
+mastershape	M1	label	((0.28125 0.01875) (0.675 0.08125))	nil	"cdsParam(1)"	("annotate" "drawing")
+mastershape	M1	line	((0.125 0.09375) (0.25 0.1875))	((0.125 0.09375) (0.25 0.09375) (0.25 0.1875))	nil	("device" "drawing")
+mastershape	M1	line	((0.125 -0.09375) (0.125 0.09375))	((0.125 -0.09375) (0.125 0.09375))	nil	("device" "drawing")
+mastershape	M1	line	((0.1875 -0.125) (0.25 -0.0625))	((0.1875 -0.0625) (0.25 -0.09375) (0.1875 -0.125))	nil	("device" "drawing")
+mastershape	M1	line	((0.0 0.0) (0.09375 0.0))	((0.0 0.0) (0.09375 0.0))	nil	("device" "drawing")
+mastershape	M1	line	((0.09375 -0.09375) (0.09375 0.09375))	((0.09375 0.09375) (0.09375 -0.09375))	nil	("device" "drawing")
+mastershape	M1	line	((0.125 0.0) (0.25 0.0))	((0.125 0.0) (0.25 0.0))	nil	("device" "drawing")
+mastershape	M1	line	((0.125 -0.1875) (0.25 -0.09375))	((0.125 -0.09375) (0.25 -0.09375) (0.25 -0.1875))	nil	("device" "drawing")
+mastershape	M1	rect	((0.0 -0.1875) (0.25 0.1875))	nil	nil	("instance" "drawing")
+mastershape	M1	rect	((0.225 -0.2125) (0.275 -0.1625))	nil	nil	("pin" "drawing")
+mastershape	M1	rect	((-0.025 -0.025) (0.025 0.025))	nil	nil	("pin" "drawing")
+mastershape	M1	rect	((0.225 -0.025) (0.275 0.025))	nil	nil	("pin" "drawing")
+mastershape	M1	rect	((0.225 0.1625) (0.275 0.2125))	nil	nil	("pin" "drawing")
+property	M1	model	"NMOS_VTH"
+property	M1	hw09IntendedName	"M1"
+property	M1	pd	"1.521e-05"
+property	M1	ps	"1.521e-05"
+property	M1	ad	"1.575e-12"
+property	M1	as	"1.575e-12"
+property	M1	ld	"105n"
+property	M1	ls	"105n"
+property	M1	m	"1"
+property	M1	l	"50n"
+property	M1	w	"15u"
+instance	R2	analogLib	res	(10.25 7.0)	R0
+connection	R2	MINUS	outn
+connection	R2	PLUS	vdd
+pin	R2	PLUS	(10.25 7.0)
+pin	R2	MINUS	(10.25 6.625)
+mastershape	R2	label	((-0.6625 -0.3875) (-0.0625 -0.325))	nil	"cdsTerm(\"MINUS\")"	("annotate" "drawing8")
+mastershape	R2	label	((-0.60625 -0.075) (-0.0625 -0.0125))	nil	"cdsTerm(\"PLUS\")"	("annotate" "drawing8")
+mastershape	R2	label	((0.09375 -0.075) (0.425 -0.0125))	nil	"cdsName()"	("annotate" "drawing7")
+mastershape	R2	label	((0.09375 -0.2625) (0.4875 -0.2))	nil	"cdsParam(2)"	("annotate" "drawing")
+mastershape	R2	label	((0.09375 -0.35625) (0.4875 -0.29375))	nil	"cdsParam(3)"	("annotate" "drawing")
+mastershape	R2	label	((0.09375 -0.16875) (0.4875 -0.10625))	nil	"cdsParam(1)"	("annotate" "drawing")
+mastershape	R2	line	((-0.0625 -0.375) (0.0625 0.0))	((0.0 -0.375) (0.0 -0.3) (-0.0625 -0.28125) (0.0625 -0.24375) (-0.0625 -0.20625) (0.0625 -0.16875) (-0.0625 -0.13125) (0.0625 -0.09375) (0.0 -0.075) (0.0 0.0))	nil	("device" "drawing")
+mastershape	R2	rect	((-0.125 -0.375) (0.125 0.0))	nil	nil	("instance" "drawing")
+mastershape	R2	polygon	((-0.025 -0.025) (0.025 0.025))	((-0.025 0.025) (0.025 0.025) (0.025 -0.025) (-0.025 -0.025))	nil	("pin" "drawing")
+mastershape	R2	polygon	((-0.025 -0.4) (0.025 -0.35))	((-0.025 -0.35) (0.025 -0.35) (0.025 -0.4) (-0.025 -0.4))	nil	("pin" "drawing")
+property	R2	r	"500"
+property	R2	hw09IntendedName	"R2"
+instance	R1	analogLib	res	(6.25 7.0)	R0
+connection	R1	MINUS	outp
+connection	R1	PLUS	vdd
+pin	R1	PLUS	(6.25 7.0)
+pin	R1	MINUS	(6.25 6.625)
+mastershape	R1	label	((-0.6625 -0.3875) (-0.0625 -0.325))	nil	"cdsTerm(\"MINUS\")"	("annotate" "drawing8")
+mastershape	R1	label	((-0.60625 -0.075) (-0.0625 -0.0125))	nil	"cdsTerm(\"PLUS\")"	("annotate" "drawing8")
+mastershape	R1	label	((0.09375 -0.075) (0.425 -0.0125))	nil	"cdsName()"	("annotate" "drawing7")
+mastershape	R1	label	((0.09375 -0.2625) (0.4875 -0.2))	nil	"cdsParam(2)"	("annotate" "drawing")
+mastershape	R1	label	((0.09375 -0.35625) (0.4875 -0.29375))	nil	"cdsParam(3)"	("annotate" "drawing")
+mastershape	R1	label	((0.09375 -0.16875) (0.4875 -0.10625))	nil	"cdsParam(1)"	("annotate" "drawing")
+mastershape	R1	line	((-0.0625 -0.375) (0.0625 0.0))	((0.0 -0.375) (0.0 -0.3) (-0.0625 -0.28125) (0.0625 -0.24375) (-0.0625 -0.20625) (0.0625 -0.16875) (-0.0625 -0.13125) (0.0625 -0.09375) (0.0 -0.075) (0.0 0.0))	nil	("device" "drawing")
+mastershape	R1	rect	((-0.125 -0.375) (0.125 0.0))	nil	nil	("instance" "drawing")
+mastershape	R1	polygon	((-0.025 -0.025) (0.025 0.025))	((-0.025 0.025) (0.025 0.025) (0.025 -0.025) (-0.025 -0.025))	nil	("pin" "drawing")
+mastershape	R1	polygon	((-0.025 -0.4) (0.025 -0.35))	((-0.025 -0.35) (0.025 -0.35) (0.025 -0.4) (-0.025 -0.4))	nil	("pin" "drawing")
+property	R1	r	"500"
+property	R1	hw09IntendedName	"R1"
+instance	CLN	analogLib	cap	(12.0 5.5)	R0
+connection	CLN	MINUS	gnd!
+connection	CLN	PLUS	outn
+pin	CLN	PLUS	(12.0 5.5)
+pin	CLN	MINUS	(12.0 5.125)
+mastershape	CLN	label	((-0.60625 -0.075) (-0.0625 -0.0125))	nil	"cdsTerm(\"PLUS\")"	("annotate" "drawing8")
+mastershape	CLN	label	((-0.6625 -0.3875) (-0.0625 -0.325))	nil	"cdsTerm(\"MINUS\")"	("annotate" "drawing8")
+mastershape	CLN	label	((0.0625 -0.075) (0.39375 -0.0125))	nil	"cdsName()"	("annotate" "drawing7")
+mastershape	CLN	label	((0.09375 -0.35625) (0.4875 -0.29375))	nil	"cdsParam(3)"	("annotate" "drawing")
+mastershape	CLN	label	((0.09375 -0.16875) (0.4875 -0.10625))	nil	"cdsParam(1)"	("annotate" "drawing")
+mastershape	CLN	label	((0.09375 -0.2625) (0.4875 -0.2))	nil	"cdsParam(2)"	("annotate" "drawing")
+mastershape	CLN	line	((-0.0625 -0.1375) (0.0625 -0.1375))	((0.0625 -0.1375) (-0.0625 -0.1375))	nil	("device" "drawing")
+mastershape	CLN	line	((0.0 -0.1375) (0.0 0.0))	((0.0 0.0) (0.0 -0.1375))	nil	("device" "drawing")
+mastershape	CLN	line	((0.0 -0.375) (0.0 -0.175))	((0.0 -0.175) (0.0 -0.375))	nil	("device" "drawing")
+mastershape	CLN	arc	((-0.0625 -0.2) (0.0625 -0.175))	nil	nil	("device" "drawing")
+mastershape	CLN	rect	((-0.125 -0.375) (0.125 0.0))	nil	nil	("instance" "drawing")
+mastershape	CLN	polygon	((-0.025 -0.025) (0.025 0.025))	((-0.025 0.025) (0.025 0.025) (0.025 -0.025) (-0.025 -0.025))	nil	("pin" "drawing")
+mastershape	CLN	polygon	((-0.025 -0.4) (0.025 -0.35))	((-0.025 -0.35) (0.025 -0.35) (0.025 -0.4) (-0.025 -0.4))	nil	("pin" "drawing")
+property	CLN	c	"10f"
+property	CLN	hw09IntendedName	"CLN"
+instance	CLP	analogLib	cap	(4.5 5.5)	R0
+connection	CLP	MINUS	gnd!
+connection	CLP	PLUS	outp
+pin	CLP	PLUS	(4.5 5.5)
+pin	CLP	MINUS	(4.5 5.125)
+mastershape	CLP	label	((-0.60625 -0.075) (-0.0625 -0.0125))	nil	"cdsTerm(\"PLUS\")"	("annotate" "drawing8")
+mastershape	CLP	label	((-0.6625 -0.3875) (-0.0625 -0.325))	nil	"cdsTerm(\"MINUS\")"	("annotate" "drawing8")
+mastershape	CLP	label	((0.0625 -0.075) (0.39375 -0.0125))	nil	"cdsName()"	("annotate" "drawing7")
+mastershape	CLP	label	((0.09375 -0.35625) (0.4875 -0.29375))	nil	"cdsParam(3)"	("annotate" "drawing")
+mastershape	CLP	label	((0.09375 -0.16875) (0.4875 -0.10625))	nil	"cdsParam(1)"	("annotate" "drawing")
+mastershape	CLP	label	((0.09375 -0.2625) (0.4875 -0.2))	nil	"cdsParam(2)"	("annotate" "drawing")
+mastershape	CLP	line	((-0.0625 -0.1375) (0.0625 -0.1375))	((0.0625 -0.1375) (-0.0625 -0.1375))	nil	("device" "drawing")
+mastershape	CLP	line	((0.0 -0.1375) (0.0 0.0))	((0.0 0.0) (0.0 -0.1375))	nil	("device" "drawing")
+mastershape	CLP	line	((0.0 -0.375) (0.0 -0.175))	((0.0 -0.175) (0.0 -0.375))	nil	("device" "drawing")
+mastershape	CLP	arc	((-0.0625 -0.2) (0.0625 -0.175))	nil	nil	("device" "drawing")
+mastershape	CLP	rect	((-0.125 -0.375) (0.125 0.0))	nil	nil	("instance" "drawing")
+mastershape	CLP	polygon	((-0.025 -0.025) (0.025 0.025))	((-0.025 0.025) (0.025 0.025) (0.025 -0.025) (-0.025 -0.025))	nil	("pin" "drawing")
+mastershape	CLP	polygon	((-0.025 -0.4) (0.025 -0.35))	((-0.025 -0.35) (0.025 -0.35) (0.025 -0.4) (-0.025 -0.4))	nil	("pin" "drawing")
+property	CLP	c	"10f"
+property	CLP	hw09IntendedName	"CLP"
+shape	line	((0.0 6.0) (0.0 7.0))	((0.0 6.0) (0.0 7.0))	nil	("wire" "drawing")
+shape	line	((0.0 7.0) (1.125 7.0))	((0.0 7.0) (1.125 7.0))	nil	("wire" "drawing")
+shape	label	((0.0 6.0) (0.51875 6.13125))	nil	"rfdrive"	("wire" "label")
+shape	line	((1.5 7.0) (2.25 7.0))	((1.5 7.0) (2.25 7.0))	nil	("wire" "drawing")
+shape	label	((2.25 7.0) (2.375 7.13125))	nil	"rf"	("wire" "label")
+shape	line	((0.0 5.0) (0.0 5.5))	((0.0 5.0) (0.0 5.5))	nil	("wire" "drawing")
+shape	line	((0.0 3.0) (0.0 3.5))	((0.0 3.0) (0.0 3.5))	nil	("wire" "drawing")
+shape	label	((0.0 3.45625) (0.2375 3.63125))	nil	"lop"	("wire" "label")
+shape	line	((2.0 3.0) (2.0 3.5))	((2.0 3.0) (2.0 3.5))	nil	("wire" "drawing")
+shape	label	((2.0 3.5) (2.23125 3.63125))	nil	"lon"	("wire" "label")
+shape	line	((0.0 2.125) (0.0 2.625))	((0.0 2.125) (0.0 2.625))	nil	("wire" "drawing")
+shape	line	((2.0 2.125) (2.0 2.625))	((2.0 2.125) (2.0 2.625))	nil	("wire" "drawing")
+shape	line	((0.0 0.0) (0.0 0.5))	((0.0 0.0) (0.0 0.5))	nil	("wire" "drawing")
+shape	label	((0.0 0.5) (0.2875 0.63125))	nil	"vdd"	("wire" "label")
+shape	line	((0.0 -0.875) (0.0 -0.375))	((0.0 -0.875) (0.0 -0.375))	nil	("wire" "drawing")
+shape	label	((-1.0 8.75) (1.65 8.9375))	nil	"TESTBENCH SOURCES"	("text" "drawing")
+shape	label	((-1.0 -2.04375) (3.69375 -1.86875))	nil	"Rs = 50 ohm (inside RFPORT). LO per leg: 0.2 Vpk / 0.4 Vpp."	("text" "drawing")
+shape	label	((-1.0 -2.54375) (4.14375 -2.36875))	nil	"Output: V(outp)-V(outn). RF available power is pinDbm per tone."	("text" "drawing")
+shape	label	((-1.0 -3.04375) (6.3375 -2.86875))	nil	"Single: rfScale=1, tone2Scale=0, fRF=5.8G. Two-tone: both scales=1, fRF=5.79G, fRF2=5.81G."	("text" "drawing")
+shape	label	((-1.0 -3.54375) (5.125 -3.36875))	nil	"Noise: rfScale=tone2Scale=0; retain RF DC bias and port PAC magnitude 0.5."	("text" "drawing")
+shape	line	((6.25 4.1875) (6.25 5.5))	((6.25 4.1875) (6.25 5.5))	nil	("wire" "drawing")
+shape	line	((6.25 5.5) (6.25 6.625))	((6.25 5.5) (6.25 6.625))	nil	("wire" "drawing")
+shape	label	((6.25 4.14375) (6.61875 4.30625))	nil	"outp"	("wire" "label")
+shape	line	((10.25 4.1875) (10.25 5.5))	((10.25 4.1875) (10.25 5.5))	nil	("wire" "drawing")
+shape	line	((10.25 5.5) (10.25 6.625))	((10.25 5.5) (10.25 6.625))	nil	("wire" "drawing")
+shape	label	((10.25 4.1875) (10.6125 4.30625))	nil	"outn"	("wire" "label")
+shape	line	((6.25 7.0) (6.25 8.0))	((6.25 7.0) (6.25 8.0))	nil	("wire" "drawing")
+shape	line	((6.25 8.0) (10.25 8.0))	((6.25 8.0) (10.25 8.0))	nil	("wire" "drawing")
+shape	line	((10.25 7.0) (10.25 8.0))	((10.25 7.0) (10.25 8.0))	nil	("wire" "drawing")
+shape	label	((6.25 7.0) (6.5375 7.13125))	nil	"vdd"	("wire" "label")
+shape	line	((6.25 2.5) (6.25 3.8125))	((6.25 2.5) (6.25 3.8125))	nil	("wire" "drawing")
+shape	line	((6.25 2.5) (8.25 2.5))	((6.25 2.5) (8.25 2.5))	nil	("wire" "drawing")
+shape	line	((10.25 2.5) (10.25 3.8125))	((10.25 2.5) (10.25 3.8125))	nil	("wire" "drawing")
+shape	label	((6.25 3.8125) (6.4875 3.94375))	nil	"tail"	("wire" "label")
+shape	line	((8.25 2.5) (10.25 2.5))	((8.25 2.5) (10.25 2.5))	nil	("wire" "drawing")
+shape	line	((8.25 1.1875) (8.25 2.5))	((8.25 1.1875) (8.25 2.5))	nil	("wire" "drawing")
+shape	ellipse	((8.21875 2.46875) (8.28125 2.53125))	nil	nil	("wire" "drawing")
+shape	line	((4.5 5.5) (6.25 5.5))	((4.5 5.5) (6.25 5.5))	nil	("wire" "drawing")
+shape	ellipse	((6.21875 5.46875) (6.28125 5.53125))	nil	nil	("wire" "drawing")
+shape	line	((10.25 5.5) (12.0 5.5))	((10.25 5.5) (12.0 5.5))	nil	("wire" "drawing")
+shape	ellipse	((10.21875 5.46875) (10.28125 5.53125))	nil	nil	("wire" "drawing")
+shape	line	((4.5 4.625) (4.5 5.125))	((4.5 4.625) (4.5 5.125))	nil	("wire" "drawing")
+shape	line	((12.0 4.625) (12.0 5.125))	((12.0 4.625) (12.0 5.125))	nil	("wire" "drawing")
+shape	line	((8.25 0.3125) (8.25 0.8125))	((8.25 0.3125) (8.25 0.8125))	nil	("wire" "drawing")
+shape	line	((8.25 1.0) (9.25 1.0))	((8.25 1.0) (9.25 1.0))	nil	("wire" "drawing")
+shape	line	((9.25 0.5) (9.25 1.0))	((9.25 0.5) (9.25 1.0))	nil	("wire" "drawing")
+shape	line	((6.25 4.0) (7.25 4.0))	((6.25 4.0) (7.25 4.0))	nil	("wire" "drawing")
+shape	line	((7.25 3.5) (7.25 4.0))	((7.25 3.5) (7.25 4.0))	nil	("wire" "drawing")
+shape	line	((9.25 4.0) (10.25 4.0))	((9.25 4.0) (10.25 4.0))	nil	("wire" "drawing")
+shape	line	((9.25 3.5) (9.25 4.0))	((9.25 3.5) (9.25 4.0))	nil	("wire" "drawing")
+shape	line	((7.25 1.0) (8.0 1.0))	((7.25 1.0) (8.0 1.0))	nil	("wire" "drawing")
+shape	label	((7.25 1.0) (7.375 1.13125))	nil	"rf"	("wire" "label")
+shape	line	((5.25 4.0) (6.0 4.0))	((5.25 4.0) (6.0 4.0))	nil	("wire" "drawing")
+shape	label	((5.25 3.95625) (5.4875 4.13125))	nil	"lop"	("wire" "label")
+shape	line	((10.5 4.0) (11.25 4.0))	((10.5 4.0) (11.25 4.0))	nil	("wire" "drawing")
+shape	label	((11.25 4.0) (11.48125 4.13125))	nil	"lon"	("wire" "label")
+shape	label	((5.0 9.0) (9.1 9.1875))	nil	"ACTIVE SINGLE-BALANCED MIXER"	("text" "drawing")
+shape	label	((5.0 -0.54375) (10.0875 -0.36875))	nil	"M1: 15 um / 50 nm; M2, M3: 20 um / 50 nm. All m=1, B=ground."	("text" "drawing")
+shape	label	((5.0 -1.04375) (11.50625 -0.86875))	nil	"RF source bias 0.65 V open circuit; port DC field 0.325 V. LO common mode 0.8 V."	("text" "drawing")

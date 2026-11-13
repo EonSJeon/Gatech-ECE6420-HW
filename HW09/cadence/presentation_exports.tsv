@@ -1,0 +1,4 @@
+export	active	testbench	cadence_gui_export	hiExportImage	/nethome/sjeon84/Gatech-ECE6420/HW09/cadence/active_gui_testbench.png	"Nov 12 23:23:20 2026"	window:22
+export	active	core	cadence_gui_export	hiExportImage	/nethome/sjeon84/Gatech-ECE6420/HW09/cadence/active_gui_core.png	"Nov 12 23:23:21 2026"	window:22
+export	passive	testbench	cadence_gui_export	hiExportImage	/nethome/sjeon84/Gatech-ECE6420/HW09/cadence/passive_gui_testbench.png	"Nov 12 23:23:23 2026"	window:23
+export	passive	core	cadence_gui_export	hiExportImage	/nethome/sjeon84/Gatech-ECE6420/HW09/cadence/passive_gui_core.png	"Nov 12 23:23:23 2026"	window:23

@@ -26,4 +26,13 @@ Local:  Gatech-ECE6420/HW05
 Remote: /nethome/sjeon84/Gatech-ECE6420/HW05
 ```
 
-The named local kernel is already registered on this Mac. See [HW05 setup and execution](HW05/README.md) for registration commands, parameter editing and offline review mode. The [common prompt](Common%20Prompt%20%E2%80%94%20ECE%20Circuit%20Simulation%20Homework%20with%20Cadence_Spectre.md) records conventions for later assignments.
+The named local kernel is already registered on this Mac. See [HW05 setup and execution](HW05/README.md) for registration commands, parameter editing and offline review mode. The [common prompt](prompt/Common%20Prompt%20%E2%80%94%20ECE%20Circuit%20Simulation%20Homework%20with%20Cadence_Spectre.md) records conventions for later assignments.
+
+## Zotero reading library
+
+The [ECE6420 Zotero collection](docs/zotero/papers/README.md) mirrors the collection under Favorites, including native annotations. Run `./tools/open-vscode.sh` to start the background mirror. See [connection, commands, and publishing limits](docs/zotero/ZOTERO_VSCODE_SETUP.md). Reviews follow [Zotero Paper Review Common Prompt](prompt/Zotero%20Paper%20Review%20Common%20Prompt.md).
+
+
+## HW09 - Single-balanced mixers
+
+[HW09](HW09/README.md) contains native Virtuoso active/passive mixer schematics, the ADE simulation campaign, measured results, and a schematic rebuild guide. The [editable report source](HW09/overleaf/main.tex) is synchronized with [Overleaf](https://www.overleaf.com/project/6af68c3c1b2af4608fb66bfd) and uses native Cadence day-mode figures. Open [the GUI results review notebook](HW09/notebooks/01_cadence_gui_review.ipynb) with the **ECE6420 (Local)** kernel to inspect existing results and exported images.

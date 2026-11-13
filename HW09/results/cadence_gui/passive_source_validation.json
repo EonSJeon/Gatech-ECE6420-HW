@@ -1,0 +1,327 @@
+{
+  "status": "passed",
+  "kind": "passive",
+  "source_audit": "/Users/jeonsang-eon/Gatech-ECE6420/HW09/cadence/passive_tb_audit.tsv",
+  "source_sha256": "e1923d30a2a1fcd7e5110d824170145023487930b3953f606a6a88a31bc315b8",
+  "checks_count": 76,
+  "checks": [
+    {
+      "check": "schCheck errors/warnings",
+      "passed": true
+    },
+    {
+      "check": "MOS count",
+      "passed": true
+    },
+    {
+      "check": "M1 unique actual native instance",
+      "passed": true
+    },
+    {
+      "check": "M1 library",
+      "passed": true
+    },
+    {
+      "check": "M1 model",
+      "passed": true
+    },
+    {
+      "check": "M1 w",
+      "passed": true
+    },
+    {
+      "check": "M1 l",
+      "passed": true
+    },
+    {
+      "check": "M1 m",
+      "passed": true
+    },
+    {
+      "check": "M1 ls",
+      "passed": true
+    },
+    {
+      "check": "M1 ld",
+      "passed": true
+    },
+    {
+      "check": "M1 as",
+      "passed": true
+    },
+    {
+      "check": "M1 ad",
+      "passed": true
+    },
+    {
+      "check": "M1 ps",
+      "passed": true
+    },
+    {
+      "check": "M1 pd",
+      "passed": true
+    },
+    {
+      "check": "M2 unique actual native instance",
+      "passed": true
+    },
+    {
+      "check": "M2 library",
+      "passed": true
+    },
+    {
+      "check": "M2 model",
+      "passed": true
+    },
+    {
+      "check": "M2 w",
+      "passed": true
+    },
+    {
+      "check": "M2 l",
+      "passed": true
+    },
+    {
+      "check": "M2 m",
+      "passed": true
+    },
+    {
+      "check": "M2 ls",
+      "passed": true
+    },
+    {
+      "check": "M2 ld",
+      "passed": true
+    },
+    {
+      "check": "M2 as",
+      "passed": true
+    },
+    {
+      "check": "M2 ad",
+      "passed": true
+    },
+    {
+      "check": "M2 ps",
+      "passed": true
+    },
+    {
+      "check": "M2 pd",
+      "passed": true
+    },
+    {
+      "check": "Resistor count",
+      "passed": true
+    },
+    {
+      "check": "Capacitor count",
+      "passed": true
+    },
+    {
+      "check": "R1 unique actual native instance",
+      "passed": true
+    },
+    {
+      "check": "R1 resistance",
+      "passed": true
+    },
+    {
+      "check": "R2 unique actual native instance",
+      "passed": true
+    },
+    {
+      "check": "R2 resistance",
+      "passed": true
+    },
+    {
+      "check": "CLP unique actual native instance",
+      "passed": true
+    },
+    {
+      "check": "CLP capacitance",
+      "passed": true
+    },
+    {
+      "check": "CLN unique actual native instance",
+      "passed": true
+    },
+    {
+      "check": "CLN capacitance",
+      "passed": true
+    },
+    {
+      "check": "RFPORT unique actual native instance",
+      "passed": true
+    },
+    {
+      "check": "RFPORT r",
+      "passed": true
+    },
+    {
+      "check": "RFPORT vdc",
+      "passed": true
+    },
+    {
+      "check": "RFPORT pacm",
+      "passed": true
+    },
+    {
+      "check": "RFPORT noisetemp",
+      "passed": true
+    },
+    {
+      "check": "RFPORT num",
+      "passed": true
+    },
+    {
+      "check": "RFPORT sinephase",
+      "passed": true
+    },
+    {
+      "check": "RFPORT is noisy",
+      "passed": true
+    },
+    {
+      "check": "RFPORT sine type",
+      "passed": true
+    },
+    {
+      "check": "RFSECOND unique actual native instance",
+      "passed": true
+    },
+    {
+      "check": "RFSECOND DC",
+      "passed": true
+    },
+    {
+      "check": "RFSECOND sine type",
+      "passed": true
+    },
+    {
+      "check": "RFPORT matched amplitude at -60 dBm",
+      "passed": true
+    },
+    {
+      "check": "RFSECOND amplitude at -60 dBm",
+      "passed": true
+    },
+    {
+      "check": "LO-only RF amplitudes at -60 dBm",
+      "passed": true
+    },
+    {
+      "check": "RFPORT matched amplitude at -55 dBm",
+      "passed": true
+    },
+    {
+      "check": "RFSECOND amplitude at -55 dBm",
+      "passed": true
+    },
+    {
+      "check": "LO-only RF amplitudes at -55 dBm",
+      "passed": true
+    },
+    {
+      "check": "RFPORT matched amplitude at -35 dBm",
+      "passed": true
+    },
+    {
+      "check": "RFSECOND amplitude at -35 dBm",
+      "passed": true
+    },
+    {
+      "check": "LO-only RF amplitudes at -35 dBm",
+      "passed": true
+    },
+    {
+      "check": "LOP unique actual native instance",
+      "passed": true
+    },
+    {
+      "check": "LOP sine type",
+      "passed": true
+    },
+    {
+      "check": "LOP freq",
+      "passed": true
+    },
+    {
+      "check": "LOP va",
+      "passed": true
+    },
+    {
+      "check": "LOP vdc",
+      "passed": true
+    },
+    {
+      "check": "LOP sinephase",
+      "passed": true
+    },
+    {
+      "check": "LON unique actual native instance",
+      "passed": true
+    },
+    {
+      "check": "LON sine type",
+      "passed": true
+    },
+    {
+      "check": "LON freq",
+      "passed": true
+    },
+    {
+      "check": "LON va",
+      "passed": true
+    },
+    {
+      "check": "LON vdc",
+      "passed": true
+    },
+    {
+      "check": "LON sinephase",
+      "passed": true
+    },
+    {
+      "check": "RFPORT frequency design-variable mapping",
+      "passed": true
+    },
+    {
+      "check": "RFSECOND frequency design-variable mapping",
+      "passed": true
+    },
+    {
+      "check": "RFPORT frequency design-variable mapping",
+      "passed": true
+    },
+    {
+      "check": "RFSECOND frequency design-variable mapping",
+      "passed": true
+    },
+    {
+      "check": "No unreviewed extra device",
+      "passed": true
+    },
+    {
+      "check": "Analog primitive libraries",
+      "passed": true
+    },
+    {
+      "check": "Intended readable native instance names",
+      "passed": true
+    }
+  ],
+  "actual_native_role_names": {
+    "M1": "M1",
+    "M2": "M2",
+    "R1": "R1",
+    "R2": "R2",
+    "CLP": "CLP",
+    "CLN": "CLN",
+    "RFPORT": "RFPORT",
+    "RFSECOND": "RFSECOND",
+    "LOP": "LOP",
+    "LON": "LON"
+  },
+  "instance_count": 19,
+  "connection_count": 33
+}

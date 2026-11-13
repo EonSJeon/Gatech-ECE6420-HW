@@ -1,0 +1,36 @@
+; Export native ADE history paths after the visible GUI run has completed.
+; This file never invokes a simulator or reuses standalone Spectre netlists.
+procedure(hw09ExportADEPaths()
+  let((sess hid out psf netlist windowNumber)
+    foreach(existing maeGetSessions()
+      when(and(equal(axlGetSessionLibName(existing) "HW09_Mixers")
+               equal(axlGetSessionCellName(existing) "mixer_campaign")) sess=existing)
+    )
+    unless(sess error("HW09 native ADE session is not open.\n"))
+    hid=axlGetCurrentHistory(sess)
+    unless(hid error("No GUI simulation history exists to export.\n"))
+    out=outfile("/nethome/sjeon84/Gatech-ECE6420/HW09/ade_native_paths.tsv")
+    fprintf(out "history_handle\ttest_name\tpsf_directory\tnetlist_directory\n")
+    foreach(testName maeGetSetup(?enabled t ?session sess)
+      psf=axlGetPointPsfDir(hid testName)
+      netlist=axlGetPointNetlistDir(hid testName)
+      fprintf(out "%L\t%L\t%L\t%L\n" hid testName psf netlist)
+    )
+    close(out)
+    maeSaveSetup(?session sess)
+    printf("Native ADE history paths exported to ade_native_paths.tsv.\n")
+    windowNumber=axlGetSessionWindowNumber(sess)
+    ; Window 8 is the task-owned SKILL IDE confirmed by the GUI operator.
+    ; Hide it reversibly so the matrix remains visible in the no-WM desktop.
+    errset(hiUnmapWindow(8) t)
+    when(and(numberp(windowNumber) windowNumber>0) hiRaiseWindow(windowNumber t))
+    hid
+  )
+)
+hw09ExportADEPaths()
+
+foreach(s maeGetSessions()
+ when(and(equal(axlGetSessionLibName(s) "HW09_Mixers") equal(axlGetSessionCellName(s) "mixer_campaign"))
+  when(axlGetSessionWindowNumber(s) hiRaiseWindow(axlGetSessionWindowNumber(s)))
+ )
+)

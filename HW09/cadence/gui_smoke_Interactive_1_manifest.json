@@ -1,0 +1,137 @@
+{
+  "schema_version": 1,
+  "origin": "cadence_ade_gui",
+  "status": "smoke_only_accepted_settings",
+  "config": {
+    "active": {
+      "gm_width_um": 15.0,
+      "length_nm": 50.0,
+      "lo_common_mode_v": 0.8,
+      "lo_vpp_per_leg": 0.4,
+      "m": 1,
+      "nf": 1,
+      "rd_ohm": 500.0,
+      "rf_bias_v": 0.65,
+      "switch_width_um": 20.0
+    },
+    "analysis": {
+      "compression_pin_dbm": [
+        -60,
+        -50,
+        -40,
+        -35,
+        -30,
+        -25,
+        -20,
+        -15,
+        -10,
+        -5,
+        0,
+        5
+      ],
+      "force": false,
+      "iip3_pin_dbm": [
+        -50,
+        -45,
+        -40,
+        -35,
+        -30,
+        -25,
+        -20
+      ],
+      "maxstep_s": 2e-12,
+      "noise_frequency_hz": [
+        100000000.0,
+        200000000.0,
+        300000000.0
+      ],
+      "noise_sidebands": [
+        15,
+        31,
+        63
+      ],
+      "parallel_jobs": 2,
+      "reltol": 1e-05,
+      "rf_tones_hz": [
+        5790000000.0,
+        5810000000.0
+      ],
+      "single_tone_settle_s": 5e-09,
+      "single_tone_window_s": 2e-08,
+      "small_signal_pin_dbm": -55.0,
+      "strobe_s": 5e-12,
+      "transient_settle_s": 2e-08,
+      "window_s": 1e-07
+    },
+    "common": {
+      "if_hz": 200000000.0,
+      "lo_hz": 5600000000.0,
+      "load_cap_f": 1e-14,
+      "rf_hz": 5800000000.0,
+      "rs_ohm": 50.0,
+      "source_noise_temp_k": 290.0,
+      "temp_c": 27.0,
+      "vdd_v": 1.0
+    },
+    "passive": {
+      "length_nm": 50.0,
+      "lo_common_mode_v": 0.5,
+      "lo_vpp_per_leg": 0.4,
+      "m": 1,
+      "nf": 1,
+      "rf_common_mode_v": 0.0,
+      "rl_ohm": 500.0,
+      "switch_width_um": 20.0
+    }
+  },
+  "history": "Interactive.1",
+  "gui_action_utc": "2026-11-13T03:24:50+00:00",
+  "runs": [
+    {
+      "origin": "cadence_ade_gui",
+      "kind": "active",
+      "stage": "single_tone",
+      "test_name": "active_single_tone",
+      "library": "HW09_Mixers",
+      "cell": "active_tb",
+      "view": "schematic",
+      "pin_dbm": -55,
+      "settle_s": 5e-09,
+      "window_s": 2e-08,
+      "psf": "simulation/cadence_gui/HW09_Mixers/mixer_campaign/maestro/results/maestro/Interactive.1/1/active_single_tone/ascii/tran.tran.tran",
+      "native_psf": "simulation/cadence_gui/HW09_Mixers/mixer_campaign/maestro/results/maestro/Interactive.1/1/active_single_tone/psf/tran.tran.tran",
+      "generated_netlist": "simulation/cadence_gui/HW09_Mixers/mixer_campaign/maestro/results/maestro/Interactive.1/1/active_single_tone/netlist/input.scs",
+      "spectre_log": "simulation/cadence_gui/HW09_Mixers/mixer_campaign/maestro/results/maestro/Interactive.1/1/active_single_tone/psf/spectre.out",
+      "schematic_export": "cadence/active_tb_audit.tsv",
+      "gui_action_utc": "2026-11-13T03:24:50+00:00",
+      "gui_action_description": "Root applied native precision settings then observed and clicked Assembler green Run; only two smoke tests enabled; new Interactive.1 ordinary-Spectre history.",
+      "spectre_log_sha256": "a99df843c87825d4f31b146f3a197a55e346a2df476097af74c7bc3cf5cf59b7",
+      "generated_netlist_sha256": "c24091576a9104fb7cd1e368917e881c9c2834b3fde4675a7ef1313aae42a4d2",
+      "schematic_export_sha256": "461346d957db85d3e16a571a295c50a8631a1711a8813d4d493f31ce19bb099c",
+      "psf_sha256": "cb01cda2d980ebb2225982d9e178675bc5cf13a52ff7a8c657cddcdcf38551d7"
+    },
+    {
+      "origin": "cadence_ade_gui",
+      "kind": "passive",
+      "stage": "single_tone",
+      "test_name": "passive_single_tone",
+      "library": "HW09_Mixers",
+      "cell": "passive_tb",
+      "view": "schematic",
+      "pin_dbm": -55,
+      "settle_s": 5e-09,
+      "window_s": 2e-08,
+      "psf": "simulation/cadence_gui/HW09_Mixers/mixer_campaign/maestro/results/maestro/Interactive.1/1/passive_single_tone/ascii/tran.tran.tran",
+      "native_psf": "simulation/cadence_gui/HW09_Mixers/mixer_campaign/maestro/results/maestro/Interactive.1/1/passive_single_tone/psf/tran.tran.tran",
+      "generated_netlist": "simulation/cadence_gui/HW09_Mixers/mixer_campaign/maestro/results/maestro/Interactive.1/1/passive_single_tone/netlist/input.scs",
+      "spectre_log": "simulation/cadence_gui/HW09_Mixers/mixer_campaign/maestro/results/maestro/Interactive.1/1/passive_single_tone/psf/spectre.out",
+      "schematic_export": "cadence/passive_tb_audit.tsv",
+      "gui_action_utc": "2026-11-13T03:24:50+00:00",
+      "gui_action_description": "Root applied native precision settings then observed and clicked Assembler green Run; only two smoke tests enabled; new Interactive.1 ordinary-Spectre history.",
+      "spectre_log_sha256": "6251cfa4162377a6722f2d2e9fcab2dd355bd70815c2f76d461a5b79a00f0e46",
+      "generated_netlist_sha256": "e1c4a6f32b495ee686d9c3c329ee623af50a2e3457c908328a61280f9a37b859",
+      "schematic_export_sha256": "e1923d30a2a1fcd7e5110d824170145023487930b3953f606a6a88a31bc315b8",
+      "psf_sha256": "024a134c4ba61ea0df8c13f65a34f67908d95589f9ac1baf79fd5b3af3c21c9c"
+    }
+  ]
+}

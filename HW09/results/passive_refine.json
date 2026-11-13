@@ -1,0 +1,821 @@
+{
+  "completed_utc": "2026-11-13T00:34:00.977210+00:00",
+  "trials": [
+    {
+      "gain_db": -14.10714769955025,
+      "measurement": {
+        "completed_utc": "2026-11-13T00:33:13.692715+00:00",
+        "fund_vpk": [
+          0.00022165248808398336
+        ],
+        "gain_db": [
+          -14.10714769955025
+        ],
+        "if_frequencies_hz": [
+          200000000.0
+        ],
+        "im3_frequencies_hz": [],
+        "im3_vpk": [],
+        "lo_diff_vpp": 0.7999368353633659,
+        "max_output_v": 0.003269100909384703,
+        "mean_outn_v": -6.171796580751299e-05,
+        "mean_outp_v": -6.172419316812762e-05,
+        "mean_rf_v": 1.2357132180329633e-05,
+        "min_output_v": -0.003279360399333052,
+        "netlist": "netlists/generated/passive_refine_00.scs",
+        "netlist_sha256": "c2d8b98fac2d793893c82827aef8a387f4232450738c0735ebf87daf9b2e214c",
+        "open_peak_v": 0.0011246826503806982,
+        "pin_dbm": -55,
+        "power_gain_db": [
+          -21.096847742910438
+        ],
+        "power_mw": 0.0,
+        "raw_file_sha256": "dd5b636093b35df856b1cc4ee9a4635ff191aeb447a3a81bd84a800f40d59612",
+        "rf_node_gain_db": [
+          -13.884552395459506
+        ],
+        "rf_node_vpk": [
+          0.0010962263334881779
+        ],
+        "sample_count": 4000,
+        "window_s": 2e-08
+      },
+      "parameters": {
+        "length_nm": 50.0,
+        "lo_common_mode_v": 0.45,
+        "lo_vpp_per_leg": 0.4,
+        "m": 1,
+        "nf": 1,
+        "rf_common_mode_v": 0.0,
+        "rl_ohm": 500,
+        "switch_width_um": 2.0
+      },
+      "power_gain_db": -21.096847742910438
+    },
+    {
+      "gain_db": -11.595546870844347,
+      "measurement": {
+        "completed_utc": "2026-11-13T00:33:14.091695+00:00",
+        "fund_vpk": [
+          0.0002959733799852337
+        ],
+        "gain_db": [
+          -11.595546870844347
+        ],
+        "if_frequencies_hz": [
+          200000000.0
+        ],
+        "im3_frequencies_hz": [],
+        "im3_vpk": [],
+        "lo_diff_vpp": 0.7999368353633657,
+        "max_output_v": 0.003226889175139694,
+        "mean_outn_v": -8.330781673489776e-05,
+        "mean_outp_v": -8.33094620131655e-05,
+        "mean_rf_v": 1.668078359470611e-05,
+        "min_output_v": -0.00325363855868578,
+        "netlist": "netlists/generated/passive_refine_01.scs",
+        "netlist_sha256": "20c04f21c1e7be0762f55e2a076255c90273175d0c1787179f1f3fdee6eb2cfb",
+        "open_peak_v": 0.0011246826503806982,
+        "pin_dbm": -55,
+        "power_gain_db": [
+          -18.585246914204532
+        ],
+        "power_mw": 0.0,
+        "raw_file_sha256": "2c2878c1fa25f3cf03db94c2b7b706cc347c75389a4f3b76018033cce03c1d17",
+        "rf_node_gain_db": [
+          -11.272080664050607
+        ],
+        "rf_node_vpk": [
+          0.0010835692833987207
+        ],
+        "sample_count": 4000,
+        "window_s": 2e-08
+      },
+      "parameters": {
+        "length_nm": 50.0,
+        "lo_common_mode_v": 0.5,
+        "lo_vpp_per_leg": 0.4,
+        "m": 1,
+        "nf": 1,
+        "rf_common_mode_v": 0.0,
+        "rl_ohm": 500,
+        "switch_width_um": 2.0
+      },
+      "power_gain_db": -18.585246914204532
+    },
+    {
+      "gain_db": -10.1303421519499,
+      "measurement": {
+        "completed_utc": "2026-11-13T00:33:20.120552+00:00",
+        "fund_vpk": [
+          0.00035035868534601827
+        ],
+        "gain_db": [
+          -10.1303421519499
+        ],
+        "if_frequencies_hz": [
+          200000000.0
+        ],
+        "im3_frequencies_hz": [],
+        "im3_vpk": [],
+        "lo_diff_vpp": 0.7999368353633657,
+        "max_output_v": 0.00331441131874847,
+        "mean_outn_v": -9.94402221433269e-05,
+        "mean_outp_v": -9.944166974126731e-05,
+        "mean_rf_v": 1.9902180420185035e-05,
+        "min_output_v": -0.003355837225594864,
+        "netlist": "netlists/generated/passive_refine_02.scs",
+        "netlist_sha256": "269e977ffbc3af4844cbe1317d7fe493afd7d620ac5fcea39cf3bebe10ba8df3",
+        "open_peak_v": 0.0011246826503806982,
+        "pin_dbm": -55,
+        "power_gain_db": [
+          -17.120042195310084
+        ],
+        "power_mw": 0.0,
+        "raw_file_sha256": "1baa994c67659da7a3321da405f93efbab1f418305cc824c6dea4a4fbab171fc",
+        "rf_node_gain_db": [
+          -9.703099928401466
+        ],
+        "rf_node_vpk": [
+          0.0010707002016956306
+        ],
+        "sample_count": 4000,
+        "window_s": 2e-08
+      },
+      "parameters": {
+        "length_nm": 50.0,
+        "lo_common_mode_v": 0.55,
+        "lo_vpp_per_leg": 0.4,
+        "m": 1,
+        "nf": 1,
+        "rf_common_mode_v": 0.0,
+        "rl_ohm": 500,
+        "switch_width_um": 2.0
+      },
+      "power_gain_db": -17.120042195310084
+    },
+    {
+      "gain_db": -9.467705809640456,
+      "measurement": {
+        "completed_utc": "2026-11-13T00:33:20.119903+00:00",
+        "fund_vpk": [
+          0.000378133108751413
+        ],
+        "gain_db": [
+          -9.467705809640456
+        ],
+        "if_frequencies_hz": [
+          200000000.0
+        ],
+        "im3_frequencies_hz": [],
+        "im3_vpk": [],
+        "lo_diff_vpp": 0.7999368353633658,
+        "max_output_v": 0.003599829905817492,
+        "mean_outn_v": -0.0001072228628350592,
+        "mean_outp_v": -0.00010722537478107349,
+        "mean_rf_v": 2.1451151898825747e-05,
+        "min_output_v": -0.003651496397017211,
+        "netlist": "netlists/generated/passive_refine_03.scs",
+        "netlist_sha256": "ee4e29a90f2f69ede5491dc3161a92d962009ac51013d3900180eb5219aab193",
+        "open_peak_v": 0.0011246826503806982,
+        "pin_dbm": -55,
+        "power_gain_db": [
+          -16.457405853000644
+        ],
+        "power_mw": 0.0,
+        "raw_file_sha256": "707d3016a06e7ca70b34e9c82b014a3413477733b9a7a9aa0d34c2e39861b8dd",
+        "rf_node_gain_db": [
+          -8.936235007133162
+        ],
+        "rf_node_vpk": [
+          0.0010579288376257696
+        ],
+        "sample_count": 4000,
+        "window_s": 2e-08
+      },
+      "parameters": {
+        "length_nm": 50.0,
+        "lo_common_mode_v": 0.6,
+        "lo_vpp_per_leg": 0.4,
+        "m": 1,
+        "nf": 1,
+        "rf_common_mode_v": 0.0,
+        "rl_ohm": 500,
+        "switch_width_um": 2.0
+      },
+      "power_gain_db": -16.457405853000644
+    },
+    {
+      "gain_db": -9.884921406968818,
+      "measurement": {
+        "completed_utc": "2026-11-13T00:33:26.754524+00:00",
+        "fund_vpk": [
+          0.0003603992888248887
+        ],
+        "gain_db": [
+          -9.884921406968818
+        ],
+        "if_frequencies_hz": [
+          200000000.0
+        ],
+        "im3_frequencies_hz": [],
+        "im3_vpk": [],
+        "lo_diff_vpp": 0.7999368353633659,
+        "max_output_v": 0.007818364773884775,
+        "mean_outn_v": -0.00025060420741705334,
+        "mean_outp_v": -0.00025060336836597955,
+        "mean_rf_v": 5.012949464974289e-05,
+        "min_output_v": -0.007813873519439109,
+        "netlist": "netlists/generated/passive_refine_04.scs",
+        "netlist_sha256": "0c3adf4b0a74329d65995efcc0a6b25603b05085a9e2a2182f4f2f4c1c49f2e3",
+        "open_peak_v": 0.0011246826503806982,
+        "pin_dbm": -55,
+        "power_gain_db": [
+          -16.874621450329006
+        ],
+        "power_mw": 0.0,
+        "raw_file_sha256": "cd39273ec242e901fadb367bf2dcb44152737383de360b9cb787f45c7cdc31b5",
+        "rf_node_gain_db": [
+          -9.498969502248165
+        ],
+        "rf_node_vpk": [
+          0.0010758021315204831
+        ],
+        "sample_count": 4000,
+        "window_s": 2e-08
+      },
+      "parameters": {
+        "length_nm": 50.0,
+        "lo_common_mode_v": 0.45,
+        "lo_vpp_per_leg": 0.4,
+        "m": 1,
+        "nf": 1,
+        "rf_common_mode_v": 0.0,
+        "rl_ohm": 500,
+        "switch_width_um": 5.0
+      },
+      "power_gain_db": -16.874621450329006
+    },
+    {
+      "gain_db": -8.285370831741366,
+      "measurement": {
+        "completed_utc": "2026-11-13T00:33:27.140881+00:00",
+        "fund_vpk": [
+          0.00043327282825929064
+        ],
+        "gain_db": [
+          -8.285370831741366
+        ],
+        "if_frequencies_hz": [
+          200000000.0
+        ],
+        "im3_frequencies_hz": [],
+        "im3_vpk": [],
+        "lo_diff_vpp": 0.7999368353633657,
+        "max_output_v": 0.007444613617217549,
+        "mean_outn_v": -0.00029280556740635024,
+        "mean_outp_v": -0.00029280753912493346,
+        "mean_rf_v": 5.8580107285178644e-05,
+        "min_output_v": -0.007456673521222618,
+        "netlist": "netlists/generated/passive_refine_05.scs",
+        "netlist_sha256": "5c7c1e158f8b0a3d8a16f53816191cfb43a9ab28e11c9a29ceaf21dd5ae471ba",
+        "open_peak_v": 0.0011246826503806982,
+        "pin_dbm": -55,
+        "power_gain_db": [
+          -15.275070875101553
+        ],
+        "power_mw": 0.0,
+        "raw_file_sha256": "93078b718baf9a4dee57cf44f1a4a6e412e0a2ee9fa69a523e3490899b9992a6",
+        "rf_node_gain_db": [
+          -7.7684774202061
+        ],
+        "rf_node_vpk": [
+          0.0010597058335685304
+        ],
+        "sample_count": 4000,
+        "window_s": 2e-08
+      },
+      "parameters": {
+        "length_nm": 50.0,
+        "lo_common_mode_v": 0.5,
+        "lo_vpp_per_leg": 0.4,
+        "m": 1,
+        "nf": 1,
+        "rf_common_mode_v": 0.0,
+        "rl_ohm": 500,
+        "switch_width_um": 5.0
+      },
+      "power_gain_db": -15.275070875101553
+    },
+    {
+      "gain_db": -7.571241313791789,
+      "measurement": {
+        "completed_utc": "2026-11-13T00:33:33.161350+00:00",
+        "fund_vpk": [
+          0.0004704006681939244
+        ],
+        "gain_db": [
+          -7.571241313791789
+        ],
+        "if_frequencies_hz": [
+          200000000.0
+        ],
+        "im3_frequencies_hz": [],
+        "im3_vpk": [],
+        "lo_diff_vpp": 0.7999368353633657,
+        "max_output_v": 0.006825369849005877,
+        "mean_outn_v": -0.00030934996879861045,
+        "mean_outp_v": -0.0003093572224269007,
+        "mean_rf_v": 6.188922614459841e-05,
+        "min_output_v": -0.006886332001387975,
+        "netlist": "netlists/generated/passive_refine_06.scs",
+        "netlist_sha256": "e5b5df8a1de6e1dc48aa69432d8be5cb03b3796e71c01d9905c3a902d102f2d3",
+        "open_peak_v": 0.0011246826503806982,
+        "pin_dbm": -55,
+        "power_gain_db": [
+          -14.560941357151975
+        ],
+        "power_mw": 0.0,
+        "raw_file_sha256": "08bb81d7c13fb20103c6b682528f9e5f06f694a02653dc8bc51638100eebd92f",
+        "rf_node_gain_db": [
+          -6.927456931727849
+        ],
+        "rf_node_vpk": [
+          0.001044337268333761
+        ],
+        "sample_count": 4000,
+        "window_s": 2e-08
+      },
+      "parameters": {
+        "length_nm": 50.0,
+        "lo_common_mode_v": 0.55,
+        "lo_vpp_per_leg": 0.4,
+        "m": 1,
+        "nf": 1,
+        "rf_common_mode_v": 0.0,
+        "rl_ohm": 500,
+        "switch_width_um": 5.0
+      },
+      "power_gain_db": -14.560941357151975
+    },
+    {
+      "gain_db": -7.605975918401722,
+      "measurement": {
+        "completed_utc": "2026-11-13T00:33:33.474402+00:00",
+        "fund_vpk": [
+          0.00046852330669591854
+        ],
+        "gain_db": [
+          -7.605975918401722
+        ],
+        "if_frequencies_hz": [
+          200000000.0
+        ],
+        "im3_frequencies_hz": [],
+        "im3_vpk": [],
+        "lo_diff_vpp": 0.7999368353633658,
+        "max_output_v": 0.005931249517731301,
+        "mean_outn_v": -0.00029520477137929727,
+        "mean_outp_v": -0.00029520329564508026,
+        "mean_rf_v": 5.90624385791509e-05,
+        "min_output_v": -0.006048495911327789,
+        "netlist": "netlists/generated/passive_refine_07.scs",
+        "netlist_sha256": "e4e9f36fa1d17d04fe867cab8ac3201a9e960440a0c2fc8cd47a801f1f5a2b91",
+        "open_peak_v": 0.0011246826503806982,
+        "pin_dbm": -55,
+        "power_gain_db": [
+          -14.59567596176191
+        ],
+        "power_mw": 0.0,
+        "raw_file_sha256": "ad6a269c9bdae97fae2136364d9fdbb745a6a94ea131891c5cce33e06a5e42bc",
+        "rf_node_gain_db": [
+          -6.837707220620043
+        ],
+        "rf_node_vpk": [
+          0.0010294767925307484
+        ],
+        "sample_count": 4000,
+        "window_s": 2e-08
+      },
+      "parameters": {
+        "length_nm": 50.0,
+        "lo_common_mode_v": 0.6,
+        "lo_vpp_per_leg": 0.4,
+        "m": 1,
+        "nf": 1,
+        "rf_common_mode_v": 0.0,
+        "rl_ohm": 500,
+        "switch_width_um": 5.0
+      },
+      "power_gain_db": -14.59567596176191
+    },
+    {
+      "gain_db": -7.744656542471709,
+      "measurement": {
+        "completed_utc": "2026-11-13T00:33:39.374424+00:00",
+        "fund_vpk": [
+          0.0004611021726291028
+        ],
+        "gain_db": [
+          -7.744656542471709
+        ],
+        "if_frequencies_hz": [
+          200000000.0
+        ],
+        "im3_frequencies_hz": [],
+        "im3_vpk": [],
+        "lo_diff_vpp": 0.7999368353633659,
+        "max_output_v": 0.01459861183411549,
+        "mean_outn_v": -0.0006941910035399968,
+        "mean_outp_v": -0.0006941854363104662,
+        "mean_rf_v": 0.00013883942195322312,
+        "min_output_v": -0.01454450360610636,
+        "netlist": "netlists/generated/passive_refine_08.scs",
+        "netlist_sha256": "c4cc8c8d81bdf577e32ee4e6f693d9912362993c03176977fa265b70e432881b",
+        "open_peak_v": 0.0011246826503806982,
+        "pin_dbm": -55,
+        "power_gain_db": [
+          -14.734356585831899
+        ],
+        "power_mw": 0.0,
+        "raw_file_sha256": "a9e9a30fefccc213a4e20a5cc9785d0832b3c413169fc67f4289cd21d8b65ce5",
+        "rf_node_gain_db": [
+          -7.209763149965211
+        ],
+        "rf_node_vpk": [
+          0.0010575120532176705
+        ],
+        "sample_count": 4000,
+        "window_s": 2e-08
+      },
+      "parameters": {
+        "length_nm": 50.0,
+        "lo_common_mode_v": 0.45,
+        "lo_vpp_per_leg": 0.4,
+        "m": 1,
+        "nf": 1,
+        "rf_common_mode_v": 0.0,
+        "rl_ohm": 500,
+        "switch_width_um": 10.0
+      },
+      "power_gain_db": -14.734356585831899
+    },
+    {
+      "gain_db": -6.79976342234734,
+      "measurement": {
+        "completed_utc": "2026-11-13T00:33:39.840661+00:00",
+        "fund_vpk": [
+          0.0005140931587229805
+        ],
+        "gain_db": [
+          -6.79976342234734
+        ],
+        "if_frequencies_hz": [
+          200000000.0
+        ],
+        "im3_frequencies_hz": [],
+        "im3_vpk": [],
+        "lo_diff_vpp": 0.7999368353633657,
+        "max_output_v": 0.01344161210215541,
+        "mean_outn_v": -0.0007374782987431413,
+        "mean_outp_v": -0.0007374712450712035,
+        "mean_rf_v": 0.00014749662383325401,
+        "min_output_v": -0.01345070376300619,
+        "netlist": "netlists/generated/passive_refine_09.scs",
+        "netlist_sha256": "effdd412ee3ebebfb10f83ecc68dcac3688784075c2c8f6e930657c3073e90c6",
+        "open_peak_v": 0.0011246826503806982,
+        "pin_dbm": -55,
+        "power_gain_db": [
+          -13.789463465707527
+        ],
+        "power_mw": 0.0,
+        "raw_file_sha256": "3e7a806c3dea3e6243af32d380999eee65cf9d1c152008edc58749cbc25f07d9",
+        "rf_node_gain_db": [
+          -6.120534979630456
+        ],
+        "rf_node_vpk": [
+          0.0010400843784264876
+        ],
+        "sample_count": 4000,
+        "window_s": 2e-08
+      },
+      "parameters": {
+        "length_nm": 50.0,
+        "lo_common_mode_v": 0.5,
+        "lo_vpp_per_leg": 0.4,
+        "m": 1,
+        "nf": 1,
+        "rf_common_mode_v": 0.0,
+        "rl_ohm": 500,
+        "switch_width_um": 10.0
+      },
+      "power_gain_db": -13.789463465707527
+    },
+    {
+      "gain_db": -6.646199101533857,
+      "measurement": {
+        "completed_utc": "2026-11-13T00:33:45.828822+00:00",
+        "fund_vpk": [
+          0.0005232630166096635
+        ],
+        "gain_db": [
+          -6.646199101533857
+        ],
+        "if_frequencies_hz": [
+          200000000.0
+        ],
+        "im3_frequencies_hz": [],
+        "im3_vpk": [],
+        "lo_diff_vpp": 0.7999368353633657,
+        "max_output_v": 0.01166307411430509,
+        "mean_outn_v": -0.0007119952616029547,
+        "mean_outp_v": -0.000711991384520145,
+        "mean_rf_v": 0.00014244818578689405,
+        "min_output_v": -0.01183252759494202,
+        "netlist": "netlists/generated/passive_refine_10.scs",
+        "netlist_sha256": "cf58cbf42a31e8d5c6a931b05ccee96c6009142fcae514bae9f4c737c8953549",
+        "open_peak_v": 0.0011246826503806982,
+        "pin_dbm": -55,
+        "power_gain_db": [
+          -13.635899144894044
+        ],
+        "power_mw": 0.0,
+        "raw_file_sha256": "8937fdc527ff167a33998d38a5e54716fb1291cd3403da42ec378e080365b155",
+        "rf_node_gain_db": [
+          -5.830010307685685
+        ],
+        "rf_node_vpk": [
+          0.0010238128024747401
+        ],
+        "sample_count": 4000,
+        "window_s": 2e-08
+      },
+      "parameters": {
+        "length_nm": 50.0,
+        "lo_common_mode_v": 0.55,
+        "lo_vpp_per_leg": 0.4,
+        "m": 1,
+        "nf": 1,
+        "rf_common_mode_v": 0.0,
+        "rl_ohm": 500,
+        "switch_width_um": 10.0
+      },
+      "power_gain_db": -13.635899144894044
+    },
+    {
+      "gain_db": -7.254998823939204,
+      "measurement": {
+        "completed_utc": "2026-11-13T00:33:46.551761+00:00",
+        "fund_vpk": [
+          0.00048784297386660037
+        ],
+        "gain_db": [
+          -7.254998823939204
+        ],
+        "if_frequencies_hz": [
+          200000000.0
+        ],
+        "im3_frequencies_hz": [],
+        "im3_vpk": [],
+        "lo_diff_vpp": 0.7999368353633658,
+        "max_output_v": 0.009378535079174502,
+        "mean_outn_v": -0.0006133011661104085,
+        "mean_outp_v": -0.0006133056124451682,
+        "mean_rf_v": 0.00012271901383253096,
+        "min_output_v": -0.009669134472402191,
+        "netlist": "netlists/generated/passive_refine_11.scs",
+        "netlist_sha256": "f3e74022b887ef590b2506cb842bdab24c0c27b7e50fc7f1712facfa42d30323",
+        "open_peak_v": 0.0011246826503806982,
+        "pin_dbm": -55,
+        "power_gain_db": [
+          -14.244698867299391
+        ],
+        "power_mw": 0.0,
+        "raw_file_sha256": "a053a67d9e3ce578ca0ace12debf9cd4f7976173526c3753ff7e7055884dfb81",
+        "rf_node_gain_db": [
+          -6.303487826420554
+        ],
+        "rf_node_vpk": [
+          0.0010079858737117408
+        ],
+        "sample_count": 4000,
+        "window_s": 2e-08
+      },
+      "parameters": {
+        "length_nm": 50.0,
+        "lo_common_mode_v": 0.6,
+        "lo_vpp_per_leg": 0.4,
+        "m": 1,
+        "nf": 1,
+        "rf_common_mode_v": 0.0,
+        "rl_ohm": 500,
+        "switch_width_um": 10.0
+      },
+      "power_gain_db": -14.244698867299391
+    },
+    {
+      "gain_db": -6.310486087531384,
+      "measurement": {
+        "completed_utc": "2026-11-13T00:33:52.645665+00:00",
+        "fund_vpk": [
+          0.0005438832590862693
+        ],
+        "gain_db": [
+          -6.310486087531384
+        ],
+        "if_frequencies_hz": [
+          200000000.0
+        ],
+        "im3_frequencies_hz": [],
+        "im3_vpk": [],
+        "lo_diff_vpp": 0.7999368353633659,
+        "max_output_v": 0.02532977616652288,
+        "mean_outn_v": -0.0019108455208043582,
+        "mean_outp_v": -0.0019108469628243085,
+        "mean_rf_v": 0.00038213168999573586,
+        "min_output_v": -0.02561497006856354,
+        "netlist": "netlists/generated/passive_refine_12.scs",
+        "netlist_sha256": "4bf214f0669411d4ee53b023a5ac2df2a72644322db808c7dd9f82615bdc6a0a",
+        "open_peak_v": 0.0011246826503806982,
+        "pin_dbm": -55,
+        "power_gain_db": [
+          -13.300186130891571
+        ],
+        "power_mw": 0.0,
+        "raw_file_sha256": "99fb9347aa87a3a59d5bf4f4fd137d747101562dcfc3e51451b84daf74b2ee7f",
+        "rf_node_gain_db": [
+          -5.583325304568944
+        ],
+        "rf_node_vpk": [
+          0.0010343605693024938
+        ],
+        "sample_count": 4000,
+        "window_s": 2e-08
+      },
+      "parameters": {
+        "length_nm": 50.0,
+        "lo_common_mode_v": 0.45,
+        "lo_vpp_per_leg": 0.4,
+        "m": 1,
+        "nf": 1,
+        "rf_common_mode_v": 0.0,
+        "rl_ohm": 500,
+        "switch_width_um": 20.0
+      },
+      "power_gain_db": -13.300186130891571
+    },
+    {
+      "gain_db": -5.975240900839839,
+      "measurement": {
+        "completed_utc": "2026-11-13T00:33:53.412264+00:00",
+        "fund_vpk": [
+          0.0005652856366704951
+        ],
+        "gain_db": [
+          -5.975240900839839
+        ],
+        "if_frequencies_hz": [
+          200000000.0
+        ],
+        "im3_frequencies_hz": [],
+        "im3_vpk": [],
+        "lo_diff_vpp": 0.7999368353633657,
+        "max_output_v": 0.02224745060742795,
+        "mean_outn_v": -0.001869331419721356,
+        "mean_outp_v": -0.0018693233753994988,
+        "mean_rf_v": 0.00037393568592777274,
+        "min_output_v": -0.02289248400939159,
+        "netlist": "netlists/generated/passive_refine_13.scs",
+        "netlist_sha256": "751ce91305b73d12f081403cb6123a0d480c8700687831a29404a7493d5307b2",
+        "open_peak_v": 0.0011246826503806982,
+        "pin_dbm": -55,
+        "power_gain_db": [
+          -12.964940944200027
+        ],
+        "power_mw": 0.0,
+        "raw_file_sha256": "0781f397e35fe8a3512218fc391f4c60862d679718085d6f16d3f73c58585f11",
+        "rf_node_gain_db": [
+          -5.084332754162112
+        ],
+        "rf_node_vpk": [
+          0.001015043345413772
+        ],
+        "sample_count": 4000,
+        "window_s": 2e-08
+      },
+      "parameters": {
+        "length_nm": 50.0,
+        "lo_common_mode_v": 0.5,
+        "lo_vpp_per_leg": 0.4,
+        "m": 1,
+        "nf": 1,
+        "rf_common_mode_v": 0.0,
+        "rl_ohm": 500,
+        "switch_width_um": 20.0
+      },
+      "power_gain_db": -12.964940944200027
+    },
+    {
+      "gain_db": -6.413782567790966,
+      "measurement": {
+        "completed_utc": "2026-11-13T00:33:59.958512+00:00",
+        "fund_vpk": [
+          0.0005374534651445182
+        ],
+        "gain_db": [
+          -6.413782567790966
+        ],
+        "if_frequencies_hz": [
+          200000000.0
+        ],
+        "im3_frequencies_hz": [],
+        "im3_vpk": [],
+        "lo_diff_vpp": 0.7999368353633657,
+        "max_output_v": 0.01792446797440013,
+        "mean_outn_v": -0.0016535000910208176,
+        "mean_outp_v": -0.0016534924385633808,
+        "mean_rf_v": 0.00033092867956735397,
+        "min_output_v": -0.01915699536498806,
+        "netlist": "netlists/generated/passive_refine_14.scs",
+        "netlist_sha256": "bbefdb999b887ac600002c29692a32a460e3e3d689aea5d52f1d9056df793c4a",
+        "open_peak_v": 0.0011246826503806982,
+        "pin_dbm": -55,
+        "power_gain_db": [
+          -13.403482611151155
+        ],
+        "power_mw": 0.0,
+        "raw_file_sha256": "db1f9284138e98f0d8dcf3f409617385d1cb858467c8afc18d28944c9f2121d1",
+        "rf_node_gain_db": [
+          -5.367140660629452
+        ],
+        "rf_node_vpk": [
+          0.0009970062947539308
+        ],
+        "sample_count": 4000,
+        "window_s": 2e-08
+      },
+      "parameters": {
+        "length_nm": 50.0,
+        "lo_common_mode_v": 0.55,
+        "lo_vpp_per_leg": 0.4,
+        "m": 1,
+        "nf": 1,
+        "rf_common_mode_v": 0.0,
+        "rl_ohm": 500,
+        "switch_width_um": 20.0
+      },
+      "power_gain_db": -13.403482611151155
+    },
+    {
+      "gain_db": -7.663290371487681,
+      "measurement": {
+        "completed_utc": "2026-11-13T00:34:00.976235+00:00",
+        "fund_vpk": [
+          0.00046544190035493533
+        ],
+        "gain_db": [
+          -7.663290371487681
+        ],
+        "if_frequencies_hz": [
+          200000000.0
+        ],
+        "im3_frequencies_hz": [],
+        "im3_vpk": [],
+        "lo_diff_vpp": 0.7999368353633658,
+        "max_output_v": 0.01321032815401669,
+        "mean_outn_v": -0.001287095858836447,
+        "mean_outp_v": -0.0012870871111078674,
+        "mean_rf_v": 0.0002576912637696401,
+        "min_output_v": -0.01454178899629195,
+        "netlist": "netlists/generated/passive_refine_15.scs",
+        "netlist_sha256": "5fdece216ef7b55d9b0b10305830c5d69158d403dce67cf5a2591002b21b8385",
+        "open_peak_v": 0.0011246826503806982,
+        "pin_dbm": -55,
+        "power_gain_db": [
+          -14.652990414847869
+        ],
+        "power_mw": 0.0,
+        "raw_file_sha256": "ca629c94b68134e24418a73e406e1848b1f31ab6447a54775adba900a6f52c2c",
+        "rf_node_gain_db": [
+          -6.458866111365577
+        ],
+        "rf_node_vpk": [
+          0.0009790588165752333
+        ],
+        "sample_count": 4000,
+        "window_s": 2e-08
+      },
+      "parameters": {
+        "length_nm": 50.0,
+        "lo_common_mode_v": 0.6,
+        "lo_vpp_per_leg": 0.4,
+        "m": 1,
+        "nf": 1,
+        "rf_common_mode_v": 0.0,
+        "rl_ohm": 500,
+        "switch_width_um": 20.0
+      },
+      "power_gain_db": -14.652990414847869
+    }
+  ]
+}

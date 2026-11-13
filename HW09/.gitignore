@@ -1,0 +1,20 @@
+.venv/
+.cache/
+__pycache__/
+.ipynb_checkpoints/
+.remote.env
+simulation/
+tmp/
+.local/
+
+# Virtuoso runtime state and locks; native schematic sources remain available.
+.cadence/
+CDS.log*
+libManager.log
+*.cdslck*
+.tmp_*/
+logs_*/
+.nfs*
+.skillide.*
+cadence/**/history/
+cadence/**/results/

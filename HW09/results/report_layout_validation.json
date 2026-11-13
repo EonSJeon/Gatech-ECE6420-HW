@@ -1,0 +1,21 @@
+{
+  "status": "passed",
+  "checked_utc": "2026-11-13T01:09:18.512680+00:00",
+  "report": "output/pdf/HW09_mixer_design_report.pdf",
+  "report_sha256": "dd322f2f8341111a4ec2073af03662ec529cc48acd1f7118fd08cf01309ce56a",
+  "run_id": "ab6a7104f23d",
+  "page_count": 22,
+  "renderer": "Poppler pdftoppm",
+  "render_dpi": 135,
+  "out_of_page_spans": [],
+  "body_empty_pages": [],
+  "visual_review": "Complete contact sheet and enlarged page review passed; no clipping, overlap, or unreadable table values.",
+  "verified_handoff_fields": [
+    "W/L and D/G/S/B",
+    "CLP/CLN load symbols and values",
+    "RF port/vsource amplitude convention",
+    "LO sine phases and common mode",
+    "PSS/PAC/PNOISE frequency mapping",
+    "current result hash and independent 91/0 numerical audit"
+  ]
+}

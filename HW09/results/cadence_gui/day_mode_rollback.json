@@ -1,0 +1,99 @@
+{
+  "restored_utc": "2026-11-13T18:32:15.667595+00:00",
+  "source_overleaf_commit": "b0015389bd5176fc9d8a2aab88dbfbecb2c8fefa",
+  "source_run_id": "cadence_gui_ab6a7104f23d",
+  "figure_count": 14,
+  "image_sha256": {
+    "cadence/active_gui_testbench.png": "3d3eadc4508540734fdcd22bdf0ced7065634654872b3c857fd40b25938abde9",
+    "cadence/passive_gui_testbench.png": "1decf0bc1564e6c792e308ccc13d2dc147b890c9bc07c2d802e704410ee254b7",
+    "cadence/gui_exports/active_compression.png": "45bfb31f6d2884e3f2429611b77b8dd48f8cc52e478f2f59d43e398c971de0ab",
+    "cadence/gui_exports/active_iip3.png": "54be8e878bc6053f49dee1561c492fd9ad35375165e6b4637e08b57c4beb638c",
+    "cadence/gui_exports/active_noise.png": "17588cc9a33ff88a3039819419508c910d8c388beb08a7ef088f325da284448f",
+    "cadence/gui_exports/active_spectrum.png": "7aa484c343a913aec1d5974c0b0ff8f6c0bb430fa3c247e3d0fde606b05fedeb",
+    "cadence/gui_exports/active_transient.png": "5d2ee425e327c4610d38eff29a97f4ca838345669a18312c55d1f3b9f09ee488",
+    "cadence/gui_exports/active_twotone_spectrum.png": "6b8dab5a82a7a3d4c08a30a0abd0717369e3bb186a10b558b62aa8239b310163",
+    "cadence/gui_exports/passive_compression.png": "dee1e40111b4716f9ead5e20e41ad2717ebf3ba14ae3fcedce85168ae9eb9f4d",
+    "cadence/gui_exports/passive_iip3.png": "40e7d900d7ffa25c95e0f26612c67c6d09eefb2055738c6e40d47c5dfabdf8ac",
+    "cadence/gui_exports/passive_noise.png": "372df61d10a69d003f50e67120a540e029d494ee3f8d22b52d4ac947a3812d06",
+    "cadence/gui_exports/passive_spectrum.png": "7d3539a21980ec5ebc7011b6836ffead2d9486c6aaaa7706589ba61859fad54f",
+    "cadence/gui_exports/passive_transient.png": "f57609b6d6977d0a38c28bbe0e91ac4f962d9bf54cf9e8be11fe0e0b0656fe66",
+    "cadence/gui_exports/passive_twotone_spectrum.png": "3c12b5ee7ec87a6ced41636717dae1cb8ae6a87dfc9e4aded68dd55703c5d750"
+  },
+  "native_plot_receipt_sha256": "ff44d2e105680c5ce4eae4dd0effc927835676f01a38332362ec0279a4265f25",
+  "native_schematic_receipt_sha256": "d8e5a68b6ad25503fa360c61c061f1c4da47cebf27d99a438879c0ac9ac3b790",
+  "simulation_results_unchanged": true,
+  "theme": "native day mode",
+  "report_footnote": "Day mode is used because the default night-mode exports were difficult to read.",
+  "day_appearance_checks": [
+    {
+      "image_path": "cadence/active_gui_testbench.png",
+      "light_background_fraction": 0.8515,
+      "original_native_hash_verified": true
+    },
+    {
+      "image_path": "cadence/passive_gui_testbench.png",
+      "light_background_fraction": 0.8609,
+      "original_native_hash_verified": true
+    },
+    {
+      "image_path": "cadence/gui_exports/active_compression.png",
+      "light_background_fraction": 0.9402,
+      "original_native_hash_verified": true
+    },
+    {
+      "image_path": "cadence/gui_exports/active_iip3.png",
+      "light_background_fraction": 0.9281,
+      "original_native_hash_verified": true
+    },
+    {
+      "image_path": "cadence/gui_exports/active_noise.png",
+      "light_background_fraction": 0.9584,
+      "original_native_hash_verified": true
+    },
+    {
+      "image_path": "cadence/gui_exports/active_spectrum.png",
+      "light_background_fraction": 0.9088,
+      "original_native_hash_verified": true
+    },
+    {
+      "image_path": "cadence/gui_exports/active_transient.png",
+      "light_background_fraction": 0.6411,
+      "original_native_hash_verified": true
+    },
+    {
+      "image_path": "cadence/gui_exports/active_twotone_spectrum.png",
+      "light_background_fraction": 0.9379,
+      "original_native_hash_verified": true
+    },
+    {
+      "image_path": "cadence/gui_exports/passive_compression.png",
+      "light_background_fraction": 0.9452,
+      "original_native_hash_verified": true
+    },
+    {
+      "image_path": "cadence/gui_exports/passive_iip3.png",
+      "light_background_fraction": 0.9259,
+      "original_native_hash_verified": true
+    },
+    {
+      "image_path": "cadence/gui_exports/passive_noise.png",
+      "light_background_fraction": 0.9597,
+      "original_native_hash_verified": true
+    },
+    {
+      "image_path": "cadence/gui_exports/passive_spectrum.png",
+      "light_background_fraction": 0.9143,
+      "original_native_hash_verified": true
+    },
+    {
+      "image_path": "cadence/gui_exports/passive_transient.png",
+      "light_background_fraction": 0.6127,
+      "original_native_hash_verified": true
+    },
+    {
+      "image_path": "cadence/gui_exports/passive_twotone_spectrum.png",
+      "light_background_fraction": 0.9391,
+      "original_native_hash_verified": true
+    }
+  ]
+}

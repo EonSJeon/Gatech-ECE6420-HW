@@ -1,0 +1,4402 @@
+{
+  "schema_version": 1,
+  "origin": "cadence_ade_gui",
+  "config": {
+    "common": {
+      "rf_hz": 5800000000.0,
+      "lo_hz": 5600000000.0,
+      "if_hz": 200000000.0,
+      "vdd_v": 1.0,
+      "rs_ohm": 50.0,
+      "temp_c": 27.0,
+      "source_noise_temp_k": 290.0,
+      "load_cap_f": 1e-14
+    },
+    "active": {
+      "gm_width_um": 15.0,
+      "switch_width_um": 20.0,
+      "length_nm": 50.0,
+      "nf": 1,
+      "m": 1,
+      "rd_ohm": 500.0,
+      "rf_bias_v": 0.65,
+      "lo_common_mode_v": 0.8,
+      "lo_vpp_per_leg": 0.4
+    },
+    "passive": {
+      "switch_width_um": 20.0,
+      "length_nm": 50.0,
+      "nf": 1,
+      "m": 1,
+      "rl_ohm": 500.0,
+      "rf_common_mode_v": 0.0,
+      "lo_common_mode_v": 0.5,
+      "lo_vpp_per_leg": 0.4
+    },
+    "analysis": {
+      "small_signal_pin_dbm": -55.0,
+      "transient_settle_s": 2e-08,
+      "window_s": 1e-07,
+      "strobe_s": 5e-12,
+      "maxstep_s": 2e-12,
+      "reltol": 1e-05,
+      "single_tone_window_s": 2e-08,
+      "single_tone_settle_s": 5e-09,
+      "parallel_jobs": 2,
+      "compression_pin_dbm": [
+        -60,
+        -50,
+        -40,
+        -35,
+        -30,
+        -25,
+        -20,
+        -15,
+        -10,
+        -5,
+        0,
+        5
+      ],
+      "iip3_pin_dbm": [
+        -50,
+        -45,
+        -40,
+        -35,
+        -30,
+        -25,
+        -20
+      ],
+      "rf_tones_hz": [
+        5790000000.0,
+        5810000000.0
+      ],
+      "noise_sidebands": [
+        15,
+        31,
+        63
+      ],
+      "noise_frequency_hz": [
+        100000000.0,
+        200000000.0,
+        300000000.0
+      ],
+      "force": false
+    }
+  },
+  "library": "HW09_Mixers",
+  "maestro_cell": "mixer_campaign",
+  "maestro_view": "maestro",
+  "requested_project_directory": "/nethome/sjeon84/Gatech-ECE6420/HW09/simulation/cadence_gui",
+  "simulation_trigger": "Visible ADE Assembler Run All; no scripted run invocation",
+  "requested_engine": "Spectre",
+  "requested_accuracy_override": "Do not override",
+  "max_concurrent_jobs": 2,
+  "tests": [
+    {
+      "test_name": "active_single_tone",
+      "circuit": "active",
+      "kind": "active",
+      "cell": "active_tb",
+      "library": "HW09_Mixers",
+      "view": "schematic",
+      "stage": "single_tone",
+      "label": "single_tone",
+      "trace_names": {
+        "supply_current": "VDD:p"
+      },
+      "pin_dbm": -55,
+      "two_tone": false,
+      "settle_s": 5e-09,
+      "window_s": 2e-08,
+      "strobe_s": 5e-12,
+      "maxstep_s": 2e-12,
+      "reltol": 1e-05,
+      "variables": {
+        "pinDbm": -55,
+        "fRF": 5800000000.0,
+        "fRF2": 5800000000.0,
+        "tone2Scale": 0,
+        "rfScale": 1
+      },
+      "analyses": {
+        "tran": {
+          "stop": 2.5e-08,
+          "maxstep": 2e-12,
+          "strobeperiod": 5e-12,
+          "errpreset": "conservative"
+        }
+      }
+    },
+    {
+      "test_name": "active_single_window_check",
+      "circuit": "active",
+      "kind": "active",
+      "cell": "active_tb",
+      "library": "HW09_Mixers",
+      "view": "schematic",
+      "stage": "single_reference",
+      "label": "single_window_check",
+      "trace_names": {
+        "supply_current": "VDD:p"
+      },
+      "pin_dbm": -55,
+      "two_tone": false,
+      "settle_s": 2e-08,
+      "window_s": 1e-07,
+      "strobe_s": 5e-12,
+      "maxstep_s": 2e-12,
+      "reltol": 1e-05,
+      "variables": {
+        "pinDbm": -55,
+        "fRF": 5800000000.0,
+        "fRF2": 5800000000.0,
+        "tone2Scale": 0,
+        "rfScale": 1
+      },
+      "analyses": {
+        "tran": {
+          "stop": 1.2e-07,
+          "maxstep": 2e-12,
+          "strobeperiod": 5e-12,
+          "errpreset": "conservative"
+        }
+      }
+    },
+    {
+      "test_name": "active_compression_00",
+      "circuit": "active",
+      "kind": "active",
+      "cell": "active_tb",
+      "library": "HW09_Mixers",
+      "view": "schematic",
+      "stage": "compression",
+      "label": "compression_00",
+      "trace_names": {
+        "supply_current": "VDD:p"
+      },
+      "pin_dbm": -60,
+      "two_tone": false,
+      "settle_s": 5e-09,
+      "window_s": 2e-08,
+      "strobe_s": 5e-12,
+      "maxstep_s": 2e-12,
+      "reltol": 1e-05,
+      "variables": {
+        "pinDbm": -60,
+        "fRF": 5800000000.0,
+        "fRF2": 5800000000.0,
+        "tone2Scale": 0,
+        "rfScale": 1
+      },
+      "analyses": {
+        "tran": {
+          "stop": 2.5e-08,
+          "maxstep": 2e-12,
+          "strobeperiod": 5e-12,
+          "errpreset": "conservative"
+        }
+      }
+    },
+    {
+      "test_name": "active_compression_01",
+      "circuit": "active",
+      "kind": "active",
+      "cell": "active_tb",
+      "library": "HW09_Mixers",
+      "view": "schematic",
+      "stage": "compression",
+      "label": "compression_01",
+      "trace_names": {
+        "supply_current": "VDD:p"
+      },
+      "pin_dbm": -50,
+      "two_tone": false,
+      "settle_s": 5e-09,
+      "window_s": 2e-08,
+      "strobe_s": 5e-12,
+      "maxstep_s": 2e-12,
+      "reltol": 1e-05,
+      "variables": {
+        "pinDbm": -50,
+        "fRF": 5800000000.0,
+        "fRF2": 5800000000.0,
+        "tone2Scale": 0,
+        "rfScale": 1
+      },
+      "analyses": {
+        "tran": {
+          "stop": 2.5e-08,
+          "maxstep": 2e-12,
+          "strobeperiod": 5e-12,
+          "errpreset": "conservative"
+        }
+      }
+    },
+    {
+      "test_name": "active_compression_02",
+      "circuit": "active",
+      "kind": "active",
+      "cell": "active_tb",
+      "library": "HW09_Mixers",
+      "view": "schematic",
+      "stage": "compression",
+      "label": "compression_02",
+      "trace_names": {
+        "supply_current": "VDD:p"
+      },
+      "pin_dbm": -40,
+      "two_tone": false,
+      "settle_s": 5e-09,
+      "window_s": 2e-08,
+      "strobe_s": 5e-12,
+      "maxstep_s": 2e-12,
+      "reltol": 1e-05,
+      "variables": {
+        "pinDbm": -40,
+        "fRF": 5800000000.0,
+        "fRF2": 5800000000.0,
+        "tone2Scale": 0,
+        "rfScale": 1
+      },
+      "analyses": {
+        "tran": {
+          "stop": 2.5e-08,
+          "maxstep": 2e-12,
+          "strobeperiod": 5e-12,
+          "errpreset": "conservative"
+        }
+      }
+    },
+    {
+      "test_name": "active_compression_03",
+      "circuit": "active",
+      "kind": "active",
+      "cell": "active_tb",
+      "library": "HW09_Mixers",
+      "view": "schematic",
+      "stage": "compression",
+      "label": "compression_03",
+      "trace_names": {
+        "supply_current": "VDD:p"
+      },
+      "pin_dbm": -35,
+      "two_tone": false,
+      "settle_s": 5e-09,
+      "window_s": 2e-08,
+      "strobe_s": 5e-12,
+      "maxstep_s": 2e-12,
+      "reltol": 1e-05,
+      "variables": {
+        "pinDbm": -35,
+        "fRF": 5800000000.0,
+        "fRF2": 5800000000.0,
+        "tone2Scale": 0,
+        "rfScale": 1
+      },
+      "analyses": {
+        "tran": {
+          "stop": 2.5e-08,
+          "maxstep": 2e-12,
+          "strobeperiod": 5e-12,
+          "errpreset": "conservative"
+        }
+      }
+    },
+    {
+      "test_name": "active_compression_04",
+      "circuit": "active",
+      "kind": "active",
+      "cell": "active_tb",
+      "library": "HW09_Mixers",
+      "view": "schematic",
+      "stage": "compression",
+      "label": "compression_04",
+      "trace_names": {
+        "supply_current": "VDD:p"
+      },
+      "pin_dbm": -30,
+      "two_tone": false,
+      "settle_s": 5e-09,
+      "window_s": 2e-08,
+      "strobe_s": 5e-12,
+      "maxstep_s": 2e-12,
+      "reltol": 1e-05,
+      "variables": {
+        "pinDbm": -30,
+        "fRF": 5800000000.0,
+        "fRF2": 5800000000.0,
+        "tone2Scale": 0,
+        "rfScale": 1
+      },
+      "analyses": {
+        "tran": {
+          "stop": 2.5e-08,
+          "maxstep": 2e-12,
+          "strobeperiod": 5e-12,
+          "errpreset": "conservative"
+        }
+      }
+    },
+    {
+      "test_name": "active_compression_05",
+      "circuit": "active",
+      "kind": "active",
+      "cell": "active_tb",
+      "library": "HW09_Mixers",
+      "view": "schematic",
+      "stage": "compression",
+      "label": "compression_05",
+      "trace_names": {
+        "supply_current": "VDD:p"
+      },
+      "pin_dbm": -25,
+      "two_tone": false,
+      "settle_s": 5e-09,
+      "window_s": 2e-08,
+      "strobe_s": 5e-12,
+      "maxstep_s": 2e-12,
+      "reltol": 1e-05,
+      "variables": {
+        "pinDbm": -25,
+        "fRF": 5800000000.0,
+        "fRF2": 5800000000.0,
+        "tone2Scale": 0,
+        "rfScale": 1
+      },
+      "analyses": {
+        "tran": {
+          "stop": 2.5e-08,
+          "maxstep": 2e-12,
+          "strobeperiod": 5e-12,
+          "errpreset": "conservative"
+        }
+      }
+    },
+    {
+      "test_name": "active_compression_06",
+      "circuit": "active",
+      "kind": "active",
+      "cell": "active_tb",
+      "library": "HW09_Mixers",
+      "view": "schematic",
+      "stage": "compression",
+      "label": "compression_06",
+      "trace_names": {
+        "supply_current": "VDD:p"
+      },
+      "pin_dbm": -20,
+      "two_tone": false,
+      "settle_s": 5e-09,
+      "window_s": 2e-08,
+      "strobe_s": 5e-12,
+      "maxstep_s": 2e-12,
+      "reltol": 1e-05,
+      "variables": {
+        "pinDbm": -20,
+        "fRF": 5800000000.0,
+        "fRF2": 5800000000.0,
+        "tone2Scale": 0,
+        "rfScale": 1
+      },
+      "analyses": {
+        "tran": {
+          "stop": 2.5e-08,
+          "maxstep": 2e-12,
+          "strobeperiod": 5e-12,
+          "errpreset": "conservative"
+        }
+      }
+    },
+    {
+      "test_name": "active_compression_07",
+      "circuit": "active",
+      "kind": "active",
+      "cell": "active_tb",
+      "library": "HW09_Mixers",
+      "view": "schematic",
+      "stage": "compression",
+      "label": "compression_07",
+      "trace_names": {
+        "supply_current": "VDD:p"
+      },
+      "pin_dbm": -17.5,
+      "two_tone": false,
+      "settle_s": 5e-09,
+      "window_s": 2e-08,
+      "strobe_s": 5e-12,
+      "maxstep_s": 2e-12,
+      "reltol": 1e-05,
+      "variables": {
+        "pinDbm": -17.5,
+        "fRF": 5800000000.0,
+        "fRF2": 5800000000.0,
+        "tone2Scale": 0,
+        "rfScale": 1
+      },
+      "analyses": {
+        "tran": {
+          "stop": 2.5e-08,
+          "maxstep": 2e-12,
+          "strobeperiod": 5e-12,
+          "errpreset": "conservative"
+        }
+      }
+    },
+    {
+      "test_name": "active_compression_08",
+      "circuit": "active",
+      "kind": "active",
+      "cell": "active_tb",
+      "library": "HW09_Mixers",
+      "view": "schematic",
+      "stage": "compression",
+      "label": "compression_08",
+      "trace_names": {
+        "supply_current": "VDD:p"
+      },
+      "pin_dbm": -16.25,
+      "two_tone": false,
+      "settle_s": 5e-09,
+      "window_s": 2e-08,
+      "strobe_s": 5e-12,
+      "maxstep_s": 2e-12,
+      "reltol": 1e-05,
+      "variables": {
+        "pinDbm": -16.25,
+        "fRF": 5800000000.0,
+        "fRF2": 5800000000.0,
+        "tone2Scale": 0,
+        "rfScale": 1
+      },
+      "analyses": {
+        "tran": {
+          "stop": 2.5e-08,
+          "maxstep": 2e-12,
+          "strobeperiod": 5e-12,
+          "errpreset": "conservative"
+        }
+      }
+    },
+    {
+      "test_name": "active_compression_09",
+      "circuit": "active",
+      "kind": "active",
+      "cell": "active_tb",
+      "library": "HW09_Mixers",
+      "view": "schematic",
+      "stage": "compression",
+      "label": "compression_09",
+      "trace_names": {
+        "supply_current": "VDD:p"
+      },
+      "pin_dbm": -15.625,
+      "two_tone": false,
+      "settle_s": 5e-09,
+      "window_s": 2e-08,
+      "strobe_s": 5e-12,
+      "maxstep_s": 2e-12,
+      "reltol": 1e-05,
+      "variables": {
+        "pinDbm": -15.625,
+        "fRF": 5800000000.0,
+        "fRF2": 5800000000.0,
+        "tone2Scale": 0,
+        "rfScale": 1
+      },
+      "analyses": {
+        "tran": {
+          "stop": 2.5e-08,
+          "maxstep": 2e-12,
+          "strobeperiod": 5e-12,
+          "errpreset": "conservative"
+        }
+      }
+    },
+    {
+      "test_name": "active_compression_10",
+      "circuit": "active",
+      "kind": "active",
+      "cell": "active_tb",
+      "library": "HW09_Mixers",
+      "view": "schematic",
+      "stage": "compression",
+      "label": "compression_10",
+      "trace_names": {
+        "supply_current": "VDD:p"
+      },
+      "pin_dbm": -15.46875,
+      "two_tone": false,
+      "settle_s": 5e-09,
+      "window_s": 2e-08,
+      "strobe_s": 5e-12,
+      "maxstep_s": 2e-12,
+      "reltol": 1e-05,
+      "variables": {
+        "pinDbm": -15.46875,
+        "fRF": 5800000000.0,
+        "fRF2": 5800000000.0,
+        "tone2Scale": 0,
+        "rfScale": 1
+      },
+      "analyses": {
+        "tran": {
+          "stop": 2.5e-08,
+          "maxstep": 2e-12,
+          "strobeperiod": 5e-12,
+          "errpreset": "conservative"
+        }
+      }
+    },
+    {
+      "test_name": "active_compression_11",
+      "circuit": "active",
+      "kind": "active",
+      "cell": "active_tb",
+      "library": "HW09_Mixers",
+      "view": "schematic",
+      "stage": "compression",
+      "label": "compression_11",
+      "trace_names": {
+        "supply_current": "VDD:p"
+      },
+      "pin_dbm": -15.15625,
+      "two_tone": false,
+      "settle_s": 5e-09,
+      "window_s": 2e-08,
+      "strobe_s": 5e-12,
+      "maxstep_s": 2e-12,
+      "reltol": 1e-05,
+      "variables": {
+        "pinDbm": -15.15625,
+        "fRF": 5800000000.0,
+        "fRF2": 5800000000.0,
+        "tone2Scale": 0,
+        "rfScale": 1
+      },
+      "analyses": {
+        "tran": {
+          "stop": 2.5e-08,
+          "maxstep": 2e-12,
+          "strobeperiod": 5e-12,
+          "errpreset": "conservative"
+        }
+      }
+    },
+    {
+      "test_name": "active_compression_12",
+      "circuit": "active",
+      "kind": "active",
+      "cell": "active_tb",
+      "library": "HW09_Mixers",
+      "view": "schematic",
+      "stage": "compression",
+      "label": "compression_12",
+      "trace_names": {
+        "supply_current": "VDD:p"
+      },
+      "pin_dbm": -15,
+      "two_tone": false,
+      "settle_s": 5e-09,
+      "window_s": 2e-08,
+      "strobe_s": 5e-12,
+      "maxstep_s": 2e-12,
+      "reltol": 1e-05,
+      "variables": {
+        "pinDbm": -15,
+        "fRF": 5800000000.0,
+        "fRF2": 5800000000.0,
+        "tone2Scale": 0,
+        "rfScale": 1
+      },
+      "analyses": {
+        "tran": {
+          "stop": 2.5e-08,
+          "maxstep": 2e-12,
+          "strobeperiod": 5e-12,
+          "errpreset": "conservative"
+        }
+      }
+    },
+    {
+      "test_name": "active_compression_13",
+      "circuit": "active",
+      "kind": "active",
+      "cell": "active_tb",
+      "library": "HW09_Mixers",
+      "view": "schematic",
+      "stage": "compression",
+      "label": "compression_13",
+      "trace_names": {
+        "supply_current": "VDD:p"
+      },
+      "pin_dbm": -10,
+      "two_tone": false,
+      "settle_s": 5e-09,
+      "window_s": 2e-08,
+      "strobe_s": 5e-12,
+      "maxstep_s": 2e-12,
+      "reltol": 1e-05,
+      "variables": {
+        "pinDbm": -10,
+        "fRF": 5800000000.0,
+        "fRF2": 5800000000.0,
+        "tone2Scale": 0,
+        "rfScale": 1
+      },
+      "analyses": {
+        "tran": {
+          "stop": 2.5e-08,
+          "maxstep": 2e-12,
+          "strobeperiod": 5e-12,
+          "errpreset": "conservative"
+        }
+      }
+    },
+    {
+      "test_name": "active_two_tone_00",
+      "circuit": "active",
+      "kind": "active",
+      "cell": "active_tb",
+      "library": "HW09_Mixers",
+      "view": "schematic",
+      "stage": "two_tone",
+      "label": "two_tone_00",
+      "trace_names": {
+        "supply_current": "VDD:p"
+      },
+      "pin_dbm": -50,
+      "two_tone": true,
+      "settle_s": 2e-08,
+      "window_s": 1e-07,
+      "strobe_s": 5e-12,
+      "maxstep_s": 2e-12,
+      "reltol": 1e-05,
+      "variables": {
+        "pinDbm": -50,
+        "fRF": 5790000000.0,
+        "fRF2": 5810000000.0,
+        "tone2Scale": 1,
+        "rfScale": 1
+      },
+      "analyses": {
+        "tran": {
+          "stop": 1.2e-07,
+          "maxstep": 2e-12,
+          "strobeperiod": 5e-12,
+          "errpreset": "conservative"
+        }
+      }
+    },
+    {
+      "test_name": "active_two_tone_01",
+      "circuit": "active",
+      "kind": "active",
+      "cell": "active_tb",
+      "library": "HW09_Mixers",
+      "view": "schematic",
+      "stage": "two_tone",
+      "label": "two_tone_01",
+      "trace_names": {
+        "supply_current": "VDD:p"
+      },
+      "pin_dbm": -45,
+      "two_tone": true,
+      "settle_s": 2e-08,
+      "window_s": 1e-07,
+      "strobe_s": 5e-12,
+      "maxstep_s": 2e-12,
+      "reltol": 1e-05,
+      "variables": {
+        "pinDbm": -45,
+        "fRF": 5790000000.0,
+        "fRF2": 5810000000.0,
+        "tone2Scale": 1,
+        "rfScale": 1
+      },
+      "analyses": {
+        "tran": {
+          "stop": 1.2e-07,
+          "maxstep": 2e-12,
+          "strobeperiod": 5e-12,
+          "errpreset": "conservative"
+        }
+      }
+    },
+    {
+      "test_name": "active_two_tone_02",
+      "circuit": "active",
+      "kind": "active",
+      "cell": "active_tb",
+      "library": "HW09_Mixers",
+      "view": "schematic",
+      "stage": "two_tone",
+      "label": "two_tone_02",
+      "trace_names": {
+        "supply_current": "VDD:p"
+      },
+      "pin_dbm": -40,
+      "two_tone": true,
+      "settle_s": 2e-08,
+      "window_s": 1e-07,
+      "strobe_s": 5e-12,
+      "maxstep_s": 2e-12,
+      "reltol": 1e-05,
+      "variables": {
+        "pinDbm": -40,
+        "fRF": 5790000000.0,
+        "fRF2": 5810000000.0,
+        "tone2Scale": 1,
+        "rfScale": 1
+      },
+      "analyses": {
+        "tran": {
+          "stop": 1.2e-07,
+          "maxstep": 2e-12,
+          "strobeperiod": 5e-12,
+          "errpreset": "conservative"
+        }
+      }
+    },
+    {
+      "test_name": "active_two_tone_03",
+      "circuit": "active",
+      "kind": "active",
+      "cell": "active_tb",
+      "library": "HW09_Mixers",
+      "view": "schematic",
+      "stage": "two_tone",
+      "label": "two_tone_03",
+      "trace_names": {
+        "supply_current": "VDD:p"
+      },
+      "pin_dbm": -35,
+      "two_tone": true,
+      "settle_s": 2e-08,
+      "window_s": 1e-07,
+      "strobe_s": 5e-12,
+      "maxstep_s": 2e-12,
+      "reltol": 1e-05,
+      "variables": {
+        "pinDbm": -35,
+        "fRF": 5790000000.0,
+        "fRF2": 5810000000.0,
+        "tone2Scale": 1,
+        "rfScale": 1
+      },
+      "analyses": {
+        "tran": {
+          "stop": 1.2e-07,
+          "maxstep": 2e-12,
+          "strobeperiod": 5e-12,
+          "errpreset": "conservative"
+        }
+      }
+    },
+    {
+      "test_name": "active_two_tone_04",
+      "circuit": "active",
+      "kind": "active",
+      "cell": "active_tb",
+      "library": "HW09_Mixers",
+      "view": "schematic",
+      "stage": "two_tone",
+      "label": "two_tone_04",
+      "trace_names": {
+        "supply_current": "VDD:p"
+      },
+      "pin_dbm": -30,
+      "two_tone": true,
+      "settle_s": 2e-08,
+      "window_s": 1e-07,
+      "strobe_s": 5e-12,
+      "maxstep_s": 2e-12,
+      "reltol": 1e-05,
+      "variables": {
+        "pinDbm": -30,
+        "fRF": 5790000000.0,
+        "fRF2": 5810000000.0,
+        "tone2Scale": 1,
+        "rfScale": 1
+      },
+      "analyses": {
+        "tran": {
+          "stop": 1.2e-07,
+          "maxstep": 2e-12,
+          "strobeperiod": 5e-12,
+          "errpreset": "conservative"
+        }
+      }
+    },
+    {
+      "test_name": "active_two_tone_05",
+      "circuit": "active",
+      "kind": "active",
+      "cell": "active_tb",
+      "library": "HW09_Mixers",
+      "view": "schematic",
+      "stage": "two_tone",
+      "label": "two_tone_05",
+      "trace_names": {
+        "supply_current": "VDD:p"
+      },
+      "pin_dbm": -25,
+      "two_tone": true,
+      "settle_s": 2e-08,
+      "window_s": 1e-07,
+      "strobe_s": 5e-12,
+      "maxstep_s": 2e-12,
+      "reltol": 1e-05,
+      "variables": {
+        "pinDbm": -25,
+        "fRF": 5790000000.0,
+        "fRF2": 5810000000.0,
+        "tone2Scale": 1,
+        "rfScale": 1
+      },
+      "analyses": {
+        "tran": {
+          "stop": 1.2e-07,
+          "maxstep": 2e-12,
+          "strobeperiod": 5e-12,
+          "errpreset": "conservative"
+        }
+      }
+    },
+    {
+      "test_name": "active_two_tone_06",
+      "circuit": "active",
+      "kind": "active",
+      "cell": "active_tb",
+      "library": "HW09_Mixers",
+      "view": "schematic",
+      "stage": "two_tone",
+      "label": "two_tone_06",
+      "trace_names": {
+        "supply_current": "VDD:p"
+      },
+      "pin_dbm": -20,
+      "two_tone": true,
+      "settle_s": 2e-08,
+      "window_s": 1e-07,
+      "strobe_s": 5e-12,
+      "maxstep_s": 2e-12,
+      "reltol": 1e-05,
+      "variables": {
+        "pinDbm": -20,
+        "fRF": 5790000000.0,
+        "fRF2": 5810000000.0,
+        "tone2Scale": 1,
+        "rfScale": 1
+      },
+      "analyses": {
+        "tran": {
+          "stop": 1.2e-07,
+          "maxstep": 2e-12,
+          "strobeperiod": 5e-12,
+          "errpreset": "conservative"
+        }
+      }
+    },
+    {
+      "test_name": "active_two_tone_tight",
+      "circuit": "active",
+      "kind": "active",
+      "cell": "active_tb",
+      "library": "HW09_Mixers",
+      "view": "schematic",
+      "stage": "tight_two_tone",
+      "label": "two_tone_tight",
+      "trace_names": {
+        "supply_current": "VDD:p"
+      },
+      "pin_dbm": -35,
+      "two_tone": true,
+      "settle_s": 2e-08,
+      "window_s": 1e-07,
+      "strobe_s": 5e-12,
+      "maxstep_s": 1e-12,
+      "reltol": 1e-06,
+      "variables": {
+        "pinDbm": -35,
+        "fRF": 5790000000.0,
+        "fRF2": 5810000000.0,
+        "tone2Scale": 1,
+        "rfScale": 1
+      },
+      "analyses": {
+        "tran": {
+          "stop": 1.2e-07,
+          "maxstep": 1e-12,
+          "strobeperiod": 5e-12,
+          "errpreset": "conservative"
+        }
+      }
+    },
+    {
+      "test_name": "passive_single_tone",
+      "circuit": "passive",
+      "kind": "passive",
+      "cell": "passive_tb",
+      "library": "HW09_Mixers",
+      "view": "schematic",
+      "stage": "single_tone",
+      "label": "single_tone",
+      "trace_names": {},
+      "pin_dbm": -55,
+      "two_tone": false,
+      "settle_s": 5e-09,
+      "window_s": 2e-08,
+      "strobe_s": 5e-12,
+      "maxstep_s": 2e-12,
+      "reltol": 1e-05,
+      "variables": {
+        "pinDbm": -55,
+        "fRF": 5800000000.0,
+        "fRF2": 5800000000.0,
+        "tone2Scale": 0,
+        "rfScale": 1
+      },
+      "analyses": {
+        "tran": {
+          "stop": 2.5e-08,
+          "maxstep": 2e-12,
+          "strobeperiod": 5e-12,
+          "errpreset": "conservative"
+        }
+      }
+    },
+    {
+      "test_name": "passive_single_window_check",
+      "circuit": "passive",
+      "kind": "passive",
+      "cell": "passive_tb",
+      "library": "HW09_Mixers",
+      "view": "schematic",
+      "stage": "single_reference",
+      "label": "single_window_check",
+      "trace_names": {},
+      "pin_dbm": -55,
+      "two_tone": false,
+      "settle_s": 2e-08,
+      "window_s": 1e-07,
+      "strobe_s": 5e-12,
+      "maxstep_s": 2e-12,
+      "reltol": 1e-05,
+      "variables": {
+        "pinDbm": -55,
+        "fRF": 5800000000.0,
+        "fRF2": 5800000000.0,
+        "tone2Scale": 0,
+        "rfScale": 1
+      },
+      "analyses": {
+        "tran": {
+          "stop": 1.2e-07,
+          "maxstep": 2e-12,
+          "strobeperiod": 5e-12,
+          "errpreset": "conservative"
+        }
+      }
+    },
+    {
+      "test_name": "passive_compression_00",
+      "circuit": "passive",
+      "kind": "passive",
+      "cell": "passive_tb",
+      "library": "HW09_Mixers",
+      "view": "schematic",
+      "stage": "compression",
+      "label": "compression_00",
+      "trace_names": {},
+      "pin_dbm": -60,
+      "two_tone": false,
+      "settle_s": 5e-09,
+      "window_s": 2e-08,
+      "strobe_s": 5e-12,
+      "maxstep_s": 2e-12,
+      "reltol": 1e-05,
+      "variables": {
+        "pinDbm": -60,
+        "fRF": 5800000000.0,
+        "fRF2": 5800000000.0,
+        "tone2Scale": 0,
+        "rfScale": 1
+      },
+      "analyses": {
+        "tran": {
+          "stop": 2.5e-08,
+          "maxstep": 2e-12,
+          "strobeperiod": 5e-12,
+          "errpreset": "conservative"
+        }
+      }
+    },
+    {
+      "test_name": "passive_compression_01",
+      "circuit": "passive",
+      "kind": "passive",
+      "cell": "passive_tb",
+      "library": "HW09_Mixers",
+      "view": "schematic",
+      "stage": "compression",
+      "label": "compression_01",
+      "trace_names": {},
+      "pin_dbm": -50,
+      "two_tone": false,
+      "settle_s": 5e-09,
+      "window_s": 2e-08,
+      "strobe_s": 5e-12,
+      "maxstep_s": 2e-12,
+      "reltol": 1e-05,
+      "variables": {
+        "pinDbm": -50,
+        "fRF": 5800000000.0,
+        "fRF2": 5800000000.0,
+        "tone2Scale": 0,
+        "rfScale": 1
+      },
+      "analyses": {
+        "tran": {
+          "stop": 2.5e-08,
+          "maxstep": 2e-12,
+          "strobeperiod": 5e-12,
+          "errpreset": "conservative"
+        }
+      }
+    },
+    {
+      "test_name": "passive_compression_02",
+      "circuit": "passive",
+      "kind": "passive",
+      "cell": "passive_tb",
+      "library": "HW09_Mixers",
+      "view": "schematic",
+      "stage": "compression",
+      "label": "compression_02",
+      "trace_names": {},
+      "pin_dbm": -40,
+      "two_tone": false,
+      "settle_s": 5e-09,
+      "window_s": 2e-08,
+      "strobe_s": 5e-12,
+      "maxstep_s": 2e-12,
+      "reltol": 1e-05,
+      "variables": {
+        "pinDbm": -40,
+        "fRF": 5800000000.0,
+        "fRF2": 5800000000.0,
+        "tone2Scale": 0,
+        "rfScale": 1
+      },
+      "analyses": {
+        "tran": {
+          "stop": 2.5e-08,
+          "maxstep": 2e-12,
+          "strobeperiod": 5e-12,
+          "errpreset": "conservative"
+        }
+      }
+    },
+    {
+      "test_name": "passive_compression_03",
+      "circuit": "passive",
+      "kind": "passive",
+      "cell": "passive_tb",
+      "library": "HW09_Mixers",
+      "view": "schematic",
+      "stage": "compression",
+      "label": "compression_03",
+      "trace_names": {},
+      "pin_dbm": -35,
+      "two_tone": false,
+      "settle_s": 5e-09,
+      "window_s": 2e-08,
+      "strobe_s": 5e-12,
+      "maxstep_s": 2e-12,
+      "reltol": 1e-05,
+      "variables": {
+        "pinDbm": -35,
+        "fRF": 5800000000.0,
+        "fRF2": 5800000000.0,
+        "tone2Scale": 0,
+        "rfScale": 1
+      },
+      "analyses": {
+        "tran": {
+          "stop": 2.5e-08,
+          "maxstep": 2e-12,
+          "strobeperiod": 5e-12,
+          "errpreset": "conservative"
+        }
+      }
+    },
+    {
+      "test_name": "passive_compression_04",
+      "circuit": "passive",
+      "kind": "passive",
+      "cell": "passive_tb",
+      "library": "HW09_Mixers",
+      "view": "schematic",
+      "stage": "compression",
+      "label": "compression_04",
+      "trace_names": {},
+      "pin_dbm": -30,
+      "two_tone": false,
+      "settle_s": 5e-09,
+      "window_s": 2e-08,
+      "strobe_s": 5e-12,
+      "maxstep_s": 2e-12,
+      "reltol": 1e-05,
+      "variables": {
+        "pinDbm": -30,
+        "fRF": 5800000000.0,
+        "fRF2": 5800000000.0,
+        "tone2Scale": 0,
+        "rfScale": 1
+      },
+      "analyses": {
+        "tran": {
+          "stop": 2.5e-08,
+          "maxstep": 2e-12,
+          "strobeperiod": 5e-12,
+          "errpreset": "conservative"
+        }
+      }
+    },
+    {
+      "test_name": "passive_compression_05",
+      "circuit": "passive",
+      "kind": "passive",
+      "cell": "passive_tb",
+      "library": "HW09_Mixers",
+      "view": "schematic",
+      "stage": "compression",
+      "label": "compression_05",
+      "trace_names": {},
+      "pin_dbm": -25,
+      "two_tone": false,
+      "settle_s": 5e-09,
+      "window_s": 2e-08,
+      "strobe_s": 5e-12,
+      "maxstep_s": 2e-12,
+      "reltol": 1e-05,
+      "variables": {
+        "pinDbm": -25,
+        "fRF": 5800000000.0,
+        "fRF2": 5800000000.0,
+        "tone2Scale": 0,
+        "rfScale": 1
+      },
+      "analyses": {
+        "tran": {
+          "stop": 2.5e-08,
+          "maxstep": 2e-12,
+          "strobeperiod": 5e-12,
+          "errpreset": "conservative"
+        }
+      }
+    },
+    {
+      "test_name": "passive_compression_06",
+      "circuit": "passive",
+      "kind": "passive",
+      "cell": "passive_tb",
+      "library": "HW09_Mixers",
+      "view": "schematic",
+      "stage": "compression",
+      "label": "compression_06",
+      "trace_names": {},
+      "pin_dbm": -20,
+      "two_tone": false,
+      "settle_s": 5e-09,
+      "window_s": 2e-08,
+      "strobe_s": 5e-12,
+      "maxstep_s": 2e-12,
+      "reltol": 1e-05,
+      "variables": {
+        "pinDbm": -20,
+        "fRF": 5800000000.0,
+        "fRF2": 5800000000.0,
+        "tone2Scale": 0,
+        "rfScale": 1
+      },
+      "analyses": {
+        "tran": {
+          "stop": 2.5e-08,
+          "maxstep": 2e-12,
+          "strobeperiod": 5e-12,
+          "errpreset": "conservative"
+        }
+      }
+    },
+    {
+      "test_name": "passive_compression_07",
+      "circuit": "passive",
+      "kind": "passive",
+      "cell": "passive_tb",
+      "library": "HW09_Mixers",
+      "view": "schematic",
+      "stage": "compression",
+      "label": "compression_07",
+      "trace_names": {},
+      "pin_dbm": -17.5,
+      "two_tone": false,
+      "settle_s": 5e-09,
+      "window_s": 2e-08,
+      "strobe_s": 5e-12,
+      "maxstep_s": 2e-12,
+      "reltol": 1e-05,
+      "variables": {
+        "pinDbm": -17.5,
+        "fRF": 5800000000.0,
+        "fRF2": 5800000000.0,
+        "tone2Scale": 0,
+        "rfScale": 1
+      },
+      "analyses": {
+        "tran": {
+          "stop": 2.5e-08,
+          "maxstep": 2e-12,
+          "strobeperiod": 5e-12,
+          "errpreset": "conservative"
+        }
+      }
+    },
+    {
+      "test_name": "passive_compression_08",
+      "circuit": "passive",
+      "kind": "passive",
+      "cell": "passive_tb",
+      "library": "HW09_Mixers",
+      "view": "schematic",
+      "stage": "compression",
+      "label": "compression_08",
+      "trace_names": {},
+      "pin_dbm": -16.25,
+      "two_tone": false,
+      "settle_s": 5e-09,
+      "window_s": 2e-08,
+      "strobe_s": 5e-12,
+      "maxstep_s": 2e-12,
+      "reltol": 1e-05,
+      "variables": {
+        "pinDbm": -16.25,
+        "fRF": 5800000000.0,
+        "fRF2": 5800000000.0,
+        "tone2Scale": 0,
+        "rfScale": 1
+      },
+      "analyses": {
+        "tran": {
+          "stop": 2.5e-08,
+          "maxstep": 2e-12,
+          "strobeperiod": 5e-12,
+          "errpreset": "conservative"
+        }
+      }
+    },
+    {
+      "test_name": "passive_compression_09",
+      "circuit": "passive",
+      "kind": "passive",
+      "cell": "passive_tb",
+      "library": "HW09_Mixers",
+      "view": "schematic",
+      "stage": "compression",
+      "label": "compression_09",
+      "trace_names": {},
+      "pin_dbm": -15.625,
+      "two_tone": false,
+      "settle_s": 5e-09,
+      "window_s": 2e-08,
+      "strobe_s": 5e-12,
+      "maxstep_s": 2e-12,
+      "reltol": 1e-05,
+      "variables": {
+        "pinDbm": -15.625,
+        "fRF": 5800000000.0,
+        "fRF2": 5800000000.0,
+        "tone2Scale": 0,
+        "rfScale": 1
+      },
+      "analyses": {
+        "tran": {
+          "stop": 2.5e-08,
+          "maxstep": 2e-12,
+          "strobeperiod": 5e-12,
+          "errpreset": "conservative"
+        }
+      }
+    },
+    {
+      "test_name": "passive_compression_10",
+      "circuit": "passive",
+      "kind": "passive",
+      "cell": "passive_tb",
+      "library": "HW09_Mixers",
+      "view": "schematic",
+      "stage": "compression",
+      "label": "compression_10",
+      "trace_names": {},
+      "pin_dbm": -15.46875,
+      "two_tone": false,
+      "settle_s": 5e-09,
+      "window_s": 2e-08,
+      "strobe_s": 5e-12,
+      "maxstep_s": 2e-12,
+      "reltol": 1e-05,
+      "variables": {
+        "pinDbm": -15.46875,
+        "fRF": 5800000000.0,
+        "fRF2": 5800000000.0,
+        "tone2Scale": 0,
+        "rfScale": 1
+      },
+      "analyses": {
+        "tran": {
+          "stop": 2.5e-08,
+          "maxstep": 2e-12,
+          "strobeperiod": 5e-12,
+          "errpreset": "conservative"
+        }
+      }
+    },
+    {
+      "test_name": "passive_compression_11",
+      "circuit": "passive",
+      "kind": "passive",
+      "cell": "passive_tb",
+      "library": "HW09_Mixers",
+      "view": "schematic",
+      "stage": "compression",
+      "label": "compression_11",
+      "trace_names": {},
+      "pin_dbm": -15.15625,
+      "two_tone": false,
+      "settle_s": 5e-09,
+      "window_s": 2e-08,
+      "strobe_s": 5e-12,
+      "maxstep_s": 2e-12,
+      "reltol": 1e-05,
+      "variables": {
+        "pinDbm": -15.15625,
+        "fRF": 5800000000.0,
+        "fRF2": 5800000000.0,
+        "tone2Scale": 0,
+        "rfScale": 1
+      },
+      "analyses": {
+        "tran": {
+          "stop": 2.5e-08,
+          "maxstep": 2e-12,
+          "strobeperiod": 5e-12,
+          "errpreset": "conservative"
+        }
+      }
+    },
+    {
+      "test_name": "passive_compression_12",
+      "circuit": "passive",
+      "kind": "passive",
+      "cell": "passive_tb",
+      "library": "HW09_Mixers",
+      "view": "schematic",
+      "stage": "compression",
+      "label": "compression_12",
+      "trace_names": {},
+      "pin_dbm": -15,
+      "two_tone": false,
+      "settle_s": 5e-09,
+      "window_s": 2e-08,
+      "strobe_s": 5e-12,
+      "maxstep_s": 2e-12,
+      "reltol": 1e-05,
+      "variables": {
+        "pinDbm": -15,
+        "fRF": 5800000000.0,
+        "fRF2": 5800000000.0,
+        "tone2Scale": 0,
+        "rfScale": 1
+      },
+      "analyses": {
+        "tran": {
+          "stop": 2.5e-08,
+          "maxstep": 2e-12,
+          "strobeperiod": 5e-12,
+          "errpreset": "conservative"
+        }
+      }
+    },
+    {
+      "test_name": "passive_compression_13",
+      "circuit": "passive",
+      "kind": "passive",
+      "cell": "passive_tb",
+      "library": "HW09_Mixers",
+      "view": "schematic",
+      "stage": "compression",
+      "label": "compression_13",
+      "trace_names": {},
+      "pin_dbm": -10,
+      "two_tone": false,
+      "settle_s": 5e-09,
+      "window_s": 2e-08,
+      "strobe_s": 5e-12,
+      "maxstep_s": 2e-12,
+      "reltol": 1e-05,
+      "variables": {
+        "pinDbm": -10,
+        "fRF": 5800000000.0,
+        "fRF2": 5800000000.0,
+        "tone2Scale": 0,
+        "rfScale": 1
+      },
+      "analyses": {
+        "tran": {
+          "stop": 2.5e-08,
+          "maxstep": 2e-12,
+          "strobeperiod": 5e-12,
+          "errpreset": "conservative"
+        }
+      }
+    },
+    {
+      "test_name": "passive_two_tone_00",
+      "circuit": "passive",
+      "kind": "passive",
+      "cell": "passive_tb",
+      "library": "HW09_Mixers",
+      "view": "schematic",
+      "stage": "two_tone",
+      "label": "two_tone_00",
+      "trace_names": {},
+      "pin_dbm": -50,
+      "two_tone": true,
+      "settle_s": 2e-08,
+      "window_s": 1e-07,
+      "strobe_s": 5e-12,
+      "maxstep_s": 2e-12,
+      "reltol": 1e-05,
+      "variables": {
+        "pinDbm": -50,
+        "fRF": 5790000000.0,
+        "fRF2": 5810000000.0,
+        "tone2Scale": 1,
+        "rfScale": 1
+      },
+      "analyses": {
+        "tran": {
+          "stop": 1.2e-07,
+          "maxstep": 2e-12,
+          "strobeperiod": 5e-12,
+          "errpreset": "conservative"
+        }
+      }
+    },
+    {
+      "test_name": "passive_two_tone_01",
+      "circuit": "passive",
+      "kind": "passive",
+      "cell": "passive_tb",
+      "library": "HW09_Mixers",
+      "view": "schematic",
+      "stage": "two_tone",
+      "label": "two_tone_01",
+      "trace_names": {},
+      "pin_dbm": -45,
+      "two_tone": true,
+      "settle_s": 2e-08,
+      "window_s": 1e-07,
+      "strobe_s": 5e-12,
+      "maxstep_s": 2e-12,
+      "reltol": 1e-05,
+      "variables": {
+        "pinDbm": -45,
+        "fRF": 5790000000.0,
+        "fRF2": 5810000000.0,
+        "tone2Scale": 1,
+        "rfScale": 1
+      },
+      "analyses": {
+        "tran": {
+          "stop": 1.2e-07,
+          "maxstep": 2e-12,
+          "strobeperiod": 5e-12,
+          "errpreset": "conservative"
+        }
+      }
+    },
+    {
+      "test_name": "passive_two_tone_02",
+      "circuit": "passive",
+      "kind": "passive",
+      "cell": "passive_tb",
+      "library": "HW09_Mixers",
+      "view": "schematic",
+      "stage": "two_tone",
+      "label": "two_tone_02",
+      "trace_names": {},
+      "pin_dbm": -40,
+      "two_tone": true,
+      "settle_s": 2e-08,
+      "window_s": 1e-07,
+      "strobe_s": 5e-12,
+      "maxstep_s": 2e-12,
+      "reltol": 1e-05,
+      "variables": {
+        "pinDbm": -40,
+        "fRF": 5790000000.0,
+        "fRF2": 5810000000.0,
+        "tone2Scale": 1,
+        "rfScale": 1
+      },
+      "analyses": {
+        "tran": {
+          "stop": 1.2e-07,
+          "maxstep": 2e-12,
+          "strobeperiod": 5e-12,
+          "errpreset": "conservative"
+        }
+      }
+    },
+    {
+      "test_name": "passive_two_tone_03",
+      "circuit": "passive",
+      "kind": "passive",
+      "cell": "passive_tb",
+      "library": "HW09_Mixers",
+      "view": "schematic",
+      "stage": "two_tone",
+      "label": "two_tone_03",
+      "trace_names": {},
+      "pin_dbm": -35,
+      "two_tone": true,
+      "settle_s": 2e-08,
+      "window_s": 1e-07,
+      "strobe_s": 5e-12,
+      "maxstep_s": 2e-12,
+      "reltol": 1e-05,
+      "variables": {
+        "pinDbm": -35,
+        "fRF": 5790000000.0,
+        "fRF2": 5810000000.0,
+        "tone2Scale": 1,
+        "rfScale": 1
+      },
+      "analyses": {
+        "tran": {
+          "stop": 1.2e-07,
+          "maxstep": 2e-12,
+          "strobeperiod": 5e-12,
+          "errpreset": "conservative"
+        }
+      }
+    },
+    {
+      "test_name": "passive_two_tone_04",
+      "circuit": "passive",
+      "kind": "passive",
+      "cell": "passive_tb",
+      "library": "HW09_Mixers",
+      "view": "schematic",
+      "stage": "two_tone",
+      "label": "two_tone_04",
+      "trace_names": {},
+      "pin_dbm": -30,
+      "two_tone": true,
+      "settle_s": 2e-08,
+      "window_s": 1e-07,
+      "strobe_s": 5e-12,
+      "maxstep_s": 2e-12,
+      "reltol": 1e-05,
+      "variables": {
+        "pinDbm": -30,
+        "fRF": 5790000000.0,
+        "fRF2": 5810000000.0,
+        "tone2Scale": 1,
+        "rfScale": 1
+      },
+      "analyses": {
+        "tran": {
+          "stop": 1.2e-07,
+          "maxstep": 2e-12,
+          "strobeperiod": 5e-12,
+          "errpreset": "conservative"
+        }
+      }
+    },
+    {
+      "test_name": "passive_two_tone_05",
+      "circuit": "passive",
+      "kind": "passive",
+      "cell": "passive_tb",
+      "library": "HW09_Mixers",
+      "view": "schematic",
+      "stage": "two_tone",
+      "label": "two_tone_05",
+      "trace_names": {},
+      "pin_dbm": -25,
+      "two_tone": true,
+      "settle_s": 2e-08,
+      "window_s": 1e-07,
+      "strobe_s": 5e-12,
+      "maxstep_s": 2e-12,
+      "reltol": 1e-05,
+      "variables": {
+        "pinDbm": -25,
+        "fRF": 5790000000.0,
+        "fRF2": 5810000000.0,
+        "tone2Scale": 1,
+        "rfScale": 1
+      },
+      "analyses": {
+        "tran": {
+          "stop": 1.2e-07,
+          "maxstep": 2e-12,
+          "strobeperiod": 5e-12,
+          "errpreset": "conservative"
+        }
+      }
+    },
+    {
+      "test_name": "passive_two_tone_06",
+      "circuit": "passive",
+      "kind": "passive",
+      "cell": "passive_tb",
+      "library": "HW09_Mixers",
+      "view": "schematic",
+      "stage": "two_tone",
+      "label": "two_tone_06",
+      "trace_names": {},
+      "pin_dbm": -20,
+      "two_tone": true,
+      "settle_s": 2e-08,
+      "window_s": 1e-07,
+      "strobe_s": 5e-12,
+      "maxstep_s": 2e-12,
+      "reltol": 1e-05,
+      "variables": {
+        "pinDbm": -20,
+        "fRF": 5790000000.0,
+        "fRF2": 5810000000.0,
+        "tone2Scale": 1,
+        "rfScale": 1
+      },
+      "analyses": {
+        "tran": {
+          "stop": 1.2e-07,
+          "maxstep": 2e-12,
+          "strobeperiod": 5e-12,
+          "errpreset": "conservative"
+        }
+      }
+    },
+    {
+      "test_name": "passive_two_tone_tight",
+      "circuit": "passive",
+      "kind": "passive",
+      "cell": "passive_tb",
+      "library": "HW09_Mixers",
+      "view": "schematic",
+      "stage": "tight_two_tone",
+      "label": "two_tone_tight",
+      "trace_names": {},
+      "pin_dbm": -35,
+      "two_tone": true,
+      "settle_s": 2e-08,
+      "window_s": 1e-07,
+      "strobe_s": 5e-12,
+      "maxstep_s": 1e-12,
+      "reltol": 1e-06,
+      "variables": {
+        "pinDbm": -35,
+        "fRF": 5790000000.0,
+        "fRF2": 5810000000.0,
+        "tone2Scale": 1,
+        "rfScale": 1
+      },
+      "analyses": {
+        "tran": {
+          "stop": 1.2e-07,
+          "maxstep": 1e-12,
+          "strobeperiod": 5e-12,
+          "errpreset": "conservative"
+        }
+      }
+    },
+    {
+      "test_name": "active_noise_sb15",
+      "circuit": "active",
+      "kind": "active",
+      "cell": "active_tb",
+      "library": "HW09_Mixers",
+      "view": "schematic",
+      "stage": "pnoise",
+      "label": "noise_sb15",
+      "pin_dbm": -55,
+      "rf_scale": 0,
+      "sidebands": 15,
+      "reltol": 1e-05,
+      "variables": {
+        "pinDbm": -55,
+        "fRF": 5800000000.0,
+        "fRF2": 5800000000.0,
+        "rfScale": 0,
+        "tone2Scale": 0
+      },
+      "analyses": {
+        "pss": {
+          "engine": "Shooting",
+          "fund": "5.6G",
+          "harms": "63",
+          "tstab": "5n",
+          "errpreset": "conservative",
+          "method": "gear2only",
+          "maxacfreq": "381.348G"
+        },
+        "pac": {
+          "sweeptype": "absolute",
+          "rangeType": "Start-Stop",
+          "start": "5.7G",
+          "stop": "5.9G",
+          "incrType": "Linear",
+          "stepTypeLin": "Step Size",
+          "step": "100M",
+          "maxsideband": "1",
+          "freqaxis": "in"
+        },
+        "pnoise": {
+          "sweeptype": "absolute",
+          "rangeType": "Start-Stop",
+          "start": "100M",
+          "stop": "300M",
+          "incrType": "Linear",
+          "stepTypeLin": "Step Size",
+          "step": "100M",
+          "maxsideband": "15",
+          "noiseFigure": true,
+          "outType": "voltage",
+          "p": "/outp",
+          "n": "/outn",
+          "inType": "port",
+          "inPort": "/RFPORT",
+          "iprobe": "/RFPORT",
+          "refsideband": "1",
+          "noisetype": "timeaverage"
+        }
+      }
+    },
+    {
+      "test_name": "active_noise_sb31",
+      "circuit": "active",
+      "kind": "active",
+      "cell": "active_tb",
+      "library": "HW09_Mixers",
+      "view": "schematic",
+      "stage": "pnoise",
+      "label": "noise_sb31",
+      "pin_dbm": -55,
+      "rf_scale": 0,
+      "sidebands": 31,
+      "reltol": 1e-05,
+      "variables": {
+        "pinDbm": -55,
+        "fRF": 5800000000.0,
+        "fRF2": 5800000000.0,
+        "rfScale": 0,
+        "tone2Scale": 0
+      },
+      "analyses": {
+        "pss": {
+          "engine": "Shooting",
+          "fund": "5.6G",
+          "harms": "63",
+          "tstab": "5n",
+          "errpreset": "conservative",
+          "method": "gear2only",
+          "maxacfreq": "381.348G"
+        },
+        "pac": {
+          "sweeptype": "absolute",
+          "rangeType": "Start-Stop",
+          "start": "5.7G",
+          "stop": "5.9G",
+          "incrType": "Linear",
+          "stepTypeLin": "Step Size",
+          "step": "100M",
+          "maxsideband": "1",
+          "freqaxis": "in"
+        },
+        "pnoise": {
+          "sweeptype": "absolute",
+          "rangeType": "Start-Stop",
+          "start": "100M",
+          "stop": "300M",
+          "incrType": "Linear",
+          "stepTypeLin": "Step Size",
+          "step": "100M",
+          "maxsideband": "31",
+          "noiseFigure": true,
+          "outType": "voltage",
+          "p": "/outp",
+          "n": "/outn",
+          "inType": "port",
+          "inPort": "/RFPORT",
+          "iprobe": "/RFPORT",
+          "refsideband": "1",
+          "noisetype": "timeaverage"
+        }
+      }
+    },
+    {
+      "test_name": "active_noise_sb63",
+      "circuit": "active",
+      "kind": "active",
+      "cell": "active_tb",
+      "library": "HW09_Mixers",
+      "view": "schematic",
+      "stage": "pnoise",
+      "label": "noise_sb63",
+      "pin_dbm": -55,
+      "rf_scale": 0,
+      "sidebands": 63,
+      "reltol": 1e-05,
+      "variables": {
+        "pinDbm": -55,
+        "fRF": 5800000000.0,
+        "fRF2": 5800000000.0,
+        "rfScale": 0,
+        "tone2Scale": 0
+      },
+      "analyses": {
+        "pss": {
+          "engine": "Shooting",
+          "fund": "5.6G",
+          "harms": "63",
+          "tstab": "5n",
+          "errpreset": "conservative",
+          "method": "gear2only",
+          "maxacfreq": "381.348G"
+        },
+        "pac": {
+          "sweeptype": "absolute",
+          "rangeType": "Start-Stop",
+          "start": "5.7G",
+          "stop": "5.9G",
+          "incrType": "Linear",
+          "stepTypeLin": "Step Size",
+          "step": "100M",
+          "maxsideband": "1",
+          "freqaxis": "in"
+        },
+        "pnoise": {
+          "sweeptype": "absolute",
+          "rangeType": "Start-Stop",
+          "start": "100M",
+          "stop": "300M",
+          "incrType": "Linear",
+          "stepTypeLin": "Step Size",
+          "step": "100M",
+          "maxsideband": "63",
+          "noiseFigure": true,
+          "outType": "voltage",
+          "p": "/outp",
+          "n": "/outn",
+          "inType": "port",
+          "inPort": "/RFPORT",
+          "iprobe": "/RFPORT",
+          "refsideband": "1",
+          "noisetype": "timeaverage"
+        }
+      }
+    },
+    {
+      "test_name": "active_noise_image",
+      "circuit": "active",
+      "kind": "active",
+      "cell": "active_tb",
+      "library": "HW09_Mixers",
+      "view": "schematic",
+      "stage": "pac_image",
+      "label": "noise_image",
+      "pin_dbm": -55,
+      "rf_scale": 0,
+      "reltol": 1e-05,
+      "variables": {
+        "pinDbm": -55,
+        "fRF": 5800000000.0,
+        "fRF2": 5800000000.0,
+        "rfScale": 0,
+        "tone2Scale": 0
+      },
+      "analyses": {
+        "pss": {
+          "engine": "Shooting",
+          "fund": "5.6G",
+          "harms": "63",
+          "tstab": "5n",
+          "errpreset": "conservative",
+          "method": "gear2only",
+          "maxacfreq": "381.348G"
+        },
+        "pac": {
+          "sweeptype": "absolute",
+          "rangeType": "Start-Stop",
+          "start": "5.3G",
+          "stop": "5.5G",
+          "incrType": "Linear",
+          "stepTypeLin": "Step Size",
+          "step": "100M",
+          "maxsideband": "1",
+          "freqaxis": "in"
+        }
+      }
+    },
+    {
+      "test_name": "passive_noise_sb15",
+      "circuit": "passive",
+      "kind": "passive",
+      "cell": "passive_tb",
+      "library": "HW09_Mixers",
+      "view": "schematic",
+      "stage": "pnoise",
+      "label": "noise_sb15",
+      "pin_dbm": -55,
+      "rf_scale": 0,
+      "sidebands": 15,
+      "reltol": 1e-05,
+      "variables": {
+        "pinDbm": -55,
+        "fRF": 5800000000.0,
+        "fRF2": 5800000000.0,
+        "rfScale": 0,
+        "tone2Scale": 0
+      },
+      "analyses": {
+        "pss": {
+          "engine": "Shooting",
+          "fund": "5.6G",
+          "harms": "63",
+          "tstab": "5n",
+          "errpreset": "conservative",
+          "method": "gear2only",
+          "maxacfreq": "381.348G"
+        },
+        "pac": {
+          "sweeptype": "absolute",
+          "rangeType": "Start-Stop",
+          "start": "5.7G",
+          "stop": "5.9G",
+          "incrType": "Linear",
+          "stepTypeLin": "Step Size",
+          "step": "100M",
+          "maxsideband": "1",
+          "freqaxis": "in"
+        },
+        "pnoise": {
+          "sweeptype": "absolute",
+          "rangeType": "Start-Stop",
+          "start": "100M",
+          "stop": "300M",
+          "incrType": "Linear",
+          "stepTypeLin": "Step Size",
+          "step": "100M",
+          "maxsideband": "15",
+          "noiseFigure": true,
+          "outType": "voltage",
+          "p": "/outp",
+          "n": "/outn",
+          "inType": "port",
+          "inPort": "/RFPORT",
+          "iprobe": "/RFPORT",
+          "refsideband": "1",
+          "noisetype": "timeaverage"
+        }
+      }
+    },
+    {
+      "test_name": "passive_noise_sb31",
+      "circuit": "passive",
+      "kind": "passive",
+      "cell": "passive_tb",
+      "library": "HW09_Mixers",
+      "view": "schematic",
+      "stage": "pnoise",
+      "label": "noise_sb31",
+      "pin_dbm": -55,
+      "rf_scale": 0,
+      "sidebands": 31,
+      "reltol": 1e-05,
+      "variables": {
+        "pinDbm": -55,
+        "fRF": 5800000000.0,
+        "fRF2": 5800000000.0,
+        "rfScale": 0,
+        "tone2Scale": 0
+      },
+      "analyses": {
+        "pss": {
+          "engine": "Shooting",
+          "fund": "5.6G",
+          "harms": "63",
+          "tstab": "5n",
+          "errpreset": "conservative",
+          "method": "gear2only",
+          "maxacfreq": "381.348G"
+        },
+        "pac": {
+          "sweeptype": "absolute",
+          "rangeType": "Start-Stop",
+          "start": "5.7G",
+          "stop": "5.9G",
+          "incrType": "Linear",
+          "stepTypeLin": "Step Size",
+          "step": "100M",
+          "maxsideband": "1",
+          "freqaxis": "in"
+        },
+        "pnoise": {
+          "sweeptype": "absolute",
+          "rangeType": "Start-Stop",
+          "start": "100M",
+          "stop": "300M",
+          "incrType": "Linear",
+          "stepTypeLin": "Step Size",
+          "step": "100M",
+          "maxsideband": "31",
+          "noiseFigure": true,
+          "outType": "voltage",
+          "p": "/outp",
+          "n": "/outn",
+          "inType": "port",
+          "inPort": "/RFPORT",
+          "iprobe": "/RFPORT",
+          "refsideband": "1",
+          "noisetype": "timeaverage"
+        }
+      }
+    },
+    {
+      "test_name": "passive_noise_sb63",
+      "circuit": "passive",
+      "kind": "passive",
+      "cell": "passive_tb",
+      "library": "HW09_Mixers",
+      "view": "schematic",
+      "stage": "pnoise",
+      "label": "noise_sb63",
+      "pin_dbm": -55,
+      "rf_scale": 0,
+      "sidebands": 63,
+      "reltol": 1e-05,
+      "variables": {
+        "pinDbm": -55,
+        "fRF": 5800000000.0,
+        "fRF2": 5800000000.0,
+        "rfScale": 0,
+        "tone2Scale": 0
+      },
+      "analyses": {
+        "pss": {
+          "engine": "Shooting",
+          "fund": "5.6G",
+          "harms": "63",
+          "tstab": "5n",
+          "errpreset": "conservative",
+          "method": "gear2only",
+          "maxacfreq": "381.348G"
+        },
+        "pac": {
+          "sweeptype": "absolute",
+          "rangeType": "Start-Stop",
+          "start": "5.7G",
+          "stop": "5.9G",
+          "incrType": "Linear",
+          "stepTypeLin": "Step Size",
+          "step": "100M",
+          "maxsideband": "1",
+          "freqaxis": "in"
+        },
+        "pnoise": {
+          "sweeptype": "absolute",
+          "rangeType": "Start-Stop",
+          "start": "100M",
+          "stop": "300M",
+          "incrType": "Linear",
+          "stepTypeLin": "Step Size",
+          "step": "100M",
+          "maxsideband": "63",
+          "noiseFigure": true,
+          "outType": "voltage",
+          "p": "/outp",
+          "n": "/outn",
+          "inType": "port",
+          "inPort": "/RFPORT",
+          "iprobe": "/RFPORT",
+          "refsideband": "1",
+          "noisetype": "timeaverage"
+        }
+      }
+    },
+    {
+      "test_name": "passive_noise_image",
+      "circuit": "passive",
+      "kind": "passive",
+      "cell": "passive_tb",
+      "library": "HW09_Mixers",
+      "view": "schematic",
+      "stage": "pac_image",
+      "label": "noise_image",
+      "pin_dbm": -55,
+      "rf_scale": 0,
+      "reltol": 1e-05,
+      "variables": {
+        "pinDbm": -55,
+        "fRF": 5800000000.0,
+        "fRF2": 5800000000.0,
+        "rfScale": 0,
+        "tone2Scale": 0
+      },
+      "analyses": {
+        "pss": {
+          "engine": "Shooting",
+          "fund": "5.6G",
+          "harms": "63",
+          "tstab": "5n",
+          "errpreset": "conservative",
+          "method": "gear2only",
+          "maxacfreq": "381.348G"
+        },
+        "pac": {
+          "sweeptype": "absolute",
+          "rangeType": "Start-Stop",
+          "start": "5.3G",
+          "stop": "5.5G",
+          "incrType": "Linear",
+          "stepTypeLin": "Step Size",
+          "step": "100M",
+          "maxsideband": "1",
+          "freqaxis": "in"
+        }
+      }
+    }
+  ],
+  "runs": [
+    {
+      "test_name": "active_single_tone",
+      "circuit": "active",
+      "kind": "active",
+      "cell": "active_tb",
+      "library": "HW09_Mixers",
+      "view": "schematic",
+      "stage": "single_tone",
+      "label": "single_tone",
+      "trace_names": {
+        "supply_current": "VDD:p"
+      },
+      "pin_dbm": -55,
+      "two_tone": false,
+      "settle_s": 5e-09,
+      "window_s": 2e-08,
+      "strobe_s": 5e-12,
+      "maxstep_s": 2e-12,
+      "reltol": 1e-05,
+      "variables": {
+        "pinDbm": -55,
+        "fRF": 5800000000.0,
+        "fRF2": 5800000000.0,
+        "tone2Scale": 0,
+        "rfScale": 1
+      },
+      "analyses": {
+        "tran": {
+          "stop": 2.5e-08,
+          "maxstep": 2e-12,
+          "strobeperiod": 5e-12,
+          "errpreset": "conservative"
+        }
+      }
+    },
+    {
+      "test_name": "active_single_window_check",
+      "circuit": "active",
+      "kind": "active",
+      "cell": "active_tb",
+      "library": "HW09_Mixers",
+      "view": "schematic",
+      "stage": "single_reference",
+      "label": "single_window_check",
+      "trace_names": {
+        "supply_current": "VDD:p"
+      },
+      "pin_dbm": -55,
+      "two_tone": false,
+      "settle_s": 2e-08,
+      "window_s": 1e-07,
+      "strobe_s": 5e-12,
+      "maxstep_s": 2e-12,
+      "reltol": 1e-05,
+      "variables": {
+        "pinDbm": -55,
+        "fRF": 5800000000.0,
+        "fRF2": 5800000000.0,
+        "tone2Scale": 0,
+        "rfScale": 1
+      },
+      "analyses": {
+        "tran": {
+          "stop": 1.2e-07,
+          "maxstep": 2e-12,
+          "strobeperiod": 5e-12,
+          "errpreset": "conservative"
+        }
+      }
+    },
+    {
+      "test_name": "active_compression_00",
+      "circuit": "active",
+      "kind": "active",
+      "cell": "active_tb",
+      "library": "HW09_Mixers",
+      "view": "schematic",
+      "stage": "compression",
+      "label": "compression_00",
+      "trace_names": {
+        "supply_current": "VDD:p"
+      },
+      "pin_dbm": -60,
+      "two_tone": false,
+      "settle_s": 5e-09,
+      "window_s": 2e-08,
+      "strobe_s": 5e-12,
+      "maxstep_s": 2e-12,
+      "reltol": 1e-05,
+      "variables": {
+        "pinDbm": -60,
+        "fRF": 5800000000.0,
+        "fRF2": 5800000000.0,
+        "tone2Scale": 0,
+        "rfScale": 1
+      },
+      "analyses": {
+        "tran": {
+          "stop": 2.5e-08,
+          "maxstep": 2e-12,
+          "strobeperiod": 5e-12,
+          "errpreset": "conservative"
+        }
+      }
+    },
+    {
+      "test_name": "active_compression_01",
+      "circuit": "active",
+      "kind": "active",
+      "cell": "active_tb",
+      "library": "HW09_Mixers",
+      "view": "schematic",
+      "stage": "compression",
+      "label": "compression_01",
+      "trace_names": {
+        "supply_current": "VDD:p"
+      },
+      "pin_dbm": -50,
+      "two_tone": false,
+      "settle_s": 5e-09,
+      "window_s": 2e-08,
+      "strobe_s": 5e-12,
+      "maxstep_s": 2e-12,
+      "reltol": 1e-05,
+      "variables": {
+        "pinDbm": -50,
+        "fRF": 5800000000.0,
+        "fRF2": 5800000000.0,
+        "tone2Scale": 0,
+        "rfScale": 1
+      },
+      "analyses": {
+        "tran": {
+          "stop": 2.5e-08,
+          "maxstep": 2e-12,
+          "strobeperiod": 5e-12,
+          "errpreset": "conservative"
+        }
+      }
+    },
+    {
+      "test_name": "active_compression_02",
+      "circuit": "active",
+      "kind": "active",
+      "cell": "active_tb",
+      "library": "HW09_Mixers",
+      "view": "schematic",
+      "stage": "compression",
+      "label": "compression_02",
+      "trace_names": {
+        "supply_current": "VDD:p"
+      },
+      "pin_dbm": -40,
+      "two_tone": false,
+      "settle_s": 5e-09,
+      "window_s": 2e-08,
+      "strobe_s": 5e-12,
+      "maxstep_s": 2e-12,
+      "reltol": 1e-05,
+      "variables": {
+        "pinDbm": -40,
+        "fRF": 5800000000.0,
+        "fRF2": 5800000000.0,
+        "tone2Scale": 0,
+        "rfScale": 1
+      },
+      "analyses": {
+        "tran": {
+          "stop": 2.5e-08,
+          "maxstep": 2e-12,
+          "strobeperiod": 5e-12,
+          "errpreset": "conservative"
+        }
+      }
+    },
+    {
+      "test_name": "active_compression_03",
+      "circuit": "active",
+      "kind": "active",
+      "cell": "active_tb",
+      "library": "HW09_Mixers",
+      "view": "schematic",
+      "stage": "compression",
+      "label": "compression_03",
+      "trace_names": {
+        "supply_current": "VDD:p"
+      },
+      "pin_dbm": -35,
+      "two_tone": false,
+      "settle_s": 5e-09,
+      "window_s": 2e-08,
+      "strobe_s": 5e-12,
+      "maxstep_s": 2e-12,
+      "reltol": 1e-05,
+      "variables": {
+        "pinDbm": -35,
+        "fRF": 5800000000.0,
+        "fRF2": 5800000000.0,
+        "tone2Scale": 0,
+        "rfScale": 1
+      },
+      "analyses": {
+        "tran": {
+          "stop": 2.5e-08,
+          "maxstep": 2e-12,
+          "strobeperiod": 5e-12,
+          "errpreset": "conservative"
+        }
+      }
+    },
+    {
+      "test_name": "active_compression_04",
+      "circuit": "active",
+      "kind": "active",
+      "cell": "active_tb",
+      "library": "HW09_Mixers",
+      "view": "schematic",
+      "stage": "compression",
+      "label": "compression_04",
+      "trace_names": {
+        "supply_current": "VDD:p"
+      },
+      "pin_dbm": -30,
+      "two_tone": false,
+      "settle_s": 5e-09,
+      "window_s": 2e-08,
+      "strobe_s": 5e-12,
+      "maxstep_s": 2e-12,
+      "reltol": 1e-05,
+      "variables": {
+        "pinDbm": -30,
+        "fRF": 5800000000.0,
+        "fRF2": 5800000000.0,
+        "tone2Scale": 0,
+        "rfScale": 1
+      },
+      "analyses": {
+        "tran": {
+          "stop": 2.5e-08,
+          "maxstep": 2e-12,
+          "strobeperiod": 5e-12,
+          "errpreset": "conservative"
+        }
+      }
+    },
+    {
+      "test_name": "active_compression_05",
+      "circuit": "active",
+      "kind": "active",
+      "cell": "active_tb",
+      "library": "HW09_Mixers",
+      "view": "schematic",
+      "stage": "compression",
+      "label": "compression_05",
+      "trace_names": {
+        "supply_current": "VDD:p"
+      },
+      "pin_dbm": -25,
+      "two_tone": false,
+      "settle_s": 5e-09,
+      "window_s": 2e-08,
+      "strobe_s": 5e-12,
+      "maxstep_s": 2e-12,
+      "reltol": 1e-05,
+      "variables": {
+        "pinDbm": -25,
+        "fRF": 5800000000.0,
+        "fRF2": 5800000000.0,
+        "tone2Scale": 0,
+        "rfScale": 1
+      },
+      "analyses": {
+        "tran": {
+          "stop": 2.5e-08,
+          "maxstep": 2e-12,
+          "strobeperiod": 5e-12,
+          "errpreset": "conservative"
+        }
+      }
+    },
+    {
+      "test_name": "active_compression_06",
+      "circuit": "active",
+      "kind": "active",
+      "cell": "active_tb",
+      "library": "HW09_Mixers",
+      "view": "schematic",
+      "stage": "compression",
+      "label": "compression_06",
+      "trace_names": {
+        "supply_current": "VDD:p"
+      },
+      "pin_dbm": -20,
+      "two_tone": false,
+      "settle_s": 5e-09,
+      "window_s": 2e-08,
+      "strobe_s": 5e-12,
+      "maxstep_s": 2e-12,
+      "reltol": 1e-05,
+      "variables": {
+        "pinDbm": -20,
+        "fRF": 5800000000.0,
+        "fRF2": 5800000000.0,
+        "tone2Scale": 0,
+        "rfScale": 1
+      },
+      "analyses": {
+        "tran": {
+          "stop": 2.5e-08,
+          "maxstep": 2e-12,
+          "strobeperiod": 5e-12,
+          "errpreset": "conservative"
+        }
+      }
+    },
+    {
+      "test_name": "active_compression_07",
+      "circuit": "active",
+      "kind": "active",
+      "cell": "active_tb",
+      "library": "HW09_Mixers",
+      "view": "schematic",
+      "stage": "compression",
+      "label": "compression_07",
+      "trace_names": {
+        "supply_current": "VDD:p"
+      },
+      "pin_dbm": -17.5,
+      "two_tone": false,
+      "settle_s": 5e-09,
+      "window_s": 2e-08,
+      "strobe_s": 5e-12,
+      "maxstep_s": 2e-12,
+      "reltol": 1e-05,
+      "variables": {
+        "pinDbm": -17.5,
+        "fRF": 5800000000.0,
+        "fRF2": 5800000000.0,
+        "tone2Scale": 0,
+        "rfScale": 1
+      },
+      "analyses": {
+        "tran": {
+          "stop": 2.5e-08,
+          "maxstep": 2e-12,
+          "strobeperiod": 5e-12,
+          "errpreset": "conservative"
+        }
+      }
+    },
+    {
+      "test_name": "active_compression_08",
+      "circuit": "active",
+      "kind": "active",
+      "cell": "active_tb",
+      "library": "HW09_Mixers",
+      "view": "schematic",
+      "stage": "compression",
+      "label": "compression_08",
+      "trace_names": {
+        "supply_current": "VDD:p"
+      },
+      "pin_dbm": -16.25,
+      "two_tone": false,
+      "settle_s": 5e-09,
+      "window_s": 2e-08,
+      "strobe_s": 5e-12,
+      "maxstep_s": 2e-12,
+      "reltol": 1e-05,
+      "variables": {
+        "pinDbm": -16.25,
+        "fRF": 5800000000.0,
+        "fRF2": 5800000000.0,
+        "tone2Scale": 0,
+        "rfScale": 1
+      },
+      "analyses": {
+        "tran": {
+          "stop": 2.5e-08,
+          "maxstep": 2e-12,
+          "strobeperiod": 5e-12,
+          "errpreset": "conservative"
+        }
+      }
+    },
+    {
+      "test_name": "active_compression_09",
+      "circuit": "active",
+      "kind": "active",
+      "cell": "active_tb",
+      "library": "HW09_Mixers",
+      "view": "schematic",
+      "stage": "compression",
+      "label": "compression_09",
+      "trace_names": {
+        "supply_current": "VDD:p"
+      },
+      "pin_dbm": -15.625,
+      "two_tone": false,
+      "settle_s": 5e-09,
+      "window_s": 2e-08,
+      "strobe_s": 5e-12,
+      "maxstep_s": 2e-12,
+      "reltol": 1e-05,
+      "variables": {
+        "pinDbm": -15.625,
+        "fRF": 5800000000.0,
+        "fRF2": 5800000000.0,
+        "tone2Scale": 0,
+        "rfScale": 1
+      },
+      "analyses": {
+        "tran": {
+          "stop": 2.5e-08,
+          "maxstep": 2e-12,
+          "strobeperiod": 5e-12,
+          "errpreset": "conservative"
+        }
+      }
+    },
+    {
+      "test_name": "active_compression_10",
+      "circuit": "active",
+      "kind": "active",
+      "cell": "active_tb",
+      "library": "HW09_Mixers",
+      "view": "schematic",
+      "stage": "compression",
+      "label": "compression_10",
+      "trace_names": {
+        "supply_current": "VDD:p"
+      },
+      "pin_dbm": -15.46875,
+      "two_tone": false,
+      "settle_s": 5e-09,
+      "window_s": 2e-08,
+      "strobe_s": 5e-12,
+      "maxstep_s": 2e-12,
+      "reltol": 1e-05,
+      "variables": {
+        "pinDbm": -15.46875,
+        "fRF": 5800000000.0,
+        "fRF2": 5800000000.0,
+        "tone2Scale": 0,
+        "rfScale": 1
+      },
+      "analyses": {
+        "tran": {
+          "stop": 2.5e-08,
+          "maxstep": 2e-12,
+          "strobeperiod": 5e-12,
+          "errpreset": "conservative"
+        }
+      }
+    },
+    {
+      "test_name": "active_compression_11",
+      "circuit": "active",
+      "kind": "active",
+      "cell": "active_tb",
+      "library": "HW09_Mixers",
+      "view": "schematic",
+      "stage": "compression",
+      "label": "compression_11",
+      "trace_names": {
+        "supply_current": "VDD:p"
+      },
+      "pin_dbm": -15.15625,
+      "two_tone": false,
+      "settle_s": 5e-09,
+      "window_s": 2e-08,
+      "strobe_s": 5e-12,
+      "maxstep_s": 2e-12,
+      "reltol": 1e-05,
+      "variables": {
+        "pinDbm": -15.15625,
+        "fRF": 5800000000.0,
+        "fRF2": 5800000000.0,
+        "tone2Scale": 0,
+        "rfScale": 1
+      },
+      "analyses": {
+        "tran": {
+          "stop": 2.5e-08,
+          "maxstep": 2e-12,
+          "strobeperiod": 5e-12,
+          "errpreset": "conservative"
+        }
+      }
+    },
+    {
+      "test_name": "active_compression_12",
+      "circuit": "active",
+      "kind": "active",
+      "cell": "active_tb",
+      "library": "HW09_Mixers",
+      "view": "schematic",
+      "stage": "compression",
+      "label": "compression_12",
+      "trace_names": {
+        "supply_current": "VDD:p"
+      },
+      "pin_dbm": -15,
+      "two_tone": false,
+      "settle_s": 5e-09,
+      "window_s": 2e-08,
+      "strobe_s": 5e-12,
+      "maxstep_s": 2e-12,
+      "reltol": 1e-05,
+      "variables": {
+        "pinDbm": -15,
+        "fRF": 5800000000.0,
+        "fRF2": 5800000000.0,
+        "tone2Scale": 0,
+        "rfScale": 1
+      },
+      "analyses": {
+        "tran": {
+          "stop": 2.5e-08,
+          "maxstep": 2e-12,
+          "strobeperiod": 5e-12,
+          "errpreset": "conservative"
+        }
+      }
+    },
+    {
+      "test_name": "active_compression_13",
+      "circuit": "active",
+      "kind": "active",
+      "cell": "active_tb",
+      "library": "HW09_Mixers",
+      "view": "schematic",
+      "stage": "compression",
+      "label": "compression_13",
+      "trace_names": {
+        "supply_current": "VDD:p"
+      },
+      "pin_dbm": -10,
+      "two_tone": false,
+      "settle_s": 5e-09,
+      "window_s": 2e-08,
+      "strobe_s": 5e-12,
+      "maxstep_s": 2e-12,
+      "reltol": 1e-05,
+      "variables": {
+        "pinDbm": -10,
+        "fRF": 5800000000.0,
+        "fRF2": 5800000000.0,
+        "tone2Scale": 0,
+        "rfScale": 1
+      },
+      "analyses": {
+        "tran": {
+          "stop": 2.5e-08,
+          "maxstep": 2e-12,
+          "strobeperiod": 5e-12,
+          "errpreset": "conservative"
+        }
+      }
+    },
+    {
+      "test_name": "active_two_tone_00",
+      "circuit": "active",
+      "kind": "active",
+      "cell": "active_tb",
+      "library": "HW09_Mixers",
+      "view": "schematic",
+      "stage": "two_tone",
+      "label": "two_tone_00",
+      "trace_names": {
+        "supply_current": "VDD:p"
+      },
+      "pin_dbm": -50,
+      "two_tone": true,
+      "settle_s": 2e-08,
+      "window_s": 1e-07,
+      "strobe_s": 5e-12,
+      "maxstep_s": 2e-12,
+      "reltol": 1e-05,
+      "variables": {
+        "pinDbm": -50,
+        "fRF": 5790000000.0,
+        "fRF2": 5810000000.0,
+        "tone2Scale": 1,
+        "rfScale": 1
+      },
+      "analyses": {
+        "tran": {
+          "stop": 1.2e-07,
+          "maxstep": 2e-12,
+          "strobeperiod": 5e-12,
+          "errpreset": "conservative"
+        }
+      }
+    },
+    {
+      "test_name": "active_two_tone_01",
+      "circuit": "active",
+      "kind": "active",
+      "cell": "active_tb",
+      "library": "HW09_Mixers",
+      "view": "schematic",
+      "stage": "two_tone",
+      "label": "two_tone_01",
+      "trace_names": {
+        "supply_current": "VDD:p"
+      },
+      "pin_dbm": -45,
+      "two_tone": true,
+      "settle_s": 2e-08,
+      "window_s": 1e-07,
+      "strobe_s": 5e-12,
+      "maxstep_s": 2e-12,
+      "reltol": 1e-05,
+      "variables": {
+        "pinDbm": -45,
+        "fRF": 5790000000.0,
+        "fRF2": 5810000000.0,
+        "tone2Scale": 1,
+        "rfScale": 1
+      },
+      "analyses": {
+        "tran": {
+          "stop": 1.2e-07,
+          "maxstep": 2e-12,
+          "strobeperiod": 5e-12,
+          "errpreset": "conservative"
+        }
+      }
+    },
+    {
+      "test_name": "active_two_tone_02",
+      "circuit": "active",
+      "kind": "active",
+      "cell": "active_tb",
+      "library": "HW09_Mixers",
+      "view": "schematic",
+      "stage": "two_tone",
+      "label": "two_tone_02",
+      "trace_names": {
+        "supply_current": "VDD:p"
+      },
+      "pin_dbm": -40,
+      "two_tone": true,
+      "settle_s": 2e-08,
+      "window_s": 1e-07,
+      "strobe_s": 5e-12,
+      "maxstep_s": 2e-12,
+      "reltol": 1e-05,
+      "variables": {
+        "pinDbm": -40,
+        "fRF": 5790000000.0,
+        "fRF2": 5810000000.0,
+        "tone2Scale": 1,
+        "rfScale": 1
+      },
+      "analyses": {
+        "tran": {
+          "stop": 1.2e-07,
+          "maxstep": 2e-12,
+          "strobeperiod": 5e-12,
+          "errpreset": "conservative"
+        }
+      }
+    },
+    {
+      "test_name": "active_two_tone_03",
+      "circuit": "active",
+      "kind": "active",
+      "cell": "active_tb",
+      "library": "HW09_Mixers",
+      "view": "schematic",
+      "stage": "two_tone",
+      "label": "two_tone_03",
+      "trace_names": {
+        "supply_current": "VDD:p"
+      },
+      "pin_dbm": -35,
+      "two_tone": true,
+      "settle_s": 2e-08,
+      "window_s": 1e-07,
+      "strobe_s": 5e-12,
+      "maxstep_s": 2e-12,
+      "reltol": 1e-05,
+      "variables": {
+        "pinDbm": -35,
+        "fRF": 5790000000.0,
+        "fRF2": 5810000000.0,
+        "tone2Scale": 1,
+        "rfScale": 1
+      },
+      "analyses": {
+        "tran": {
+          "stop": 1.2e-07,
+          "maxstep": 2e-12,
+          "strobeperiod": 5e-12,
+          "errpreset": "conservative"
+        }
+      }
+    },
+    {
+      "test_name": "active_two_tone_04",
+      "circuit": "active",
+      "kind": "active",
+      "cell": "active_tb",
+      "library": "HW09_Mixers",
+      "view": "schematic",
+      "stage": "two_tone",
+      "label": "two_tone_04",
+      "trace_names": {
+        "supply_current": "VDD:p"
+      },
+      "pin_dbm": -30,
+      "two_tone": true,
+      "settle_s": 2e-08,
+      "window_s": 1e-07,
+      "strobe_s": 5e-12,
+      "maxstep_s": 2e-12,
+      "reltol": 1e-05,
+      "variables": {
+        "pinDbm": -30,
+        "fRF": 5790000000.0,
+        "fRF2": 5810000000.0,
+        "tone2Scale": 1,
+        "rfScale": 1
+      },
+      "analyses": {
+        "tran": {
+          "stop": 1.2e-07,
+          "maxstep": 2e-12,
+          "strobeperiod": 5e-12,
+          "errpreset": "conservative"
+        }
+      }
+    },
+    {
+      "test_name": "active_two_tone_05",
+      "circuit": "active",
+      "kind": "active",
+      "cell": "active_tb",
+      "library": "HW09_Mixers",
+      "view": "schematic",
+      "stage": "two_tone",
+      "label": "two_tone_05",
+      "trace_names": {
+        "supply_current": "VDD:p"
+      },
+      "pin_dbm": -25,
+      "two_tone": true,
+      "settle_s": 2e-08,
+      "window_s": 1e-07,
+      "strobe_s": 5e-12,
+      "maxstep_s": 2e-12,
+      "reltol": 1e-05,
+      "variables": {
+        "pinDbm": -25,
+        "fRF": 5790000000.0,
+        "fRF2": 5810000000.0,
+        "tone2Scale": 1,
+        "rfScale": 1
+      },
+      "analyses": {
+        "tran": {
+          "stop": 1.2e-07,
+          "maxstep": 2e-12,
+          "strobeperiod": 5e-12,
+          "errpreset": "conservative"
+        }
+      }
+    },
+    {
+      "test_name": "active_two_tone_06",
+      "circuit": "active",
+      "kind": "active",
+      "cell": "active_tb",
+      "library": "HW09_Mixers",
+      "view": "schematic",
+      "stage": "two_tone",
+      "label": "two_tone_06",
+      "trace_names": {
+        "supply_current": "VDD:p"
+      },
+      "pin_dbm": -20,
+      "two_tone": true,
+      "settle_s": 2e-08,
+      "window_s": 1e-07,
+      "strobe_s": 5e-12,
+      "maxstep_s": 2e-12,
+      "reltol": 1e-05,
+      "variables": {
+        "pinDbm": -20,
+        "fRF": 5790000000.0,
+        "fRF2": 5810000000.0,
+        "tone2Scale": 1,
+        "rfScale": 1
+      },
+      "analyses": {
+        "tran": {
+          "stop": 1.2e-07,
+          "maxstep": 2e-12,
+          "strobeperiod": 5e-12,
+          "errpreset": "conservative"
+        }
+      }
+    },
+    {
+      "test_name": "active_two_tone_tight",
+      "circuit": "active",
+      "kind": "active",
+      "cell": "active_tb",
+      "library": "HW09_Mixers",
+      "view": "schematic",
+      "stage": "tight_two_tone",
+      "label": "two_tone_tight",
+      "trace_names": {
+        "supply_current": "VDD:p"
+      },
+      "pin_dbm": -35,
+      "two_tone": true,
+      "settle_s": 2e-08,
+      "window_s": 1e-07,
+      "strobe_s": 5e-12,
+      "maxstep_s": 1e-12,
+      "reltol": 1e-06,
+      "variables": {
+        "pinDbm": -35,
+        "fRF": 5790000000.0,
+        "fRF2": 5810000000.0,
+        "tone2Scale": 1,
+        "rfScale": 1
+      },
+      "analyses": {
+        "tran": {
+          "stop": 1.2e-07,
+          "maxstep": 1e-12,
+          "strobeperiod": 5e-12,
+          "errpreset": "conservative"
+        }
+      }
+    },
+    {
+      "test_name": "passive_single_tone",
+      "circuit": "passive",
+      "kind": "passive",
+      "cell": "passive_tb",
+      "library": "HW09_Mixers",
+      "view": "schematic",
+      "stage": "single_tone",
+      "label": "single_tone",
+      "trace_names": {},
+      "pin_dbm": -55,
+      "two_tone": false,
+      "settle_s": 5e-09,
+      "window_s": 2e-08,
+      "strobe_s": 5e-12,
+      "maxstep_s": 2e-12,
+      "reltol": 1e-05,
+      "variables": {
+        "pinDbm": -55,
+        "fRF": 5800000000.0,
+        "fRF2": 5800000000.0,
+        "tone2Scale": 0,
+        "rfScale": 1
+      },
+      "analyses": {
+        "tran": {
+          "stop": 2.5e-08,
+          "maxstep": 2e-12,
+          "strobeperiod": 5e-12,
+          "errpreset": "conservative"
+        }
+      }
+    },
+    {
+      "test_name": "passive_single_window_check",
+      "circuit": "passive",
+      "kind": "passive",
+      "cell": "passive_tb",
+      "library": "HW09_Mixers",
+      "view": "schematic",
+      "stage": "single_reference",
+      "label": "single_window_check",
+      "trace_names": {},
+      "pin_dbm": -55,
+      "two_tone": false,
+      "settle_s": 2e-08,
+      "window_s": 1e-07,
+      "strobe_s": 5e-12,
+      "maxstep_s": 2e-12,
+      "reltol": 1e-05,
+      "variables": {
+        "pinDbm": -55,
+        "fRF": 5800000000.0,
+        "fRF2": 5800000000.0,
+        "tone2Scale": 0,
+        "rfScale": 1
+      },
+      "analyses": {
+        "tran": {
+          "stop": 1.2e-07,
+          "maxstep": 2e-12,
+          "strobeperiod": 5e-12,
+          "errpreset": "conservative"
+        }
+      }
+    },
+    {
+      "test_name": "passive_compression_00",
+      "circuit": "passive",
+      "kind": "passive",
+      "cell": "passive_tb",
+      "library": "HW09_Mixers",
+      "view": "schematic",
+      "stage": "compression",
+      "label": "compression_00",
+      "trace_names": {},
+      "pin_dbm": -60,
+      "two_tone": false,
+      "settle_s": 5e-09,
+      "window_s": 2e-08,
+      "strobe_s": 5e-12,
+      "maxstep_s": 2e-12,
+      "reltol": 1e-05,
+      "variables": {
+        "pinDbm": -60,
+        "fRF": 5800000000.0,
+        "fRF2": 5800000000.0,
+        "tone2Scale": 0,
+        "rfScale": 1
+      },
+      "analyses": {
+        "tran": {
+          "stop": 2.5e-08,
+          "maxstep": 2e-12,
+          "strobeperiod": 5e-12,
+          "errpreset": "conservative"
+        }
+      }
+    },
+    {
+      "test_name": "passive_compression_01",
+      "circuit": "passive",
+      "kind": "passive",
+      "cell": "passive_tb",
+      "library": "HW09_Mixers",
+      "view": "schematic",
+      "stage": "compression",
+      "label": "compression_01",
+      "trace_names": {},
+      "pin_dbm": -50,
+      "two_tone": false,
+      "settle_s": 5e-09,
+      "window_s": 2e-08,
+      "strobe_s": 5e-12,
+      "maxstep_s": 2e-12,
+      "reltol": 1e-05,
+      "variables": {
+        "pinDbm": -50,
+        "fRF": 5800000000.0,
+        "fRF2": 5800000000.0,
+        "tone2Scale": 0,
+        "rfScale": 1
+      },
+      "analyses": {
+        "tran": {
+          "stop": 2.5e-08,
+          "maxstep": 2e-12,
+          "strobeperiod": 5e-12,
+          "errpreset": "conservative"
+        }
+      }
+    },
+    {
+      "test_name": "passive_compression_02",
+      "circuit": "passive",
+      "kind": "passive",
+      "cell": "passive_tb",
+      "library": "HW09_Mixers",
+      "view": "schematic",
+      "stage": "compression",
+      "label": "compression_02",
+      "trace_names": {},
+      "pin_dbm": -40,
+      "two_tone": false,
+      "settle_s": 5e-09,
+      "window_s": 2e-08,
+      "strobe_s": 5e-12,
+      "maxstep_s": 2e-12,
+      "reltol": 1e-05,
+      "variables": {
+        "pinDbm": -40,
+        "fRF": 5800000000.0,
+        "fRF2": 5800000000.0,
+        "tone2Scale": 0,
+        "rfScale": 1
+      },
+      "analyses": {
+        "tran": {
+          "stop": 2.5e-08,
+          "maxstep": 2e-12,
+          "strobeperiod": 5e-12,
+          "errpreset": "conservative"
+        }
+      }
+    },
+    {
+      "test_name": "passive_compression_03",
+      "circuit": "passive",
+      "kind": "passive",
+      "cell": "passive_tb",
+      "library": "HW09_Mixers",
+      "view": "schematic",
+      "stage": "compression",
+      "label": "compression_03",
+      "trace_names": {},
+      "pin_dbm": -35,
+      "two_tone": false,
+      "settle_s": 5e-09,
+      "window_s": 2e-08,
+      "strobe_s": 5e-12,
+      "maxstep_s": 2e-12,
+      "reltol": 1e-05,
+      "variables": {
+        "pinDbm": -35,
+        "fRF": 5800000000.0,
+        "fRF2": 5800000000.0,
+        "tone2Scale": 0,
+        "rfScale": 1
+      },
+      "analyses": {
+        "tran": {
+          "stop": 2.5e-08,
+          "maxstep": 2e-12,
+          "strobeperiod": 5e-12,
+          "errpreset": "conservative"
+        }
+      }
+    },
+    {
+      "test_name": "passive_compression_04",
+      "circuit": "passive",
+      "kind": "passive",
+      "cell": "passive_tb",
+      "library": "HW09_Mixers",
+      "view": "schematic",
+      "stage": "compression",
+      "label": "compression_04",
+      "trace_names": {},
+      "pin_dbm": -30,
+      "two_tone": false,
+      "settle_s": 5e-09,
+      "window_s": 2e-08,
+      "strobe_s": 5e-12,
+      "maxstep_s": 2e-12,
+      "reltol": 1e-05,
+      "variables": {
+        "pinDbm": -30,
+        "fRF": 5800000000.0,
+        "fRF2": 5800000000.0,
+        "tone2Scale": 0,
+        "rfScale": 1
+      },
+      "analyses": {
+        "tran": {
+          "stop": 2.5e-08,
+          "maxstep": 2e-12,
+          "strobeperiod": 5e-12,
+          "errpreset": "conservative"
+        }
+      }
+    },
+    {
+      "test_name": "passive_compression_05",
+      "circuit": "passive",
+      "kind": "passive",
+      "cell": "passive_tb",
+      "library": "HW09_Mixers",
+      "view": "schematic",
+      "stage": "compression",
+      "label": "compression_05",
+      "trace_names": {},
+      "pin_dbm": -25,
+      "two_tone": false,
+      "settle_s": 5e-09,
+      "window_s": 2e-08,
+      "strobe_s": 5e-12,
+      "maxstep_s": 2e-12,
+      "reltol": 1e-05,
+      "variables": {
+        "pinDbm": -25,
+        "fRF": 5800000000.0,
+        "fRF2": 5800000000.0,
+        "tone2Scale": 0,
+        "rfScale": 1
+      },
+      "analyses": {
+        "tran": {
+          "stop": 2.5e-08,
+          "maxstep": 2e-12,
+          "strobeperiod": 5e-12,
+          "errpreset": "conservative"
+        }
+      }
+    },
+    {
+      "test_name": "passive_compression_06",
+      "circuit": "passive",
+      "kind": "passive",
+      "cell": "passive_tb",
+      "library": "HW09_Mixers",
+      "view": "schematic",
+      "stage": "compression",
+      "label": "compression_06",
+      "trace_names": {},
+      "pin_dbm": -20,
+      "two_tone": false,
+      "settle_s": 5e-09,
+      "window_s": 2e-08,
+      "strobe_s": 5e-12,
+      "maxstep_s": 2e-12,
+      "reltol": 1e-05,
+      "variables": {
+        "pinDbm": -20,
+        "fRF": 5800000000.0,
+        "fRF2": 5800000000.0,
+        "tone2Scale": 0,
+        "rfScale": 1
+      },
+      "analyses": {
+        "tran": {
+          "stop": 2.5e-08,
+          "maxstep": 2e-12,
+          "strobeperiod": 5e-12,
+          "errpreset": "conservative"
+        }
+      }
+    },
+    {
+      "test_name": "passive_compression_07",
+      "circuit": "passive",
+      "kind": "passive",
+      "cell": "passive_tb",
+      "library": "HW09_Mixers",
+      "view": "schematic",
+      "stage": "compression",
+      "label": "compression_07",
+      "trace_names": {},
+      "pin_dbm": -17.5,
+      "two_tone": false,
+      "settle_s": 5e-09,
+      "window_s": 2e-08,
+      "strobe_s": 5e-12,
+      "maxstep_s": 2e-12,
+      "reltol": 1e-05,
+      "variables": {
+        "pinDbm": -17.5,
+        "fRF": 5800000000.0,
+        "fRF2": 5800000000.0,
+        "tone2Scale": 0,
+        "rfScale": 1
+      },
+      "analyses": {
+        "tran": {
+          "stop": 2.5e-08,
+          "maxstep": 2e-12,
+          "strobeperiod": 5e-12,
+          "errpreset": "conservative"
+        }
+      }
+    },
+    {
+      "test_name": "passive_compression_08",
+      "circuit": "passive",
+      "kind": "passive",
+      "cell": "passive_tb",
+      "library": "HW09_Mixers",
+      "view": "schematic",
+      "stage": "compression",
+      "label": "compression_08",
+      "trace_names": {},
+      "pin_dbm": -16.25,
+      "two_tone": false,
+      "settle_s": 5e-09,
+      "window_s": 2e-08,
+      "strobe_s": 5e-12,
+      "maxstep_s": 2e-12,
+      "reltol": 1e-05,
+      "variables": {
+        "pinDbm": -16.25,
+        "fRF": 5800000000.0,
+        "fRF2": 5800000000.0,
+        "tone2Scale": 0,
+        "rfScale": 1
+      },
+      "analyses": {
+        "tran": {
+          "stop": 2.5e-08,
+          "maxstep": 2e-12,
+          "strobeperiod": 5e-12,
+          "errpreset": "conservative"
+        }
+      }
+    },
+    {
+      "test_name": "passive_compression_09",
+      "circuit": "passive",
+      "kind": "passive",
+      "cell": "passive_tb",
+      "library": "HW09_Mixers",
+      "view": "schematic",
+      "stage": "compression",
+      "label": "compression_09",
+      "trace_names": {},
+      "pin_dbm": -15.625,
+      "two_tone": false,
+      "settle_s": 5e-09,
+      "window_s": 2e-08,
+      "strobe_s": 5e-12,
+      "maxstep_s": 2e-12,
+      "reltol": 1e-05,
+      "variables": {
+        "pinDbm": -15.625,
+        "fRF": 5800000000.0,
+        "fRF2": 5800000000.0,
+        "tone2Scale": 0,
+        "rfScale": 1
+      },
+      "analyses": {
+        "tran": {
+          "stop": 2.5e-08,
+          "maxstep": 2e-12,
+          "strobeperiod": 5e-12,
+          "errpreset": "conservative"
+        }
+      }
+    },
+    {
+      "test_name": "passive_compression_10",
+      "circuit": "passive",
+      "kind": "passive",
+      "cell": "passive_tb",
+      "library": "HW09_Mixers",
+      "view": "schematic",
+      "stage": "compression",
+      "label": "compression_10",
+      "trace_names": {},
+      "pin_dbm": -15.46875,
+      "two_tone": false,
+      "settle_s": 5e-09,
+      "window_s": 2e-08,
+      "strobe_s": 5e-12,
+      "maxstep_s": 2e-12,
+      "reltol": 1e-05,
+      "variables": {
+        "pinDbm": -15.46875,
+        "fRF": 5800000000.0,
+        "fRF2": 5800000000.0,
+        "tone2Scale": 0,
+        "rfScale": 1
+      },
+      "analyses": {
+        "tran": {
+          "stop": 2.5e-08,
+          "maxstep": 2e-12,
+          "strobeperiod": 5e-12,
+          "errpreset": "conservative"
+        }
+      }
+    },
+    {
+      "test_name": "passive_compression_11",
+      "circuit": "passive",
+      "kind": "passive",
+      "cell": "passive_tb",
+      "library": "HW09_Mixers",
+      "view": "schematic",
+      "stage": "compression",
+      "label": "compression_11",
+      "trace_names": {},
+      "pin_dbm": -15.15625,
+      "two_tone": false,
+      "settle_s": 5e-09,
+      "window_s": 2e-08,
+      "strobe_s": 5e-12,
+      "maxstep_s": 2e-12,
+      "reltol": 1e-05,
+      "variables": {
+        "pinDbm": -15.15625,
+        "fRF": 5800000000.0,
+        "fRF2": 5800000000.0,
+        "tone2Scale": 0,
+        "rfScale": 1
+      },
+      "analyses": {
+        "tran": {
+          "stop": 2.5e-08,
+          "maxstep": 2e-12,
+          "strobeperiod": 5e-12,
+          "errpreset": "conservative"
+        }
+      }
+    },
+    {
+      "test_name": "passive_compression_12",
+      "circuit": "passive",
+      "kind": "passive",
+      "cell": "passive_tb",
+      "library": "HW09_Mixers",
+      "view": "schematic",
+      "stage": "compression",
+      "label": "compression_12",
+      "trace_names": {},
+      "pin_dbm": -15,
+      "two_tone": false,
+      "settle_s": 5e-09,
+      "window_s": 2e-08,
+      "strobe_s": 5e-12,
+      "maxstep_s": 2e-12,
+      "reltol": 1e-05,
+      "variables": {
+        "pinDbm": -15,
+        "fRF": 5800000000.0,
+        "fRF2": 5800000000.0,
+        "tone2Scale": 0,
+        "rfScale": 1
+      },
+      "analyses": {
+        "tran": {
+          "stop": 2.5e-08,
+          "maxstep": 2e-12,
+          "strobeperiod": 5e-12,
+          "errpreset": "conservative"
+        }
+      }
+    },
+    {
+      "test_name": "passive_compression_13",
+      "circuit": "passive",
+      "kind": "passive",
+      "cell": "passive_tb",
+      "library": "HW09_Mixers",
+      "view": "schematic",
+      "stage": "compression",
+      "label": "compression_13",
+      "trace_names": {},
+      "pin_dbm": -10,
+      "two_tone": false,
+      "settle_s": 5e-09,
+      "window_s": 2e-08,
+      "strobe_s": 5e-12,
+      "maxstep_s": 2e-12,
+      "reltol": 1e-05,
+      "variables": {
+        "pinDbm": -10,
+        "fRF": 5800000000.0,
+        "fRF2": 5800000000.0,
+        "tone2Scale": 0,
+        "rfScale": 1
+      },
+      "analyses": {
+        "tran": {
+          "stop": 2.5e-08,
+          "maxstep": 2e-12,
+          "strobeperiod": 5e-12,
+          "errpreset": "conservative"
+        }
+      }
+    },
+    {
+      "test_name": "passive_two_tone_00",
+      "circuit": "passive",
+      "kind": "passive",
+      "cell": "passive_tb",
+      "library": "HW09_Mixers",
+      "view": "schematic",
+      "stage": "two_tone",
+      "label": "two_tone_00",
+      "trace_names": {},
+      "pin_dbm": -50,
+      "two_tone": true,
+      "settle_s": 2e-08,
+      "window_s": 1e-07,
+      "strobe_s": 5e-12,
+      "maxstep_s": 2e-12,
+      "reltol": 1e-05,
+      "variables": {
+        "pinDbm": -50,
+        "fRF": 5790000000.0,
+        "fRF2": 5810000000.0,
+        "tone2Scale": 1,
+        "rfScale": 1
+      },
+      "analyses": {
+        "tran": {
+          "stop": 1.2e-07,
+          "maxstep": 2e-12,
+          "strobeperiod": 5e-12,
+          "errpreset": "conservative"
+        }
+      }
+    },
+    {
+      "test_name": "passive_two_tone_01",
+      "circuit": "passive",
+      "kind": "passive",
+      "cell": "passive_tb",
+      "library": "HW09_Mixers",
+      "view": "schematic",
+      "stage": "two_tone",
+      "label": "two_tone_01",
+      "trace_names": {},
+      "pin_dbm": -45,
+      "two_tone": true,
+      "settle_s": 2e-08,
+      "window_s": 1e-07,
+      "strobe_s": 5e-12,
+      "maxstep_s": 2e-12,
+      "reltol": 1e-05,
+      "variables": {
+        "pinDbm": -45,
+        "fRF": 5790000000.0,
+        "fRF2": 5810000000.0,
+        "tone2Scale": 1,
+        "rfScale": 1
+      },
+      "analyses": {
+        "tran": {
+          "stop": 1.2e-07,
+          "maxstep": 2e-12,
+          "strobeperiod": 5e-12,
+          "errpreset": "conservative"
+        }
+      }
+    },
+    {
+      "test_name": "passive_two_tone_02",
+      "circuit": "passive",
+      "kind": "passive",
+      "cell": "passive_tb",
+      "library": "HW09_Mixers",
+      "view": "schematic",
+      "stage": "two_tone",
+      "label": "two_tone_02",
+      "trace_names": {},
+      "pin_dbm": -40,
+      "two_tone": true,
+      "settle_s": 2e-08,
+      "window_s": 1e-07,
+      "strobe_s": 5e-12,
+      "maxstep_s": 2e-12,
+      "reltol": 1e-05,
+      "variables": {
+        "pinDbm": -40,
+        "fRF": 5790000000.0,
+        "fRF2": 5810000000.0,
+        "tone2Scale": 1,
+        "rfScale": 1
+      },
+      "analyses": {
+        "tran": {
+          "stop": 1.2e-07,
+          "maxstep": 2e-12,
+          "strobeperiod": 5e-12,
+          "errpreset": "conservative"
+        }
+      }
+    },
+    {
+      "test_name": "passive_two_tone_03",
+      "circuit": "passive",
+      "kind": "passive",
+      "cell": "passive_tb",
+      "library": "HW09_Mixers",
+      "view": "schematic",
+      "stage": "two_tone",
+      "label": "two_tone_03",
+      "trace_names": {},
+      "pin_dbm": -35,
+      "two_tone": true,
+      "settle_s": 2e-08,
+      "window_s": 1e-07,
+      "strobe_s": 5e-12,
+      "maxstep_s": 2e-12,
+      "reltol": 1e-05,
+      "variables": {
+        "pinDbm": -35,
+        "fRF": 5790000000.0,
+        "fRF2": 5810000000.0,
+        "tone2Scale": 1,
+        "rfScale": 1
+      },
+      "analyses": {
+        "tran": {
+          "stop": 1.2e-07,
+          "maxstep": 2e-12,
+          "strobeperiod": 5e-12,
+          "errpreset": "conservative"
+        }
+      }
+    },
+    {
+      "test_name": "passive_two_tone_04",
+      "circuit": "passive",
+      "kind": "passive",
+      "cell": "passive_tb",
+      "library": "HW09_Mixers",
+      "view": "schematic",
+      "stage": "two_tone",
+      "label": "two_tone_04",
+      "trace_names": {},
+      "pin_dbm": -30,
+      "two_tone": true,
+      "settle_s": 2e-08,
+      "window_s": 1e-07,
+      "strobe_s": 5e-12,
+      "maxstep_s": 2e-12,
+      "reltol": 1e-05,
+      "variables": {
+        "pinDbm": -30,
+        "fRF": 5790000000.0,
+        "fRF2": 5810000000.0,
+        "tone2Scale": 1,
+        "rfScale": 1
+      },
+      "analyses": {
+        "tran": {
+          "stop": 1.2e-07,
+          "maxstep": 2e-12,
+          "strobeperiod": 5e-12,
+          "errpreset": "conservative"
+        }
+      }
+    },
+    {
+      "test_name": "passive_two_tone_05",
+      "circuit": "passive",
+      "kind": "passive",
+      "cell": "passive_tb",
+      "library": "HW09_Mixers",
+      "view": "schematic",
+      "stage": "two_tone",
+      "label": "two_tone_05",
+      "trace_names": {},
+      "pin_dbm": -25,
+      "two_tone": true,
+      "settle_s": 2e-08,
+      "window_s": 1e-07,
+      "strobe_s": 5e-12,
+      "maxstep_s": 2e-12,
+      "reltol": 1e-05,
+      "variables": {
+        "pinDbm": -25,
+        "fRF": 5790000000.0,
+        "fRF2": 5810000000.0,
+        "tone2Scale": 1,
+        "rfScale": 1
+      },
+      "analyses": {
+        "tran": {
+          "stop": 1.2e-07,
+          "maxstep": 2e-12,
+          "strobeperiod": 5e-12,
+          "errpreset": "conservative"
+        }
+      }
+    },
+    {
+      "test_name": "passive_two_tone_06",
+      "circuit": "passive",
+      "kind": "passive",
+      "cell": "passive_tb",
+      "library": "HW09_Mixers",
+      "view": "schematic",
+      "stage": "two_tone",
+      "label": "two_tone_06",
+      "trace_names": {},
+      "pin_dbm": -20,
+      "two_tone": true,
+      "settle_s": 2e-08,
+      "window_s": 1e-07,
+      "strobe_s": 5e-12,
+      "maxstep_s": 2e-12,
+      "reltol": 1e-05,
+      "variables": {
+        "pinDbm": -20,
+        "fRF": 5790000000.0,
+        "fRF2": 5810000000.0,
+        "tone2Scale": 1,
+        "rfScale": 1
+      },
+      "analyses": {
+        "tran": {
+          "stop": 1.2e-07,
+          "maxstep": 2e-12,
+          "strobeperiod": 5e-12,
+          "errpreset": "conservative"
+        }
+      }
+    },
+    {
+      "test_name": "passive_two_tone_tight",
+      "circuit": "passive",
+      "kind": "passive",
+      "cell": "passive_tb",
+      "library": "HW09_Mixers",
+      "view": "schematic",
+      "stage": "tight_two_tone",
+      "label": "two_tone_tight",
+      "trace_names": {},
+      "pin_dbm": -35,
+      "two_tone": true,
+      "settle_s": 2e-08,
+      "window_s": 1e-07,
+      "strobe_s": 5e-12,
+      "maxstep_s": 1e-12,
+      "reltol": 1e-06,
+      "variables": {
+        "pinDbm": -35,
+        "fRF": 5790000000.0,
+        "fRF2": 5810000000.0,
+        "tone2Scale": 1,
+        "rfScale": 1
+      },
+      "analyses": {
+        "tran": {
+          "stop": 1.2e-07,
+          "maxstep": 1e-12,
+          "strobeperiod": 5e-12,
+          "errpreset": "conservative"
+        }
+      }
+    },
+    {
+      "test_name": "active_noise_sb15",
+      "circuit": "active",
+      "kind": "active",
+      "cell": "active_tb",
+      "library": "HW09_Mixers",
+      "view": "schematic",
+      "stage": "pnoise",
+      "label": "noise_sb15",
+      "pin_dbm": -55,
+      "rf_scale": 0,
+      "sidebands": 15,
+      "reltol": 1e-05,
+      "variables": {
+        "pinDbm": -55,
+        "fRF": 5800000000.0,
+        "fRF2": 5800000000.0,
+        "rfScale": 0,
+        "tone2Scale": 0
+      },
+      "analyses": {
+        "pss": {
+          "engine": "Shooting",
+          "fund": "5.6G",
+          "harms": "63",
+          "tstab": "5n",
+          "errpreset": "conservative",
+          "method": "gear2only",
+          "maxacfreq": "381.348G"
+        },
+        "pac": {
+          "sweeptype": "absolute",
+          "rangeType": "Start-Stop",
+          "start": "5.7G",
+          "stop": "5.9G",
+          "incrType": "Linear",
+          "stepTypeLin": "Step Size",
+          "step": "100M",
+          "maxsideband": "1",
+          "freqaxis": "in"
+        },
+        "pnoise": {
+          "sweeptype": "absolute",
+          "rangeType": "Start-Stop",
+          "start": "100M",
+          "stop": "300M",
+          "incrType": "Linear",
+          "stepTypeLin": "Step Size",
+          "step": "100M",
+          "maxsideband": "15",
+          "noiseFigure": true,
+          "outType": "voltage",
+          "p": "/outp",
+          "n": "/outn",
+          "inType": "port",
+          "inPort": "/RFPORT",
+          "iprobe": "/RFPORT",
+          "refsideband": "1",
+          "noisetype": "timeaverage"
+        }
+      }
+    },
+    {
+      "test_name": "active_noise_sb31",
+      "circuit": "active",
+      "kind": "active",
+      "cell": "active_tb",
+      "library": "HW09_Mixers",
+      "view": "schematic",
+      "stage": "pnoise",
+      "label": "noise_sb31",
+      "pin_dbm": -55,
+      "rf_scale": 0,
+      "sidebands": 31,
+      "reltol": 1e-05,
+      "variables": {
+        "pinDbm": -55,
+        "fRF": 5800000000.0,
+        "fRF2": 5800000000.0,
+        "rfScale": 0,
+        "tone2Scale": 0
+      },
+      "analyses": {
+        "pss": {
+          "engine": "Shooting",
+          "fund": "5.6G",
+          "harms": "63",
+          "tstab": "5n",
+          "errpreset": "conservative",
+          "method": "gear2only",
+          "maxacfreq": "381.348G"
+        },
+        "pac": {
+          "sweeptype": "absolute",
+          "rangeType": "Start-Stop",
+          "start": "5.7G",
+          "stop": "5.9G",
+          "incrType": "Linear",
+          "stepTypeLin": "Step Size",
+          "step": "100M",
+          "maxsideband": "1",
+          "freqaxis": "in"
+        },
+        "pnoise": {
+          "sweeptype": "absolute",
+          "rangeType": "Start-Stop",
+          "start": "100M",
+          "stop": "300M",
+          "incrType": "Linear",
+          "stepTypeLin": "Step Size",
+          "step": "100M",
+          "maxsideband": "31",
+          "noiseFigure": true,
+          "outType": "voltage",
+          "p": "/outp",
+          "n": "/outn",
+          "inType": "port",
+          "inPort": "/RFPORT",
+          "iprobe": "/RFPORT",
+          "refsideband": "1",
+          "noisetype": "timeaverage"
+        }
+      }
+    },
+    {
+      "test_name": "active_noise_sb63",
+      "circuit": "active",
+      "kind": "active",
+      "cell": "active_tb",
+      "library": "HW09_Mixers",
+      "view": "schematic",
+      "stage": "pnoise",
+      "label": "noise_sb63",
+      "pin_dbm": -55,
+      "rf_scale": 0,
+      "sidebands": 63,
+      "reltol": 1e-05,
+      "variables": {
+        "pinDbm": -55,
+        "fRF": 5800000000.0,
+        "fRF2": 5800000000.0,
+        "rfScale": 0,
+        "tone2Scale": 0
+      },
+      "analyses": {
+        "pss": {
+          "engine": "Shooting",
+          "fund": "5.6G",
+          "harms": "63",
+          "tstab": "5n",
+          "errpreset": "conservative",
+          "method": "gear2only",
+          "maxacfreq": "381.348G"
+        },
+        "pac": {
+          "sweeptype": "absolute",
+          "rangeType": "Start-Stop",
+          "start": "5.7G",
+          "stop": "5.9G",
+          "incrType": "Linear",
+          "stepTypeLin": "Step Size",
+          "step": "100M",
+          "maxsideband": "1",
+          "freqaxis": "in"
+        },
+        "pnoise": {
+          "sweeptype": "absolute",
+          "rangeType": "Start-Stop",
+          "start": "100M",
+          "stop": "300M",
+          "incrType": "Linear",
+          "stepTypeLin": "Step Size",
+          "step": "100M",
+          "maxsideband": "63",
+          "noiseFigure": true,
+          "outType": "voltage",
+          "p": "/outp",
+          "n": "/outn",
+          "inType": "port",
+          "inPort": "/RFPORT",
+          "iprobe": "/RFPORT",
+          "refsideband": "1",
+          "noisetype": "timeaverage"
+        }
+      }
+    },
+    {
+      "test_name": "active_noise_sb63",
+      "circuit": "active",
+      "kind": "active",
+      "cell": "active_tb",
+      "library": "HW09_Mixers",
+      "view": "schematic",
+      "stage": "pac_usb",
+      "label": "noise_sb63",
+      "pin_dbm": -55,
+      "rf_scale": 0,
+      "sidebands": 63,
+      "reltol": 1e-05,
+      "variables": {
+        "pinDbm": -55,
+        "fRF": 5800000000.0,
+        "fRF2": 5800000000.0,
+        "rfScale": 0,
+        "tone2Scale": 0
+      },
+      "analyses": {
+        "pss": {
+          "engine": "Shooting",
+          "fund": "5.6G",
+          "harms": "63",
+          "tstab": "5n",
+          "errpreset": "conservative",
+          "method": "gear2only",
+          "maxacfreq": "381.348G"
+        },
+        "pac": {
+          "sweeptype": "absolute",
+          "rangeType": "Start-Stop",
+          "start": "5.7G",
+          "stop": "5.9G",
+          "incrType": "Linear",
+          "stepTypeLin": "Step Size",
+          "step": "100M",
+          "maxsideband": "1",
+          "freqaxis": "in"
+        },
+        "pnoise": {
+          "sweeptype": "absolute",
+          "rangeType": "Start-Stop",
+          "start": "100M",
+          "stop": "300M",
+          "incrType": "Linear",
+          "stepTypeLin": "Step Size",
+          "step": "100M",
+          "maxsideband": "63",
+          "noiseFigure": true,
+          "outType": "voltage",
+          "p": "/outp",
+          "n": "/outn",
+          "inType": "port",
+          "inPort": "/RFPORT",
+          "iprobe": "/RFPORT",
+          "refsideband": "1",
+          "noisetype": "timeaverage"
+        }
+      }
+    },
+    {
+      "test_name": "active_noise_image",
+      "circuit": "active",
+      "kind": "active",
+      "cell": "active_tb",
+      "library": "HW09_Mixers",
+      "view": "schematic",
+      "stage": "pac_image",
+      "label": "noise_image",
+      "pin_dbm": -55,
+      "rf_scale": 0,
+      "reltol": 1e-05,
+      "variables": {
+        "pinDbm": -55,
+        "fRF": 5800000000.0,
+        "fRF2": 5800000000.0,
+        "rfScale": 0,
+        "tone2Scale": 0
+      },
+      "analyses": {
+        "pss": {
+          "engine": "Shooting",
+          "fund": "5.6G",
+          "harms": "63",
+          "tstab": "5n",
+          "errpreset": "conservative",
+          "method": "gear2only",
+          "maxacfreq": "381.348G"
+        },
+        "pac": {
+          "sweeptype": "absolute",
+          "rangeType": "Start-Stop",
+          "start": "5.3G",
+          "stop": "5.5G",
+          "incrType": "Linear",
+          "stepTypeLin": "Step Size",
+          "step": "100M",
+          "maxsideband": "1",
+          "freqaxis": "in"
+        }
+      }
+    },
+    {
+      "test_name": "passive_noise_sb15",
+      "circuit": "passive",
+      "kind": "passive",
+      "cell": "passive_tb",
+      "library": "HW09_Mixers",
+      "view": "schematic",
+      "stage": "pnoise",
+      "label": "noise_sb15",
+      "pin_dbm": -55,
+      "rf_scale": 0,
+      "sidebands": 15,
+      "reltol": 1e-05,
+      "variables": {
+        "pinDbm": -55,
+        "fRF": 5800000000.0,
+        "fRF2": 5800000000.0,
+        "rfScale": 0,
+        "tone2Scale": 0
+      },
+      "analyses": {
+        "pss": {
+          "engine": "Shooting",
+          "fund": "5.6G",
+          "harms": "63",
+          "tstab": "5n",
+          "errpreset": "conservative",
+          "method": "gear2only",
+          "maxacfreq": "381.348G"
+        },
+        "pac": {
+          "sweeptype": "absolute",
+          "rangeType": "Start-Stop",
+          "start": "5.7G",
+          "stop": "5.9G",
+          "incrType": "Linear",
+          "stepTypeLin": "Step Size",
+          "step": "100M",
+          "maxsideband": "1",
+          "freqaxis": "in"
+        },
+        "pnoise": {
+          "sweeptype": "absolute",
+          "rangeType": "Start-Stop",
+          "start": "100M",
+          "stop": "300M",
+          "incrType": "Linear",
+          "stepTypeLin": "Step Size",
+          "step": "100M",
+          "maxsideband": "15",
+          "noiseFigure": true,
+          "outType": "voltage",
+          "p": "/outp",
+          "n": "/outn",
+          "inType": "port",
+          "inPort": "/RFPORT",
+          "iprobe": "/RFPORT",
+          "refsideband": "1",
+          "noisetype": "timeaverage"
+        }
+      }
+    },
+    {
+      "test_name": "passive_noise_sb31",
+      "circuit": "passive",
+      "kind": "passive",
+      "cell": "passive_tb",
+      "library": "HW09_Mixers",
+      "view": "schematic",
+      "stage": "pnoise",
+      "label": "noise_sb31",
+      "pin_dbm": -55,
+      "rf_scale": 0,
+      "sidebands": 31,
+      "reltol": 1e-05,
+      "variables": {
+        "pinDbm": -55,
+        "fRF": 5800000000.0,
+        "fRF2": 5800000000.0,
+        "rfScale": 0,
+        "tone2Scale": 0
+      },
+      "analyses": {
+        "pss": {
+          "engine": "Shooting",
+          "fund": "5.6G",
+          "harms": "63",
+          "tstab": "5n",
+          "errpreset": "conservative",
+          "method": "gear2only",
+          "maxacfreq": "381.348G"
+        },
+        "pac": {
+          "sweeptype": "absolute",
+          "rangeType": "Start-Stop",
+          "start": "5.7G",
+          "stop": "5.9G",
+          "incrType": "Linear",
+          "stepTypeLin": "Step Size",
+          "step": "100M",
+          "maxsideband": "1",
+          "freqaxis": "in"
+        },
+        "pnoise": {
+          "sweeptype": "absolute",
+          "rangeType": "Start-Stop",
+          "start": "100M",
+          "stop": "300M",
+          "incrType": "Linear",
+          "stepTypeLin": "Step Size",
+          "step": "100M",
+          "maxsideband": "31",
+          "noiseFigure": true,
+          "outType": "voltage",
+          "p": "/outp",
+          "n": "/outn",
+          "inType": "port",
+          "inPort": "/RFPORT",
+          "iprobe": "/RFPORT",
+          "refsideband": "1",
+          "noisetype": "timeaverage"
+        }
+      }
+    },
+    {
+      "test_name": "passive_noise_sb63",
+      "circuit": "passive",
+      "kind": "passive",
+      "cell": "passive_tb",
+      "library": "HW09_Mixers",
+      "view": "schematic",
+      "stage": "pnoise",
+      "label": "noise_sb63",
+      "pin_dbm": -55,
+      "rf_scale": 0,
+      "sidebands": 63,
+      "reltol": 1e-05,
+      "variables": {
+        "pinDbm": -55,
+        "fRF": 5800000000.0,
+        "fRF2": 5800000000.0,
+        "rfScale": 0,
+        "tone2Scale": 0
+      },
+      "analyses": {
+        "pss": {
+          "engine": "Shooting",
+          "fund": "5.6G",
+          "harms": "63",
+          "tstab": "5n",
+          "errpreset": "conservative",
+          "method": "gear2only",
+          "maxacfreq": "381.348G"
+        },
+        "pac": {
+          "sweeptype": "absolute",
+          "rangeType": "Start-Stop",
+          "start": "5.7G",
+          "stop": "5.9G",
+          "incrType": "Linear",
+          "stepTypeLin": "Step Size",
+          "step": "100M",
+          "maxsideband": "1",
+          "freqaxis": "in"
+        },
+        "pnoise": {
+          "sweeptype": "absolute",
+          "rangeType": "Start-Stop",
+          "start": "100M",
+          "stop": "300M",
+          "incrType": "Linear",
+          "stepTypeLin": "Step Size",
+          "step": "100M",
+          "maxsideband": "63",
+          "noiseFigure": true,
+          "outType": "voltage",
+          "p": "/outp",
+          "n": "/outn",
+          "inType": "port",
+          "inPort": "/RFPORT",
+          "iprobe": "/RFPORT",
+          "refsideband": "1",
+          "noisetype": "timeaverage"
+        }
+      }
+    },
+    {
+      "test_name": "passive_noise_sb63",
+      "circuit": "passive",
+      "kind": "passive",
+      "cell": "passive_tb",
+      "library": "HW09_Mixers",
+      "view": "schematic",
+      "stage": "pac_usb",
+      "label": "noise_sb63",
+      "pin_dbm": -55,
+      "rf_scale": 0,
+      "sidebands": 63,
+      "reltol": 1e-05,
+      "variables": {
+        "pinDbm": -55,
+        "fRF": 5800000000.0,
+        "fRF2": 5800000000.0,
+        "rfScale": 0,
+        "tone2Scale": 0
+      },
+      "analyses": {
+        "pss": {
+          "engine": "Shooting",
+          "fund": "5.6G",
+          "harms": "63",
+          "tstab": "5n",
+          "errpreset": "conservative",
+          "method": "gear2only",
+          "maxacfreq": "381.348G"
+        },
+        "pac": {
+          "sweeptype": "absolute",
+          "rangeType": "Start-Stop",
+          "start": "5.7G",
+          "stop": "5.9G",
+          "incrType": "Linear",
+          "stepTypeLin": "Step Size",
+          "step": "100M",
+          "maxsideband": "1",
+          "freqaxis": "in"
+        },
+        "pnoise": {
+          "sweeptype": "absolute",
+          "rangeType": "Start-Stop",
+          "start": "100M",
+          "stop": "300M",
+          "incrType": "Linear",
+          "stepTypeLin": "Step Size",
+          "step": "100M",
+          "maxsideband": "63",
+          "noiseFigure": true,
+          "outType": "voltage",
+          "p": "/outp",
+          "n": "/outn",
+          "inType": "port",
+          "inPort": "/RFPORT",
+          "iprobe": "/RFPORT",
+          "refsideband": "1",
+          "noisetype": "timeaverage"
+        }
+      }
+    },
+    {
+      "test_name": "passive_noise_image",
+      "circuit": "passive",
+      "kind": "passive",
+      "cell": "passive_tb",
+      "library": "HW09_Mixers",
+      "view": "schematic",
+      "stage": "pac_image",
+      "label": "noise_image",
+      "pin_dbm": -55,
+      "rf_scale": 0,
+      "reltol": 1e-05,
+      "variables": {
+        "pinDbm": -55,
+        "fRF": 5800000000.0,
+        "fRF2": 5800000000.0,
+        "rfScale": 0,
+        "tone2Scale": 0
+      },
+      "analyses": {
+        "pss": {
+          "engine": "Shooting",
+          "fund": "5.6G",
+          "harms": "63",
+          "tstab": "5n",
+          "errpreset": "conservative",
+          "method": "gear2only",
+          "maxacfreq": "381.348G"
+        },
+        "pac": {
+          "sweeptype": "absolute",
+          "rangeType": "Start-Stop",
+          "start": "5.3G",
+          "stop": "5.5G",
+          "incrType": "Linear",
+          "stepTypeLin": "Step Size",
+          "step": "100M",
+          "maxsideband": "1",
+          "freqaxis": "in"
+        }
+      }
+    }
+  ],
+  "initially_enabled": [
+    "active_single_tone",
+    "passive_single_tone"
+  ]
+}

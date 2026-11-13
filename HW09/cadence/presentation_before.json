@@ -1,0 +1,16 @@
+{
+  "captured_utc": "2026-11-13T04:22:27.526898+00:00",
+  "purpose": "Before GUI presentation-only label changes",
+  "files": [
+    {
+      "path": "cadence/HW09_Mixers/active_tb/schematic/sch.oa",
+      "sha256": "42b1a8085febda20c9b684acc0cc59cd3b9bcd5f5001b60c4439c8612f4bf7f4",
+      "size": 33876
+    },
+    {
+      "path": "cadence/HW09_Mixers/passive_tb/schematic/sch.oa",
+      "sha256": "9d944474eb0fdcb12b79ad6413f90b81005a8bb5da4247e5cc7ec4043e409caf",
+      "size": 32876
+    }
+  ]
+}

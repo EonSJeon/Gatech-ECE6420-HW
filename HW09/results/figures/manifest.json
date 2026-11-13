@@ -1,0 +1,21 @@
+{
+  "completed_utc": "2026-11-13T01:06:18.345569+00:00",
+  "config_fingerprint": "ab6a7104f23d7959fe600c43b1b6a7078f76eef3e32892f988efbe167b81e92c",
+  "figures": {
+    "active_compression": "/Users/jeonsang-eon/Gatech-ECE6420/HW09/results/figures/active_compression.png",
+    "active_iip3": "/Users/jeonsang-eon/Gatech-ECE6420/HW09/results/figures/active_iip3.png",
+    "active_noise": "/Users/jeonsang-eon/Gatech-ECE6420/HW09/results/figures/active_noise.png",
+    "active_spectrum": "/Users/jeonsang-eon/Gatech-ECE6420/HW09/results/figures/active_spectrum.png",
+    "active_transient": "/Users/jeonsang-eon/Gatech-ECE6420/HW09/results/figures/active_transient.png",
+    "active_twotone_spectrum": "/Users/jeonsang-eon/Gatech-ECE6420/HW09/results/figures/active_twotone_spectrum.png",
+    "passive_compression": "/Users/jeonsang-eon/Gatech-ECE6420/HW09/results/figures/passive_compression.png",
+    "passive_iip3": "/Users/jeonsang-eon/Gatech-ECE6420/HW09/results/figures/passive_iip3.png",
+    "passive_noise": "/Users/jeonsang-eon/Gatech-ECE6420/HW09/results/figures/passive_noise.png",
+    "passive_spectrum": "/Users/jeonsang-eon/Gatech-ECE6420/HW09/results/figures/passive_spectrum.png",
+    "passive_transient": "/Users/jeonsang-eon/Gatech-ECE6420/HW09/results/figures/passive_transient.png",
+    "passive_twotone_spectrum": "/Users/jeonsang-eon/Gatech-ECE6420/HW09/results/figures/passive_twotone_spectrum.png"
+  },
+  "rendered_locally": true,
+  "run_id": "ab6a7104f23d",
+  "spectra_style": "stems"
+}

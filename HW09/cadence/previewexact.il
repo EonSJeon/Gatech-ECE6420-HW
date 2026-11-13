@@ -1,0 +1,42 @@
+; Native existing-graph legend/layout preview only. No PSF re-evaluation.
+foreach(row hw09PlotWindows
+  foreach(sub awvGetSubwindowList(nth(2 row) ?all t)
+    awvSetLegendPos(nth(2 row) "above" ?subwindow sub)
+  )
+)
+procedure(hw09PreviewRestoreCIW()
+  let((ci)
+    ci=hiGetCIWindow()
+    when(ci
+      hiResizeWindow(ci list(list(10 760) list(1590 980)))
+      hiRaiseWindow(ci))
+  )
+)
+procedure(hw09ExportExactPreview()
+  let((directory audit win actual file saved)
+    directory=strcat(hw09PlotRoot "/cadence/gui_exports/exact_preview_v1")
+    unless(isDir(directory) createDir(directory))
+    audit=outfile(strcat(directory "/native_legend_preview.tsv") "w")
+    foreach(role list("iip3" "transient")
+      win=nil
+      foreach(row hw09PlotWindows
+        when(and(equal(car(row) "active") equal(cadr(row) role)) win=nth(2 row)))
+      unless(win error("Missing active native graph for exact-copy preview.\n"))
+      awvSetCurrentWindow(win)
+      actual=awvGetHiWindow(win)
+      when(actual hiRaiseWindow(actual))
+      foreach(sub awvGetSubwindowList(win ?all t)
+        fprintf(audit "LEGEND\t%s\t%L\t%L\t%L\n"
+          role win sub awvGetWaveNameList(win ?subwindow sub)))
+      file=strcat(directory "/active_" role ".png")
+      saved=saveGraphImage(?window win ?fileName file ?exactCopy t)
+      unless(and(saved isFile(file)) error("Native exact-copy preview failed: %s\n" file))
+      printf("HW09 native above-legend exact-copy preview written: %s\n" file)
+    )
+    close(audit)
+    hw09PreviewRestoreCIW()
+    hiRegTimer("hw09PreviewRestoreCIW()" 10)
+  )
+)
+; Let the native graph layout process the legend change before capture.
+hiRegTimer("hw09ExportExactPreview()" 10)

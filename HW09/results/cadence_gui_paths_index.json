@@ -1,0 +1,7 @@
+{
+  "origin": "verified_actual_native_point_file_index",
+  "source_manifest": "cadence/gui_run_manifest.json",
+  "source_manifest_sha256": "cdd029e5218cdf577a1c67b9328b8bf8912e7b94b8b76d2e838f668840c45789",
+  "test_count": 56,
+  "method": "Index derived from completed native point paths in the verified actual GUI manifest. No simulator or GUI state was invoked."
+}

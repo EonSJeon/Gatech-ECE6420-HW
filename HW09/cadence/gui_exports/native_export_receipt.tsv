@@ -1,0 +1,63 @@
+SOURCE_RUN	cadence_gui_ab6a7104f23d
+EXPORT	Nov 13 00:01:04 2026	window:50	active	transient	/nethome/sjeon84/Gatech-ECE6420/HW09/cadence/gui_exports/active_transient.png	Native v(/rf) minus RF bias and v(/outp)-v(/outn); no envelope or filtered-IF substitution
+SOURCE	active	transient	/nethome/sjeon84/Gatech-ECE6420/HW09/simulation/cadence_gui/HW09_Mixers/mixer_campaign/maestro/results/maestro/Interactive.2/1/active_single_tone/psf
+EXPORT	Nov 13 00:01:05 2026	window:51	active	spectrum	/nethome/sjeon84/Gatech-ECE6420/HW09/cadence/gui_exports/active_spectrum.png	db20(mag(dft(v(/outp)-v(/outn),5ns,25ns,4000,Rectangular))/unit-cosine-calibration); 50MHz bins
+SOURCE	active	spectrum	/nethome/sjeon84/Gatech-ECE6420/HW09/simulation/cadence_gui/HW09_Mixers/mixer_campaign/maestro/results/maestro/Interactive.2/1/active_single_tone/psf
+EXPORT	Nov 13 00:01:06 2026	window:52	active	twotone_spectrum	/nethome/sjeon84/Gatech-ECE6420/HW09/cadence/gui_exports/active_twotone_spectrum.png	db20(mag(dft(v(/outp)-v(/outn),20ns,120ns,20000,Rectangular))/unit-cosine-calibration); 10MHz bins
+SOURCE	active	twotone_spectrum	/nethome/sjeon84/Gatech-ECE6420/HW09/simulation/cadence_gui/HW09_Mixers/mixer_campaign/maestro/results/maestro/Interactive.2/1/active_two_tone_tight/psf
+EXPORT	Nov 13 00:01:06 2026	window:53	active	compression	/nethome/sjeon84/Gatech-ECE6420/HW09/cadence/gui_exports/active_compression.png	Native calibrated DFT200MHz per14actual named tests;20log10(Aif/sqrt(8*50*1mW*10^(Pin/10))); threshold=mean(first3gains)-1dB
+SOURCE	active	compression	/nethome/sjeon84/Gatech-ECE6420/HW09/simulation/cadence_gui/HW09_Mixers/mixer_campaign/maestro/results/maestro/Interactive.2/1/active_compression_00/psf
+SOURCE	active	compression	/nethome/sjeon84/Gatech-ECE6420/HW09/simulation/cadence_gui/HW09_Mixers/mixer_campaign/maestro/results/maestro/Interactive.2/1/active_compression_01/psf
+SOURCE	active	compression	/nethome/sjeon84/Gatech-ECE6420/HW09/simulation/cadence_gui/HW09_Mixers/mixer_campaign/maestro/results/maestro/Interactive.2/1/active_compression_02/psf
+SOURCE	active	compression	/nethome/sjeon84/Gatech-ECE6420/HW09/simulation/cadence_gui/HW09_Mixers/mixer_campaign/maestro/results/maestro/Interactive.2/1/active_compression_03/psf
+SOURCE	active	compression	/nethome/sjeon84/Gatech-ECE6420/HW09/simulation/cadence_gui/HW09_Mixers/mixer_campaign/maestro/results/maestro/Interactive.2/1/active_compression_04/psf
+SOURCE	active	compression	/nethome/sjeon84/Gatech-ECE6420/HW09/simulation/cadence_gui/HW09_Mixers/mixer_campaign/maestro/results/maestro/Interactive.2/1/active_compression_05/psf
+SOURCE	active	compression	/nethome/sjeon84/Gatech-ECE6420/HW09/simulation/cadence_gui/HW09_Mixers/mixer_campaign/maestro/results/maestro/Interactive.2/1/active_compression_06/psf
+SOURCE	active	compression	/nethome/sjeon84/Gatech-ECE6420/HW09/simulation/cadence_gui/HW09_Mixers/mixer_campaign/maestro/results/maestro/Interactive.2/1/active_compression_07/psf
+SOURCE	active	compression	/nethome/sjeon84/Gatech-ECE6420/HW09/simulation/cadence_gui/HW09_Mixers/mixer_campaign/maestro/results/maestro/Interactive.2/1/active_compression_08/psf
+SOURCE	active	compression	/nethome/sjeon84/Gatech-ECE6420/HW09/simulation/cadence_gui/HW09_Mixers/mixer_campaign/maestro/results/maestro/Interactive.2/1/active_compression_09/psf
+SOURCE	active	compression	/nethome/sjeon84/Gatech-ECE6420/HW09/simulation/cadence_gui/HW09_Mixers/mixer_campaign/maestro/results/maestro/Interactive.2/1/active_compression_10/psf
+SOURCE	active	compression	/nethome/sjeon84/Gatech-ECE6420/HW09/simulation/cadence_gui/HW09_Mixers/mixer_campaign/maestro/results/maestro/Interactive.2/1/active_compression_11/psf
+SOURCE	active	compression	/nethome/sjeon84/Gatech-ECE6420/HW09/simulation/cadence_gui/HW09_Mixers/mixer_campaign/maestro/results/maestro/Interactive.2/1/active_compression_12/psf
+SOURCE	active	compression	/nethome/sjeon84/Gatech-ECE6420/HW09/simulation/cadence_gui/HW09_Mixers/mixer_campaign/maestro/results/maestro/Interactive.2/1/active_compression_13/psf
+EXPORT	Nov 13 00:01:07 2026	window:54	active	iip3	/nethome/sjeon84/Gatech-ECE6420/HW09/cadence/gui_exports/active_iip3.png	Native calibrated DFT at190/210MHz fundamentals and170/230MHz IM3 per7actual named tests;db20(peak V); accepted cubic interval -40,-35,-30dBm
+SOURCE	active	iip3	/nethome/sjeon84/Gatech-ECE6420/HW09/simulation/cadence_gui/HW09_Mixers/mixer_campaign/maestro/results/maestro/Interactive.2/1/active_two_tone_00/psf
+SOURCE	active	iip3	/nethome/sjeon84/Gatech-ECE6420/HW09/simulation/cadence_gui/HW09_Mixers/mixer_campaign/maestro/results/maestro/Interactive.2/1/active_two_tone_01/psf
+SOURCE	active	iip3	/nethome/sjeon84/Gatech-ECE6420/HW09/simulation/cadence_gui/HW09_Mixers/mixer_campaign/maestro/results/maestro/Interactive.2/1/active_two_tone_02/psf
+SOURCE	active	iip3	/nethome/sjeon84/Gatech-ECE6420/HW09/simulation/cadence_gui/HW09_Mixers/mixer_campaign/maestro/results/maestro/Interactive.2/1/active_two_tone_03/psf
+SOURCE	active	iip3	/nethome/sjeon84/Gatech-ECE6420/HW09/simulation/cadence_gui/HW09_Mixers/mixer_campaign/maestro/results/maestro/Interactive.2/1/active_two_tone_04/psf
+SOURCE	active	iip3	/nethome/sjeon84/Gatech-ECE6420/HW09/simulation/cadence_gui/HW09_Mixers/mixer_campaign/maestro/results/maestro/Interactive.2/1/active_two_tone_05/psf
+SOURCE	active	iip3	/nethome/sjeon84/Gatech-ECE6420/HW09/simulation/cadence_gui/HW09_Mixers/mixer_campaign/maestro/results/maestro/Interactive.2/1/active_two_tone_06/psf
+EXPORT	Nov 13 00:01:08 2026	window:55	active	noise	/nethome/sjeon84/Gatech-ECE6420/HW09/cadence/gui_exports/active_noise.png	getData(NF,pnoise) and getData(NFdsb,pnoise);native63-sideband PNOISE,branch-load noise included;NFieee excluded
+SOURCE	active	noise	/nethome/sjeon84/Gatech-ECE6420/HW09/simulation/cadence_gui/HW09_Mixers/mixer_campaign/maestro/results/maestro/Interactive.2/1/active_noise_sb63/psf
+EXPORT	Nov 13 00:01:09 2026	window:56	passive	transient	/nethome/sjeon84/Gatech-ECE6420/HW09/cadence/gui_exports/passive_transient.png	Native v(/rf) minus RF bias and v(/outp)-v(/outn); no envelope or filtered-IF substitution
+SOURCE	passive	transient	/nethome/sjeon84/Gatech-ECE6420/HW09/simulation/cadence_gui/HW09_Mixers/mixer_campaign/maestro/results/maestro/Interactive.2/1/passive_single_tone/psf
+EXPORT	Nov 13 00:01:09 2026	window:57	passive	spectrum	/nethome/sjeon84/Gatech-ECE6420/HW09/cadence/gui_exports/passive_spectrum.png	db20(mag(dft(v(/outp)-v(/outn),5ns,25ns,4000,Rectangular))/unit-cosine-calibration); 50MHz bins
+SOURCE	passive	spectrum	/nethome/sjeon84/Gatech-ECE6420/HW09/simulation/cadence_gui/HW09_Mixers/mixer_campaign/maestro/results/maestro/Interactive.2/1/passive_single_tone/psf
+EXPORT	Nov 13 00:01:10 2026	window:58	passive	twotone_spectrum	/nethome/sjeon84/Gatech-ECE6420/HW09/cadence/gui_exports/passive_twotone_spectrum.png	db20(mag(dft(v(/outp)-v(/outn),20ns,120ns,20000,Rectangular))/unit-cosine-calibration); 10MHz bins
+SOURCE	passive	twotone_spectrum	/nethome/sjeon84/Gatech-ECE6420/HW09/simulation/cadence_gui/HW09_Mixers/mixer_campaign/maestro/results/maestro/Interactive.2/1/passive_two_tone_tight/psf
+EXPORT	Nov 13 00:01:11 2026	window:59	passive	compression	/nethome/sjeon84/Gatech-ECE6420/HW09/cadence/gui_exports/passive_compression.png	Native calibrated DFT200MHz per14actual named tests;20log10(Aif/sqrt(8*50*1mW*10^(Pin/10))); threshold=mean(first3gains)-1dB
+SOURCE	passive	compression	/nethome/sjeon84/Gatech-ECE6420/HW09/simulation/cadence_gui/HW09_Mixers/mixer_campaign/maestro/results/maestro/Interactive.2/1/passive_compression_00/psf
+SOURCE	passive	compression	/nethome/sjeon84/Gatech-ECE6420/HW09/simulation/cadence_gui/HW09_Mixers/mixer_campaign/maestro/results/maestro/Interactive.2/1/passive_compression_01/psf
+SOURCE	passive	compression	/nethome/sjeon84/Gatech-ECE6420/HW09/simulation/cadence_gui/HW09_Mixers/mixer_campaign/maestro/results/maestro/Interactive.2/1/passive_compression_02/psf
+SOURCE	passive	compression	/nethome/sjeon84/Gatech-ECE6420/HW09/simulation/cadence_gui/HW09_Mixers/mixer_campaign/maestro/results/maestro/Interactive.2/1/passive_compression_03/psf
+SOURCE	passive	compression	/nethome/sjeon84/Gatech-ECE6420/HW09/simulation/cadence_gui/HW09_Mixers/mixer_campaign/maestro/results/maestro/Interactive.2/1/passive_compression_04/psf
+SOURCE	passive	compression	/nethome/sjeon84/Gatech-ECE6420/HW09/simulation/cadence_gui/HW09_Mixers/mixer_campaign/maestro/results/maestro/Interactive.2/1/passive_compression_05/psf
+SOURCE	passive	compression	/nethome/sjeon84/Gatech-ECE6420/HW09/simulation/cadence_gui/HW09_Mixers/mixer_campaign/maestro/results/maestro/Interactive.2/1/passive_compression_06/psf
+SOURCE	passive	compression	/nethome/sjeon84/Gatech-ECE6420/HW09/simulation/cadence_gui/HW09_Mixers/mixer_campaign/maestro/results/maestro/Interactive.2/1/passive_compression_07/psf
+SOURCE	passive	compression	/nethome/sjeon84/Gatech-ECE6420/HW09/simulation/cadence_gui/HW09_Mixers/mixer_campaign/maestro/results/maestro/Interactive.2/1/passive_compression_08/psf
+SOURCE	passive	compression	/nethome/sjeon84/Gatech-ECE6420/HW09/simulation/cadence_gui/HW09_Mixers/mixer_campaign/maestro/results/maestro/Interactive.2/1/passive_compression_09/psf
+SOURCE	passive	compression	/nethome/sjeon84/Gatech-ECE6420/HW09/simulation/cadence_gui/HW09_Mixers/mixer_campaign/maestro/results/maestro/Interactive.2/1/passive_compression_10/psf
+SOURCE	passive	compression	/nethome/sjeon84/Gatech-ECE6420/HW09/simulation/cadence_gui/HW09_Mixers/mixer_campaign/maestro/results/maestro/Interactive.2/1/passive_compression_11/psf
+SOURCE	passive	compression	/nethome/sjeon84/Gatech-ECE6420/HW09/simulation/cadence_gui/HW09_Mixers/mixer_campaign/maestro/results/maestro/Interactive.2/1/passive_compression_12/psf
+SOURCE	passive	compression	/nethome/sjeon84/Gatech-ECE6420/HW09/simulation/cadence_gui/HW09_Mixers/mixer_campaign/maestro/results/maestro/Interactive.2/1/passive_compression_13/psf
+EXPORT	Nov 13 00:01:12 2026	window:60	passive	iip3	/nethome/sjeon84/Gatech-ECE6420/HW09/cadence/gui_exports/passive_iip3.png	Native calibrated DFT at190/210MHz fundamentals and170/230MHz IM3 per7actual named tests;db20(peak V); accepted cubic interval -40,-35,-30dBm
+SOURCE	passive	iip3	/nethome/sjeon84/Gatech-ECE6420/HW09/simulation/cadence_gui/HW09_Mixers/mixer_campaign/maestro/results/maestro/Interactive.2/1/passive_two_tone_00/psf
+SOURCE	passive	iip3	/nethome/sjeon84/Gatech-ECE6420/HW09/simulation/cadence_gui/HW09_Mixers/mixer_campaign/maestro/results/maestro/Interactive.2/1/passive_two_tone_01/psf
+SOURCE	passive	iip3	/nethome/sjeon84/Gatech-ECE6420/HW09/simulation/cadence_gui/HW09_Mixers/mixer_campaign/maestro/results/maestro/Interactive.2/1/passive_two_tone_02/psf
+SOURCE	passive	iip3	/nethome/sjeon84/Gatech-ECE6420/HW09/simulation/cadence_gui/HW09_Mixers/mixer_campaign/maestro/results/maestro/Interactive.2/1/passive_two_tone_03/psf
+SOURCE	passive	iip3	/nethome/sjeon84/Gatech-ECE6420/HW09/simulation/cadence_gui/HW09_Mixers/mixer_campaign/maestro/results/maestro/Interactive.2/1/passive_two_tone_04/psf
+SOURCE	passive	iip3	/nethome/sjeon84/Gatech-ECE6420/HW09/simulation/cadence_gui/HW09_Mixers/mixer_campaign/maestro/results/maestro/Interactive.2/1/passive_two_tone_05/psf
+SOURCE	passive	iip3	/nethome/sjeon84/Gatech-ECE6420/HW09/simulation/cadence_gui/HW09_Mixers/mixer_campaign/maestro/results/maestro/Interactive.2/1/passive_two_tone_06/psf
+EXPORT	Nov 13 00:01:12 2026	window:61	passive	noise	/nethome/sjeon84/Gatech-ECE6420/HW09/cadence/gui_exports/passive_noise.png	getData(NF,pnoise) and getData(NFdsb,pnoise);native63-sideband PNOISE,branch-load noise included;NFieee excluded
+SOURCE	passive	noise	/nethome/sjeon84/Gatech-ECE6420/HW09/simulation/cadence_gui/HW09_Mixers/mixer_campaign/maestro/results/maestro/Interactive.2/1/passive_noise_sb63/psf

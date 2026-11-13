@@ -1,0 +1,41 @@
+{
+  "origin": "native_oa_geometry_local_render",
+  "source_audit": "/Users/jeonsang-eon/Gatech-ECE6420/HW09/cadence/passive_tb_audit.tsv",
+  "source_sha256": "e1923d30a2a1fcd7e5110d824170145023487930b3953f606a6a88a31bc315b8",
+  "instance_count": 19,
+  "connection_count": 33,
+  "rendered_instances": [
+    "CLN",
+    "CLP",
+    "I0",
+    "I1",
+    "I2",
+    "I3",
+    "I4",
+    "I5",
+    "I6",
+    "I7",
+    "I8",
+    "LON",
+    "LOP",
+    "M1",
+    "M2",
+    "R1",
+    "R2",
+    "RFPORT",
+    "RFSECOND"
+  ],
+  "label_font_pt": 11.5,
+  "shape_count": 255,
+  "unrendered_shape_types": [],
+  "view": "complete testbench",
+  "png": "/Users/jeonsang-eon/Gatech-ECE6420/HW09/results/cadence_gui/schematics/passive_testbench.png",
+  "svg": "/Users/jeonsang-eon/Gatech-ECE6420/HW09/results/cadence_gui/schematics/passive_testbench.svg",
+  "rendering_description": "Complete native testbench. Source symbols retain all exported master primitives; actual source type and settings are identified by their CDF captions. Rendered locally from exported OA symbol primitives, wires, signal labels, instance orientations and actual CDF properties. Nonprinting boundaries, unresolved dynamic labels and standalone instructional notes are omitted for readability. This is a source-geometry rendering, not a GUI screenshot.",
+  "auxiliary_source_audits": [
+    {
+      "source": "/Users/jeonsang-eon/Gatech-ECE6420/HW09/cadence/symbol_arcs.tsv",
+      "sha256": "649570c61b7989dde23db5c0ac56897fda17280c7116223b7545e83b39edf0ca"
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "rows": [
+    {
+      "circuit": "active",
+      "gm_width_um": 10,
+      "switch_width_um": 20,
+      "rf_bias_v": 0.7,
+      "lo_common_mode_v": 0.8,
+      "voltage_gain_db": 8.173047,
+      "power_mw": 0.834956,
+      "ssb_nf_db": 11.354644,
+      "iip3_dbm": -4.9945,
+      "selected": false,
+      "reason": "Higher power, slightly lower gain, higher NF, and lower validated IIP3 than the selected candidate."
+    },
+    {
+      "circuit": "active",
+      "gm_width_um": 15,
+      "switch_width_um": 20,
+      "rf_bias_v": 0.65,
+      "lo_common_mode_v": 0.8,
+      "voltage_gain_db": 8.573327,
+      "power_mw": 0.685075,
+      "ssb_nf_db": 11.14608,
+      "iip3_dbm": -2.7177,
+      "selected": true,
+      "reason": "Selected using measured gain, core power, periodic noise and a validated -40/-35/-30dBm cubic region."
+    },
+    {
+      "circuit": "passive",
+      "switch_width_um": 20,
+      "lo_common_mode_v": 0.65,
+      "voltage_gain_db": -10.033212,
+      "power_mw": 0,
+      "selected": false,
+      "reason": "Excess LO common mode increases simultaneous conduction and conversion loss."
+    },
+    {
+      "circuit": "passive",
+      "switch_width_um": 20,
+      "lo_common_mode_v": 0.5,
+      "voltage_gain_db": -5.975241,
+      "power_mw": 0,
+      "selected": true,
+      "reason": "Lowest measured conversion loss in the refined candidate grid at the common 500-ohm load."
+    }
+  ],
+  "scope": "Bounded candidate exploration, not a global optimum. Both final circuits use 500-ohm branch loads, 10fF load capacitors and a 50-ohm source.",
+  "candidate_gain_window_s": 2e-08,
+  "candidate_iip3_window_s": 1e-07,
+  "input_power_dbm_per_tone": -55,
+  "supporting_data": [
+    "results/design_sweep.json",
+    "results/passive_refine.json",
+    "results/active_candidate_check.json"
+  ]
+}

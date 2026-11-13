@@ -1,0 +1,99 @@
+{
+  "schema_version": 1,
+  "project_url": "https://www.overleaf.com/project/6af68c3c1b2af4608fb66bfd",
+  "remote": "https://git@git.overleaf.com/6af68c3c1b2af4608fb66bfd",
+  "branch": "main",
+  "work_tree": "overleaf",
+  "git_metadata": ".local/overleaf-git",
+  "automatic_sync": false,
+  "credential_storage": "Existing macOS osxkeychain helper reused; no project credential file",
+  "verified_utc": "2026-11-13T18:37:56.225872+00:00",
+  "head": "a4c6bdcd0f516095cea24a83f5892de71b4bc68f",
+  "remote_head": "a4c6bdcd0f516095cea24a83f5892de71b4bc68f",
+  "local_to_overleaf_commit": "d64be79c4130ae8784acd13e999146dbf2d72e66",
+  "overleaf_to_local_commit": "f36e8e61faed6813f9e4525f3099ea4918a1f7c2",
+  "roundtrip_file": "overleaf/README.md",
+  "roundtrip_sha256": "0e5f3dd045d28f1480e83b900e99ec2517c98da7848b43f0cf4d9f0d001dada9",
+  "roundtrip_method": "A source-folder commit was pushed with ordinary Git; an additional README line was edited through the Overleaf web GUI and received with a fast-forward-only pull.",
+  "latest_local_to_overleaf_commit": "a4c6bdcd0f516095cea24a83f5892de71b4bc68f",
+  "current_readme_sha256": "5c74de2844e03fccb1932c3c0c70c5236828aa666348767204cc1a92fa6abba3",
+  "build_manifest_sha256": "77228bfb10bd5e00748aa0673f5a2fb4f6afd383b19eb48745c5427cddc35f45",
+  "gui_results_sha256": "2e338d97a1dc3d196e8af5c87401875f556bc9819e01f23743583838e1afe41f",
+  "native_figure_counts": {
+    "schematics": 2,
+    "viva_plots": 12,
+    "total": 14
+  },
+  "verification": {
+    "python_tests_passed": 37,
+    "independent_checks_passed": 142,
+    "independent_checks_failed": 0
+  },
+  "overleaf_preview_review": {
+    "compiled_through": "Overleaf web GUI",
+    "pages": 15,
+    "errors": 0,
+    "warnings": 0,
+    "other_log_entries": 0,
+    "report_content_reviewed_pages": [
+      1,
+      2,
+      5,
+      12,
+      15
+    ],
+    "all_native_daytime_figure_hashes_verified": 14,
+    "readability_footnote_verified": true,
+    "compiled_pdf_downloaded": false
+  },
+  "previous_source_commit": "10d2a4ec5933acf3a5b7f83aa407283392dca9cb",
+  "figure_theme": "native day mode; white native ViVA and schematic exports",
+  "preserved_overleaf_user_commit": "36f406e",
+  "native_dark_export": {
+    "helper": "cadence/exportnight.il",
+    "plot_export_receipt_sha256": "50dbc8cce8e8ba671610a46153a35503314f62d3993001bf3c6a0a859dee0376",
+    "schematic_export_receipt_sha256": "0bfb6ebae37930c6de5c00b3e92d7f764dd19d6ff62b3c80af268d8d597a28f1",
+    "electrical_snapshot_proof_sha256": "a1c805eb1fac7d6ff4f0ffeca742fdf59b10ad4711854b694075290722447dc7",
+    "calculator_audit_sha256": "00ad4219cc8389b8489a27393927db097ef84d5e616ebe90a8d12c45c06466dc",
+    "original_metrics_preserved": true,
+    "original_electrical_state_preserved": true
+  },
+  "previous_overleaf_preview_review": {
+    "compiled_through": "Overleaf web GUI",
+    "pages": 15,
+    "errors": 0,
+    "warnings": 0,
+    "other_log_entries": 1,
+    "report_content_reviewed_pages": [
+      1
+    ],
+    "native_figures_unchanged_from_previous_visual_review": 14,
+    "compiled_pdf_downloaded": false
+  },
+  "report_content_cleanup": {
+    "summary_columns": [
+      "Metric",
+      "Active",
+      "Passive"
+    ],
+    "removed": [
+      "execution history",
+      "standalone candidate screening comparison",
+      "duplicate comparison columns",
+      "baseline provenance entry",
+      "implementation-specific extraction discussion"
+    ],
+    "forbidden_content_matches_in_overleaf_source": 0,
+    "regression_tests_passed": 37,
+    "user_editable_files_and_native_figures_preserved": true,
+    "measurement_results_unchanged": true,
+    "synchronized_commit": "10d2a4ec5933acf3a5b7f83aa407283392dca9cb"
+  },
+  "native_day_rollback": {
+    "evidence": "results/cadence_gui/day_mode_rollback.json",
+    "source_overleaf_commit": "b0015389bd5176fc9d8a2aab88dbfbecb2c8fefa",
+    "figure_count": 14,
+    "metrics_unchanged": true,
+    "original_export_receipts_restored": true
+  }
+}

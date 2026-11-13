@@ -1,0 +1,35 @@
+{
+  "origin": "native_oa_geometry_local_render",
+  "source_audit": "/Users/jeonsang-eon/Gatech-ECE6420/HW09/cadence/active_tb_audit.tsv",
+  "source_sha256": "461346d957db85d3e16a571a295c50a8631a1711a8813d4d493f31ce19bb099c",
+  "instance_count": 22,
+  "connection_count": 40,
+  "rendered_instances": [
+    "CLN",
+    "CLP",
+    "I4",
+    "I5",
+    "I6",
+    "I7",
+    "I8",
+    "I9",
+    "M1",
+    "M2",
+    "M3",
+    "R1",
+    "R2"
+  ],
+  "label_font_pt": 9.5,
+  "shape_count": 320,
+  "unrendered_shape_types": [],
+  "view": "core crop",
+  "png": "/Users/jeonsang-eon/Gatech-ECE6420/HW09/results/cadence_gui/schematics/active_core.png",
+  "svg": "/Users/jeonsang-eon/Gatech-ECE6420/HW09/results/cadence_gui/schematics/active_core.svg",
+  "rendering_description": "Core crop of the actual native testbench; external source symbol primitives and pins are omitted while native core wires and net labels are retained. Rendered locally from exported OA symbol primitives, wires, signal labels, instance orientations and actual CDF properties. Nonprinting boundaries, unresolved dynamic labels and standalone instructional notes are omitted for readability. This is a source-geometry rendering, not a GUI screenshot.",
+  "auxiliary_source_audits": [
+    {
+      "source": "/Users/jeonsang-eon/Gatech-ECE6420/HW09/cadence/symbol_arcs.tsv",
+      "sha256": "649570c61b7989dde23db5c0ac56897fda17280c7116223b7545e83b39edf0ca"
+    }
+  ]
+}

@@ -1,0 +1,3015 @@
+{
+  "circuits": {
+    "active": {
+      "completed_utc": "2026-11-13T01:06:18.328501+00:00",
+      "curves": {
+        "compression": "results/curves/active_compression.npz",
+        "iip3": "results/curves/active_iip3.npz",
+        "noise": "results/curves/active_noise.npz",
+        "spectrum": "results/curves/active_spectrum.npz",
+        "transient": "results/curves/active_transient.npz",
+        "twotone": "results/curves/active_twotone.npz",
+        "twotone_spectrum": "results/curves/active_twotone_spectrum.npz"
+      },
+      "dc": {
+        "max_output_v": 1.009579928685656,
+        "mean_outn_v": 0.8287311929781,
+        "mean_outp_v": 0.828731206314571,
+        "mean_rf_v": 0.6500000055680349,
+        "min_output_v": 0.621898094611969,
+        "omitted_nonfinite_op_fields": [
+          "Omitted nonfinite BSIM4 operating-point values from dcOpInfo.info (M1: ig, is, ib, vth_drive, vdsat_marg, ft, Tk, Dtsh, Iavl, vth0, go, co, cm, cmb, cmx, tau1, fqslim, gmoveri; M2: ig, is, ib, vth_drive, vdsat_marg, ft, Tk, Dtsh, Iavl, vth0, go, co, cm, cmb, cmx, tau1, fqslim, gmoveri; M3: ig, is, ib, vth_drive, vdsat_marg, ft, Tk, Dtsh, Iavl, vth0, go, co, cm, cmb, cmx, tau1, fqslim, gmoveri)"
+        ],
+        "operating_points": {
+          "M1": {
+            "gds": 0.0005909068340045241,
+            "gm": 0.00904888281729265,
+            "id": 0.0006498702471089635,
+            "region": 2,
+            "vds": 0.1923084352801542,
+            "vdsat": 0.09174356695559484,
+            "vgs": 0.6499999725743442,
+            "vth": 0.6001855450732785
+          },
+          "M2": {
+            "gds": 0.0002771475401683287,
+            "gm": 0.005801341954161645,
+            "id": 0.0003249347362724455,
+            "region": 3,
+            "vds": 0.6452241960297611,
+            "vdsat": 0.06706433549999169,
+            "vgs": 0.6076915647198459,
+            "vth": 0.6205318117256603
+          },
+          "M3": {
+            "gds": 0.0002771475401683287,
+            "gm": 0.005801341954161645,
+            "id": 0.0003249347362724455,
+            "region": 3,
+            "vds": 0.6452241960297611,
+            "vdsat": 0.06706433549999169,
+            "vgs": 0.6076915647198459,
+            "vth": 0.6205318117256603
+          }
+        },
+        "static_op_note": "LO sources are both at their DC common mode in this static operating point. Dynamic tail/output extrema come from the settled LO-driven transient.",
+        "tail_max_v": 0.3048999189490376,
+        "tail_mean_v": 0.2564559148950673,
+        "tail_min_v": 0.1959722858064493
+      },
+      "design": {
+        "completed_utc": "2026-11-13T00:50:22.045076+00:00",
+        "fund_vpk": [
+          0.0030178407682697815
+        ],
+        "gain_db": [
+          8.573326509984069
+        ],
+        "if_frequencies_hz": [
+          200000000.0
+        ],
+        "im3_frequencies_hz": [],
+        "im3_vpk": [],
+        "lo_diff_vpp": 0.7999368353633657,
+        "max_output_v": 1.009579928685656,
+        "mean_outn_v": 0.8287311929781,
+        "mean_outp_v": 0.828731206314571,
+        "mean_rf_v": 0.6500000055680349,
+        "measurement_start_s": 5e-09,
+        "min_output_v": 0.621898094611969,
+        "netlist": "netlists/generated/active_design.scs",
+        "netlist_sha256": "62f5b7ab4b2a9ca23711850147332da852f57a6c531a02a93b025b2e422e16e1",
+        "open_peak_v": 0.0011246826503806982,
+        "pin_dbm": -55.0,
+        "power_gain_db": [
+          1.583626466623883
+        ],
+        "power_mw": 0.685075201414658,
+        "raw_file_sha256": "d2813777cd735d0ca5bc273dd651b75806dc4f69df2d222cfb35a942750e53f4",
+        "rf_node_gain_db": [
+          8.625449756950086
+        ],
+        "rf_node_vpk": [
+          0.0011179537403591172
+        ],
+        "sample_count": 4000,
+        "settle_s": 5e-09,
+        "status": "complete",
+        "strobe_s": 5e-12,
+        "tail_max_v": 0.3048999189490376,
+        "tail_mean_v": 0.2564559148950673,
+        "tail_min_v": 0.1959722858064493,
+        "window_s": 2e-08
+      },
+      "linearity": {
+        "baseline_gain_db": 8.572646897045894,
+        "completed_utc": "2026-11-13T00:54:24.638017+00:00",
+        "compression": [
+          {
+            "completed_utc": "2026-11-13T00:50:55.351008+00:00",
+            "fund_vpk": [
+              0.001697153935092481
+            ],
+            "gain_db": [
+              8.573824795528688
+            ],
+            "if_frequencies_hz": [
+              200000000.0
+            ],
+            "im3_frequencies_hz": [],
+            "im3_vpk": [],
+            "lo_diff_vpp": 0.7999368353633657,
+            "max_output_v": 1.009551182333109,
+            "mean_outn_v": 0.8287352968372316,
+            "mean_outp_v": 0.828735266051742,
+            "mean_rf_v": 0.6500000057438264,
+            "measurement_start_s": 5e-09,
+            "min_output_v": 0.6237931119009867,
+            "netlist": "netlists/generated/active_compression_00.scs",
+            "netlist_sha256": "95d4149d955ef913b8069b5eb23604951fa34f8b91ceca9312e50b11b851160d",
+            "open_peak_v": 0.0006324555320336759,
+            "pin_dbm": -60,
+            "power_gain_db": [
+              1.584124752168501
+            ],
+            "power_mw": 0.6850588742220527,
+            "raw_file_sha256": "cd69272d9fb6e4fe22cc9e0bbef087adb680cb030393c6ac1ae97606213120cb",
+            "rf_node_gain_db": [
+              8.625945228692917
+            ],
+            "rf_node_vpk": [
+              0.0006286717915138145
+            ],
+            "sample_count": 4000,
+            "settle_s": 5e-09,
+            "strobe_s": 5e-12,
+            "tail_max_v": 0.3044864461866668,
+            "tail_mean_v": 0.25645594741812183,
+            "tail_min_v": 0.1963226436501462,
+            "window_s": 2e-08
+          },
+          {
+            "completed_utc": "2026-11-13T00:51:01.301772+00:00",
+            "fund_vpk": [
+              0.005366254797942263
+            ],
+            "gain_db": [
+              8.572825882485347
+            ],
+            "if_frequencies_hz": [
+              200000000.0
+            ],
+            "im3_frequencies_hz": [],
+            "im3_vpk": [],
+            "lo_diff_vpp": 0.7999368353633657,
+            "max_output_v": 1.00962937702168,
+            "mean_outn_v": 0.828718276955147,
+            "mean_outp_v": 0.8287182568506336,
+            "mean_rf_v": 0.6500000056087372,
+            "measurement_start_s": 5e-09,
+            "min_output_v": 0.6184642061123807,
+            "netlist": "netlists/generated/active_compression_01.scs",
+            "netlist_sha256": "db4ee13196af80b895adb6b21b16afcf9d1630f7a38b20080a626aef6942f096",
+            "open_peak_v": 0.002,
+            "pin_dbm": -50,
+            "power_gain_db": [
+              1.5831258391251588
+            ],
+            "power_mw": 0.6851269323884389,
+            "raw_file_sha256": "2376435a35469674d9ff5b8c1c17d8c48e86c3bf7bc7bb438c6af354b0a41e47",
+            "rf_node_gain_db": [
+              8.624953968034562
+            ],
+            "rf_node_vpk": [
+              0.0019880330103977154
+            ],
+            "sample_count": 4000,
+            "settle_s": 5e-09,
+            "strobe_s": 5e-12,
+            "tail_max_v": 0.3056340818392528,
+            "tail_mean_v": 0.25645580660981687,
+            "tail_min_v": 0.1953505204682383,
+            "window_s": 2e-08
+          },
+          {
+            "completed_utc": "2026-11-13T00:51:07.103996+00:00",
+            "fund_vpk": [
+              0.016966587309781424
+            ],
+            "gain_db": [
+              8.571290013123647
+            ],
+            "if_frequencies_hz": [
+              200000000.0
+            ],
+            "im3_frequencies_hz": [],
+            "im3_vpk": [],
+            "lo_diff_vpp": 0.7999368353633657,
+            "max_output_v": 1.009855745130944,
+            "mean_outn_v": 0.8285479401356322,
+            "mean_outp_v": 0.8285480054868076,
+            "mean_rf_v": 0.6500000055915156,
+            "measurement_start_s": 5e-09,
+            "min_output_v": 0.6011570527708661,
+            "netlist": "netlists/generated/active_compression_02.scs",
+            "netlist_sha256": "629e833889ba42bd3d39b697d7cc37683b19cdd3e24fbc3f14f8765f53352090",
+            "open_peak_v": 0.006324555320336759,
+            "pin_dbm": -40,
+            "power_gain_db": [
+              1.5815899697634572
+            ],
+            "power_mw": 0.6858081087551205,
+            "raw_file_sha256": "caf19e8dbf30aaa19dbc6b1bb1608e50ceba8d0fdf640f20422bb5262fa4364d",
+            "rf_node_gain_db": [
+              8.623435060793817
+            ],
+            "rf_node_vpk": [
+              0.006286700099549568
+            ],
+            "sample_count": 4000,
+            "settle_s": 5e-09,
+            "strobe_s": 5e-12,
+            "tail_max_v": 0.3092401739857086,
+            "tail_mean_v": 0.256454348826529,
+            "tail_min_v": 0.1923022781499466,
+            "window_s": 2e-08
+          },
+          {
+            "completed_utc": "2026-11-13T00:51:13.180466+00:00",
+            "fund_vpk": [
+              0.030160855698960102
+            ],
+            "gain_db": [
+              8.568273263078797
+            ],
+            "if_frequencies_hz": [
+              200000000.0
+            ],
+            "im3_frequencies_hz": [],
+            "im3_vpk": [],
+            "lo_diff_vpp": 0.7999368353633657,
+            "max_output_v": 1.010128642875631,
+            "mean_outn_v": 0.8281394542683054,
+            "mean_outp_v": 0.828139525659581,
+            "mean_rf_v": 0.6500000051056155,
+            "measurement_start_s": 5e-09,
+            "min_output_v": 0.5807201024940728,
+            "netlist": "netlists/generated/active_compression_03.scs",
+            "netlist_sha256": "95ac50a1ac0def6e6785cb7ee54387fff02fc0f855ffb6f4600c2d0606469cff",
+            "open_peak_v": 0.011246826503806982,
+            "pin_dbm": -35,
+            "power_gain_db": [
+              1.578573219718609
+            ],
+            "power_mw": 0.6874420401442272,
+            "raw_file_sha256": "6b50481ca93c765f89e173d80e0675806795223746d2c0019c10d0b3acc71538",
+            "rf_node_gain_db": [
+              8.620443963766736
+            ],
+            "rf_node_vpk": [
+              0.011179476326461239
+            ],
+            "sample_count": 4000,
+            "settle_s": 5e-09,
+            "strobe_s": 5e-12,
+            "tail_max_v": 0.3133006021810112,
+            "tail_mean_v": 0.2564508400032831,
+            "tail_min_v": 0.1888771646176521,
+            "window_s": 2e-08
+          },
+          {
+            "completed_utc": "2026-11-13T00:51:19.259737+00:00",
+            "fund_vpk": [
+              0.053568987352923716
+            ],
+            "gain_db": [
+              8.557668821086617
+            ],
+            "if_frequencies_hz": [
+              200000000.0
+            ],
+            "im3_frequencies_hz": [],
+            "im3_vpk": [],
+            "lo_diff_vpp": 0.7999368353633657,
+            "max_output_v": 1.010588780364892,
+            "mean_outn_v": 0.826853582209244,
+            "mean_outp_v": 0.8268532819595635,
+            "mean_rf_v": 0.6500000055876167,
+            "measurement_start_s": 5e-09,
+            "min_output_v": 0.5425981106042408,
+            "netlist": "netlists/generated/active_compression_04.scs",
+            "netlist_sha256": "c53b52f248dcbfc6c113135ade54c7393007705c59875db58003a2c08741294a",
+            "open_peak_v": 0.02,
+            "pin_dbm": -30,
+            "power_gain_db": [
+              1.5679687777264297
+            ],
+            "power_mw": 0.6925862716623852,
+            "raw_file_sha256": "ff86d54305a7c78d49684c728144267461dc0a7fb6752dd54fed58a220b29e8c",
+            "rf_node_gain_db": [
+              8.609924899279973
+            ],
+            "rf_node_vpk": [
+              0.01988003715560056
+            ],
+            "sample_count": 4000,
+            "settle_s": 5e-09,
+            "strobe_s": 5e-12,
+            "tail_max_v": 0.3203975117738638,
+            "tail_mean_v": 0.256439458671958,
+            "tail_min_v": 0.1828495346087096,
+            "window_s": 2e-08
+          },
+          {
+            "completed_utc": "2026-11-13T00:51:24.963364+00:00",
+            "fund_vpk": [
+              0.09488519016506806
+            ],
+            "gain_db": [
+              8.523368733262448
+            ],
+            "if_frequencies_hz": [
+              200000000.0
+            ],
+            "im3_frequencies_hz": [],
+            "im3_vpk": [],
+            "lo_diff_vpp": 0.7999368353633657,
+            "max_output_v": 1.011319275283421,
+            "mean_outn_v": 0.8228430930903169,
+            "mean_outp_v": 0.8228431719850191,
+            "mean_rf_v": 0.6500000019818392,
+            "measurement_start_s": 5e-09,
+            "min_output_v": 0.4700138064482534,
+            "netlist": "netlists/generated/active_compression_05.scs",
+            "netlist_sha256": "26699a48d63f62cdb86501d776fdff850b4858381152aad75830aaeff3e380d5",
+            "open_peak_v": 0.03556558820077846,
+            "pin_dbm": -25,
+            "power_gain_db": [
+              1.5336686899022602
+            ],
+            "power_mw": 0.708627469849328,
+            "raw_file_sha256": "776e2ab9a5befecb7a4497764996f635ea01cf345cf7e5a1047528bc2e164a2d",
+            "rf_node_gain_db": [
+              8.575924091612354
+            ],
+            "rf_node_vpk": [
+              0.03535104267158936
+            ],
+            "sample_count": 4000,
+            "settle_s": 5e-09,
+            "strobe_s": 5e-12,
+            "tail_max_v": 0.3326559467187902,
+            "tail_mean_v": 0.25639775058314773,
+            "tail_min_v": 0.1725019499132995,
+            "window_s": 2e-08
+          },
+          {
+            "completed_utc": "2026-11-13T00:51:31.074479+00:00",
+            "fund_vpk": [
+              0.16614935967096423
+            ],
+            "gain_db": [
+              8.389373524214767
+            ],
+            "if_frequencies_hz": [
+              200000000.0
+            ],
+            "im3_frequencies_hz": [],
+            "im3_vpk": [],
+            "lo_diff_vpp": 0.7999368353633657,
+            "max_output_v": 1.012879229556044,
+            "mean_outn_v": 0.8108000292524918,
+            "mean_outp_v": 0.8107999096608846,
+            "mean_rf_v": 0.6499999572596696,
+            "measurement_start_s": 5e-09,
+            "min_output_v": 0.3391556204680216,
+            "netlist": "netlists/generated/active_compression_06.scs",
+            "netlist_sha256": "9c082d6772afc87a6174c35be14d0bb0db22392bc7bea963fe0bd37cd5cb353e",
+            "open_peak_v": 0.06324555320336758,
+            "pin_dbm": -20,
+            "power_gain_db": [
+              1.3996734808545785
+            ],
+            "power_mw": 0.7568001221732474,
+            "raw_file_sha256": "8738899a51f8a30c51c888f238e738b27f28d29250c6b59be8021e4e16267047",
+            "rf_node_gain_db": [
+              8.443697976259484
+            ],
+            "rf_node_vpk": [
+              0.06285122881383172
+            ],
+            "sample_count": 4000,
+            "settle_s": 5e-09,
+            "strobe_s": 5e-12,
+            "tail_max_v": 0.3529736455243518,
+            "tail_mean_v": 0.2559283304507577,
+            "tail_min_v": 0.1549935536367929,
+            "window_s": 2e-08
+          },
+          {
+            "completed_utc": "2026-11-13T00:51:53.448974+00:00",
+            "fund_vpk": [
+              0.21490935132222175
+            ],
+            "gain_db": [
+              8.124506352740987
+            ],
+            "if_frequencies_hz": [
+              200000000.0
+            ],
+            "im3_frequencies_hz": [],
+            "im3_vpk": [],
+            "lo_diff_vpp": 0.7999368353633657,
+            "max_output_v": 1.013936697358178,
+            "mean_outn_v": 0.7986318986251879,
+            "mean_outp_v": 0.7986318394208841,
+            "mean_rf_v": 0.6499999395234112,
+            "measurement_start_s": 5e-09,
+            "min_output_v": 0.2599155646561422,
+            "netlist": "netlists/generated/active_compression_refine_0.scs",
+            "netlist_sha256": "c50c75102055bdebc77d0f22bf334e6591c4875e2bcbf12a5eedba16542bd69e",
+            "open_peak_v": 0.08433930068571645,
+            "pin_dbm": -17.5,
+            "power_gain_db": [
+              1.1348063093807976
+            ],
+            "power_mw": 0.8054725239078557,
+            "raw_file_sha256": "d21cb20b9c2b13d7033e08ba7f983f063864dc5485af70d62dbaa8da7811cd28",
+            "rf_node_gain_db": [
+              8.183013914264652
+            ],
+            "rf_node_vpk": [
+              0.08377310596100669
+            ],
+            "sample_count": 4000,
+            "settle_s": 5e-09,
+            "strobe_s": 5e-12,
+            "tail_max_v": 0.367053749469404,
+            "tail_mean_v": 0.2539099333516507,
+            "tail_min_v": 0.1431275429675294,
+            "window_s": 2e-08
+          },
+          {
+            "completed_utc": "2026-11-13T00:51:59.804228+00:00",
+            "fund_vpk": [
+              0.23948111971541386
+            ],
+            "gain_db": [
+              7.814825687942837
+            ],
+            "if_frequencies_hz": [
+              200000000.0
+            ],
+            "im3_frequencies_hz": [],
+            "im3_vpk": [],
+            "lo_diff_vpp": 0.7999368353633657,
+            "max_output_v": 1.014761108775749,
+            "mean_outn_v": 0.7906224864779637,
+            "mean_outp_v": 0.7906224549665491,
+            "mean_rf_v": 0.6499999513291176,
+            "measurement_start_s": 5e-09,
+            "min_output_v": 0.2186555276211454,
+            "netlist": "netlists/generated/active_compression_refine_1.scs",
+            "netlist_sha256": "da70054f9d8252ff808a2408dc7e38e470f1e70c8ea0c77fbeac2f63638d797b",
+            "open_peak_v": 0.09739350503317262,
+            "pin_dbm": -16.25,
+            "power_gain_db": [
+              0.8251256445826481
+            ],
+            "power_mw": 0.8375101171109742,
+            "raw_file_sha256": "0a2ca5feccf3369606e948b7001acd546a02c429fe70ed5256ee8553818183c1",
+            "rf_node_gain_db": [
+              7.876561354623398
+            ],
+            "rf_node_vpk": [
+              0.09670372700952752
+            ],
+            "sample_count": 4000,
+            "settle_s": 5e-09,
+            "strobe_s": 5e-12,
+            "tail_max_v": 0.3751873777074095,
+            "tail_mean_v": 0.2517620628016901,
+            "tail_min_v": 0.1365778303567247,
+            "window_s": 2e-08
+          },
+          {
+            "completed_utc": "2026-11-13T00:52:06.512713+00:00",
+            "fund_vpk": [
+              0.250577172235383
+            ],
+            "gain_db": [
+              7.5832301649924405
+            ],
+            "if_frequencies_hz": [
+              200000000.0
+            ],
+            "im3_frequencies_hz": [],
+            "im3_vpk": [],
+            "lo_diff_vpp": 0.7999368353633657,
+            "max_output_v": 1.015138361664602,
+            "mean_outn_v": 0.7862454879912288,
+            "mean_outp_v": 0.7862456860623958,
+            "mean_rf_v": 0.6499999531126562,
+            "measurement_start_s": 5e-09,
+            "min_output_v": 0.1995573637413216,
+            "netlist": "netlists/generated/active_compression_refine_2.scs",
+            "netlist_sha256": "18ff13ae29d99b9ac506edcf23585318d176626380e51e1fec616bafe7d2a955",
+            "open_peak_v": 0.10465982293629894,
+            "pin_dbm": -15.625,
+            "power_gain_db": [
+              0.5935301216322522
+            ],
+            "power_mw": 0.8550176518927507,
+            "raw_file_sha256": "fbcb8d488780103c12ab1242ca190e3854d68a0bde489e7b96a2c8284917a35a",
+            "rf_node_gain_db": [
+              7.646562969802546
+            ],
+            "rf_node_vpk": [
+              0.10389947555834518
+            ],
+            "sample_count": 4000,
+            "settle_s": 5e-09,
+            "strobe_s": 5e-12,
+            "tail_max_v": 0.3793604783290855,
+            "tail_mean_v": 0.2504541222571645,
+            "tail_min_v": 0.1332056863187993,
+            "window_s": 2e-08
+          },
+          {
+            "completed_utc": "2026-11-13T00:52:20.022414+00:00",
+            "fund_vpk": [
+              0.2531636821319594
+            ],
+            "gain_db": [
+              7.516178159363562
+            ],
+            "if_frequencies_hz": [
+              200000000.0
+            ],
+            "im3_frequencies_hz": [],
+            "im3_vpk": [],
+            "lo_diff_vpp": 0.7999368353633657,
+            "max_output_v": 1.015218515574393,
+            "mean_outn_v": 0.7851263611541819,
+            "mean_outp_v": 0.7851266489307215,
+            "mean_rf_v": 0.6499999559291261,
+            "measurement_start_s": 5e-09,
+            "min_output_v": 0.195140785109827,
+            "netlist": "netlists/generated/active_compression_refine_4.scs",
+            "netlist_sha256": "140d85c363bb92be092f44e965f06f79be1ac265224f1a6ca4582d6d594af6d7",
+            "open_peak_v": 0.10655957891731282,
+            "pin_dbm": -15.46875,
+            "power_gain_db": [
+              0.5264781160033752
+            ],
+            "power_mw": 0.8594939798301935,
+            "raw_file_sha256": "916b6734f860967957c5c454aea26babdd85b3e047b8e5e02a115e4f7fd8f0d0",
+            "rf_node_gain_db": [
+              7.579882668414743
+            ],
+            "rf_node_vpk": [
+              0.10578090303711075
+            ],
+            "sample_count": 4000,
+            "settle_s": 5e-09,
+            "strobe_s": 5e-12,
+            "tail_max_v": 0.3804079119047552,
+            "tail_mean_v": 0.25011507674668026,
+            "tail_min_v": 0.132355738002624,
+            "window_s": 2e-08
+          },
+          {
+            "completed_utc": "2026-11-13T00:52:13.244315+00:00",
+            "fund_vpk": [
+              0.2556672913142485
+            ],
+            "gain_db": [
+              7.445403492740894
+            ],
+            "if_frequencies_hz": [
+              200000000.0
+            ],
+            "im3_frequencies_hz": [],
+            "im3_vpk": [],
+            "lo_diff_vpp": 0.7999368353633657,
+            "max_output_v": 1.015305482957992,
+            "mean_outn_v": 0.7840004948151377,
+            "mean_outp_v": 0.784000784924914,
+            "mean_rf_v": 0.6499999577021002,
+            "measurement_start_s": 5e-09,
+            "min_output_v": 0.1908912520150103,
+            "netlist": "netlists/generated/active_compression_refine_3.scs",
+            "netlist_sha256": "63b4e49ecc7e8aba74f232a26a8eaca222116f26e6386bf11255b60ebbb97d42",
+            "open_peak_v": 0.10849381874022652,
+            "pin_dbm": -15.3125,
+            "power_gain_db": [
+              0.4557034493807056
+            ],
+            "power_mw": 0.8639974405198965,
+            "raw_file_sha256": "58e6da57203863017db4f6f995a54965084a2afdfbc75cf5e9d59f7f002e1891",
+            "rf_node_gain_db": [
+              7.5094642557745654
+            ],
+            "rf_node_vpk": [
+              0.10769659125834703
+            ],
+            "sample_count": 4000,
+            "settle_s": 5e-09,
+            "strobe_s": 5e-12,
+            "tail_max_v": 0.3814555242615873,
+            "tail_mean_v": 0.24977415834328337,
+            "tail_min_v": 0.1315035488897473,
+            "window_s": 2e-08
+          },
+          {
+            "completed_utc": "2026-11-13T00:51:38.437786+00:00",
+            "fund_vpk": [
+              0.26041674634808326
+            ],
+            "gain_db": [
+              7.292778257048678
+            ],
+            "if_frequencies_hz": [
+              200000000.0
+            ],
+            "im3_frequencies_hz": [],
+            "im3_vpk": [],
+            "lo_diff_vpp": 0.7999368353633657,
+            "max_output_v": 1.015494428494256,
+            "mean_outn_v": 0.781733817870472,
+            "mean_outp_v": 0.7817345609763847,
+            "mean_rf_v": 0.649999964645815,
+            "measurement_start_s": 5e-09,
+            "min_output_v": 0.1826774658318371,
+            "netlist": "netlists/generated/active_compression_07.scs",
+            "netlist_sha256": "ca6574c88598c8d265ae3b1cf7062ad4370fbfc492f72b70c8a20a62a1589a94",
+            "open_peak_v": 0.11246826503806982,
+            "pin_dbm": -15,
+            "power_gain_db": [
+              0.30307821368848903
+            ],
+            "power_mw": 0.8730632423062863,
+            "raw_file_sha256": "49fc7e05ddebc3faf19e053eaa676b828048006e36a0ff7ff900fcf767d219f0",
+            "rf_node_gain_db": [
+              7.357495945530102
+            ],
+            "rf_node_vpk": [
+              0.1116333894770951
+            ],
+            "sample_count": 4000,
+            "settle_s": 5e-09,
+            "strobe_s": 5e-12,
+            "tail_max_v": 0.3835481542715614,
+            "tail_mean_v": 0.2490923426057857,
+            "tail_min_v": 0.1287086479277599,
+            "window_s": 2e-08
+          },
+          {
+            "completed_utc": "2026-11-13T00:51:46.829638+00:00",
+            "fund_vpk": [
+              0.29604280199229227
+            ],
+            "gain_db": [
+              3.406490208252084
+            ],
+            "if_frequencies_hz": [
+              200000000.0
+            ],
+            "im3_frequencies_hz": [],
+            "im3_vpk": [],
+            "lo_diff_vpp": 0.7999368353633657,
+            "max_output_v": 1.018346153825334,
+            "mean_outn_v": 0.7460235329231385,
+            "mean_outp_v": 0.7460246272696627,
+            "mean_rf_v": 0.6500000903720055,
+            "measurement_start_s": 5e-09,
+            "min_output_v": 0.1169566602339183,
+            "netlist": "netlists/generated/active_compression_08.scs",
+            "netlist_sha256": "58cc9364db5f9e804e7641888bfe0283212876e04b798177318fbdfe3640b759",
+            "open_peak_v": 0.2,
+            "pin_dbm": -10,
+            "power_gain_db": [
+              -3.5832098351081045
+            ],
+            "power_mw": 1.0159036796143976,
+            "raw_file_sha256": "de4ca7f753fd01b11b55129d35072aa0949934ae6e8547ae4378307b85888b08",
+            "rf_node_gain_db": [
+              3.4704187885507394
+            ],
+            "rf_node_vpk": [
+              0.19853339380772644
+            ],
+            "sample_count": 4000,
+            "settle_s": 5e-09,
+            "strobe_s": 5e-12,
+            "tail_max_v": 0.417356728937825,
+            "tail_mean_v": 0.2410444108561008,
+            "tail_min_v": 0.0750849916388262,
+            "window_s": 2e-08
+          }
+        ],
+        "convergence": {
+          "delta_db": [
+            0.05072261819608315,
+            0.05164572464045847
+          ],
+          "original": [
+            -2.7418034970619587,
+            -2.753084783778668
+          ],
+          "passed": true,
+          "tight": [
+            -2.6910808788658755,
+            -2.7014390591382096
+          ]
+        },
+        "cubic_region": {
+          "fundamental_slopes": [
+            0.9957325176502951,
+            0.9957268547513677
+          ],
+          "im3_slopes": [
+            3.058694012471281,
+            3.0635733232901843
+          ],
+          "indices": [
+            2,
+            3,
+            4
+          ],
+          "minimum_im3_to_empty_bin_margin_db": 35.62884734323006,
+          "pins_dbm": [
+            -40,
+            -35,
+            -30
+          ]
+        },
+        "iip3_each_side_dbm": [
+          -2.713393126181748,
+          -2.717720781779325
+        ],
+        "input_power_convention": "Thevenin available source power per tone, Rs=50 ohm",
+        "p1db_bracket_dbm": [
+          -15.625,
+          -15.46875
+        ],
+        "p1db_dbm": -15.546875,
+        "status": "complete",
+        "two_tone": [
+          {
+            "completed_utc": "2026-11-13T00:52:44.495735+00:00",
+            "empty_bin_residual_vpk": 1.5457694250839226e-08,
+            "fund_vpk": [
+              0.005366399331634015,
+              0.005365468346375563
+            ],
+            "gain_db": [
+              8.57305982344356,
+              8.571552828487512
+            ],
+            "if_frequencies_hz": [
+              190000000.0,
+              210000000.0
+            ],
+            "iip3_dbm": [
+              -4.444437346292204,
+              -4.527273661321793
+            ],
+            "im3_frequencies_hz": [
+              170000000.0,
+              230000000.0
+            ],
+            "im3_to_empty_bin_margin_db": [
+              19.69964017300238,
+              19.86380580810551
+            ],
+            "im3_vpk": [
+              1.4932300510715725e-07,
+              1.5217208921755012e-07
+            ],
+            "lo_diff_vpp": 0.7999368353844634,
+            "max_output_v": 1.009738139005306,
+            "mean_outn_v": 0.8286993239071264,
+            "mean_outp_v": 0.8286993166012672,
+            "mean_rf_v": 0.6500000060574864,
+            "measurement_start_s": 2e-08,
+            "min_output_v": 0.6105350556627662,
+            "netlist": "netlists/generated/active_iip3_00.scs",
+            "netlist_sha256": "9b47bdc121a861c05482cadd24ce40589c7868906f6a40cbaff6360f925a5c9a",
+            "open_peak_v": 0.002,
+            "pin_dbm": -50,
+            "power_gain_db": [
+              1.5833597800833723,
+              1.5818527851273232
+            ],
+            "power_mw": 0.6852027189832133,
+            "raw_file_sha256": "5f3464129747e66cb1f08c024108f3593d55980a5375505b4960bd120d9328a9",
+            "rf_node_gain_db": [
+              8.625020617041804,
+              8.623859028703752
+            ],
+            "rf_node_vpk": [
+              0.0019880713006751173,
+              0.001987992243795576
+            ],
+            "sample_count": 20000,
+            "settle_s": 2e-08,
+            "strobe_s": 5e-12,
+            "tail_max_v": 0.3073061742741885,
+            "tail_mean_v": 0.2564556400401132,
+            "tail_min_v": 0.1939433994114809,
+            "window_s": 1e-07
+          },
+          {
+            "completed_utc": "2026-11-13T00:52:44.358333+00:00",
+            "empty_bin_residual_vpk": 1.9363859243546935e-08,
+            "fund_vpk": [
+              0.009541954142527762,
+              0.009540294661323646
+            ],
+            "gain_db": [
+              8.572146587948584,
+              8.570635857134842
+            ],
+            "if_frequencies_hz": [
+              190000000.0,
+              210000000.0
+            ],
+            "iip3_dbm": [
+              -2.0866714822442134,
+              -2.117379531834274
+            ],
+            "im3_frequencies_hz": [
+              170000000.0,
+              230000000.0
+            ],
+            "im3_to_empty_bin_margin_db": [
+              28.026251124093193,
+              28.086156492459583
+            ],
+            "im3_vpk": [
+              4.878704042959276e-07,
+              4.91246808282107e-07
+            ],
+            "lo_diff_vpp": 0.7999368353844634,
+            "max_output_v": 1.009894975807441,
+            "mean_outn_v": 0.8286174700349931,
+            "mean_outp_v": 0.8286175020667037,
+            "mean_rf_v": 0.6500000057158404,
+            "measurement_start_s": 2e-08,
+            "min_output_v": 0.597949027394476,
+            "netlist": "netlists/generated/active_iip3_01.scs",
+            "netlist_sha256": "a6e57b07de4727db1b403b4e72b6842e5f7a6a742209c4b3455eda9644836c9e",
+            "open_peak_v": 0.003556558820077846,
+            "pin_dbm": -45,
+            "power_gain_db": [
+              1.5824465445883964,
+              1.5809358137746552
+            ],
+            "power_mw": 0.6855300557966064,
+            "raw_file_sha256": "af34e78f4dc78fe2f1002cc2d9ecded35b7628dfd3575a71d2a103b4790e10f9",
+            "rf_node_gain_db": [
+              8.624117758961475,
+              8.622952568270804
+            ],
+            "rf_node_vpk": [
+              0.003535342035848605,
+              0.003535201396458211
+            ],
+            "sample_count": 20000,
+            "settle_s": 2e-08,
+            "strobe_s": 5e-12,
+            "tail_max_v": 0.3098937829563338,
+            "tail_mean_v": 0.25645494660833223,
+            "tail_min_v": 0.1917637666659642,
+            "window_s": 1e-07
+          },
+          {
+            "completed_utc": "2026-11-13T00:53:08.208161+00:00",
+            "empty_bin_residual_vpk": 5.023622398652797e-08,
+            "fund_vpk": [
+              0.016962576314533725,
+              0.016959658160878525
+            ],
+            "gain_db": [
+              8.569236377931906,
+              8.567741973978245
+            ],
+            "if_frequencies_hz": [
+              190000000.0,
+              210000000.0
+            ],
+            "iip3_dbm": [
+              -2.5417842036891756,
+              -2.5304226094326125
+            ],
+            "im3_frequencies_hz": [
+              170000000.0,
+              230000000.0
+            ],
+            "im3_to_empty_bin_margin_db": [
+              35.653064935696854,
+              35.62884734323006
+            ],
+            "im3_vpk": [
+              3.0455815643915975e-06,
+              3.0371018427644072e-06
+            ],
+            "lo_diff_vpp": 0.7999368353844634,
+            "max_output_v": 1.010199590794899,
+            "mean_outn_v": 0.8283590836379849,
+            "mean_outp_v": 0.8283590990154586,
+            "mean_rf_v": 0.650000005285772,
+            "measurement_start_s": 2e-08,
+            "min_output_v": 0.5747805258516484,
+            "netlist": "netlists/generated/active_iip3_02.scs",
+            "netlist_sha256": "261bca44a1199d51b467a845f9b90000746a3a21ee79a15a01cf0b2d968a0954",
+            "open_peak_v": 0.006324555320336759,
+            "pin_dbm": -40,
+            "power_gain_db": [
+              1.579536334571716,
+              1.578041930618057
+            ],
+            "power_mw": 0.6865636346931128,
+            "raw_file_sha256": "19e8728597a33f859d1ca13c97f392a512fb1b3d9932aa409a918a9392485bde",
+            "rf_node_gain_db": [
+              8.621233098738369,
+              8.620084352536782
+            ],
+            "rf_node_vpk": [
+              0.006286807456942957,
+              0.006286557276410492
+            ],
+            "sample_count": 20000,
+            "settle_s": 2e-08,
+            "strobe_s": 5e-12,
+            "tail_max_v": 0.3144483075585679,
+            "tail_mean_v": 0.2564527354240333,
+            "tail_min_v": 0.1879281658890831,
+            "window_s": 1e-07
+          },
+          {
+            "completed_utc": "2026-11-13T00:53:08.285022+00:00",
+            "empty_bin_residual_vpk": 5.536730114928525e-08,
+            "fund_vpk": [
+              0.030129372042125707,
+              0.030124099514937986
+            ],
+            "gain_db": [
+              8.55920169032913,
+              8.557681559183168
+            ],
+            "if_frequencies_hz": [
+              190000000.0,
+              210000000.0
+            ],
+            "iip3_dbm": [
+              -2.7418034970619587,
+              -2.753084783778668
+            ],
+            "im3_frequencies_hz": [
+              170000000.0,
+              230000000.0
+            ],
+            "im3_to_empty_bin_margin_db": [
+              50.198341506413655,
+              50.219383948701115
+            ],
+            "im3_vpk": [
+              1.7913086781618458e-05,
+              1.795653564650831e-05
+            ],
+            "lo_diff_vpp": 0.7999368353844634,
+            "max_output_v": 1.010706171034228,
+            "mean_outn_v": 0.8275454693031447,
+            "mean_outp_v": 0.8275453623346329,
+            "mean_rf_v": 0.6500000052785377,
+            "measurement_start_s": 2e-08,
+            "min_output_v": 0.5314034547563404,
+            "netlist": "netlists/generated/active_iip3_03.scs",
+            "netlist_sha256": "5eea8d3c594209d0d3b0ad3adc81fb54556ca38f918dcce5299b22519814d604",
+            "open_peak_v": 0.011246826503806982,
+            "pin_dbm": -35,
+            "power_gain_db": [
+              1.5695016469689427,
+              1.56798151582298
+            ],
+            "power_mw": 0.689818336724445,
+            "raw_file_sha256": "3a653e55079003f2bb7f4b6218477d49286c8bae92a6e7424d8d1fef3b8ee3f4",
+            "rf_node_gain_db": [
+              8.61127916800233,
+              8.610105147491323
+            ],
+            "rf_node_vpk": [
+              0.011179596313028247,
+              0.01117915084339321
+            ],
+            "sample_count": 20000,
+            "settle_s": 2e-08,
+            "strobe_s": 5e-12,
+            "tail_max_v": 0.32238848547096,
+            "tail_mean_v": 0.2564455466665206,
+            "tail_min_v": 0.181206880607091,
+            "window_s": 1e-07
+          },
+          {
+            "completed_utc": "2026-11-13T00:53:32.397568+00:00",
+            "empty_bin_residual_vpk": 5.161249266218359e-08,
+            "fund_vpk": [
+              0.0533774808471681,
+              0.053367950120529965
+            ],
+            "gain_db": [
+              8.526561554434855,
+              8.52501052149192
+            ],
+            "if_frequencies_hz": [
+              190000000.0,
+              210000000.0
+            ],
+            "iip3_dbm": [
+              -2.8565916777941105,
+              -2.8696549521266945
+            ],
+            "im3_frequencies_hz": [
+              170000000.0,
+              230000000.0
+            ],
+            "im3_to_empty_bin_margin_db": [
+              66.00524814053186,
+              66.0298236562541
+            ],
+            "im3_vpk": [
+              0.00010304270268095991,
+              0.0001033346604976833
+            ],
+            "lo_diff_vpp": 0.7999368353844634,
+            "max_output_v": 1.011556998795748,
+            "mean_outn_v": 0.8250063609829121,
+            "mean_outp_v": 0.8250063755358029,
+            "mean_rf_v": 0.6500000042796126,
+            "measurement_start_s": 2e-08,
+            "min_output_v": 0.448563188855944,
+            "netlist": "netlists/generated/active_iip3_04.scs",
+            "netlist_sha256": "ff1fed3f8416299da908cbd8b7870828115c039e067f212a30dc978ca410a850",
+            "open_peak_v": 0.02,
+            "pin_dbm": -30,
+            "power_gain_db": [
+              1.5368615110746675,
+              1.5353104781317324
+            ],
+            "power_mw": 0.6999745269625701,
+            "raw_file_sha256": "8dc99f172b81d3704d623725085f074b4773ae10809516b839cc928483a79ea6",
+            "rf_node_gain_db": [
+              8.578925922796783,
+              8.577722601915813
+            ],
+            "rf_node_vpk": [
+              0.019879789305438447,
+              0.019878993497011
+            ],
+            "sample_count": 20000,
+            "settle_s": 2e-08,
+            "strobe_s": 5e-12,
+            "tail_max_v": 0.3360566284579241,
+            "tail_mean_v": 0.25641909867182233,
+            "tail_min_v": 0.1696950592610891,
+            "window_s": 1e-07
+          },
+          {
+            "completed_utc": "2026-11-13T00:53:32.402918+00:00",
+            "empty_bin_residual_vpk": 1.5649568779569113e-07,
+            "fund_vpk": [
+              0.09348783847201052,
+              0.09346949352335153
+            ],
+            "gain_db": [
+              8.394502458604741,
+              8.392797875015763
+            ],
+            "if_frequencies_hz": [
+              190000000.0,
+              210000000.0
+            ],
+            "iip3_dbm": [
+              -4.085621702700518,
+              -4.1015984859928345
+            ],
+            "im3_frequencies_hz": [
+              170000000.0,
+              230000000.0
+            ],
+            "im3_to_empty_bin_margin_db": [
+              73.69629827412011,
+              73.72654725711577
+            ],
+            "im3_vpk": [
+              0.0007573860275161337,
+              0.0007600282549880033
+            ],
+            "lo_diff_vpp": 0.7999368353844634,
+            "max_output_v": 1.013277727751951,
+            "mean_outn_v": 0.8173679427642574,
+            "mean_outp_v": 0.8173678656386352,
+            "mean_rf_v": 0.649999979272143,
+            "measurement_start_s": 2e-08,
+            "min_output_v": 0.3080698020849302,
+            "netlist": "netlists/generated/active_iip3_05.scs",
+            "netlist_sha256": "27061608672d52e40309d0f3cb06ac60303370938047563efb96302a1045b549",
+            "open_peak_v": 0.03556558820077846,
+            "pin_dbm": -25,
+            "power_gain_db": [
+              1.4048024152445535,
+              1.4030978316555727
+            ],
+            "power_mw": 0.7305283831942148,
+            "raw_file_sha256": "4e33a391842b666845ffed0de4b1101f61a9455d1e814883d4dd949f1fbecb12",
+            "rf_node_gain_db": [
+              8.448672804419076,
+              8.447325734154632
+            ],
+            "rf_node_vpk": [
+              0.03534447038182969,
+              0.03534301562479416
+            ],
+            "sample_count": 20000,
+            "settle_s": 2e-08,
+            "strobe_s": 5e-12,
+            "tail_max_v": 0.3582978915875862,
+            "tail_mean_v": 0.2561118941212767,
+            "tail_min_v": 0.1504751761255044,
+            "window_s": 1e-07
+          },
+          {
+            "completed_utc": "2026-11-13T00:53:55.532028+00:00",
+            "empty_bin_residual_vpk": 2.0692608912829e-07,
+            "fund_vpk": [
+              0.14751184429431768,
+              0.1474681512933643
+            ],
+            "gain_db": [
+              7.355937944549292,
+              7.353364803368947
+            ],
+            "if_frequencies_hz": [
+              190000000.0,
+              210000000.0
+            ],
+            "iip3_dbm": [
+              -8.336376811452272,
+              -8.344572066763234
+            ],
+            "im3_frequencies_hz": [
+              170000000.0,
+              230000000.0
+            ],
+            "im3_to_empty_bin_margin_db": [
+              93.73298648615624,
+              93.74680385559782
+            ],
+            "im3_vpk": [
+              0.01005691024136505,
+              0.010072921339403532
+            ],
+            "lo_diff_vpp": 0.7999368353844634,
+            "max_output_v": 1.016071885110076,
+            "mean_outn_v": 0.79857293259366,
+            "mean_outp_v": 0.7985728959619309,
+            "mean_rf_v": 0.6499999745499341,
+            "measurement_start_s": 2e-08,
+            "min_output_v": 0.1605376499502117,
+            "netlist": "netlists/generated/active_iip3_06.scs",
+            "netlist_sha256": "20b10e83953ad825ac24ea0a73bb1b02c8e2dc71d4828e3da4852b6c42bcc75e",
+            "open_peak_v": 0.06324555320336758,
+            "pin_dbm": -20,
+            "power_gain_db": [
+              0.3662379011891029,
+              0.36366476000875736
+            ],
+            "power_mw": 0.8057083428888181,
+            "raw_file_sha256": "b41a5b73d7a9393eace21238f3733983a01fb808e008e24674afaa7f8ef65601",
+            "rf_node_gain_db": [
+              7.418996412453332,
+              7.416826271009467
+            ],
+            "rf_node_vpk": [
+              0.06278806110712648,
+              0.06278514799331338
+            ],
+            "sample_count": 20000,
+            "settle_s": 2e-08,
+            "strobe_s": 5e-12,
+            "tail_max_v": 0.3906972234780234,
+            "tail_mean_v": 0.25238902537620456,
+            "tail_min_v": 0.1124167702431597,
+            "window_s": 1e-07
+          }
+        ]
+      },
+      "metrics": {
+        "conversion_loss_db": -8.573326509984069,
+        "dsb_nf_db": 8.123825167025982,
+        "iip3_dbm": -2.717720781779325,
+        "iip3_lower_dbm": -2.713393126181748,
+        "iip3_upper_dbm": -2.717720781779325,
+        "p1db_dbm": -15.546875,
+        "power_conversion_loss_db": -1.583626466623883,
+        "power_gain_db": 1.583626466623883,
+        "power_mw": 0.685075201414658,
+        "rf_node_gain_db": 8.625449756950086,
+        "ssb_nf_db": 11.146078010718456,
+        "voltage_gain_db": 8.573326509984069
+      },
+      "noise": {
+        "analysis_settings": {
+          "pac_freqaxis": "in",
+          "pac_output_sideband": -1,
+          "pac_source_matched_v": 0.5,
+          "pnoise_final_maxsideband": 63,
+          "pnoise_input_probe": "RFPORT",
+          "pnoise_noisetype": "timeaverage",
+          "pnoise_output_frequencies_hz": [
+            100000000.0,
+            200000000.0,
+            300000000.0
+          ],
+          "pnoise_output_nodes": [
+            "outp",
+            "outn"
+          ],
+          "pnoise_output_probe": "none",
+          "pnoise_refsideband": 1,
+          "pnoise_sideband_checks": [
+            15,
+            31,
+            63
+          ],
+          "pnoise_sweeptype": "absolute",
+          "pss_errpreset": "conservative",
+          "pss_fund_hz": 5600000000.0,
+          "pss_harmonics": 63,
+          "pss_maxacfreq_hz": 381348000000.0,
+          "pss_method": "gear2only",
+          "pss_solver": "shooting",
+          "pss_tstab_s": 5e-09
+        },
+        "audit_path": "simulation/noise_probe_active/noise_audit.json",
+        "circuit_temperature_c": 27.0,
+        "completed_utc": "2026-11-13T00:54:28.053508+00:00",
+        "config_fingerprint": "ab6a7104f23d7959fe600c43b1b6a7078f76eef3e32892f988efbe167b81e92c",
+        "convergence": {
+          "dsb_nf_db": [
+            [
+              8.132241143827288,
+              8.12382502442476,
+              8.121192798142484
+            ],
+            [
+              8.132241286127826,
+              8.123825167012859,
+              8.121192940836268
+            ],
+            [
+              8.132241286140921,
+              8.123825167025982,
+              8.121192940849397
+            ]
+          ],
+          "last_dsb_delta_db": [
+            1.3095302620058646e-11,
+            1.312372432948905e-11,
+            1.3129053400007251e-11
+          ],
+          "last_ssb_delta_db": [
+            1.3095302620058646e-11,
+            1.312194797264965e-11,
+            1.3127277043167851e-11
+          ],
+          "passed": true,
+          "pss_maxacfreq_hz": 381348000000.0,
+          "sidebands": [
+            15,
+            31,
+            63
+          ],
+          "ssb_nf_db": [
+            [
+              11.148514718688423,
+              11.146077868117231,
+              11.149427994652822
+            ],
+            [
+              11.148514860988959,
+              11.146078010705335,
+              11.149428137346607
+            ],
+            [
+              11.148514861002054,
+              11.146078010718456,
+              11.149428137359735
+            ]
+          ],
+          "tolerance_db": 0.15
+        },
+        "curve_path": "results/curves/active_noise.npz",
+        "curve_sha256": "e35ba05e53c2a534f1ebf99f28cfa84a57c104ba7fcb9cc528a88e5a6a589f86",
+        "definition": "F_SSB=Sout_total/(4*k*T0*Rs*abs(Gopen_signal)^2); F_DSB uses sum of signal and image gain powers",
+        "dsb_nf_db": 8.123825167025982,
+        "frequency_hz": 200000000.0,
+        "image_input_frequency_hz": [
+          5500000000.0,
+          5400000000.0,
+          5300000000.0
+        ],
+        "kind": "active",
+        "measurement": "loaded differential-output SSB/DSB noise figure; both intrinsic branch resistors included",
+        "native_checks": {
+          "max_dsb_delta_db": 8.304407341519493e-05,
+          "max_ssb_delta_db": 8.304408958892395e-05,
+          "passed": true,
+          "tolerance_db": 0.12
+        },
+        "netlist": "netlists/generated/noise_probe_active.scs",
+        "netlist_sha256": "1ae0c4319d146f981703536fb90e8ee7b1dd8209e1917f8d90d95a12fbee900e",
+        "noise_module_sha256": "fdefe3e990c4c3f8a1f505356f347e8991501439d3adc325ef0a508c3a3e9a2f",
+        "noise_storage_representation": "amplitude_spectral_density",
+        "output_probe": "none; no external output load added",
+        "pac_image_sha256": "9922c8d7b4ffbadd6c56eb00769ac35bd938903bf056338450cae36c215e8b61",
+        "pac_usb_sha256": "a07a169996e31b90aadce05cc31404fa13040478a7103229d8232c45258b870f",
+        "port_open_ac_v": 1.0,
+        "port_pacmag_v_matched": 0.5,
+        "refsideband": 1,
+        "signal_input_frequency_hz": [
+          5700000000.0,
+          5800000000.0,
+          5900000000.0
+        ],
+        "source_resistance_ohm": 50.0,
+        "source_temperature_k": 290.0,
+        "ssb_nf_db": 11.146078010718456,
+        "status": "complete",
+        "validation": {
+          "intrinsic_branch_load_noise_included": true,
+          "native_nf_normalization_passed": true,
+          "no_external_output_load_added": true,
+          "psf_noise_units_verified": true,
+          "sideband_convergence_passed": true,
+          "source_and_image_pac_verified": true
+        }
+      },
+      "notes": [],
+      "parameters": {
+        "gm_width_um": 15.0,
+        "length_nm": 50.0,
+        "lo_common_mode_v": 0.8,
+        "lo_vpp_per_leg": 0.4,
+        "m": 1,
+        "nf": 1,
+        "rd_ohm": 500.0,
+        "rf_bias_v": 0.65,
+        "switch_width_um": 20.0
+      },
+      "single_tone": {
+        "completed_utc": "2026-11-13T00:50:27.922180+00:00",
+        "curve_path": "results/curves/active_transient.npz",
+        "fund_vpk": [
+          0.0030178407682697815
+        ],
+        "gain_db": [
+          8.573326509984069
+        ],
+        "if_frequencies_hz": [
+          200000000.0
+        ],
+        "im3_frequencies_hz": [],
+        "im3_vpk": [],
+        "lo_diff_vpp": 0.7999368353633657,
+        "max_output_v": 1.009579928685656,
+        "mean_outn_v": 0.8287311929781,
+        "mean_outp_v": 0.828731206314571,
+        "mean_rf_v": 0.6500000055680349,
+        "measurement_start_s": 5e-09,
+        "min_output_v": 0.621898094611969,
+        "netlist": "netlists/generated/active_single_tone.scs",
+        "netlist_sha256": "62f5b7ab4b2a9ca23711850147332da852f57a6c531a02a93b025b2e422e16e1",
+        "open_peak_v": 0.0011246826503806982,
+        "pin_dbm": -55.0,
+        "power_gain_db": [
+          1.583626466623883
+        ],
+        "power_mw": 0.685075201414658,
+        "raw_file_sha256": "c1fceb5e0c6c214588f59ced4b79df8fdac092f15af59bd4d30b730f3e29ce82",
+        "rf_node_gain_db": [
+          8.625449756950086
+        ],
+        "rf_node_vpk": [
+          0.0011179537403591172
+        ],
+        "sample_count": 4000,
+        "settle_s": 5e-09,
+        "spectrum_path": "results/curves/active_spectrum.npz",
+        "status": "complete",
+        "strobe_s": 5e-12,
+        "tail_max_v": 0.3048999189490376,
+        "tail_mean_v": 0.2564559148950673,
+        "tail_min_v": 0.1959722858064493,
+        "window_s": 2e-08
+      },
+      "status": "complete",
+      "window_convergence": {
+        "gain_delta_db": 3.4917988500637875e-09,
+        "reference": {
+          "completed_utc": "2026-11-13T00:50:49.477623+00:00",
+          "fund_vpk": [
+            0.0030178407694829777
+          ],
+          "gain_db": [
+            8.573326513475868
+          ],
+          "if_frequencies_hz": [
+            200000000.0
+          ],
+          "im3_frequencies_hz": [],
+          "im3_vpk": [],
+          "lo_diff_vpp": 0.7999368353844634,
+          "max_output_v": 1.009579928685957,
+          "mean_outn_v": 0.8287311929783399,
+          "mean_outp_v": 0.8287312063142083,
+          "mean_rf_v": 0.6500000055680317,
+          "measurement_start_s": 2e-08,
+          "min_output_v": 0.6218980946108035,
+          "netlist": "netlists/generated/active_single_window_check.scs",
+          "netlist_sha256": "ad82c375dadde69e24a552f8647ef1e3d8754be7125537b9de858f05cd79f41d",
+          "open_peak_v": 0.0011246826503806982,
+          "pin_dbm": -55.0,
+          "power_gain_db": [
+            1.58362647011568
+          ],
+          "power_mw": 0.6850752014149037,
+          "raw_file_sha256": "a1af035ad32f06ab05672f462853c9728535d932359290e66df68135ee7d33fc",
+          "rf_node_gain_db": [
+            8.625449760433238
+          ],
+          "rf_node_vpk": [
+            0.0011179537403602298
+          ],
+          "sample_count": 20000,
+          "settle_s": 2e-08,
+          "strobe_s": 5e-12,
+          "tail_max_v": 0.3048999189494561,
+          "tail_mean_v": 0.25645591489504926,
+          "tail_min_v": 0.1959722858051033,
+          "window_s": 1e-07
+        },
+        "short_settle_s": 5e-09,
+        "short_window_s": 2e-08,
+        "status": "complete",
+        "tolerance_db": 0.02
+      }
+    },
+    "passive": {
+      "completed_utc": "2026-11-13T01:06:18.309467+00:00",
+      "curves": {
+        "compression": "results/curves/passive_compression.npz",
+        "iip3": "results/curves/passive_iip3.npz",
+        "noise": "results/curves/passive_noise.npz",
+        "spectrum": "results/curves/passive_spectrum.npz",
+        "transient": "results/curves/passive_transient.npz",
+        "twotone": "results/curves/passive_twotone.npz",
+        "twotone_spectrum": "results/curves/passive_twotone_spectrum.npz"
+      },
+      "dc": {
+        "max_output_v": 0.02224745060742795,
+        "mean_outn_v": -0.001869331419721356,
+        "mean_outp_v": -0.0018693233753994988,
+        "mean_rf_v": 0.00037393568592777274,
+        "min_output_v": -0.02289248400939159,
+        "omitted_nonfinite_op_fields": [
+          "Omitted nonfinite BSIM4 operating-point values from dcOpInfo.info (M1: ig, is, ib, vth_drive, vdsat_marg, ft, Tk, Dtsh, Iavl, vth0, go, co, cm, cmb, cmx, tau1, fqslim, gmoveri; M2: ig, is, ib, vth_drive, vdsat_marg, ft, Tk, Dtsh, Iavl, vth0, go, co, cm, cmb, cmx, tau1, fqslim, gmoveri)"
+        ],
+        "operating_points": {
+          "M1": {
+            "gds": 0.001606093889451254,
+            "gm": 1.058091423555146e-09,
+            "id": -1.090413067310134e-10,
+            "region": 3,
+            "vds": 3.300949589535737e-08,
+            "vdsat": 0.0482326824473542,
+            "vgs": 0.4999999784919669,
+            "vth": 0.607941989241893
+          },
+          "M2": {
+            "gds": 0.001606093889451254,
+            "gm": 1.058091423555146e-09,
+            "id": -1.090413067310134e-10,
+            "region": 3,
+            "vds": 3.300949589535737e-08,
+            "vdsat": 0.0482326824473542,
+            "vgs": 0.4999999784919669,
+            "vth": 0.607941989241893
+          }
+        },
+        "static_op_note": "LO sources are both at their DC common mode in this static operating point. Dynamic tail/output extrema come from the settled LO-driven transient."
+      },
+      "design": {
+        "completed_utc": "2026-11-13T00:45:41.919356+00:00",
+        "fund_vpk": [
+          0.0005652856366704951
+        ],
+        "gain_db": [
+          -5.975240900839839
+        ],
+        "if_frequencies_hz": [
+          200000000.0
+        ],
+        "im3_frequencies_hz": [],
+        "im3_vpk": [],
+        "lo_diff_vpp": 0.7999368353633657,
+        "max_output_v": 0.02224745060742795,
+        "mean_outn_v": -0.001869331419721356,
+        "mean_outp_v": -0.0018693233753994988,
+        "mean_rf_v": 0.00037393568592777274,
+        "measurement_start_s": 5e-09,
+        "min_output_v": -0.02289248400939159,
+        "netlist": "netlists/generated/passive_design.scs",
+        "netlist_sha256": "751ce91305b73d12f081403cb6123a0d480c8700687831a29404a7493d5307b2",
+        "open_peak_v": 0.0011246826503806982,
+        "pin_dbm": -55.0,
+        "power_gain_db": [
+          -12.964940944200027
+        ],
+        "power_mw": 0.0,
+        "raw_file_sha256": "5012157c2689004d2a3c9f154189b26fa5192016658995170a98abfb458edc3f",
+        "rf_node_gain_db": [
+          -5.084332754162112
+        ],
+        "rf_node_vpk": [
+          0.001015043345413772
+        ],
+        "sample_count": 4000,
+        "settle_s": 5e-09,
+        "status": "complete",
+        "strobe_s": 5e-12,
+        "window_s": 2e-08
+      },
+      "linearity": {
+        "baseline_gain_db": -5.9764325441968325,
+        "completed_utc": "2026-11-13T00:50:12.676227+00:00",
+        "compression": [
+          {
+            "completed_utc": "2026-11-13T00:46:25.934023+00:00",
+            "fund_vpk": [
+              0.00031787406690304463
+            ],
+            "gain_db": [
+              -5.975497946384723
+            ],
+            "if_frequencies_hz": [
+              200000000.0
+            ],
+            "im3_frequencies_hz": [],
+            "im3_vpk": [],
+            "lo_diff_vpp": 0.7999368353633657,
+            "max_output_v": 0.0221568504114462,
+            "mean_outn_v": -0.0018688037332386287,
+            "mean_outp_v": -0.0018688049661556782,
+            "mean_rf_v": 0.00037384216115330727,
+            "measurement_start_s": 5e-09,
+            "min_output_v": -0.02282059294124216,
+            "netlist": "netlists/generated/passive_compression_00.scs",
+            "netlist_sha256": "2166eea1d5327ffda8b92fcb365952a7414a229076d8da6c08f4c7eb6c6dacb6",
+            "open_peak_v": 0.0006324555320336759,
+            "pin_dbm": -60,
+            "power_gain_db": [
+              -12.965197989744912
+            ],
+            "power_mw": 0.0,
+            "raw_file_sha256": "6004c23feb0fb673aa4d6ab7a358a8585552067a9d1999addb23c965a3f50089",
+            "rf_node_gain_db": [
+              -5.084391227644648
+            ],
+            "rf_node_vpk": [
+              0.0005707877707983657
+            ],
+            "sample_count": 4000,
+            "settle_s": 5e-09,
+            "strobe_s": 5e-12,
+            "window_s": 2e-08
+          },
+          {
+            "completed_utc": "2026-11-13T00:46:32.776698+00:00",
+            "fund_vpk": [
+              0.0010052078829235957
+            ],
+            "gain_db": [
+              -5.97548219913477
+            ],
+            "if_frequencies_hz": [
+              200000000.0
+            ],
+            "im3_frequencies_hz": [],
+            "im3_vpk": [],
+            "lo_diff_vpp": 0.7999368353633657,
+            "max_output_v": 0.02241473890077914,
+            "mean_outn_v": -0.0018709603284849314,
+            "mean_outp_v": -0.0018709445085029906,
+            "mean_rf_v": 0.0003742534461498014,
+            "measurement_start_s": 5e-09,
+            "min_output_v": -0.0230216750469605,
+            "netlist": "netlists/generated/passive_compression_01.scs",
+            "netlist_sha256": "a672543969654d6d3fe56ef5fe93ccd1bc1beb201f6364601aa8ba6ef0f1e816",
+            "open_peak_v": 0.002,
+            "pin_dbm": -50,
+            "power_gain_db": [
+              -12.96518224249496
+            ],
+            "power_mw": 0.0,
+            "raw_file_sha256": "6706900887c517df9e46ce1cd961c9aae05d0fd85c4eff3390db10b662da16e4",
+            "rf_node_gain_db": [
+              -5.084546582189291
+            ],
+            "rf_node_vpk": [
+              0.00180502497280856
+            ],
+            "sample_count": 4000,
+            "settle_s": 5e-09,
+            "strobe_s": 5e-12,
+            "window_s": 2e-08
+          },
+          {
+            "completed_utc": "2026-11-13T00:46:39.682716+00:00",
+            "fund_vpk": [
+              0.0031777089803378595
+            ],
+            "gain_db": [
+              -5.978317487071002
+            ],
+            "if_frequencies_hz": [
+              200000000.0
+            ],
+            "im3_frequencies_hz": [],
+            "im3_vpk": [],
+            "lo_diff_vpp": 0.7999368353633657,
+            "max_output_v": 0.02324838872524103,
+            "mean_outn_v": -0.001892131535697525,
+            "mean_outp_v": -0.0018921190745923887,
+            "mean_rf_v": 0.0003784755444213939,
+            "measurement_start_s": 5e-09,
+            "min_output_v": -0.02371161211506325,
+            "netlist": "netlists/generated/passive_compression_02.scs",
+            "netlist_sha256": "53f891c126d49d9fe0f40d5d79c7fce84979e4f756229658d8b328562ce9ee8a",
+            "open_peak_v": 0.006324555320336759,
+            "pin_dbm": -40,
+            "power_gain_db": [
+              -12.96801753043119
+            ],
+            "power_mw": 0.0,
+            "raw_file_sha256": "a74b891a55a00c469aa44d84e8e463cc8570bbb39ce8afac9aca5dc4d3fc459e",
+            "rf_node_gain_db": [
+              -5.087449118926718
+            ],
+            "rf_node_vpk": [
+              0.005708034340726619
+            ],
+            "sample_count": 4000,
+            "settle_s": 5e-09,
+            "strobe_s": 5e-12,
+            "window_s": 2e-08
+          },
+          {
+            "completed_utc": "2026-11-13T00:46:46.066461+00:00",
+            "fund_vpk": [
+              0.005646581659567729
+            ],
+            "gain_db": [
+              -5.984887649497708
+            ],
+            "if_frequencies_hz": [
+              200000000.0
+            ],
+            "im3_frequencies_hz": [],
+            "im3_vpk": [],
+            "lo_diff_vpp": 0.7999368353633657,
+            "max_output_v": 0.02419346564722379,
+            "mean_outn_v": -0.0019428466853680893,
+            "mean_outp_v": -0.0019428204772072542,
+            "mean_rf_v": 0.00038858740812887794,
+            "measurement_start_s": 5e-09,
+            "min_output_v": -0.02467479959812569,
+            "netlist": "netlists/generated/passive_compression_03.scs",
+            "netlist_sha256": "4763bcb8b75826214e1642f3c47710a0b9c2cb310010364b5e51d6cb102d0787",
+            "open_peak_v": 0.011246826503806982,
+            "pin_dbm": -35,
+            "power_gain_db": [
+              -12.974587692857897
+            ],
+            "power_mw": 0.0,
+            "raw_file_sha256": "088144547a9d69f7cab932e90a6b81d186ce2db9e2824f453e41492630d0403f",
+            "rf_node_gain_db": [
+              -5.094173163215961
+            ],
+            "rf_node_vpk": [
+              0.010150659770491968
+            ],
+            "sample_count": 4000,
+            "settle_s": 5e-09,
+            "strobe_s": 5e-12,
+            "window_s": 2e-08
+          },
+          {
+            "completed_utc": "2026-11-13T00:46:52.391778+00:00",
+            "fund_vpk": [
+              0.010017441670531932
+            ],
+            "gain_db": [
+              -6.005463467156656
+            ],
+            "if_frequencies_hz": [
+              200000000.0
+            ],
+            "im3_frequencies_hz": [],
+            "im3_vpk": [],
+            "lo_diff_vpp": 0.7999368353633657,
+            "max_output_v": 0.02635080341574125,
+            "mean_outn_v": -0.002103087491811169,
+            "mean_outp_v": -0.002103042337901531,
+            "mean_rf_v": 0.0004205875662627813,
+            "measurement_start_s": 5e-09,
+            "min_output_v": -0.0267085377324361,
+            "netlist": "netlists/generated/passive_compression_04.scs",
+            "netlist_sha256": "a75e86af21e5b7246f466c0a53aa595138a036983a24678b59bf6134196381e1",
+            "open_peak_v": 0.02,
+            "pin_dbm": -30,
+            "power_gain_db": [
+              -12.995163510516845
+            ],
+            "power_mw": 0.0,
+            "raw_file_sha256": "c06806eec3791df092589b7b502a1d58dc6fe4eddec363cf411ff0f2abfc72da",
+            "rf_node_gain_db": [
+              -5.115511889300879
+            ],
+            "rf_node_vpk": [
+              0.01805229478716896
+            ],
+            "sample_count": 4000,
+            "settle_s": 5e-09,
+            "strobe_s": 5e-12,
+            "window_s": 2e-08
+          },
+          {
+            "completed_utc": "2026-11-13T00:46:58.904913+00:00",
+            "fund_vpk": [
+              0.01767892290475271
+            ],
+            "gain_db": [
+              -6.071483874819791
+            ],
+            "if_frequencies_hz": [
+              200000000.0
+            ],
+            "im3_frequencies_hz": [],
+            "im3_vpk": [],
+            "lo_diff_vpp": 0.7999368353633657,
+            "max_output_v": 0.03384090306626485,
+            "mean_outn_v": -0.002609573972991475,
+            "mean_outp_v": -0.0026094870119599046,
+            "mean_rf_v": 0.0005219239319399968,
+            "measurement_start_s": 5e-09,
+            "min_output_v": -0.03812503825906342,
+            "netlist": "netlists/generated/passive_compression_05.scs",
+            "netlist_sha256": "bd4b2a2ad14d0e6ce9c9762f97e1399ab9b215d12819cfe734864906be41af1e",
+            "open_peak_v": 0.03556558820077846,
+            "pin_dbm": -25,
+            "power_gain_db": [
+              -13.061183918179978
+            ],
+            "power_mw": 0.0,
+            "raw_file_sha256": "d4fbe668364fccc03b4df856f994a587b0589566e42096abfdfa7917b2fd82fd",
+            "rf_node_gain_db": [
+              -5.183689913805436
+            ],
+            "rf_node_vpk": [
+              0.03210999941196927
+            ],
+            "sample_count": 4000,
+            "settle_s": 5e-09,
+            "strobe_s": 5e-12,
+            "window_s": 2e-08
+          },
+          {
+            "completed_utc": "2026-11-13T00:47:05.628172+00:00",
+            "fund_vpk": [
+              0.030672194115277364
+            ],
+            "gain_db": [
+              -6.2857030319901686
+            ],
+            "if_frequencies_hz": [
+              200000000.0
+            ],
+            "im3_frequencies_hz": [],
+            "im3_vpk": [],
+            "lo_diff_vpp": 0.7999368353633657,
+            "max_output_v": 0.0523126987792211,
+            "mean_outn_v": -0.004206003322819943,
+            "mean_outp_v": -0.004206292288398923,
+            "mean_rf_v": 0.0008410906424331786,
+            "measurement_start_s": 5e-09,
+            "min_output_v": -0.06087860462320971,
+            "netlist": "netlists/generated/passive_compression_06.scs",
+            "netlist_sha256": "e9d1b84bf8b870390f5baf2935cda9a62136c09dc7db8d5543a6a70a3bef85bb",
+            "open_peak_v": 0.06324555320336758,
+            "pin_dbm": -20,
+            "power_gain_db": [
+              -13.275403075350358
+            ],
+            "power_mw": 0.0,
+            "raw_file_sha256": "235415585a75f434af4b66181c7b245c4accfc4471995864ef5616df6f4cf35b",
+            "rf_node_gain_db": [
+              -5.4029911183857475
+            ],
+            "rf_node_vpk": [
+              0.05713396968061668
+            ],
+            "sample_count": 4000,
+            "settle_s": 5e-09,
+            "strobe_s": 5e-12,
+            "window_s": 2e-08
+          },
+          {
+            "completed_utc": "2026-11-13T00:47:26.856273+00:00",
+            "fund_vpk": [
+              0.039748610853259966
+            ],
+            "gain_db": [
+              -6.534160805281798
+            ],
+            "if_frequencies_hz": [
+              200000000.0
+            ],
+            "im3_frequencies_hz": [],
+            "im3_vpk": [],
+            "lo_diff_vpp": 0.7999368353633657,
+            "max_output_v": 0.06561994912752663,
+            "mean_outn_v": -0.006025402724525549,
+            "mean_outp_v": -0.0060253603319271355,
+            "mean_rf_v": 0.0012051603150559896,
+            "measurement_start_s": 5e-09,
+            "min_output_v": -0.07831556464030072,
+            "netlist": "netlists/generated/passive_compression_refine_0.scs",
+            "netlist_sha256": "ba2d74cf4ca11213fc1fe96aa88fa2ad74b3220620ddc822fc1f4a16b2c1c0f3",
+            "open_peak_v": 0.08433930068571645,
+            "pin_dbm": -17.5,
+            "power_gain_db": [
+              -13.523860848641988
+            ],
+            "power_mw": 0.0,
+            "raw_file_sha256": "ac7186f86a14dfc5d4efcc7807cef53533c0df1df0594b5a3785395c64fc0b04",
+            "rf_node_gain_db": [
+              -5.65591980977053
+            ],
+            "rf_node_vpk": [
+              0.07622860038881317
+            ],
+            "sample_count": 4000,
+            "settle_s": 5e-09,
+            "strobe_s": 5e-12,
+            "window_s": 2e-08
+          },
+          {
+            "completed_utc": "2026-11-13T00:47:34.074976+00:00",
+            "fund_vpk": [
+              0.04490267421172116
+            ],
+            "gain_db": [
+              -6.725155783275799
+            ],
+            "if_frequencies_hz": [
+              200000000.0
+            ],
+            "im3_frequencies_hz": [],
+            "im3_vpk": [],
+            "lo_diff_vpp": 0.7999368353633657,
+            "max_output_v": 0.07321920235792148,
+            "mean_outn_v": -0.007413169978683907,
+            "mean_outp_v": -0.0074133220153534355,
+            "mean_rf_v": 0.0014827359522208016,
+            "measurement_start_s": 5e-09,
+            "min_output_v": -0.08907085503068582,
+            "netlist": "netlists/generated/passive_compression_refine_1.scs",
+            "netlist_sha256": "ad8e123fd51190b1ae986dbd642118c7c34e5edda632fe0325e47b85fe3a06d5",
+            "open_peak_v": 0.09739350503317262,
+            "pin_dbm": -16.25,
+            "power_gain_db": [
+              -13.714855826635988
+            ],
+            "power_mw": 0.0,
+            "raw_file_sha256": "d4776ac5f3631565a58ee5e1be071c0d18169a89f3571accad7d1b6f83d93b8f",
+            "rf_node_gain_db": [
+              -5.849667367595669
+            ],
+            "rf_node_vpk": [
+              0.08805531497229861
+            ],
+            "sample_count": 4000,
+            "settle_s": 5e-09,
+            "strobe_s": 5e-12,
+            "window_s": 2e-08
+          },
+          {
+            "completed_utc": "2026-11-13T00:47:41.105624+00:00",
+            "fund_vpk": [
+              0.047597984819104495
+            ],
+            "gain_db": [
+              -6.843828590159346
+            ],
+            "if_frequencies_hz": [
+              200000000.0
+            ],
+            "im3_frequencies_hz": [],
+            "im3_vpk": [],
+            "lo_diff_vpp": 0.7999368353633657,
+            "max_output_v": 0.07709686465925865,
+            "mean_outn_v": -0.008272505762547679,
+            "mean_outp_v": -0.008272608309902986,
+            "mean_rf_v": 0.001654558033218653,
+            "measurement_start_s": 5e-09,
+            "min_output_v": -0.09501892937923727,
+            "netlist": "netlists/generated/passive_compression_refine_2.scs",
+            "netlist_sha256": "2e3894d3e49d4fdf4e4b33c668407f4a26101c15e9e19e43f5a0e7472dfd7fa4",
+            "open_peak_v": 0.10465982293629894,
+            "pin_dbm": -15.625,
+            "power_gain_db": [
+              -13.833528633519535
+            ],
+            "power_mw": 0.0,
+            "raw_file_sha256": "de8d52331bea46a55f7e0fae492d7921ac509f8c7586810159080e4d74b20867",
+            "rf_node_gain_db": [
+              -5.969793606559694
+            ],
+            "rf_node_vpk": [
+              0.09464076595052602
+            ],
+            "sample_count": 4000,
+            "settle_s": 5e-09,
+            "strobe_s": 5e-12,
+            "window_s": 2e-08
+          },
+          {
+            "completed_utc": "2026-11-13T00:47:48.478901+00:00",
+            "fund_vpk": [
+              0.04896679347143173
+            ],
+            "gain_db": [
+              -6.910066598795542
+            ],
+            "if_frequencies_hz": [
+              200000000.0
+            ],
+            "im3_frequencies_hz": [],
+            "im3_vpk": [],
+            "lo_diff_vpp": 0.7999368353633657,
+            "max_output_v": 0.07903229143519921,
+            "mean_outn_v": -0.008750878259098456,
+            "mean_outp_v": -0.008751054708553585,
+            "mean_rf_v": 0.0017502396201605035,
+            "measurement_start_s": 5e-09,
+            "min_output_v": -0.09814364183899855,
+            "netlist": "netlists/generated/passive_compression_refine_3.scs",
+            "netlist_sha256": "6ab22d0dfd74e7d1c595c4ec9881c45dd0bfc240b6352369b896ff9035604a1a",
+            "open_peak_v": 0.10849381874022652,
+            "pin_dbm": -15.3125,
+            "power_gain_db": [
+              -13.89976664215573
+            ],
+            "power_mw": 0.0,
+            "raw_file_sha256": "0f486b14c878c3f8270a6fa558f4a13b18305c3eb85c473a55354c7accca3039",
+            "rf_node_gain_db": [
+              -6.036760863146599
+            ],
+            "rf_node_vpk": [
+              0.09811597160955905
+            ],
+            "sample_count": 4000,
+            "settle_s": 5e-09,
+            "strobe_s": 5e-12,
+            "window_s": 2e-08
+          },
+          {
+            "completed_utc": "2026-11-13T00:47:55.502648+00:00",
+            "fund_vpk": [
+              0.049655243598561945
+            ],
+            "gain_db": [
+              -6.945047577426333
+            ],
+            "if_frequencies_hz": [
+              200000000.0
+            ],
+            "im3_frequencies_hz": [],
+            "im3_vpk": [],
+            "lo_diff_vpp": 0.7999368353633657,
+            "max_output_v": 0.07999551002007213,
+            "mean_outn_v": -0.009003313604671647,
+            "mean_outp_v": -0.00900347963620294,
+            "mean_rf_v": 0.0018007437865012227,
+            "measurement_start_s": 5e-09,
+            "min_output_v": -0.09974459434375386,
+            "netlist": "netlists/generated/passive_compression_refine_4.scs",
+            "netlist_sha256": "bdf85d27d4d47f024c0c2e53a42e7b9a391466e3c34f3b0949fe9a7d0a5c82ec",
+            "open_peak_v": 0.11046316834614198,
+            "pin_dbm": -15.15625,
+            "power_gain_db": [
+              -13.93474762078652
+            ],
+            "power_mw": 0.0,
+            "raw_file_sha256": "f00ddef65f23819c87ca44c14d8b24ea746f27eca95019cf329f157e5b9ce15f",
+            "rf_node_gain_db": [
+              -6.072104592185983
+            ],
+            "rf_node_vpk": [
+              0.09990111752397353
+            ],
+            "sample_count": 4000,
+            "settle_s": 5e-09,
+            "strobe_s": 5e-12,
+            "window_s": 2e-08
+          },
+          {
+            "completed_utc": "2026-11-13T00:47:12.507556+00:00",
+            "fund_vpk": [
+              0.05034584961818183
+            ],
+            "gain_db": [
+              -6.981326428283554
+            ],
+            "if_frequencies_hz": [
+              200000000.0
+            ],
+            "im3_frequencies_hz": [],
+            "im3_vpk": [],
+            "lo_diff_vpp": 0.7999368353633657,
+            "max_output_v": 0.08095417247066686,
+            "mean_outn_v": -0.009265018207910465,
+            "mean_outp_v": -0.009265172891286828,
+            "mean_rf_v": 0.0018530901324999513,
+            "measurement_start_s": 5e-09,
+            "min_output_v": -0.1013716111490151,
+            "netlist": "netlists/generated/passive_compression_07.scs",
+            "netlist_sha256": "2383992736eb6aa8d4a05fc326e09031b3f7d7391812e7d08c54d97aca159acc",
+            "open_peak_v": 0.11246826503806982,
+            "pin_dbm": -15,
+            "power_gain_db": [
+              -13.971026471643741
+            ],
+            "power_mw": 0.0,
+            "raw_file_sha256": "0557fde9137415e07832f3ebf0b3996f81d70f1ad9b1de8434ac988a4c3406bf",
+            "rf_node_gain_db": [
+              -6.108743692388094
+            ],
+            "rf_node_vpk": [
+              0.10171871352902744
+            ],
+            "sample_count": 4000,
+            "settle_s": 5e-09,
+            "strobe_s": 5e-12,
+            "window_s": 2e-08
+          },
+          {
+            "completed_utc": "2026-11-13T00:47:20.130205+00:00",
+            "fund_vpk": [
+              0.06912065793730937
+            ],
+            "gain_db": [
+              -9.228442645279852
+            ],
+            "if_frequencies_hz": [
+              200000000.0
+            ],
+            "im3_frequencies_hz": [],
+            "im3_vpk": [],
+            "lo_diff_vpp": 0.7999368353633657,
+            "max_output_v": 0.103365304559021,
+            "mean_outn_v": -0.02510255442288229,
+            "mean_outp_v": -0.025102503836290316,
+            "mean_rf_v": 0.0050207823993641005,
+            "measurement_start_s": 5e-09,
+            "min_output_v": -0.1711451108805414,
+            "netlist": "netlists/generated/passive_compression_08.scs",
+            "netlist_sha256": "cdffd8605c21efdd722f2bb3a587e84600ba6f92527dce797a9c7417ae2a2a9b",
+            "open_peak_v": 0.2,
+            "pin_dbm": -10,
+            "power_gain_db": [
+              -16.21814268864004
+            ],
+            "power_mw": 0.0,
+            "raw_file_sha256": "2d1e980d34687512fc8c75e706a150b0b17897764e6f64c962d8972d311eee4a",
+            "rf_node_gain_db": [
+              -8.354962590458575
+            ],
+            "rf_node_vpk": [
+              0.18086560811655375
+            ],
+            "sample_count": 4000,
+            "settle_s": 5e-09,
+            "strobe_s": 5e-12,
+            "window_s": 2e-08
+          }
+        ],
+        "convergence": {
+          "delta_db": [
+            -0.0027367627211098977,
+            -0.003605488473727547
+          ],
+          "original": [
+            -5.387290867003777,
+            -5.388766670121857
+          ],
+          "passed": true,
+          "tight": [
+            -5.390027629724887,
+            -5.392372158595585
+          ]
+        },
+        "cubic_region": {
+          "fundamental_slopes": [
+            0.991784062306877,
+            0.9917840156133227
+          ],
+          "im3_slopes": [
+            2.9835124836213645,
+            2.98380967793685
+          ],
+          "indices": [
+            2,
+            3,
+            4
+          ],
+          "minimum_im3_to_empty_bin_margin_db": 44.685973824419136,
+          "pins_dbm": [
+            -40,
+            -35,
+            -30
+          ]
+        },
+        "iip3_each_side_dbm": [
+          -5.470534677396508,
+          -5.472481506380608
+        ],
+        "input_power_convention": "Thevenin available source power per tone, Rs=50 ohm",
+        "p1db_bracket_dbm": [
+          -15.15625,
+          -15.0
+        ],
+        "p1db_dbm": -15.078125,
+        "status": "complete",
+        "two_tone": [
+          {
+            "completed_utc": "2026-11-13T00:48:22.006414+00:00",
+            "empty_bin_residual_vpk": 3.1481626354064078e-09,
+            "fund_vpk": [
+              0.0010049852222870736,
+              0.0010052537791803108
+            ],
+            "gain_db": [
+              -5.97740639807712,
+              -5.975085623733002
+            ],
+            "if_frequencies_hz": [
+              190000000.0,
+              210000000.0
+            ],
+            "iip3_dbm": [
+              -5.174752562552371,
+              -5.166554209023829
+            ],
+            "im3_frequencies_hz": [
+              170000000.0,
+              230000000.0
+            ],
+            "im3_to_empty_bin_margin_db": [
+              20.43155543826236,
+              20.417479505549405
+            ],
+            "im3_vpk": [
+              3.3085288958623596e-08,
+              3.303171595991408e-08
+            ],
+            "lo_diff_vpp": 0.7999368353844634,
+            "max_output_v": 0.02279260926042904,
+            "mean_outn_v": -0.0018733502973618233,
+            "mean_outp_v": -0.0018733393972311,
+            "mean_rf_v": 0.00037471114760117614,
+            "measurement_start_s": 2e-08,
+            "min_output_v": -0.02332188402441237,
+            "netlist": "netlists/generated/passive_iip3_00.scs",
+            "netlist_sha256": "33db322f5c784ceb62297d1c72a50df8295d3a55a5d4ce85f04e94c84cd56855",
+            "open_peak_v": 0.002,
+            "pin_dbm": -50,
+            "power_gain_db": [
+              -12.96710644143731,
+              -12.964785667093189
+            ],
+            "power_mw": 0.0,
+            "raw_file_sha256": "2a690b2106d962dd50a87e351accf4634853f500cae646df3bf965236d606ff3",
+            "rf_node_gain_db": [
+              -5.086817143255711,
+              -5.08375352627893
+            ],
+            "rf_node_vpk": [
+              0.0018050969521653116,
+              0.001804942581606774
+            ],
+            "sample_count": 20000,
+            "settle_s": 2e-08,
+            "strobe_s": 5e-12,
+            "window_s": 1e-07
+          },
+          {
+            "completed_utc": "2026-11-13T00:48:21.826114+00:00",
+            "empty_bin_residual_vpk": 4.217823696511492e-09,
+            "fund_vpk": [
+              0.001786756637200365,
+              0.0017872343461587167
+            ],
+            "gain_db": [
+              -5.97929183259499,
+              -5.976969875245133
+            ],
+            "if_frequencies_hz": [
+              190000000.0,
+              210000000.0
+            ],
+            "iip3_dbm": [
+              -5.096537282964057,
+              -5.073947663910218
+            ],
+            "im3_frequencies_hz": [
+              170000000.0,
+              230000000.0
+            ],
+            "im3_to_empty_bin_margin_db": [
+              32.73261419796695,
+              32.68975691720912
+            ],
+            "im3_vpk": [
+              1.8269183262656213e-07,
+              1.817926281795737e-07
+            ],
+            "lo_diff_vpp": 0.7999368353844634,
+            "max_output_v": 0.02339425467471796,
+            "mean_outn_v": -0.0018835385497893594,
+            "mean_outp_v": -0.0018835364954082287,
+            "mean_rf_v": 0.0003767336847128525,
+            "measurement_start_s": 2e-08,
+            "min_output_v": -0.02385039485497759,
+            "netlist": "netlists/generated/passive_iip3_01.scs",
+            "netlist_sha256": "5f882c39f48c2e8b3d1ca98f7c3417be47f06fc42b076456c16e745ecc832a44",
+            "open_peak_v": 0.003556558820077846,
+            "pin_dbm": -45,
+            "power_gain_db": [
+              -12.968991875955178,
+              -12.96666991860532
+            ],
+            "power_mw": 0.0,
+            "raw_file_sha256": "66aded957b87a06239bb8e34a7d3562567a48e95f48e43959f2b45896d8325af",
+            "rf_node_gain_db": [
+              -5.088823726853782,
+              -5.085754768268501
+            ],
+            "rf_node_vpk": [
+              0.003210011515456574,
+              0.00320973546089456
+            ],
+            "sample_count": 20000,
+            "settle_s": 2e-08,
+            "strobe_s": 5e-12,
+            "window_s": 1e-07
+          },
+          {
+            "completed_utc": "2026-11-13T00:48:47.039353+00:00",
+            "empty_bin_residual_vpk": 6.618145056432812e-09,
+            "fund_vpk": [
+              0.0031750562231462253,
+              0.0031759044982101075
+            ],
+            "gain_db": [
+              -5.985571511674248,
+              -5.9832512253570505
+            ],
+            "if_frequencies_hz": [
+              190000000.0,
+              210000000.0
+            ],
+            "iip3_dbm": [
+              -5.5328355293066664,
+              -5.534274768701167
+            ],
+            "im3_frequencies_hz": [
+              170000000.0,
+              230000000.0
+            ],
+            "im3_to_empty_bin_margin_db": [
+              44.685973824419136,
+              44.69117258952534
+            ],
+            "im3_vpk": [
+              1.1351022198822257e-06,
+              1.1357818159181564e-06
+            ],
+            "lo_diff_vpp": 0.7999368353844634,
+            "max_output_v": 0.02452745938630086,
+            "mean_outn_v": -0.0019156396217358904,
+            "mean_outp_v": -0.0019156309212599743,
+            "mean_rf_v": 0.0003831398753015534,
+            "measurement_start_s": 2e-08,
+            "min_output_v": -0.02496710105401679,
+            "netlist": "netlists/generated/passive_iip3_02.scs",
+            "netlist_sha256": "7b7a9cbef9443c495ac2791a413c8929e2f71f705c13dab637f2db0153d2aa2c",
+            "open_peak_v": 0.006324555320336759,
+            "pin_dbm": -40,
+            "power_gain_db": [
+              -12.975271555034437,
+              -12.972951268717239
+            ],
+            "power_mw": 0.0,
+            "raw_file_sha256": "b30834e1fe49a7b8b402acd9706b7758cd1ee57c33374957d11085deba9c4dc6",
+            "rf_node_gain_db": [
+              -5.095233507166465,
+              -5.092165215635696
+            ],
+            "rf_node_vpk": [
+              0.005708382886057415,
+              0.0057078913168011934
+            ],
+            "sample_count": 20000,
+            "settle_s": 2e-08,
+            "strobe_s": 5e-12,
+            "window_s": 1e-07
+          },
+          {
+            "completed_utc": "2026-11-13T00:48:47.013337+00:00",
+            "empty_bin_residual_vpk": 1.5358601174910815e-08,
+            "fund_vpk": [
+              0.005633467322964102,
+              0.005634972515893632
+            ],
+            "gain_db": [
+              -6.005084322741724,
+              -6.002763870232838
+            ],
+            "if_frequencies_hz": [
+              190000000.0,
+              210000000.0
+            ],
+            "iip3_dbm": [
+              -5.387290867003777,
+              -5.388766670121857
+            ],
+            "im3_frequencies_hz": [
+              170000000.0,
+              230000000.0
+            ],
+            "im3_to_empty_bin_margin_db": [
+              52.063064064908325,
+              52.068336123653374
+            ],
+            "im3_vpk": [
+              6.158924300912311e-06,
+              6.162663706806322e-06
+            ],
+            "lo_diff_vpp": 0.7999368353844634,
+            "max_output_v": 0.02713791169935236,
+            "mean_outn_v": -0.002017032809444207,
+            "mean_outp_v": -0.002017017606362041,
+            "mean_rf_v": 0.0004033415071602247,
+            "measurement_start_s": 2e-08,
+            "min_output_v": -0.02750860192177648,
+            "netlist": "netlists/generated/passive_iip3_03.scs",
+            "netlist_sha256": "144e67a3c172952c96311fb42c7818ce24bfb515fb19b72b69404bee6e7dd80a",
+            "open_peak_v": 0.011246826503806982,
+            "pin_dbm": -35,
+            "power_gain_db": [
+              -12.994784366101912,
+              -12.992463913593028
+            ],
+            "power_mw": 0.0,
+            "raw_file_sha256": "5dca79e836743382ee5b649f8c7eb8cad0a0cd8e61ebdf0e403870990847a328",
+            "rf_node_gain_db": [
+              -5.1154574232950125,
+              -5.112390886547412
+            ],
+            "rf_node_vpk": [
+              0.010151930845255867,
+              0.01015105887121244
+            ],
+            "sample_count": 20000,
+            "settle_s": 2e-08,
+            "strobe_s": 5e-12,
+            "window_s": 1e-07
+          },
+          {
+            "completed_utc": "2026-11-13T00:49:13.122941+00:00",
+            "empty_bin_residual_vpk": 2.7174381834352174e-08,
+            "fund_vpk": [
+              0.009945885409226675,
+              0.00994854210187279
+            ],
+            "gain_db": [
+              -6.067730888605491,
+              -6.0654110692238365
+            ],
+            "if_frequencies_hz": [
+              190000000.0,
+              210000000.0
+            ],
+            "iip3_dbm": [
+              -5.491477635879079,
+              -5.494403080318801
+            ],
+            "im3_frequencies_hz": [
+              170000000.0,
+              230000000.0
+            ],
+            "im3_to_empty_bin_margin_db": [
+              62.252630826533924,
+              62.260801534795036
+            ],
+            "im3_vpk": [
+              3.5220151099559986e-05,
+              3.5253297845202274e-05
+            ],
+            "lo_diff_vpp": 0.7999368353844634,
+            "max_output_v": 0.03684523078299782,
+            "mean_outn_v": -0.002337341083066895,
+            "mean_outp_v": -0.0023373481119340674,
+            "mean_rf_v": 0.00046743882187175715,
+            "measurement_start_s": 2e-08,
+            "min_output_v": -0.04171933492863354,
+            "netlist": "netlists/generated/passive_iip3_04.scs",
+            "netlist_sha256": "7688e9dbdab852ef8ded26b8f471dfaf0b4b41b546f8fc1b0d0896c3ddb9325b",
+            "open_peak_v": 0.02,
+            "pin_dbm": -30,
+            "power_gain_db": [
+              -13.05743093196568,
+              -13.055111112584024
+            ],
+            "power_mw": 0.0,
+            "raw_file_sha256": "2b8641643e9910ab2df6cb68010f54bc29c43f12a7744b9fc1e746e744624a68",
+            "rf_node_gain_db": [
+              -5.1801126676186104,
+              -5.177047031030541
+            ],
+            "rf_node_vpk": [
+              0.018057144964426595,
+              0.018055594547393656
+            ],
+            "sample_count": 20000,
+            "settle_s": 2e-08,
+            "strobe_s": 5e-12,
+            "window_s": 1e-07
+          },
+          {
+            "completed_utc": "2026-11-13T00:49:13.120466+00:00",
+            "empty_bin_residual_vpk": 6.175070779367415e-08,
+            "fund_vpk": [
+              0.017278334932838875,
+              0.01728296347429001
+            ],
+            "gain_db": [
+              -6.270562146165176,
+              -6.268235671042829
+            ],
+            "if_frequencies_hz": [
+              190000000.0,
+              210000000.0
+            ],
+            "iip3_dbm": [
+              -5.628181145170743,
+              -5.628342928087903
+            ],
+            "im3_frequencies_hz": [
+              170000000.0,
+              230000000.0
+            ],
+            "im3_to_empty_bin_margin_db": [
+              70.193561259591,
+              70.19621130054766
+            ],
+            "im3_vpk": [
+              0.00019967330335425072,
+              0.0001997342324222048
+            ],
+            "lo_diff_vpp": 0.7999368353844634,
+            "max_output_v": 0.05740556849990938,
+            "mean_outn_v": -0.0033475996060178042,
+            "mean_outp_v": -0.003347670585338905,
+            "mean_rf_v": 0.0006694820782710131,
+            "measurement_start_s": 2e-08,
+            "min_output_v": -0.0673228453619604,
+            "netlist": "netlists/generated/passive_iip3_05.scs",
+            "netlist_sha256": "ccc861aa8098fe32994c227e7a63dc0de52b0cc052b3bfe0f66fd8ba4a556cec",
+            "open_peak_v": 0.03556558820077846,
+            "pin_dbm": -25,
+            "power_gain_db": [
+              -13.260262189525365,
+              -13.257935714403018
+            ],
+            "power_mw": 0.0,
+            "raw_file_sha256": "b475d31153d3df1a5e7a4bf77a73d5cbbb7d1d27fb6ff1788112e9ee788ebf78",
+            "rf_node_gain_db": [
+              -5.387748696940875,
+              -5.384674314601957
+            ],
+            "rf_node_vpk": [
+              0.03212841664918575,
+              0.032125650318829725
+            ],
+            "sample_count": 20000,
+            "settle_s": 2e-08,
+            "strobe_s": 5e-12,
+            "window_s": 1e-07
+          },
+          {
+            "completed_utc": "2026-11-13T00:49:37.537971+00:00",
+            "empty_bin_residual_vpk": 7.125130950301155e-08,
+            "fund_vpk": [
+              0.02849484403911966,
+              0.028503023150970832
+            ],
+            "gain_db": [
+              -6.925274227447672,
+              -6.9227814021239675
+            ],
+            "if_frequencies_hz": [
+              190000000.0,
+              210000000.0
+            ],
+            "iip3_dbm": [
+              -5.779804153590735,
+              -5.778779712466937
+            ],
+            "im3_frequencies_hz": [
+              170000000.0,
+              230000000.0
+            ],
+            "im3_to_empty_bin_margin_db": [
+              83.59907698299381,
+              83.5995209260699
+            ],
+            "im3_vpk": [
+              0.0010783176147722894,
+              0.0010783727298949487
+            ],
+            "lo_diff_vpp": 0.7999368353844634,
+            "max_output_v": 0.08737107710515021,
+            "mean_outn_v": -0.0065465972430753866,
+            "mean_outp_v": -0.006546656155549493,
+            "mean_rf_v": 0.0013094034072480116,
+            "measurement_start_s": 2e-08,
+            "min_output_v": -0.112716454696134,
+            "netlist": "netlists/generated/passive_iip3_06.scs",
+            "netlist_sha256": "0d397f966635cc47ee21eb2ab77b53e22712adab6558c68c88773a37350815ba",
+            "open_peak_v": 0.06324555320336758,
+            "pin_dbm": -20,
+            "power_gain_db": [
+              -13.91497427080786,
+              -13.912481445484158
+            ],
+            "power_mw": 0.0,
+            "raw_file_sha256": "7eeaf53986eb2abe2a27bd0fe11dface78b3f377dd05089bd3a9dbd425d0b9c1",
+            "rf_node_gain_db": [
+              -6.0518298203118635,
+              -6.048597049947548
+            ],
+            "rf_node_vpk": [
+              0.057194961936847706,
+              0.0571900897444076
+            ],
+            "sample_count": 20000,
+            "settle_s": 2e-08,
+            "strobe_s": 5e-12,
+            "window_s": 1e-07
+          }
+        ]
+      },
+      "metrics": {
+        "conversion_loss_db": 5.975240900839839,
+        "dsb_nf_db": 13.708005399717788,
+        "iip3_dbm": -5.472481506380608,
+        "iip3_lower_dbm": -5.470534677396508,
+        "iip3_upper_dbm": -5.472481506380608,
+        "p1db_dbm": -15.078125,
+        "power_conversion_loss_db": 12.964940944200027,
+        "power_gain_db": -12.964940944200027,
+        "power_mw": 0.0,
+        "rf_node_gain_db": -5.084332754162112,
+        "ssb_nf_db": 16.69435780385286,
+        "voltage_gain_db": -5.975240900839839
+      },
+      "noise": {
+        "analysis_settings": {
+          "pac_freqaxis": "in",
+          "pac_output_sideband": -1,
+          "pac_source_matched_v": 0.5,
+          "pnoise_final_maxsideband": 63,
+          "pnoise_input_probe": "RFPORT",
+          "pnoise_noisetype": "timeaverage",
+          "pnoise_output_frequencies_hz": [
+            100000000.0,
+            200000000.0,
+            300000000.0
+          ],
+          "pnoise_output_nodes": [
+            "outp",
+            "outn"
+          ],
+          "pnoise_output_probe": "none",
+          "pnoise_refsideband": 1,
+          "pnoise_sideband_checks": [
+            15,
+            31,
+            63
+          ],
+          "pnoise_sweeptype": "absolute",
+          "pss_errpreset": "conservative",
+          "pss_fund_hz": 5600000000.0,
+          "pss_harmonics": 63,
+          "pss_maxacfreq_hz": 381348000000.0,
+          "pss_method": "gear2only",
+          "pss_solver": "shooting",
+          "pss_tstab_s": 5e-09
+        },
+        "audit_path": "simulation/noise_probe_passive/noise_audit.json",
+        "circuit_temperature_c": 27.0,
+        "completed_utc": "2026-11-13T00:50:16.201884+00:00",
+        "config_fingerprint": "ab6a7104f23d7959fe600c43b1b6a7078f76eef3e32892f988efbe167b81e92c",
+        "convergence": {
+          "dsb_nf_db": [
+            [
+              13.708422716330247,
+              13.7080053740859,
+              13.707312239874
+            ],
+            [
+              13.708422737926805,
+              13.70800539618105,
+              13.70731226280039
+            ],
+            [
+              13.708422741313424,
+              13.708005399717788,
+              13.7073122665874
+            ]
+          ],
+          "last_dsb_delta_db": [
+            3.3866189852460593e-09,
+            3.536737125386935e-09,
+            3.787009816846876e-09
+          ],
+          "last_ssb_delta_db": [
+            3.38661720888922e-09,
+            3.536737125386935e-09,
+            3.787011593203715e-09
+          ],
+          "passed": true,
+          "pss_maxacfreq_hz": 381348000000.0,
+          "sidebands": [
+            15,
+            31,
+            63
+          ],
+          "ssb_nf_db": [
+            [
+              16.706728986691324,
+              16.694357778220976,
+              16.681757123499917
+            ],
+            [
+              16.706729008287887,
+              16.694357800316123,
+              16.681757146426307
+            ],
+            [
+              16.706729011674504,
+              16.69435780385286,
+              16.68175715021332
+            ]
+          ],
+          "tolerance_db": 0.15
+        },
+        "curve_path": "results/curves/passive_noise.npz",
+        "curve_sha256": "315f015e000e8c9b32791cce7ce1d6a60e76973d2108300e0e617e1d9847403f",
+        "definition": "F_SSB=Sout_total/(4*k*T0*Rs*abs(Gopen_signal)^2); F_DSB uses sum of signal and image gain powers",
+        "dsb_nf_db": 13.708005399717788,
+        "frequency_hz": 200000000.0,
+        "image_input_frequency_hz": [
+          5500000000.0,
+          5400000000.0,
+          5300000000.0
+        ],
+        "kind": "passive",
+        "measurement": "loaded differential-output SSB/DSB noise figure; both intrinsic branch resistors included",
+        "native_checks": {
+          "max_dsb_delta_db": 8.304407544201808e-05,
+          "max_ssb_delta_db": 8.30440754207018e-05,
+          "passed": true,
+          "tolerance_db": 0.12
+        },
+        "netlist": "netlists/generated/noise_probe_passive.scs",
+        "netlist_sha256": "82bad26be0b96bfe927964875caf0eec852504c4816d7be268328a74ba8624cf",
+        "noise_module_sha256": "fdefe3e990c4c3f8a1f505356f347e8991501439d3adc325ef0a508c3a3e9a2f",
+        "noise_storage_representation": "amplitude_spectral_density",
+        "output_probe": "none; no external output load added",
+        "pac_image_sha256": "214052ef82caa5202d43823aa80d55c8c15ff11a69539fe22f2ed71b44fc76e4",
+        "pac_usb_sha256": "5126d7c23b8f867f9704cf3bd13f90974b987a573e1d41d03fb62cf32c8e4ff6",
+        "port_open_ac_v": 1.0,
+        "port_pacmag_v_matched": 0.5,
+        "refsideband": 1,
+        "signal_input_frequency_hz": [
+          5700000000.0,
+          5800000000.0,
+          5900000000.0
+        ],
+        "source_resistance_ohm": 50.0,
+        "source_temperature_k": 290.0,
+        "ssb_nf_db": 16.69435780385286,
+        "status": "complete",
+        "validation": {
+          "intrinsic_branch_load_noise_included": true,
+          "native_nf_normalization_passed": true,
+          "no_external_output_load_added": true,
+          "psf_noise_units_verified": true,
+          "sideband_convergence_passed": true,
+          "source_and_image_pac_verified": true
+        }
+      },
+      "notes": [],
+      "parameters": {
+        "length_nm": 50.0,
+        "lo_common_mode_v": 0.5,
+        "lo_vpp_per_leg": 0.4,
+        "m": 1,
+        "nf": 1,
+        "rf_common_mode_v": 0.0,
+        "rl_ohm": 500.0,
+        "switch_width_um": 20.0
+      },
+      "single_tone": {
+        "completed_utc": "2026-11-13T00:45:48.880196+00:00",
+        "curve_path": "results/curves/passive_transient.npz",
+        "fund_vpk": [
+          0.0005652856366704951
+        ],
+        "gain_db": [
+          -5.975240900839839
+        ],
+        "if_frequencies_hz": [
+          200000000.0
+        ],
+        "im3_frequencies_hz": [],
+        "im3_vpk": [],
+        "lo_diff_vpp": 0.7999368353633657,
+        "max_output_v": 0.02224745060742795,
+        "mean_outn_v": -0.001869331419721356,
+        "mean_outp_v": -0.0018693233753994988,
+        "mean_rf_v": 0.00037393568592777274,
+        "measurement_start_s": 5e-09,
+        "min_output_v": -0.02289248400939159,
+        "netlist": "netlists/generated/passive_single_tone.scs",
+        "netlist_sha256": "751ce91305b73d12f081403cb6123a0d480c8700687831a29404a7493d5307b2",
+        "open_peak_v": 0.0011246826503806982,
+        "pin_dbm": -55.0,
+        "power_gain_db": [
+          -12.964940944200027
+        ],
+        "power_mw": 0.0,
+        "raw_file_sha256": "4bd62d1eb73b908490758680a8f452954cd7fb19aab1a779fb8b995b3f4657e9",
+        "rf_node_gain_db": [
+          -5.084332754162112
+        ],
+        "rf_node_vpk": [
+          0.001015043345413772
+        ],
+        "sample_count": 4000,
+        "settle_s": 5e-09,
+        "spectrum_path": "results/curves/passive_spectrum.npz",
+        "status": "complete",
+        "strobe_s": 5e-12,
+        "window_s": 2e-08
+      },
+      "status": "complete",
+      "window_convergence": {
+        "gain_delta_db": -3.0114178795059843e-07,
+        "reference": {
+          "completed_utc": "2026-11-13T00:46:18.897490+00:00",
+          "fund_vpk": [
+            0.0005652856170719126
+          ],
+          "gain_db": [
+            -5.975241201981627
+          ],
+          "if_frequencies_hz": [
+            200000000.0
+          ],
+          "im3_frequencies_hz": [],
+          "im3_vpk": [],
+          "lo_diff_vpp": 0.7999368353844634,
+          "max_output_v": 0.02224745060763757,
+          "mean_outn_v": -0.0018693314478429209,
+          "mean_outp_v": -0.0018693233799426093,
+          "mean_rf_v": 0.0003739356756349771,
+          "measurement_start_s": 2e-08,
+          "min_output_v": -0.02289248400951532,
+          "netlist": "netlists/generated/passive_single_window_check.scs",
+          "netlist_sha256": "53311d0e068be28b7db5319fed7f1c0be1d1582ccb9f9304a223778769dc6ae8",
+          "open_peak_v": 0.0011246826503806982,
+          "pin_dbm": -55.0,
+          "power_gain_db": [
+            -12.964941245341816
+          ],
+          "power_mw": 0.0,
+          "raw_file_sha256": "9e76c33144d571f8d8c32c1b7bc060162dafab1e4fd5e09190f972440e5d22e3",
+          "rf_node_gain_db": [
+            -5.084332932998532
+          ],
+          "rf_node_vpk": [
+            0.0010150433311210219
+          ],
+          "sample_count": 20000,
+          "settle_s": 2e-08,
+          "strobe_s": 5e-12,
+          "window_s": 1e-07
+        },
+        "short_settle_s": 5e-09,
+        "short_window_s": 2e-08,
+        "status": "complete",
+        "tolerance_db": 0.02
+      }
+    }
+  },
+  "completed_utc": "2026-11-13T01:06:18.345569+00:00",
+  "config": {
+    "active": {
+      "gm_width_um": 15.0,
+      "length_nm": 50.0,
+      "lo_common_mode_v": 0.8,
+      "lo_vpp_per_leg": 0.4,
+      "m": 1,
+      "nf": 1,
+      "rd_ohm": 500.0,
+      "rf_bias_v": 0.65,
+      "switch_width_um": 20.0
+    },
+    "analysis": {
+      "compression_pin_dbm": [
+        -60,
+        -50,
+        -40,
+        -35,
+        -30,
+        -25,
+        -20,
+        -15,
+        -10,
+        -5,
+        0,
+        5
+      ],
+      "force": false,
+      "iip3_pin_dbm": [
+        -50,
+        -45,
+        -40,
+        -35,
+        -30,
+        -25,
+        -20
+      ],
+      "maxstep_s": 2e-12,
+      "noise_frequency_hz": [
+        100000000.0,
+        200000000.0,
+        300000000.0
+      ],
+      "noise_sidebands": [
+        15,
+        31,
+        63
+      ],
+      "parallel_jobs": 2,
+      "reltol": 1e-05,
+      "rf_tones_hz": [
+        5790000000.0,
+        5810000000.0
+      ],
+      "single_tone_settle_s": 5e-09,
+      "single_tone_window_s": 2e-08,
+      "small_signal_pin_dbm": -55.0,
+      "strobe_s": 5e-12,
+      "transient_settle_s": 2e-08,
+      "window_s": 1e-07
+    },
+    "common": {
+      "if_hz": 200000000.0,
+      "lo_hz": 5600000000.0,
+      "load_cap_f": 1e-14,
+      "rf_hz": 5800000000.0,
+      "rs_ohm": 50.0,
+      "source_noise_temp_k": 290.0,
+      "temp_c": 27.0,
+      "vdd_v": 1.0
+    },
+    "passive": {
+      "length_nm": 50.0,
+      "lo_common_mode_v": 0.5,
+      "lo_vpp_per_leg": 0.4,
+      "m": 1,
+      "nf": 1,
+      "rf_common_mode_v": 0.0,
+      "rl_ohm": 500.0,
+      "switch_width_um": 20.0
+    }
+  },
+  "design_selection": {
+    "candidate_gain_window_s": 2e-08,
+    "candidate_iip3_window_s": 1e-07,
+    "input_power_dbm_per_tone": -55,
+    "rows": [
+      {
+        "circuit": "active",
+        "gm_width_um": 10,
+        "iip3_dbm": -4.9945,
+        "lo_common_mode_v": 0.8,
+        "power_mw": 0.834956,
+        "reason": "Higher power, slightly lower gain, higher NF, and lower validated IIP3 than the selected candidate.",
+        "rf_bias_v": 0.7,
+        "selected": false,
+        "ssb_nf_db": 11.354644,
+        "switch_width_um": 20,
+        "voltage_gain_db": 8.173047
+      },
+      {
+        "circuit": "active",
+        "gm_width_um": 15,
+        "iip3_dbm": -2.7177,
+        "lo_common_mode_v": 0.8,
+        "power_mw": 0.685075,
+        "reason": "Selected using measured gain, core power, periodic noise and a validated -40/-35/-30dBm cubic region.",
+        "rf_bias_v": 0.65,
+        "selected": true,
+        "ssb_nf_db": 11.14608,
+        "switch_width_um": 20,
+        "voltage_gain_db": 8.573327
+      },
+      {
+        "circuit": "passive",
+        "lo_common_mode_v": 0.65,
+        "power_mw": 0,
+        "reason": "Excess LO common mode increases simultaneous conduction and conversion loss.",
+        "selected": false,
+        "switch_width_um": 20,
+        "voltage_gain_db": -10.033212
+      },
+      {
+        "circuit": "passive",
+        "lo_common_mode_v": 0.5,
+        "power_mw": 0,
+        "reason": "Lowest measured conversion loss in the refined candidate grid at the common 500-ohm load.",
+        "selected": true,
+        "switch_width_um": 20,
+        "voltage_gain_db": -5.975241
+      }
+    ],
+    "scope": "Bounded candidate exploration, not a global optimum. Both final circuits use 500-ohm branch loads, 10fF load capacitors and a 50-ohm source.",
+    "supporting_data": [
+      "results/design_sweep.json",
+      "results/passive_refine.json",
+      "results/active_candidate_check.json"
+    ]
+  },
+  "environment": {
+    "license": "5280@ece-winlic.ece.gatech.edu:1055@ansyslic.ecs.gatech.edu",
+    "model_file": "/tools/designkits/NCSU/FreePDK4514/ncsu_basekit/models/hspice/tran_models/models_nom/NMOS_VTH.inc",
+    "model_sha256": "f869d191bd3d173491dec6d8b5d31c0a35a60b6e75a86e9644515a8efa92566f",
+    "noise_module_sha256": "fdefe3e990c4c3f8a1f505356f347e8991501439d3adc325ef0a508c3a3e9a2f",
+    "python": "/nethome/sjeon84/Gatech-ECE6420/HW09/.venv/bin/python",
+    "remote_host": "ece-labsrv",
+    "rendered_plots_remotely": false,
+    "spectre_bin": "/tools/software/cadence/spectre/latest/tools.lnx86/bin/spectre",
+    "spectre_version": "sub-version  24.1.0.371.isr8",
+    "worker_sha256": "e0866d1f8253e3334802b9d24c15f2e7eb78c9a28ac267f7450c84d7cdc5f08a",
+    "worker_version": "hw09-mixer-1.0"
+  },
+  "run_id": "ab6a7104f23d",
+  "schema_version": 1,
+  "status": "complete",
+  "updated_utc": "2026-11-13T01:06:18.307500+00:00",
+  "validation": {
+    "exact_coherent_grid": true,
+    "remote_plot_files_created": false,
+    "source_and_load_conventions_explicit": true,
+    "source_port_open_voltage_factor": 2
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "history": "Interactive.2",
+  "origin": "actual_GUI_active_transient_group",
+  "status": "active_transients_accepted_noise_pending",
+  "gain_db": 8.573326509988187,
+  "core_power_mw": 0.685075201414662,
+  "p1": {
+    "baseline_gain_db": 8.572646897075147,
+    "p1db_bracket_dbm": [
+      -15.625,
+      -15.46875
+    ],
+    "p1db_dbm": -15.546875,
+    "p1db_resolution_db": 0.078125,
+    "definition": "midpoint of adjacent measured 1-dB crossing bounds"
+  },
+  "iip3": {
+    "iip3_each_side_dbm": [
+      -2.7133931442740304,
+      -2.7177206658717927
+    ],
+    "iip3_dbm": -2.7177206658717927,
+    "cubic_region": {
+      "pins_dbm": [
+        -40,
+        -35,
+        -30
+      ],
+      "indices": [
+        2,
+        3,
+        4
+      ],
+      "fundamental_slopes": [
+        0.9957325176524137,
+        0.9957268547515712
+      ],
+      "im3_slopes": [
+        3.0586939973970417,
+        3.0635733824273053
+      ],
+      "minimum_im3_to_empty_bin_margin_db": 35.628871680489034,
+      "pointwise_intercept_spread_db": 0.3392326383786539
+    },
+    "convergence": {
+      "original": [
+        -2.7418034761582106,
+        -2.7530847147849187
+      ],
+      "tight": [
+        -2.691080903861831,
+        -2.7014390871928526
+      ],
+      "delta_db": [
+        0.05072257229637955,
+        0.051645627592066035
+      ],
+      "passed": true,
+      "actual_numerical_settings_passed": true,
+      "effective_reltol_normal": 1.0000000000000002e-06,
+      "effective_reltol_tight": 1e-07,
+      "effective_maxstep_normal_s": 2e-12,
+      "effective_maxstep_tight_s": 1e-12
+    },
+    "status": "complete"
+  },
+  "single_window_delta_db": 3.4285942973610872e-09,
+  "baseline_difference": {
+    "gain_db": 4.1175951537297806e-12,
+    "p1_dbm": 0.0,
+    "iip3_dbm": 1.1590753246082386e-07
+  }
+}

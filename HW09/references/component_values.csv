@@ -1,0 +1,6 @@
+circuit,device,library/cell,width_um,length_nm,multiplier,ls_nm,ld_nm,each_diffusion_area_m2,each_diffusion_perimeter_m
+active,M1,NCSU_Devices_FreePDK45/NMOS_VTH,15.0,50.0,1,105,105,1.5749999999999999e-12,1.5209999999999998e-05
+active,M2,NCSU_Devices_FreePDK45/NMOS_VTH,20.0,50.0,1,105,105,2.1e-12,2.0209999999999998e-05
+active,M3,NCSU_Devices_FreePDK45/NMOS_VTH,20.0,50.0,1,105,105,2.1e-12,2.0209999999999998e-05
+passive,M1,NCSU_Devices_FreePDK45/NMOS_VTH,20.0,50.0,1,105,105,2.1e-12,2.0209999999999998e-05
+passive,M2,NCSU_Devices_FreePDK45/NMOS_VTH,20.0,50.0,1,105,105,2.1e-12,2.0209999999999998e-05

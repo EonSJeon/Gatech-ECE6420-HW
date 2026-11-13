@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "origin": "cadence_gui_export",
+  "kind": "passive",
+  "role": "transient",
+  "image_path": "cadence/gui_exports/passive_transient.png",
+  "image_sha256": "f57609b6d6977d0a38c28bbe0e91ac4f962d9bf54cf9e8be11fe0e0b0656fe66",
+  "capture_utc": "2026-11-13T05:01:09+00:00",
+  "capture_app": "Cadence Virtuoso Visualization and Analysis (ViVA), IC25.1, through FastX5",
+  "capture_attachment": "Parent agent directly observed the existing Virtuoso GUI load of the final native ViVA export helper after approving complete above legends and padded axes. The parent and review agents inspected all12 canonical native PNGs. Actual export UTC is recorded from each preserved source PNG modification time.",
+  "export_method": "saveGraphImage",
+  "source_run_id": "cadence_gui_ab6a7104f23d",
+  "source_records": [
+    {
+      "test_name": "passive_single_tone",
+      "stage": "single_tone",
+      "psf": "simulation/cadence_gui/HW09_Mixers/mixer_campaign/maestro/results/maestro/Interactive.2/1/passive_single_tone/ascii/tran.tran.tran",
+      "psf_sha256": "1bcb1961e9ecc4d61e5f0c0f66e87093beee6fdfb19a301dd14dffe00b85249a",
+      "native_psf": "simulation/cadence_gui/HW09_Mixers/mixer_campaign/maestro/results/maestro/Interactive.2/1/passive_single_tone/psf/tran.tran.tran",
+      "generated_netlist": "simulation/cadence_gui/HW09_Mixers/mixer_campaign/maestro/results/maestro/Interactive.2/1/passive_single_tone/netlist/input.scs",
+      "generated_netlist_sha256": "5a522685b2bf90358fb9a5f5c7ef30c4366da25d7d4686bbd95418206b7a4a84",
+      "native_psf_sha256": "83286b64ea0466569941ba647c118aea28970c62d7c1ddc199a3d232b0d5af60",
+      "conversion_evidence": "simulation/cadence_gui/HW09_Mixers/mixer_campaign/maestro/results/maestro/Interactive.2/1/passive_single_tone/ascii/tran.tran.tran.conversion.json",
+      "conversion_evidence_sha256": "83c98a3403b290c8c352d6d1d01447a73c47c553b2cdf6de82a85b49fea335ee",
+      "pin_dbm": -55
+    }
+  ],
+  "expression": "Native v(/rf) minus RF bias and v(/outp)-v(/outn); no envelope or filtered-IF substitution",
+  "x_axis": "Time (ns)",
+  "y_axis": "RF node minus bias and raw differential output (mV)",
+  "rendering_description": "Passive: RF-node-minus-bias and raw differential-output panels from the actual native transient. LO/RF feedthrough remains in the raw output; no filtered or reconstructed IF is substituted.",
+  "export_receipt": "cadence/gui_exports/native_export_receipt.tsv",
+  "export_receipt_sha256": "ff44d2e105680c5ce4eae4dd0effc927835676f01a38332362ec0279a4265f25",
+  "calculator_audit": "cadence/gui_exports/native_calculator_audit.tsv",
+  "calculator_audit_sha256": "00ad4219cc8389b8489a27393927db097ef84d5e616ebe90a8d12c45c06466dc",
+  "native_export_time_raw": "Nov 13 00:01:09 2026",
+  "native_window": "window:56",
+  "image_dimensions_px": [
+    2400,
+    1600
+  ],
+  "native_export_options": {
+    "exactCopy": false
+  }
+}

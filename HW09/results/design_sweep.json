@@ -1,0 +1,2371 @@
+{
+  "completed_utc": "2026-11-13T00:31:46.334626+00:00",
+  "fixed_load_ohm_per_branch": 500,
+  "model_sha256": "f869d191bd3d173491dec6d8b5d31c0a35a60b6e75a86e9644515a8efa92566f",
+  "selection_intent": "Compare source-referenced gain, power, dynamic headroom and compression at -25dBm. Final selection also requires full IIP3 and periodic-noise validation.",
+  "trials": [
+    {
+      "compression_at_minus25_dbm_db": 0.04510162985264854,
+      "gain_db": -0.8577687209339542,
+      "kind": "active",
+      "large_signal": {
+        "completed_utc": "2026-11-13T00:29:00.125617+00:00",
+        "fund_vpk": [
+          0.032054313351811144
+        ],
+        "gain_db": [
+          -0.9028703507866027
+        ],
+        "if_frequencies_hz": [
+          200000000.0
+        ],
+        "im3_frequencies_hz": [],
+        "im3_vpk": [],
+        "lo_diff_vpp": 0.7999368353633657,
+        "max_output_v": 1.015800701799731,
+        "mean_outn_v": 0.9382379442593377,
+        "mean_outp_v": 0.9382378894358911,
+        "mean_rf_v": 0.6499999770627782,
+        "min_output_v": 0.7990397975583843,
+        "netlist": "netlists/generated/active_scout_large_00.scs",
+        "netlist_sha256": "c587c39face7c735da1c53debdfb986a24e90a93c46712a929f5c5b176cdb61e",
+        "open_peak_v": 0.03556558820077846,
+        "pin_dbm": -25,
+        "power_gain_db": [
+          -7.892570394146791
+        ],
+        "power_mw": 0.24704833260954231,
+        "raw_file_sha256": "fd9adb6ade49894aa3c8d2abd42af1e5e02240d6495bf36436e1e01c51791a7c",
+        "rf_node_gain_db": [
+          -0.8930119444174451
+        ],
+        "rf_node_vpk": [
+          0.0355252444782791
+        ],
+        "sample_count": 4000,
+        "tail_max_v": 0.3811725128401783,
+        "tail_mean_v": 0.3163503768435519,
+        "tail_min_v": 0.229278122289193,
+        "window_s": 2e-08
+      },
+      "parameters": {
+        "gm_width_um": 5.0,
+        "length_nm": 50.0,
+        "lo_common_mode_v": 0.8,
+        "lo_vpp_per_leg": 0.4,
+        "m": 1,
+        "nf": 1,
+        "rd_ohm": 500.0,
+        "rf_bias_v": 0.65,
+        "switch_width_um": 20.0
+      },
+      "power_gain_db": -7.847468764294141,
+      "power_mw": 0.23839377406281292,
+      "rf_node_gain_db": -0.8480546251502357,
+      "single_tone": {
+        "completed_utc": "2026-11-13T00:28:52.870054+00:00",
+        "fund_vpk": [
+          0.0010189234551547584
+        ],
+        "gain_db": [
+          -0.8577687209339542
+        ],
+        "if_frequencies_hz": [
+          200000000.0
+        ],
+        "im3_frequencies_hz": [],
+        "im3_vpk": [],
+        "lo_diff_vpp": 0.7999368353633657,
+        "max_output_v": 1.014210254354446,
+        "mean_outn_v": 0.9404015366710953,
+        "mean_outp_v": 0.9404015762974982,
+        "mean_rf_v": 0.649999975673933,
+        "min_output_v": 0.8523266925486582,
+        "netlist": "netlists/generated/active_scout_00.scs",
+        "netlist_sha256": "97e35f53690b824382492d6ee3149f1da5fb7f25b298fd40493cef5cbb68205a",
+        "open_peak_v": 0.0011246826503806982,
+        "pin_dbm": -55,
+        "power_gain_db": [
+          -7.847468764294141
+        ],
+        "power_mw": 0.23839377406281292,
+        "raw_file_sha256": "32b635e73556af79a7264c4844160f417b91f5342d69d8d5034066e771ac2800",
+        "rf_node_gain_db": [
+          -0.8480546251502357
+        ],
+        "rf_node_vpk": [
+          0.001123425534709426
+        ],
+        "sample_count": 4000,
+        "tail_max_v": 0.3626372948194865,
+        "tail_mean_v": 0.3157692014036839,
+        "tail_min_v": 0.2538773816430527,
+        "window_s": 2e-08
+      }
+    },
+    {
+      "compression_at_minus25_dbm_db": 0.06720900545448716,
+      "gain_db": 2.512759709197427,
+      "kind": "active",
+      "large_signal": {
+        "completed_utc": "2026-11-13T00:29:00.127076+00:00",
+        "fund_vpk": [
+          0.047131095106401864
+        ],
+        "gain_db": [
+          2.44555070374294
+        ],
+        "if_frequencies_hz": [
+          200000000.0
+        ],
+        "im3_frequencies_hz": [],
+        "im3_vpk": [],
+        "lo_diff_vpp": 0.7999368353633657,
+        "max_output_v": 1.013035181364746,
+        "mean_outn_v": 0.8908993591661182,
+        "mean_outp_v": 0.8908994659248717,
+        "mean_rf_v": 0.6999999812072206,
+        "min_output_v": 0.6894137453314396,
+        "netlist": "netlists/generated/active_scout_large_01.scs",
+        "netlist_sha256": "9b54633c1530438b6ebaa225317c33e5c912985d0529704948e43660795cce25",
+        "open_peak_v": 0.03556558820077846,
+        "pin_dbm": -25,
+        "power_gain_db": [
+          -4.544149339617248
+        ],
+        "power_mw": 0.43640234981802006,
+        "raw_file_sha256": "4c288b775802dd95b92109f44be39352acfa656b0f02543892ef8afb574351cc",
+        "rf_node_gain_db": [
+          2.4522085150804256
+        ],
+        "rf_node_vpk": [
+          0.03553833730778196
+        ],
+        "sample_count": 4000,
+        "tail_max_v": 0.3532071777139413,
+        "tail_mean_v": 0.28462463442076047,
+        "tail_min_v": 0.2020279389453294,
+        "window_s": 2e-08
+      },
+      "parameters": {
+        "gm_width_um": 5.0,
+        "length_nm": 50.0,
+        "lo_common_mode_v": 0.8,
+        "lo_vpp_per_leg": 0.4,
+        "m": 1,
+        "nf": 1,
+        "rd_ohm": 500.0,
+        "rf_bias_v": 0.7,
+        "switch_width_um": 20.0
+      },
+      "power_gain_db": -4.4769403341627605,
+      "power_mw": 0.42912739511080955,
+      "rf_node_gain_db": 2.5193268304705505,
+      "single_tone": {
+        "completed_utc": "2026-11-13T00:28:52.872809+00:00",
+        "fund_vpk": [
+          0.001501993250632761
+        ],
+        "gain_db": [
+          2.512759709197427
+        ],
+        "if_frequencies_hz": [
+          200000000.0
+        ],
+        "im3_frequencies_hz": [],
+        "im3_vpk": [],
+        "lo_diff_vpp": 0.7999368353633657,
+        "max_output_v": 1.011709993116793,
+        "mean_outn_v": 0.8927181548894496,
+        "mean_outp_v": 0.8927181475551456,
+        "mean_rf_v": 0.699999980930645,
+        "min_output_v": 0.761136820811851,
+        "netlist": "netlists/generated/active_scout_01.scs",
+        "netlist_sha256": "3efc55458c6b22bb21adf387e03ff1d78024a0cbdc700bd2fc64a31cc7e92675",
+        "open_peak_v": 0.0011246826503806982,
+        "pin_dbm": -55,
+        "power_gain_db": [
+          -4.4769403341627605
+        ],
+        "power_mw": 0.42912739511080955,
+        "raw_file_sha256": "b7a4f8289b53d81386203c84d00e5129694f49e27fd0199b5e00065ec90d7464",
+        "rf_node_gain_db": [
+          2.5193268304705505
+        ],
+        "rf_node_vpk": [
+          0.0011238326354439231
+        ],
+        "sample_count": 4000,
+        "tail_max_v": 0.3341712998012272,
+        "tail_mean_v": 0.28413369743325384,
+        "tail_min_v": 0.2190421280990593,
+        "window_s": 2e-08
+      }
+    },
+    {
+      "compression_at_minus25_dbm_db": 0.06821561332927129,
+      "gain_db": 4.200196071696571,
+      "kind": "active",
+      "large_signal": {
+        "completed_utc": "2026-11-13T00:29:16.266377+00:00",
+        "fund_vpk": [
+          0.057230694821083214
+        ],
+        "gain_db": [
+          4.1319804583673
+        ],
+        "if_frequencies_hz": [
+          200000000.0
+        ],
+        "im3_frequencies_hz": [],
+        "im3_vpk": [],
+        "lo_diff_vpp": 0.7999368353633657,
+        "max_output_v": 1.010389138603583,
+        "mean_outn_v": 0.8299348430577689,
+        "mean_outp_v": 0.8299348418723482,
+        "mean_rf_v": 0.7499999738002564,
+        "min_output_v": 0.5595379285355482,
+        "netlist": "netlists/generated/active_scout_large_02.scs",
+        "netlist_sha256": "4ad8b69bc09709da52634e1261f75e3a503fe463792f98ed9dd53fbf637a7446",
+        "open_peak_v": 0.03556558820077846,
+        "pin_dbm": -25,
+        "power_gain_db": [
+          -2.857719584992888
+        ],
+        "power_mw": 0.6802606301397656,
+        "raw_file_sha256": "cac65fbf19a431fe63fa9137c024ac5a22ebeb1dcec898b34c18cf347c1867d3",
+        "rf_node_gain_db": [
+          4.137335295959366
+        ],
+        "rf_node_vpk": [
+          0.035543668827721316
+        ],
+        "sample_count": 4000,
+        "tail_max_v": 0.3250706378475364,
+        "tail_mean_v": 0.2574681529011952,
+        "tail_min_v": 0.1820856801195657,
+        "window_s": 2e-08
+      },
+      "parameters": {
+        "gm_width_um": 5.0,
+        "length_nm": 50.0,
+        "lo_common_mode_v": 0.8,
+        "lo_vpp_per_leg": 0.4,
+        "m": 1,
+        "nf": 1,
+        "rd_ohm": 500.0,
+        "rf_bias_v": 0.75,
+        "switch_width_um": 20.0
+      },
+      "power_gain_db": -2.7895039716636165,
+      "power_mw": 0.6764688765920364,
+      "rf_node_gain_db": 4.20551483061722,
+      "single_tone": {
+        "completed_utc": "2026-11-13T00:29:07.508052+00:00",
+        "fund_vpk": [
+          0.0018240628538909501
+        ],
+        "gain_db": [
+          4.200196071696571
+        ],
+        "if_frequencies_hz": [
+          200000000.0
+        ],
+        "im3_frequencies_hz": [],
+        "im3_vpk": [],
+        "lo_diff_vpp": 0.7999368353633657,
+        "max_output_v": 1.009257452858959,
+        "mean_outn_v": 0.8308827852661477,
+        "mean_outp_v": 0.8308827764378339,
+        "mean_rf_v": 0.749999975005875,
+        "min_output_v": 0.6434077077549225,
+        "netlist": "netlists/generated/active_scout_02.scs",
+        "netlist_sha256": "3997e63bc2397851bfd4c847790dcc390d944058d2c6e93eb1af8067e6a9d314",
+        "open_peak_v": 0.0011246826503806982,
+        "pin_dbm": -55,
+        "power_gain_db": [
+          -2.7895039716636165
+        ],
+        "power_mw": 0.6764688765920364,
+        "raw_file_sha256": "9bc15cca20c44e3f8ebef79dc73c9c4f3da25bf1fb8afe7a0f78513cca97d7c8",
+        "rf_node_gain_db": [
+          4.20551483061722
+        ],
+        "rf_node_vpk": [
+          0.001123994167679998
+        ],
+        "sample_count": 4000,
+        "tail_max_v": 0.3069121990484878,
+        "tail_mean_v": 0.2570425916912187,
+        "tail_min_v": 0.1946273313421372,
+        "window_s": 2e-08
+      }
+    },
+    {
+      "compression_at_minus25_dbm_db": 0.04033922123908251,
+      "gain_db": 5.2601062820496765,
+      "kind": "active",
+      "large_signal": {
+        "completed_utc": "2026-11-13T00:29:16.266821+00:00",
+        "fund_vpk": [
+          0.06486618385774855
+        ],
+        "gain_db": [
+          5.219767060810594
+        ],
+        "if_frequencies_hz": [
+          200000000.0
+        ],
+        "im3_frequencies_hz": [],
+        "im3_vpk": [],
+        "lo_diff_vpp": 0.7999368353633657,
+        "max_output_v": 1.013221793093737,
+        "mean_outn_v": 0.8796667535945484,
+        "mean_outp_v": 0.8796665222495164,
+        "mean_rf_v": 0.6499999888033879,
+        "min_output_v": 0.6317365387666729,
+        "netlist": "netlists/generated/active_scout_large_03.scs",
+        "netlist_sha256": "bdc6f87f6c3b36ac5084ec60d440ff787648bb6ccfee12cf228c1bf2c85a6384",
+        "open_peak_v": 0.03556558820077846,
+        "pin_dbm": -25,
+        "power_gain_db": [
+          -1.7699329825495946
+        ],
+        "power_mw": 0.4813334483118707,
+        "raw_file_sha256": "1703976084d198635fc9c60bf9d79833fb7675afaa07eecc51fd7d7e2a803730",
+        "rf_node_gain_db": [
+          5.243746197654814
+        ],
+        "rf_node_vpk": [
+          0.03546753768234057
+        ],
+        "sample_count": 4000,
+        "tail_max_v": 0.3528318153190481,
+        "tail_mean_v": 0.2801623257331568,
+        "tail_min_v": 0.1937273366579882,
+        "window_s": 2e-08
+      },
+      "parameters": {
+        "gm_width_um": 10.0,
+        "length_nm": 50.0,
+        "lo_common_mode_v": 0.8,
+        "lo_vpp_per_leg": 0.4,
+        "m": 1,
+        "nf": 1,
+        "rd_ohm": 500.0,
+        "rf_bias_v": 0.65,
+        "switch_width_um": 20.0
+      },
+      "power_gain_db": -1.7295937613105097,
+      "power_mw": 0.46476871097258077,
+      "rf_node_gain_db": 5.283769946241245,
+      "single_tone": {
+        "completed_utc": "2026-11-13T00:29:07.506920+00:00",
+        "fund_vpk": [
+          0.0020607974570034933
+        ],
+        "gain_db": [
+          5.2601062820496765
+        ],
+        "if_frequencies_hz": [
+          200000000.0
+        ],
+        "im3_frequencies_hz": [],
+        "im3_vpk": [],
+        "lo_diff_vpp": 0.7999368353633657,
+        "max_output_v": 1.011547192996562,
+        "mean_outn_v": 0.883807833788115,
+        "mean_outp_v": 0.8838078107255947,
+        "mean_rf_v": 0.6499999855717731,
+        "min_output_v": 0.7360642786294428,
+        "netlist": "netlists/generated/active_scout_03.scs",
+        "netlist_sha256": "e10d5974b2bf16ebb3af8edfd853ee40ac6b3ddab1a115e39702deebd7a2bcd9",
+        "open_peak_v": 0.0011246826503806982,
+        "pin_dbm": -55,
+        "power_gain_db": [
+          -1.7295937613105097
+        ],
+        "power_mw": 0.46476871097258077,
+        "raw_file_sha256": "12583f32d4bd5ab8858eaa1d4a80f4fea41b637727ba4b0962d5e43b75f9d702",
+        "rf_node_gain_db": [
+          5.283769946241245
+        ],
+        "rf_node_vpk": [
+          0.001121622757486562
+        ],
+        "sample_count": 4000,
+        "tail_max_v": 0.3290918281297632,
+        "tail_mean_v": 0.27988521860117227,
+        "tail_min_v": 0.2163610403441731,
+        "window_s": 2e-08
+      }
+    },
+    {
+      "compression_at_minus25_dbm_db": 0.08574533208240886,
+      "gain_db": 8.17304706946349,
+      "kind": "active",
+      "large_signal": {
+        "completed_utc": "2026-11-13T00:29:28.921524+00:00",
+        "fund_vpk": [
+          0.09023916800950571
+        ],
+        "gain_db": [
+          8.08730173738108
+        ],
+        "if_frequencies_hz": [
+          200000000.0
+        ],
+        "im3_frequencies_hz": [],
+        "im3_vpk": [],
+        "lo_diff_vpp": 0.7999368353633657,
+        "max_output_v": 1.009583259838767,
+        "mean_outn_v": 0.7881244777540799,
+        "mean_outp_v": 0.7881247446364567,
+        "mean_rf_v": 0.6999999726315218,
+        "min_output_v": 0.4224471140894571,
+        "netlist": "netlists/generated/active_scout_large_04.scs",
+        "netlist_sha256": "a9a6bf1689216fcaf39a2eec94c91f13156d8592a8be52c765a8f33ba23bb6ba",
+        "open_peak_v": 0.03556558820077846,
+        "pin_dbm": -25,
+        "power_gain_db": [
+          1.0976016940208932
+        ],
+        "power_mw": 0.8475015552189271,
+        "raw_file_sha256": "e7fa38ca5b82e2b336393ab8812fbaf311585e55c3d5f47031021f6849c289a2",
+        "rf_node_gain_db": [
+          8.109438783591909
+        ],
+        "rf_node_vpk": [
+          0.03547506038297115
+        ],
+        "sample_count": 4000,
+        "tail_max_v": 0.317004132081077,
+        "tail_mean_v": 0.24327101647084887,
+        "tail_min_v": 0.1654548592664289,
+        "window_s": 2e-08
+      },
+      "parameters": {
+        "gm_width_um": 10.0,
+        "length_nm": 50.0,
+        "lo_common_mode_v": 0.8,
+        "lo_vpp_per_leg": 0.4,
+        "m": 1,
+        "nf": 1,
+        "rd_ohm": 500.0,
+        "rf_bias_v": 0.7,
+        "switch_width_um": 20.0
+      },
+      "power_gain_db": 1.1833470261033028,
+      "power_mw": 0.8349563494725396,
+      "rf_node_gain_db": 8.19500288617792,
+      "single_tone": {
+        "completed_utc": "2026-11-13T00:29:22.997099+00:00",
+        "fund_vpk": [
+          0.0028819228414151046
+        ],
+        "gain_db": [
+          8.17304706946349
+        ],
+        "if_frequencies_hz": [
+          200000000.0
+        ],
+        "im3_frequencies_hz": [],
+        "im3_vpk": [],
+        "lo_diff_vpp": 0.7999368353633657,
+        "max_output_v": 1.007963547246853,
+        "mean_outn_v": 0.7912609475588517,
+        "mean_outp_v": 0.7912608777048785,
+        "mean_rf_v": 0.6999999766905046,
+        "min_output_v": 0.5594861656609336,
+        "netlist": "netlists/generated/active_scout_04.scs",
+        "netlist_sha256": "fb9349d0e130abb2807b176dcd3a7753e2b824df66d10c7fad79c61ce3b1fa76",
+        "open_peak_v": 0.0011246826503806982,
+        "pin_dbm": -55,
+        "power_gain_db": [
+          1.1833470261033028
+        ],
+        "power_mw": 0.8349563494725396,
+        "raw_file_sha256": "9c54e15c09de40a043767636864115653fd3e871ee328091b2404b3c065356a8",
+        "rf_node_gain_db": [
+          8.19500288617792
+        ],
+        "rf_node_vpk": [
+          0.001121843316233067
+        ],
+        "sample_count": 4000,
+        "tail_max_v": 0.291827543046882,
+        "tail_mean_v": 0.24309847696464557,
+        "tail_min_v": 0.1835026365393854,
+        "window_s": 2e-08
+      }
+    },
+    {
+      "compression_at_minus25_dbm_db": 0.6361583451003447,
+      "gain_db": 8.807000531745965,
+      "kind": "active",
+      "large_signal": {
+        "completed_utc": "2026-11-13T00:29:29.800261+00:00",
+        "fund_vpk": [
+          0.09111127098294106
+        ],
+        "gain_db": [
+          8.17084218664562
+        ],
+        "if_frequencies_hz": [
+          200000000.0
+        ],
+        "im3_frequencies_hz": [],
+        "im3_vpk": [],
+        "lo_diff_vpp": 0.7999368353633657,
+        "max_output_v": 1.005113011781373,
+        "mean_outn_v": 0.6766452491351931,
+        "mean_outp_v": 0.6766454539637657,
+        "mean_rf_v": 0.7499999501746508,
+        "min_output_v": 0.2340462177618507,
+        "netlist": "netlists/generated/active_scout_large_05.scs",
+        "netlist_sha256": "1a29d5a9e0abbdc3b6ca5cdb8cf8e78aa6245c12dfb3d7ece3baff7a179297a6",
+        "open_peak_v": 0.03556558820077846,
+        "pin_dbm": -25,
+        "power_gain_db": [
+          1.1811421432854328
+        ],
+        "power_mw": 1.2934185938020821,
+        "raw_file_sha256": "b3c0623fbf7103ea7f66b2ad6c6e2f6faafbd3399a3cad025ff6b9bdd272dabf",
+        "rf_node_gain_db": [
+          8.203976051009189
+        ],
+        "rf_node_vpk": [
+          0.03543017540789044
+        ],
+        "sample_count": 4000,
+        "tail_max_v": 0.2788215949122739,
+        "tail_mean_v": 0.20359137295366367,
+        "tail_min_v": 0.1438400039486855,
+        "window_s": 2e-08
+      },
+      "parameters": {
+        "gm_width_um": 10.0,
+        "length_nm": 50.0,
+        "lo_common_mode_v": 0.8,
+        "lo_vpp_per_leg": 0.4,
+        "m": 1,
+        "nf": 1,
+        "rd_ohm": 500.0,
+        "rf_bias_v": 0.75,
+        "switch_width_um": 20.0
+      },
+      "power_gain_db": 1.817300488385777,
+      "power_mw": 1.2993781621595926,
+      "rf_node_gain_db": 8.838421479947446,
+      "single_tone": {
+        "completed_utc": "2026-11-13T00:29:23.465082+00:00",
+        "fund_vpk": [
+          0.003100130831254011
+        ],
+        "gain_db": [
+          8.807000531745965
+        ],
+        "if_frequencies_hz": [
+          200000000.0
+        ],
+        "im3_frequencies_hz": [],
+        "im3_vpk": [],
+        "lo_diff_vpp": 0.7999368353633657,
+        "max_output_v": 1.002807346519372,
+        "mean_outn_v": 0.6751554699689891,
+        "mean_outp_v": 0.6751554489512145,
+        "mean_rf_v": 0.749999974774073,
+        "min_output_v": 0.3414295301790543,
+        "netlist": "netlists/generated/active_scout_05.scs",
+        "netlist_sha256": "703227c258b845a5403892d069725d4ff4411cda25f01c937903fdb6bb2f97f3",
+        "open_peak_v": 0.0011246826503806982,
+        "pin_dbm": -55,
+        "power_gain_db": [
+          1.817300488385777
+        ],
+        "power_mw": 1.2993781621595926,
+        "raw_file_sha256": "24e81eea8eb024378b9d27fddf37416bd700f58381c1a6247ebcfa0bf713eab3",
+        "rf_node_gain_db": [
+          8.838421479947446
+        ],
+        "rf_node_vpk": [
+          0.0011206214942280582
+        ],
+        "sample_count": 4000,
+        "tail_max_v": 0.2482712224137205,
+        "tail_mean_v": 0.2064797480725749,
+        "tail_min_v": 0.1574000247866286,
+        "window_s": 2e-08
+      }
+    },
+    {
+      "compression_at_minus25_dbm_db": 0.04995777672162127,
+      "gain_db": 8.573326509984069,
+      "kind": "active",
+      "large_signal": {
+        "completed_utc": "2026-11-13T00:29:40.833540+00:00",
+        "fund_vpk": [
+          0.09488519016506806
+        ],
+        "gain_db": [
+          8.523368733262448
+        ],
+        "if_frequencies_hz": [
+          200000000.0
+        ],
+        "im3_frequencies_hz": [],
+        "im3_vpk": [],
+        "lo_diff_vpp": 0.7999368353633657,
+        "max_output_v": 1.011319275283421,
+        "mean_outn_v": 0.8228430930903169,
+        "mean_outp_v": 0.8228431719850191,
+        "mean_rf_v": 0.6500000019818392,
+        "min_output_v": 0.4700138064482534,
+        "netlist": "netlists/generated/active_scout_large_06.scs",
+        "netlist_sha256": "26699a48d63f62cdb86501d776fdff850b4858381152aad75830aaeff3e380d5",
+        "open_peak_v": 0.03556558820077846,
+        "pin_dbm": -25,
+        "power_gain_db": [
+          1.5336686899022602
+        ],
+        "power_mw": 0.708627469849328,
+        "raw_file_sha256": "6a3384a76a618f4c0c4c6f258e9064daad88b566db31e7e307e4569a18e432ef",
+        "rf_node_gain_db": [
+          8.575924091612354
+        ],
+        "rf_node_vpk": [
+          0.03535104267158936
+        ],
+        "sample_count": 4000,
+        "tail_max_v": 0.3326559467187902,
+        "tail_mean_v": 0.25639775058314773,
+        "tail_min_v": 0.1725019499132995,
+        "window_s": 2e-08
+      },
+      "parameters": {
+        "gm_width_um": 15.0,
+        "length_nm": 50.0,
+        "lo_common_mode_v": 0.8,
+        "lo_vpp_per_leg": 0.4,
+        "m": 1,
+        "nf": 1,
+        "rd_ohm": 500.0,
+        "rf_bias_v": 0.65,
+        "switch_width_um": 20.0
+      },
+      "power_gain_db": 1.583626466623883,
+      "power_mw": 0.685075201414658,
+      "rf_node_gain_db": 8.625449756950086,
+      "single_tone": {
+        "completed_utc": "2026-11-13T00:29:34.923110+00:00",
+        "fund_vpk": [
+          0.0030178407682697815
+        ],
+        "gain_db": [
+          8.573326509984069
+        ],
+        "if_frequencies_hz": [
+          200000000.0
+        ],
+        "im3_frequencies_hz": [],
+        "im3_vpk": [],
+        "lo_diff_vpp": 0.7999368353633657,
+        "max_output_v": 1.009579928685656,
+        "mean_outn_v": 0.8287311929781,
+        "mean_outp_v": 0.828731206314571,
+        "mean_rf_v": 0.6500000055680349,
+        "min_output_v": 0.621898094611969,
+        "netlist": "netlists/generated/active_scout_06.scs",
+        "netlist_sha256": "62f5b7ab4b2a9ca23711850147332da852f57a6c531a02a93b025b2e422e16e1",
+        "open_peak_v": 0.0011246826503806982,
+        "pin_dbm": -55,
+        "power_gain_db": [
+          1.583626466623883
+        ],
+        "power_mw": 0.685075201414658,
+        "raw_file_sha256": "55a8f205bd5acbc9bcee055355b064df08674da3917e2e6cd397e1c0cd632ee9",
+        "rf_node_gain_db": [
+          8.625449756950086
+        ],
+        "rf_node_vpk": [
+          0.0011179537403591172
+        ],
+        "sample_count": 4000,
+        "tail_max_v": 0.3048999189490376,
+        "tail_mean_v": 0.2564559148950673,
+        "tail_min_v": 0.1959722858064493,
+        "window_s": 2e-08
+      }
+    },
+    {
+      "compression_at_minus25_dbm_db": 0.6653308897468264,
+      "gain_db": 10.920460517593625,
+      "kind": "active",
+      "large_signal": {
+        "completed_utc": "2026-11-13T00:29:42.684502+00:00",
+        "fund_vpk": [
+          0.11582077777965344
+        ],
+        "gain_db": [
+          10.255129627846799
+        ],
+        "if_frequencies_hz": [
+          200000000.0
+        ],
+        "im3_frequencies_hz": [],
+        "im3_vpk": [],
+        "lo_diff_vpp": 0.7999368353633657,
+        "max_output_v": 1.006396697721977,
+        "mean_outn_v": 0.6921751815835432,
+        "mean_outp_v": 0.6921747549039481,
+        "mean_rf_v": 0.6999999461722076,
+        "min_output_v": 0.2316116897804875,
+        "netlist": "netlists/generated/active_scout_large_07.scs",
+        "netlist_sha256": "a440a72ac545afffdb16e9deaa6137d9decf84e6e7f2efa93563bf99a52dedd8",
+        "open_peak_v": 0.03556558820077846,
+        "pin_dbm": -25,
+        "power_gain_db": [
+          3.2654295844866112
+        ],
+        "power_mw": 1.2313001270250172,
+        "raw_file_sha256": "37f0d67eb198abd832544d78b04114599eb8aea3257058362ea1b7152d420b3f",
+        "rf_node_gain_db": [
+          10.330493812125088
+        ],
+        "rf_node_vpk": [
+          0.035258333915139516
+        ],
+        "sample_count": 4000,
+        "tail_max_v": 0.2900867744270731,
+        "tail_mean_v": 0.20854884311954353,
+        "tail_min_v": 0.141586703250264,
+        "window_s": 2e-08
+      },
+      "parameters": {
+        "gm_width_um": 15.0,
+        "length_nm": 50.0,
+        "lo_common_mode_v": 0.8,
+        "lo_vpp_per_leg": 0.4,
+        "m": 1,
+        "nf": 1,
+        "rd_ohm": 500.0,
+        "rf_bias_v": 0.7,
+        "switch_width_um": 20.0
+      },
+      "power_gain_db": 3.930760474233436,
+      "power_mw": 1.2234796471011893,
+      "rf_node_gain_db": 10.986547954264132,
+      "single_tone": {
+        "completed_utc": "2026-11-13T00:29:36.242633+00:00",
+        "fund_vpk": [
+          0.003954148919874867
+        ],
+        "gain_db": [
+          10.920460517593625
+        ],
+        "if_frequencies_hz": [
+          200000000.0
+        ],
+        "im3_frequencies_hz": [],
+        "im3_vpk": [],
+        "lo_diff_vpp": 0.7999368353633657,
+        "max_output_v": 1.004098799894519,
+        "mean_outn_v": 0.6941300803366995,
+        "mean_outp_v": 0.6941300961127059,
+        "mean_rf_v": 0.69999999565821,
+        "min_output_v": 0.3695610987266205,
+        "netlist": "netlists/generated/active_scout_07.scs",
+        "netlist_sha256": "057a98d41c1d9e13919f0516a909a5419a5698131fc6c445f3a015b5d77bf20f",
+        "open_peak_v": 0.0011246826503806982,
+        "pin_dbm": -55,
+        "power_gain_db": [
+          3.930760474233436
+        ],
+        "power_mw": 1.2234796471011893,
+        "raw_file_sha256": "14ca7bb750f0d1f47cdbfb80ef6b3192428b51daa94bccd751117fa95c26d888",
+        "rf_node_gain_db": [
+          10.986547954264132
+        ],
+        "rf_node_vpk": [
+          0.0011161578649302507
+        ],
+        "sample_count": 4000,
+        "tail_max_v": 0.2565119023121015,
+        "tail_mean_v": 0.21280606444349648,
+        "tail_min_v": 0.1612023863366283,
+        "window_s": 2e-08
+      }
+    },
+    {
+      "compression_at_minus25_dbm_db": -1.73413301398585,
+      "gain_db": -2.1947342283293745,
+      "kind": "active",
+      "large_signal": {
+        "completed_utc": "2026-11-13T00:29:55.748270+00:00",
+        "fund_vpk": [
+          0.03372872581364323
+        ],
+        "gain_db": [
+          -0.4606012143435246
+        ],
+        "if_frequencies_hz": [
+          200000000.0
+        ],
+        "im3_frequencies_hz": [],
+        "im3_vpk": [],
+        "lo_diff_vpp": 0.7999368353633657,
+        "max_output_v": 0.9966125860152137,
+        "mean_outn_v": 0.5657127563603683,
+        "mean_outp_v": 0.5657127189354658,
+        "mean_rf_v": 0.7499999124259211,
+        "min_output_v": 0.1403998744136824,
+        "netlist": "netlists/generated/active_scout_large_08.scs",
+        "netlist_sha256": "4026d2ee9c716a8b5da49a9f2208cf624926fd0e14922d46b3dbe0660239e0cd",
+        "open_peak_v": 0.03556558820077846,
+        "pin_dbm": -25,
+        "power_gain_db": [
+          -7.450301257703712
+        ],
+        "power_mw": 1.7371490494083321,
+        "raw_file_sha256": "4951cf01ba41fd5c791bab801c98ca4d8c4873726ba5f369f1b9a402eaeb7db2",
+        "rf_node_gain_db": [
+          -0.3674890729828709
+        ],
+        "rf_node_vpk": [
+          0.03518636379528147
+        ],
+        "sample_count": 4000,
+        "tail_max_v": 0.2248243178437706,
+        "tail_mean_v": 0.14772466888720123,
+        "tail_min_v": 0.09557737774445482,
+        "window_s": 2e-08
+      },
+      "parameters": {
+        "gm_width_um": 15.0,
+        "length_nm": 50.0,
+        "lo_common_mode_v": 0.8,
+        "lo_vpp_per_leg": 0.4,
+        "m": 1,
+        "nf": 1,
+        "rd_ohm": 500.0,
+        "rf_bias_v": 0.75,
+        "switch_width_um": 20.0
+      },
+      "power_gain_db": -9.184434271689563,
+      "power_mw": 1.7702086326661086,
+      "rf_node_gain_db": -2.099858167232391,
+      "single_tone": {
+        "completed_utc": "2026-11-13T00:29:48.521657+00:00",
+        "fund_vpk": [
+          0.0008735610954757191
+        ],
+        "gain_db": [
+          -2.1947342283293745
+        ],
+        "if_frequencies_hz": [
+          200000000.0
+        ],
+        "im3_frequencies_hz": [],
+        "im3_vpk": [],
+        "lo_diff_vpp": 0.7999368353633657,
+        "max_output_v": 0.9764672511753595,
+        "mean_outn_v": 0.5574478422140204,
+        "mean_outp_v": 0.5574478414529254,
+        "mean_rf_v": 0.7499998432551399,
+        "min_output_v": 0.1748167672111025,
+        "netlist": "netlists/generated/active_scout_08.scs",
+        "netlist_sha256": "f5e7c779f6193b5b180c506d2ef95f3eaa1c3201ab8823844de338bd2e2b2150",
+        "open_peak_v": 0.0011246826503806982,
+        "pin_dbm": -55,
+        "power_gain_db": [
+          -9.184434271689563
+        ],
+        "power_mw": 1.7702086326661086,
+        "raw_file_sha256": "bc65d20b6dd38b8f6e7707b7b9d80975e1bf03df6f3486c3dc3990d8620bc6c0",
+        "rf_node_gain_db": [
+          -2.099858167232391
+        ],
+        "rf_node_vpk": [
+          0.001112464580850005
+        ],
+        "sample_count": 4000,
+        "tail_max_v": 0.1735937107654877,
+        "tail_mean_v": 0.14236137367331128,
+        "tail_min_v": 0.1215716949242614,
+        "window_s": 2e-08
+      }
+    },
+    {
+      "compression_at_minus25_dbm_db": 0.09838077833251102,
+      "gain_db": -7.254998823939204,
+      "kind": "passive",
+      "large_signal": {
+        "completed_utc": "2026-11-13T00:29:55.297536+00:00",
+        "fund_vpk": [
+          0.015253201783559057
+        ],
+        "gain_db": [
+          -7.353379602271715
+        ],
+        "if_frequencies_hz": [
+          200000000.0
+        ],
+        "im3_frequencies_hz": [],
+        "im3_vpk": [],
+        "lo_diff_vpp": 0.7999368353633658,
+        "max_output_v": 0.03302454927082304,
+        "mean_outn_v": -0.001298568356136494,
+        "mean_outp_v": -0.0012983962100680884,
+        "mean_rf_v": 0.0002597573242610366,
+        "min_output_v": -0.03385615815003053,
+        "netlist": "netlists/generated/passive_scout_large_09.scs",
+        "netlist_sha256": "7eedee08dfce36c6c6ee8c765086dac9a4b3b188d5b8177babfa42513aaf16a9",
+        "open_peak_v": 0.03556558820077846,
+        "pin_dbm": -25,
+        "power_gain_db": [
+          -14.343079645631903
+        ],
+        "power_mw": 0.0,
+        "raw_file_sha256": "d56724cd3c8c42519e0c931836e501edfa19c49145426e5f1ff4d1d13123df71",
+        "rf_node_gain_db": [
+          -6.402523863385933
+        ],
+        "rf_node_vpk": [
+          0.031877716848375856
+        ],
+        "sample_count": 4000,
+        "window_s": 2e-08
+      },
+      "parameters": {
+        "length_nm": 50.0,
+        "lo_common_mode_v": 0.6,
+        "lo_vpp_per_leg": 0.4,
+        "m": 1,
+        "nf": 1,
+        "rf_common_mode_v": 0.0,
+        "rl_ohm": 500.0,
+        "switch_width_um": 10.0
+      },
+      "power_gain_db": -14.244698867299391,
+      "power_mw": 0.0,
+      "rf_node_gain_db": -6.303487826420554,
+      "single_tone": {
+        "completed_utc": "2026-11-13T00:29:49.213725+00:00",
+        "fund_vpk": [
+          0.00048784297386660037
+        ],
+        "gain_db": [
+          -7.254998823939204
+        ],
+        "if_frequencies_hz": [
+          200000000.0
+        ],
+        "im3_frequencies_hz": [],
+        "im3_vpk": [],
+        "lo_diff_vpp": 0.7999368353633658,
+        "max_output_v": 0.009378535079174502,
+        "mean_outn_v": -0.0006133011661104085,
+        "mean_outp_v": -0.0006133056124451682,
+        "mean_rf_v": 0.00012271901383253096,
+        "min_output_v": -0.009669134472402191,
+        "netlist": "netlists/generated/passive_scout_09.scs",
+        "netlist_sha256": "f3e74022b887ef590b2506cb842bdab24c0c27b7e50fc7f1712facfa42d30323",
+        "open_peak_v": 0.0011246826503806982,
+        "pin_dbm": -55,
+        "power_gain_db": [
+          -14.244698867299391
+        ],
+        "power_mw": 0.0,
+        "raw_file_sha256": "9b8f44db3fe228b5fef7cf6d81af9b24788b78b8ea65f970671d718346c2f6af",
+        "rf_node_gain_db": [
+          -6.303487826420554
+        ],
+        "rf_node_vpk": [
+          0.0010079858737117408
+        ],
+        "sample_count": 4000,
+        "window_s": 2e-08
+      }
+    },
+    {
+      "compression_at_minus25_dbm_db": 0.11205838650591815,
+      "gain_db": -8.805413831963627,
+      "kind": "passive",
+      "large_signal": {
+        "completed_utc": "2026-11-13T00:30:08.469564+00:00",
+        "fund_vpk": [
+          0.012739617382607685
+        ],
+        "gain_db": [
+          -8.917472218469545
+        ],
+        "if_frequencies_hz": [
+          200000000.0
+        ],
+        "im3_frequencies_hz": [],
+        "im3_vpk": [],
+        "lo_diff_vpp": 0.7999368353633658,
+        "max_output_v": 0.03353481515634276,
+        "mean_outn_v": -0.0011553623553119125,
+        "mean_outp_v": -0.0011552326256371339,
+        "mean_rf_v": 0.00023113561489061693,
+        "min_output_v": -0.0329166554595746,
+        "netlist": "netlists/generated/passive_scout_large_10.scs",
+        "netlist_sha256": "fae3f38b3f48f89abc3323476cc9e127407141d12170832442687c95b3114033",
+        "open_peak_v": 0.03556558820077846,
+        "pin_dbm": -25,
+        "power_gain_db": [
+          -15.907172261829732
+        ],
+        "power_mw": 0.0,
+        "raw_file_sha256": "c22ca2449890b51c4e3e5e64164b5897a716997277b88cf2812cd0de78e155d1",
+        "rf_node_gain_db": [
+          -7.822535346067467
+        ],
+        "rf_node_vpk": [
+          0.03135329235284729
+        ],
+        "sample_count": 4000,
+        "window_s": 2e-08
+      },
+      "parameters": {
+        "length_nm": 50.0,
+        "lo_common_mode_v": 0.65,
+        "lo_vpp_per_leg": 0.4,
+        "m": 1,
+        "nf": 1,
+        "rf_common_mode_v": 0.0,
+        "rl_ohm": 500.0,
+        "switch_width_um": 10.0
+      },
+      "power_gain_db": -15.795113875323814,
+      "power_mw": 0.0,
+      "rf_node_gain_db": -7.710804271432412,
+      "single_tone": {
+        "completed_utc": "2026-11-13T00:30:02.042978+00:00",
+        "fund_vpk": [
+          0.0004080931490892267
+        ],
+        "gain_db": [
+          -8.805413831963627
+        ],
+        "if_frequencies_hz": [
+          200000000.0
+        ],
+        "im3_frequencies_hz": [],
+        "im3_vpk": [],
+        "lo_diff_vpp": 0.7999368353633658,
+        "max_output_v": 0.007112177699872367,
+        "mean_outn_v": -0.00044912040117929075,
+        "mean_outp_v": -0.0004491352181810958,
+        "mean_rf_v": 8.997124966797973e-05,
+        "min_output_v": -0.007464739447277668,
+        "netlist": "netlists/generated/passive_scout_10.scs",
+        "netlist_sha256": "af346902389b4cab26404389d30dfc8cbb65d13bb6c498065ae2a97239082caf",
+        "open_peak_v": 0.0011246826503806982,
+        "pin_dbm": -55,
+        "power_gain_db": [
+          -15.795113875323814
+        ],
+        "power_mw": 0.0,
+        "raw_file_sha256": "4655302a65743ca3187bdfa4ba0d1f4a59d0e3fc61b84e4b7349c79d629219fb",
+        "rf_node_gain_db": [
+          -7.710804271432412
+        ],
+        "rf_node_vpk": [
+          0.0009915155225471025
+        ],
+        "sample_count": 4000,
+        "window_s": 2e-08
+      }
+    },
+    {
+      "compression_at_minus25_dbm_db": 0.0714249181968345,
+      "gain_db": -11.60037229800597,
+      "kind": "passive",
+      "large_signal": {
+        "completed_utc": "2026-11-13T00:30:08.929324+00:00",
+        "fund_vpk": [
+          0.009277695932904792
+        ],
+        "gain_db": [
+          -11.671797216202805
+        ],
+        "if_frequencies_hz": [
+          200000000.0
+        ],
+        "im3_frequencies_hz": [],
+        "im3_vpk": [],
+        "lo_diff_vpp": 0.7999368353633657,
+        "max_output_v": 0.03323027385628489,
+        "mean_outn_v": -0.0009514726994704234,
+        "mean_outp_v": -0.0009513429621551371,
+        "mean_rf_v": 0.00019038563128950749,
+        "min_output_v": -0.03189801793054512,
+        "netlist": "netlists/generated/passive_scout_large_11.scs",
+        "netlist_sha256": "a2c2bfafb3a382cd01d24cf6e5c945c5f085f752978e277314c730cfb292d1dc",
+        "open_peak_v": 0.03556558820077846,
+        "pin_dbm": -25,
+        "power_gain_db": [
+          -18.661497259562992
+        ],
+        "power_mw": 0.0,
+        "raw_file_sha256": "4bec8fad3a25147425b499bccda8a1930b43243db0c0206a87d91108efe5cb5a",
+        "rf_node_gain_db": [
+          -10.430988005166586
+        ],
+        "rf_node_vpk": [
+          0.03083113657738929
+        ],
+        "sample_count": 4000,
+        "window_s": 2e-08
+      },
+      "parameters": {
+        "length_nm": 50.0,
+        "lo_common_mode_v": 0.7,
+        "lo_vpp_per_leg": 0.4,
+        "m": 1,
+        "nf": 1,
+        "rf_common_mode_v": 0.0,
+        "rl_ohm": 500.0,
+        "switch_width_um": 10.0
+      },
+      "power_gain_db": -18.590072341366156,
+      "power_mw": 0.0,
+      "rf_node_gain_db": -10.358330129004802,
+      "single_tone": {
+        "completed_utc": "2026-11-13T00:30:02.414493+00:00",
+        "fund_vpk": [
+          0.0002958089982806876
+        ],
+        "gain_db": [
+          -11.60037229800597
+        ],
+        "if_frequencies_hz": [
+          200000000.0
+        ],
+        "im3_frequencies_hz": [],
+        "im3_vpk": [],
+        "lo_diff_vpp": 0.7999368353633657,
+        "max_output_v": 0.006080476307963639,
+        "mean_outn_v": -0.0002702470850455379,
+        "mean_outp_v": -0.0002702657961794627,
+        "mean_rf_v": 5.421441161256839e-05,
+        "min_output_v": -0.006340247349721801,
+        "netlist": "netlists/generated/passive_scout_11.scs",
+        "netlist_sha256": "d341214de9e1efb881ecb28bfafd35ef10a4207163830e781470701db2466a18",
+        "open_peak_v": 0.0011246826503806982,
+        "pin_dbm": -55,
+        "power_gain_db": [
+          -18.590072341366156
+        ],
+        "power_mw": 0.0,
+        "raw_file_sha256": "e79a5e8f2973f639e033485b6448c574cc7e6fdba6daaba996950e787f3bd4d3",
+        "rf_node_gain_db": [
+          -10.358330129004802
+        ],
+        "rf_node_vpk": [
+          0.0009748277581975023
+        ],
+        "sample_count": 4000,
+        "window_s": 2e-08
+      }
+    },
+    {
+      "compression_at_minus25_dbm_db": -0.09992735572717315,
+      "gain_db": -15.653898051958395,
+      "kind": "passive",
+      "large_signal": {
+        "completed_utc": "2026-11-13T00:30:22.053874+00:00",
+        "fund_vpk": [
+          0.005933780278927718
+        ],
+        "gain_db": [
+          -15.553970696231222
+        ],
+        "if_frequencies_hz": [
+          200000000.0
+        ],
+        "im3_frequencies_hz": [],
+        "im3_vpk": [],
+        "lo_diff_vpp": 0.7999368353633657,
+        "max_output_v": 0.03240821150366172,
+        "mean_outn_v": -0.0006811929138983479,
+        "mean_outp_v": -0.0006811260259487392,
+        "mean_rf_v": 0.00013634528407956408,
+        "min_output_v": -0.03105982885460102,
+        "netlist": "netlists/generated/passive_scout_large_12.scs",
+        "netlist_sha256": "69d2df4c93b052a5f570c1c6809abe8947fa15a35e18139f669bf9664421f4df",
+        "open_peak_v": 0.03556558820077846,
+        "pin_dbm": -25,
+        "power_gain_db": [
+          -22.54367073959141
+        ],
+        "power_mw": 0.0,
+        "raw_file_sha256": "dee5f1102fc7fa0d79803f9539ba4777eed3551cec73218d9efed4463be07c99",
+        "rf_node_gain_db": [
+          -14.188320148991082
+        ],
+        "rf_node_vpk": [
+          0.030391173388395493
+        ],
+        "sample_count": 4000,
+        "window_s": 2e-08
+      },
+      "parameters": {
+        "length_nm": 50.0,
+        "lo_common_mode_v": 0.75,
+        "lo_vpp_per_leg": 0.4,
+        "m": 1,
+        "nf": 1,
+        "rf_common_mode_v": 0.0,
+        "rl_ohm": 500.0,
+        "switch_width_um": 10.0
+      },
+      "power_gain_db": -22.64359809531858,
+      "power_mw": 0.0,
+      "rf_node_gain_db": -14.283905836127628,
+      "single_tone": {
+        "completed_utc": "2026-11-13T00:30:15.391691+00:00",
+        "fund_vpk": [
+          0.00018549623237775438
+        ],
+        "gain_db": [
+          -15.653898051958395
+        ],
+        "if_frequencies_hz": [
+          200000000.0
+        ],
+        "im3_frequencies_hz": [],
+        "im3_vpk": [],
+        "lo_diff_vpp": 0.7999368353633657,
+        "max_output_v": 0.004950709878427228,
+        "mean_outn_v": -0.00013951388930698956,
+        "mean_outp_v": -0.00013952625529742876,
+        "mean_rf_v": 2.8127944543884113e-05,
+        "min_output_v": -0.005224008562344324,
+        "netlist": "netlists/generated/passive_scout_12.scs",
+        "netlist_sha256": "017ddcf9c52f0227ec0cd166ff20d6e26c2eee559ddff760aa1682842c9a84be",
+        "open_peak_v": 0.0011246826503806982,
+        "pin_dbm": -55,
+        "power_gain_db": [
+          -22.64359809531858
+        ],
+        "power_mw": 0.0,
+        "raw_file_sha256": "8414ada5332324eadd49791a6c9717938a233606124d7d982dbab19a5fe25360",
+        "rf_node_gain_db": [
+          -14.283905836127628
+        ],
+        "rf_node_vpk": [
+          0.0009605730213307075
+        ],
+        "sample_count": 4000,
+        "window_s": 2e-08
+      }
+    },
+    {
+      "compression_at_minus25_dbm_db": 0.09686634054386545,
+      "gain_db": -7.663290371487681,
+      "kind": "passive",
+      "large_signal": {
+        "completed_utc": "2026-11-13T00:30:22.951371+00:00",
+        "fund_vpk": [
+          0.014555333479012002
+        ],
+        "gain_db": [
+          -7.760156712031547
+        ],
+        "if_frequencies_hz": [
+          200000000.0
+        ],
+        "im3_frequencies_hz": [],
+        "im3_vpk": [],
+        "lo_diff_vpp": 0.7999368353633658,
+        "max_output_v": 0.03716184573609969,
+        "mean_outn_v": -0.001967738176725655,
+        "mean_outp_v": -0.0019677288812830897,
+        "mean_rf_v": 0.00039389360225709774,
+        "min_output_v": -0.03726273369678688,
+        "netlist": "netlists/generated/passive_scout_large_13.scs",
+        "netlist_sha256": "0fba0bc472c5ea3c61fa1911c72a892b2f9490fd200b860f7d68f87dbfd05a02",
+        "open_peak_v": 0.03556558820077846,
+        "pin_dbm": -25,
+        "power_gain_db": [
+          -14.749856755391734
+        ],
+        "power_mw": 0.0,
+        "raw_file_sha256": "c4c11de1624ee7939785ffd2fac32c743c701e6f41ee57ec5a4515de548c1bd2",
+        "rf_node_gain_db": [
+          -6.555675892094283
+        ],
+        "rf_node_vpk": [
+          0.030960356631586184
+        ],
+        "sample_count": 4000,
+        "window_s": 2e-08
+      },
+      "parameters": {
+        "length_nm": 50.0,
+        "lo_common_mode_v": 0.6,
+        "lo_vpp_per_leg": 0.4,
+        "m": 1,
+        "nf": 1,
+        "rf_common_mode_v": 0.0,
+        "rl_ohm": 500.0,
+        "switch_width_um": 20.0
+      },
+      "power_gain_db": -14.652990414847869,
+      "power_mw": 0.0,
+      "rf_node_gain_db": -6.458866111365577,
+      "single_tone": {
+        "completed_utc": "2026-11-13T00:30:16.260224+00:00",
+        "fund_vpk": [
+          0.00046544190035493533
+        ],
+        "gain_db": [
+          -7.663290371487681
+        ],
+        "if_frequencies_hz": [
+          200000000.0
+        ],
+        "im3_frequencies_hz": [],
+        "im3_vpk": [],
+        "lo_diff_vpp": 0.7999368353633658,
+        "max_output_v": 0.01321032815401669,
+        "mean_outn_v": -0.001287095858836447,
+        "mean_outp_v": -0.0012870871111078674,
+        "mean_rf_v": 0.0002576912637696401,
+        "min_output_v": -0.01454178899629195,
+        "netlist": "netlists/generated/passive_scout_13.scs",
+        "netlist_sha256": "5fdece216ef7b55d9b0b10305830c5d69158d403dce67cf5a2591002b21b8385",
+        "open_peak_v": 0.0011246826503806982,
+        "pin_dbm": -55,
+        "power_gain_db": [
+          -14.652990414847869
+        ],
+        "power_mw": 0.0,
+        "raw_file_sha256": "18b122566e88e80f30c63cfc20e63a86452596ee87552968235d006a9ccc61c1",
+        "rf_node_gain_db": [
+          -6.458866111365577
+        ],
+        "rf_node_vpk": [
+          0.0009790588165752333
+        ],
+        "sample_count": 4000,
+        "window_s": 2e-08
+      }
+    },
+    {
+      "compression_at_minus25_dbm_db": 0.09381524695737653,
+      "gain_db": -10.033211582699511,
+      "kind": "passive",
+      "large_signal": {
+        "completed_utc": "2026-11-13T00:30:35.789176+00:00",
+        "fund_vpk": [
+          0.011083544114322962
+        ],
+        "gain_db": [
+          -10.127026829656888
+        ],
+        "if_frequencies_hz": [
+          200000000.0
+        ],
+        "im3_frequencies_hz": [],
+        "im3_vpk": [],
+        "lo_diff_vpp": 0.7999368353633658,
+        "max_output_v": 0.03719800077005696,
+        "mean_outn_v": -0.0015066275035489753,
+        "mean_outp_v": -0.0015066345595577194,
+        "mean_rf_v": 0.0003016511227373676,
+        "min_output_v": -0.03528599165124217,
+        "netlist": "netlists/generated/passive_scout_large_14.scs",
+        "netlist_sha256": "ba2b158e8963f6a6b3b215a7df48f74d5b75019164074b5c9a95964481613189",
+        "open_peak_v": 0.03556558820077846,
+        "pin_dbm": -25,
+        "power_gain_db": [
+          -17.116726873017075
+        ],
+        "power_mw": 0.0,
+        "raw_file_sha256": "24b04e61badce9b54923b4540afa776b9768cbeebb3a129e794b2a838e32df0d",
+        "rf_node_gain_db": [
+          -8.755263273705902
+        ],
+        "rf_node_vpk": [
+          0.030369792026726846
+        ],
+        "sample_count": 4000,
+        "window_s": 2e-08
+      },
+      "parameters": {
+        "length_nm": 50.0,
+        "lo_common_mode_v": 0.65,
+        "lo_vpp_per_leg": 0.4,
+        "m": 1,
+        "nf": 1,
+        "rf_common_mode_v": 0.0,
+        "rl_ohm": 500.0,
+        "switch_width_um": 20.0
+      },
+      "power_gain_db": -17.022911626059695,
+      "power_mw": 0.0,
+      "rf_node_gain_db": -8.661474010200195,
+      "single_tone": {
+        "completed_utc": "2026-11-13T00:30:29.421651+00:00",
+        "fund_vpk": [
+          0.00035429858392354826
+        ],
+        "gain_db": [
+          -10.033211582699511
+        ],
+        "if_frequencies_hz": [
+          200000000.0
+        ],
+        "im3_frequencies_hz": [],
+        "im3_vpk": [],
+        "lo_diff_vpp": 0.7999368353633658,
+        "max_output_v": 0.00923705603206398,
+        "mean_outn_v": -0.0008134215800777409,
+        "mean_outp_v": -0.0008134162865658101,
+        "mean_rf_v": 0.00016296498497605236,
+        "min_output_v": -0.009850784144047903,
+        "netlist": "netlists/generated/passive_scout_14.scs",
+        "netlist_sha256": "191ec00ae2f687e258b963398df83010a6a0a25c56a6fac357e6897871c8ee46",
+        "open_peak_v": 0.0011246826503806982,
+        "pin_dbm": -55,
+        "power_gain_db": [
+          -17.022911626059695
+        ],
+        "power_mw": 0.0,
+        "raw_file_sha256": "541b7a135bdff21f072271491972dca55a54d799d88d5c152d8f3119d608b2be",
+        "rf_node_gain_db": [
+          -8.661474010200195
+        ],
+        "rf_node_vpk": [
+          0.0009603800216305084
+        ],
+        "sample_count": 4000,
+        "window_s": 2e-08
+      }
+    },
+    {
+      "compression_at_minus25_dbm_db": -0.0324069629150987,
+      "gain_db": -13.91142810602708,
+      "kind": "passive",
+      "large_signal": {
+        "completed_utc": "2026-11-13T00:30:36.655151+00:00",
+        "fund_vpk": [
+          0.007195797588291824
+        ],
+        "gain_db": [
+          -13.87902114311198
+        ],
+        "if_frequencies_hz": [
+          200000000.0
+        ],
+        "im3_frequencies_hz": [],
+        "im3_vpk": [],
+        "lo_diff_vpp": 0.7999368353633657,
+        "max_output_v": 0.03618117609547668,
+        "mean_outn_v": -0.001004824013121135,
+        "mean_outp_v": -0.0010048334644859906,
+        "mean_rf_v": 0.00020127694834552387,
+        "min_output_v": -0.03387773465039287,
+        "netlist": "netlists/generated/passive_scout_large_15.scs",
+        "netlist_sha256": "3d3e61a11bd8ba48be757e4b4490392bab26ecaf572ce559a83bfba36613f789",
+        "open_peak_v": 0.03556558820077846,
+        "pin_dbm": -25,
+        "power_gain_db": [
+          -20.868721186472165
+        ],
+        "power_mw": 0.0,
+        "raw_file_sha256": "5e9bed0381eff40dfb722f110aba9082a41283440b4a32df9d14b9fe0a4fbeb5",
+        "rf_node_gain_db": [
+          -12.347649031956111
+        ],
+        "rf_node_vpk": [
+          0.029816824569209165
+        ],
+        "sample_count": 4000,
+        "window_s": 2e-08
+      },
+      "parameters": {
+        "length_nm": 50.0,
+        "lo_common_mode_v": 0.7,
+        "lo_vpp_per_leg": 0.4,
+        "m": 1,
+        "nf": 1,
+        "rf_common_mode_v": 0.0,
+        "rl_ohm": 500.0,
+        "switch_width_um": 20.0
+      },
+      "power_gain_db": -20.90112814938727,
+      "power_mw": 0.0,
+      "rf_node_gain_db": -12.376546373810164,
+      "single_tone": {
+        "completed_utc": "2026-11-13T00:30:30.203007+00:00",
+        "fund_vpk": [
+          0.00022670369066529693
+        ],
+        "gain_db": [
+          -13.91142810602708
+        ],
+        "if_frequencies_hz": [
+          200000000.0
+        ],
+        "im3_frequencies_hz": [],
+        "im3_vpk": [],
+        "lo_diff_vpp": 0.7999368353633657,
+        "max_output_v": 0.007877555277471283,
+        "mean_outn_v": -0.0003986554647512741,
+        "mean_outp_v": -0.0003986581642361703,
+        "mean_rf_v": 7.995013803193285e-05,
+        "min_output_v": -0.008296159070112441,
+        "netlist": "netlists/generated/passive_scout_15.scs",
+        "netlist_sha256": "df850abc2e7640ea639593481d677a17b1367f0674a8cfb1a1c50ecfd25c7bb6",
+        "open_peak_v": 0.0011246826503806982,
+        "pin_dbm": -55,
+        "power_gain_db": [
+          -20.90112814938727
+        ],
+        "power_mw": 0.0,
+        "raw_file_sha256": "fce4f910f14f3bc2177cf8dfae77537e3f63deebfb3dc0fc277fc89307bd4bfd",
+        "rf_node_gain_db": [
+          -12.376546373810164
+        ],
+        "rf_node_vpk": [
+          0.0009425098747805226
+        ],
+        "sample_count": 4000,
+        "window_s": 2e-08
+      }
+    },
+    {
+      "compression_at_minus25_dbm_db": -0.3022264250229725,
+      "gain_db": -19.1189064996586,
+      "kind": "passive",
+      "large_signal": {
+        "completed_utc": "2026-11-13T00:30:49.629495+00:00",
+        "fund_vpk": [
+          0.004075641651662116
+        ],
+        "gain_db": [
+          -18.816680074635627
+        ],
+        "if_frequencies_hz": [
+          200000000.0
+        ],
+        "im3_frequencies_hz": [],
+        "im3_vpk": [],
+        "lo_diff_vpp": 0.7999368353633657,
+        "max_output_v": 0.0345995589084054,
+        "mean_outn_v": -0.0005757348635633711,
+        "mean_outp_v": -0.0005757610841602101,
+        "mean_rf_v": 0.00011533681628147584,
+        "min_output_v": -0.03253721247174671,
+        "netlist": "netlists/generated/passive_scout_large_16.scs",
+        "netlist_sha256": "1145d7dae902e50be40e88513d5ffbd61d5198bc7bb2e1164c2aa77c6b01a3f5",
+        "open_peak_v": 0.03556558820077846,
+        "pin_dbm": -25,
+        "power_gain_db": [
+          -25.806380117995815
+        ],
+        "power_mw": 0.0,
+        "raw_file_sha256": "ac2c69ae322cb1e63a8cd1ad8dc74e5b74b91737ebc813843a0e0cbcc4749eea",
+        "rf_node_gain_db": [
+          -17.16087148047118
+        ],
+        "rf_node_vpk": [
+          0.02939270568220466
+        ],
+        "sample_count": 4000,
+        "window_s": 2e-08
+      },
+      "parameters": {
+        "length_nm": 50.0,
+        "lo_common_mode_v": 0.75,
+        "lo_vpp_per_leg": 0.4,
+        "m": 1,
+        "nf": 1,
+        "rf_common_mode_v": 0.0,
+        "rl_ohm": 500.0,
+        "switch_width_um": 20.0
+      },
+      "power_gain_db": -26.108606543018787,
+      "power_mw": 0.0,
+      "rf_node_gain_db": -17.457359058357333,
+      "single_tone": {
+        "completed_utc": "2026-11-13T00:30:42.805000+00:00",
+        "fund_vpk": [
+          0.00012447572677956722
+        ],
+        "gain_db": [
+          -19.1189064996586
+        ],
+        "if_frequencies_hz": [
+          200000000.0
+        ],
+        "im3_frequencies_hz": [],
+        "im3_vpk": [],
+        "lo_diff_vpp": 0.7999368353633657,
+        "max_output_v": 0.006236495898529332,
+        "mean_outn_v": -0.00016567190983769484,
+        "mean_outp_v": -0.00016567293558493896,
+        "mean_rf_v": 3.352185765755751e-05,
+        "min_output_v": -0.006696037233748268,
+        "netlist": "netlists/generated/passive_scout_16.scs",
+        "netlist_sha256": "62397b46cde73a87c2db728b20b1e28ab2488d3df99572ca7e3479d5fc191ea4",
+        "open_peak_v": 0.0011246826503806982,
+        "pin_dbm": -55,
+        "power_gain_db": [
+          -26.108606543018787
+        ],
+        "power_mw": 0.0,
+        "raw_file_sha256": "a30c7816e4ff52ab637585b8b94f9aafb2db1d522d324ef82ac6c7f734bce146",
+        "rf_node_gain_db": [
+          -17.457359058357333
+        ],
+        "rf_node_vpk": [
+          0.0009288650530409457
+        ],
+        "sample_count": 4000,
+        "window_s": 2e-08
+      }
+    },
+    {
+      "compression_at_minus25_dbm_db": 0.08099488417477119,
+      "gain_db": -8.97180469533591,
+      "kind": "passive",
+      "large_signal": {
+        "completed_utc": "2026-11-13T00:30:50.981000+00:00",
+        "fund_vpk": [
+          0.012542670596017642
+        ],
+        "gain_db": [
+          -9.052799579510681
+        ],
+        "if_frequencies_hz": [
+          200000000.0
+        ],
+        "im3_frequencies_hz": [],
+        "im3_vpk": [],
+        "lo_diff_vpp": 0.7999368353633658,
+        "max_output_v": 0.03910272173831079,
+        "mean_outn_v": -0.0030716774635682078,
+        "mean_outp_v": -0.0030716856805594267,
+        "mean_rf_v": 0.0006153388558471975,
+        "min_output_v": -0.03760149943000706,
+        "netlist": "netlists/generated/passive_scout_large_17.scs",
+        "netlist_sha256": "ea73d54fdeba26646c0438631ccf62a58b9761b504d27233584534e1ed93cdf0",
+        "open_peak_v": 0.03556558820077846,
+        "pin_dbm": -25,
+        "power_gain_db": [
+          -16.04249962287087
+        ],
+        "power_mw": 0.0,
+        "raw_file_sha256": "2d1cffef291a92efb9938bd7bc93a46e13ac8e1d39205a98721daf7c302af20f",
+        "rf_node_gain_db": [
+          -7.231096985459753
+        ],
+        "rf_node_vpk": [
+          0.02883665396215162
+        ],
+        "sample_count": 4000,
+        "window_s": 2e-08
+      },
+      "parameters": {
+        "length_nm": 50.0,
+        "lo_common_mode_v": 0.6,
+        "lo_vpp_per_leg": 0.4,
+        "m": 1,
+        "nf": 1,
+        "rf_common_mode_v": 0.0,
+        "rl_ohm": 500.0,
+        "switch_width_um": 40.0
+      },
+      "power_gain_db": -15.961504738696098,
+      "power_mw": 0.0,
+      "rf_node_gain_db": -7.149717031830244,
+      "single_tone": {
+        "completed_utc": "2026-11-13T00:30:43.911521+00:00",
+        "fund_vpk": [
+          0.0004003499336773061
+        ],
+        "gain_db": [
+          -8.97180469533591
+        ],
+        "if_frequencies_hz": [
+          200000000.0
+        ],
+        "im3_frequencies_hz": [],
+        "im3_vpk": [],
+        "lo_diff_vpp": 0.7999368353633658,
+        "max_output_v": 0.01549255321010998,
+        "mean_outn_v": -0.002503180650694875,
+        "mean_outp_v": -0.002503182949956578,
+        "mean_rf_v": 0.0005014301638105774,
+        "min_output_v": -0.02035317603237022,
+        "netlist": "netlists/generated/passive_scout_17.scs",
+        "netlist_sha256": "6bce58d2847c4a73b30c3b120a118350f2f5445cdbe41ad122558dad12dd1f7e",
+        "open_peak_v": 0.0011246826503806982,
+        "pin_dbm": -55,
+        "power_gain_db": [
+          -15.961504738696098
+        ],
+        "power_mw": 0.0,
+        "raw_file_sha256": "c44532a8603f3bfef0f95cb296cffe4e465bbfeeafbe439f9fea8f79f7a1898d",
+        "rf_node_gain_db": [
+          -7.149717031830244
+        ],
+        "rf_node_vpk": [
+          0.0009118546402567963
+        ],
+        "sample_count": 4000,
+        "window_s": 2e-08
+      }
+    },
+    {
+      "compression_at_minus25_dbm_db": 0.029507381903393082,
+      "gain_db": -12.29996479420954,
+      "kind": "passive",
+      "large_signal": {
+        "completed_utc": "2026-11-13T00:31:04.241343+00:00",
+        "fund_vpk": [
+          0.008601147330999316
+        ],
+        "gain_db": [
+          -12.329472176112933
+        ],
+        "if_frequencies_hz": [
+          200000000.0
+        ],
+        "im3_frequencies_hz": [],
+        "im3_vpk": [],
+        "lo_diff_vpp": 0.7999368353633658,
+        "max_output_v": 0.03832147970435579,
+        "mean_outn_v": -0.0019088532552371197,
+        "mean_outp_v": -0.0019088311470018549,
+        "mean_rf_v": 0.00038272242941039147,
+        "min_output_v": -0.03566922187815038,
+        "netlist": "netlists/generated/passive_scout_large_18.scs",
+        "netlist_sha256": "0920592a467ecda26ffb2be9350c8ea1a8712259216258fe2263e4733f9dd04f",
+        "open_peak_v": 0.03556558820077846,
+        "pin_dbm": -25,
+        "power_gain_db": [
+          -19.31917221947312
+        ],
+        "power_mw": 0.0,
+        "raw_file_sha256": "f736bb354eb620fd19c8499b5e9ff81eb7b70694a7617f1cf777b1a3fed1ba46",
+        "rf_node_gain_db": [
+          -10.270696534170195
+        ],
+        "rf_node_vpk": [
+          0.02806022916640464
+        ],
+        "sample_count": 4000,
+        "window_s": 2e-08
+      },
+      "parameters": {
+        "length_nm": 50.0,
+        "lo_common_mode_v": 0.65,
+        "lo_vpp_per_leg": 0.4,
+        "m": 1,
+        "nf": 1,
+        "rf_common_mode_v": 0.0,
+        "rl_ohm": 500.0,
+        "switch_width_um": 40.0
+      },
+      "power_gain_db": -19.289664837569727,
+      "power_mw": 0.0,
+      "rf_node_gain_db": -10.239197794521623,
+      "single_tone": {
+        "completed_utc": "2026-11-13T00:30:57.260980+00:00",
+        "fund_vpk": [
+          0.0002729177335101805
+        ],
+        "gain_db": [
+          -12.29996479420954
+        ],
+        "if_frequencies_hz": [
+          200000000.0
+        ],
+        "im3_frequencies_hz": [],
+        "im3_vpk": [],
+        "lo_diff_vpp": 0.7999368353633658,
+        "max_output_v": 0.01098657728249583,
+        "mean_outn_v": -0.0013676805167466275,
+        "mean_outp_v": -0.0013676760008438206,
+        "mean_rf_v": 0.00027412320730124494,
+        "min_output_v": -0.01218518323686105,
+        "netlist": "netlists/generated/passive_scout_18.scs",
+        "netlist_sha256": "54a1202d115c065ea51baa588c22517512a4d0a01b997f639d4cfb2eb20718ab",
+        "open_peak_v": 0.0011246826503806982,
+        "pin_dbm": -55,
+        "power_gain_db": [
+          -19.289664837569727
+        ],
+        "power_mw": 0.0,
+        "raw_file_sha256": "0f59d68a964746a10f5febdb340b5630ee748e0f33802affdc76cceff8b4e845",
+        "rf_node_gain_db": [
+          -10.239197794521623
+        ],
+        "rf_node_vpk": [
+          0.000887138946395626
+        ],
+        "sample_count": 4000,
+        "window_s": 2e-08
+      }
+    },
+    {
+      "compression_at_minus25_dbm_db": -0.1765394808471754,
+      "gain_db": -17.437214926747718,
+      "kind": "passive",
+      "large_signal": {
+        "completed_utc": "2026-11-13T00:31:06.207524+00:00",
+        "fund_vpk": [
+          0.004875242505670749
+        ],
+        "gain_db": [
+          -17.260675445900542
+        ],
+        "if_frequencies_hz": [
+          200000000.0
+        ],
+        "im3_frequencies_hz": [],
+        "im3_vpk": [],
+        "lo_diff_vpp": 0.7999368353633657,
+        "max_output_v": 0.03646678587931453,
+        "mean_outn_v": -0.0009645531090863592,
+        "mean_outp_v": -0.0009646148243104617,
+        "mean_rf_v": 0.00019343354035985917,
+        "min_output_v": -0.03359540664677092,
+        "netlist": "netlists/generated/passive_scout_large_19.scs",
+        "netlist_sha256": "a484104ec2d2346efcec7f6cd780715ce2f73293c4ce7937e5b98989ed8d22cc",
+        "open_peak_v": 0.03556558820077846,
+        "pin_dbm": -25,
+        "power_gain_db": [
+          -24.250375489260733
+        ],
+        "power_mw": 0.0,
+        "raw_file_sha256": "9090439b294fff08f445266b7dc524613b3a29e2266c0e7ef731757968d7dc71",
+        "rf_node_gain_db": [
+          -14.99058089005672
+        ],
+        "rf_node_vpk": [
+          0.027385789640556716
+        ],
+        "sample_count": 4000,
+        "window_s": 2e-08
+      },
+      "parameters": {
+        "length_nm": 50.0,
+        "lo_common_mode_v": 0.7,
+        "lo_vpp_per_leg": 0.4,
+        "m": 1,
+        "nf": 1,
+        "rf_common_mode_v": 0.0,
+        "rl_ohm": 500.0,
+        "switch_width_um": 40.0
+      },
+      "power_gain_db": -24.42691497010791,
+      "power_mw": 0.0,
+      "rf_node_gain_db": -15.16164549806641,
+      "single_tone": {
+        "completed_utc": "2026-11-13T00:30:58.794712+00:00",
+        "fund_vpk": [
+          0.0001510668763661838
+        ],
+        "gain_db": [
+          -17.437214926747718
+        ],
+        "if_frequencies_hz": [
+          200000000.0
+        ],
+        "im3_frequencies_hz": [],
+        "im3_vpk": [],
+        "lo_diff_vpp": 0.7999368353633657,
+        "max_output_v": 0.009241145911942082,
+        "mean_outn_v": -0.0005579462985485645,
+        "mean_outp_v": -0.0005579356596499425,
+        "mean_rf_v": 0.00011204537765574647,
+        "min_output_v": -0.009934032008392272,
+        "netlist": "netlists/generated/passive_scout_19.scs",
+        "netlist_sha256": "8494faed18aef5d663eda78c8b1d0476f4dbd5b40edca68ba94c5cf0e81dd112",
+        "open_peak_v": 0.0011246826503806982,
+        "pin_dbm": -55,
+        "power_gain_db": [
+          -24.42691497010791
+        ],
+        "power_mw": 0.0,
+        "raw_file_sha256": "0d0394d1d60ef41d1fae1c30f1f0ccb382a193a44a01e485fbfdac750b3d277f",
+        "rf_node_gain_db": [
+          -15.16164549806641
+        ],
+        "rf_node_vpk": [
+          0.0008654690151782507
+        ],
+        "sample_count": 4000,
+        "window_s": 2e-08
+      }
+    },
+    {
+      "compression_at_minus25_dbm_db": -0.4424603353349319,
+      "gain_db": -23.988324750250484,
+      "kind": "passive",
+      "large_signal": {
+        "completed_utc": "2026-11-13T00:31:18.527205+00:00",
+        "fund_vpk": [
+          0.0023644861524137655
+        ],
+        "gain_db": [
+          -23.545864414915552
+        ],
+        "if_frequencies_hz": [
+          200000000.0
+        ],
+        "im3_frequencies_hz": [],
+        "im3_vpk": [],
+        "lo_diff_vpp": 0.7999368353633657,
+        "max_output_v": 0.0338941402429136,
+        "mean_outn_v": -0.0004117520237842953,
+        "mean_outp_v": -0.00041177714694883564,
+        "mean_rf_v": 8.285653250722014e-05,
+        "min_output_v": -0.03153955285038763,
+        "netlist": "netlists/generated/passive_scout_large_20.scs",
+        "netlist_sha256": "92a8aa2db3447dad34e5e9f32cbea8756d2cfc0a3cd8138a5600ea6d1d06884c",
+        "open_peak_v": 0.03556558820077846,
+        "pin_dbm": -25,
+        "power_gain_db": [
+          -30.53556445827574
+        ],
+        "power_mw": 0.0,
+        "raw_file_sha256": "7d7057801f455f24a1a9a4b6998d7cd67cff2b877ba52e6c05ecf17b39e12696",
+        "rf_node_gain_db": [
+          -21.1101079057263
+        ],
+        "rf_node_vpk": [
+          0.02686842258287157
+        ],
+        "sample_count": 4000,
+        "window_s": 2e-08
+      },
+      "parameters": {
+        "length_nm": 50.0,
+        "lo_common_mode_v": 0.75,
+        "lo_vpp_per_leg": 0.4,
+        "m": 1,
+        "nf": 1,
+        "rf_common_mode_v": 0.0,
+        "rl_ohm": 500.0,
+        "switch_width_um": 40.0
+      },
+      "power_gain_db": -30.978024793610665,
+      "power_mw": 0.0,
+      "rf_node_gain_db": -21.547603914657163,
+      "single_tone": {
+        "completed_utc": "2026-11-13T00:31:11.504014+00:00",
+        "fund_vpk": [
+          7.1058127374053e-05
+        ],
+        "gain_db": [
+          -23.988324750250484
+        ],
+        "if_frequencies_hz": [
+          200000000.0
+        ],
+        "im3_frequencies_hz": [],
+        "im3_vpk": [],
+        "lo_diff_vpp": 0.7999368353633657,
+        "max_output_v": 0.007045789559301126,
+        "mean_outn_v": -0.00018905939819146403,
+        "mean_outp_v": -0.00018906113976520605,
+        "mean_rf_v": 3.838757395141e-05,
+        "min_output_v": -0.007679106155952965,
+        "netlist": "netlists/generated/passive_scout_20.scs",
+        "netlist_sha256": "d6ac2666ea7e17dbb3f6d00be48fb86b5e8e476ad93139f8ca2009da77659d86",
+        "open_peak_v": 0.0011246826503806982,
+        "pin_dbm": -55,
+        "power_gain_db": [
+          -30.978024793610665
+        ],
+        "power_mw": 0.0,
+        "raw_file_sha256": "84fcdd4c166f2d430d33d4cfdb58901e794e00e78f0d5951aad6cadeb44d0180",
+        "rf_node_gain_db": [
+          -21.547603914657163
+        ],
+        "rf_node_vpk": [
+          0.0008491686530863132
+        ],
+        "sample_count": 4000,
+        "window_s": 2e-08
+      }
+    },
+    {
+      "compression_at_minus25_dbm_db": -0.006425224828342735,
+      "gain_db": -14.482708904142669,
+      "kind": "passive",
+      "large_signal": {
+        "completed_utc": "2026-11-13T00:31:20.354672+00:00",
+        "fund_vpk": [
+          0.006717625854870748
+        ],
+        "gain_db": [
+          -14.476283679314326
+        ],
+        "if_frequencies_hz": [
+          200000000.0
+        ],
+        "im3_frequencies_hz": [],
+        "im3_vpk": [],
+        "lo_diff_vpp": 0.7999368353633658,
+        "max_output_v": 0.03304524239321829,
+        "mean_outn_v": -0.002114670103086615,
+        "mean_outp_v": -0.0021147071422975864,
+        "mean_rf_v": 0.00042383231516555025,
+        "min_output_v": -0.03152760786443192,
+        "netlist": "netlists/generated/passive_scout_large_21.scs",
+        "netlist_sha256": "575dae9c79eb27331a59dd5c2d9baffc745ddebc20c7d8f97897870a5b535f92",
+        "open_peak_v": 0.03556558820077846,
+        "pin_dbm": -25,
+        "power_gain_db": [
+          -21.465983722674512
+        ],
+        "power_mw": 0.0,
+        "raw_file_sha256": "af75a5091aee973366cd2278420b8f8a00508cd34e8e768dd92dcd8afcb37efb",
+        "rf_node_gain_db": [
+          -11.368520972187795
+        ],
+        "rf_node_vpk": [
+          0.024868057353029917
+        ],
+        "sample_count": 4000,
+        "window_s": 2e-08
+      },
+      "parameters": {
+        "length_nm": 50.0,
+        "lo_common_mode_v": 0.6,
+        "lo_vpp_per_leg": 0.4,
+        "m": 1,
+        "nf": 1,
+        "rf_common_mode_v": 0.0,
+        "rl_ohm": 500.0,
+        "switch_width_um": 80.0
+      },
+      "power_gain_db": -21.472408947502856,
+      "power_mw": 0.0,
+      "rf_node_gain_db": -11.37232731457373,
+      "single_tone": {
+        "completed_utc": "2026-11-13T00:31:13.376879+00:00",
+        "fund_vpk": [
+          0.00021227289869287148
+        ],
+        "gain_db": [
+          -14.482708904142669
+        ],
+        "if_frequencies_hz": [
+          200000000.0
+        ],
+        "im3_frequencies_hz": [],
+        "im3_vpk": [],
+        "lo_diff_vpp": 0.7999368353633658,
+        "max_output_v": 0.01250583674384421,
+        "mean_outn_v": -0.0018401276113615634,
+        "mean_outp_v": -0.0018401194596120666,
+        "mean_rf_v": 0.0003687699455400811,
+        "min_output_v": -0.01623564362759945,
+        "netlist": "netlists/generated/passive_scout_21.scs",
+        "netlist_sha256": "2c163b8ae7f0f768adf18c73f19a5671b59fdf4b6eaca490f887795df7689a60",
+        "open_peak_v": 0.0011246826503806982,
+        "pin_dbm": -55,
+        "power_gain_db": [
+          -21.472408947502856
+        ],
+        "power_mw": 0.0,
+        "raw_file_sha256": "c95697e8f825a89378607f517aa7965b0959a06126cfe26c7fa8db50d28a0031",
+        "rf_node_gain_db": [
+          -11.37232731457373
+        ],
+        "rf_node_vpk": [
+          0.0007861599513808572
+        ],
+        "sample_count": 4000,
+        "window_s": 2e-08
+      }
+    },
+    {
+      "compression_at_minus25_dbm_db": -0.13569077701707855,
+      "gain_db": -21.38681957814366,
+      "kind": "passive",
+      "large_signal": {
+        "completed_utc": "2026-11-13T00:31:33.103832+00:00",
+        "fund_vpk": [
+          0.0030794528264832333
+        ],
+        "gain_db": [
+          -21.25112880112658
+        ],
+        "if_frequencies_hz": [
+          200000000.0
+        ],
+        "im3_frequencies_hz": [],
+        "im3_vpk": [],
+        "lo_diff_vpp": 0.7999368353633658,
+        "max_output_v": 0.03057431936593951,
+        "mean_outn_v": -0.0007316658213225636,
+        "mean_outp_v": -0.000731637408160113,
+        "mean_rf_v": 0.00014695013019815677,
+        "min_output_v": -0.02977174736469313,
+        "netlist": "netlists/generated/passive_scout_large_22.scs",
+        "netlist_sha256": "b727d6d00d0f5c6b36d88b61f77c3519e989274fe0ed3644dcaea4e909bf5dc5",
+        "open_peak_v": 0.03556558820077846,
+        "pin_dbm": -25,
+        "power_gain_db": [
+          -28.240828844486764
+        ],
+        "power_mw": 0.0,
+        "raw_file_sha256": "2d9c92b9c255edcd2e1c3d1e374844910fc8411bc1f4aa0dcc12e11cce260d1e",
+        "rf_node_gain_db": [
+          -17.79447016926074
+        ],
+        "rf_node_vpk": [
+          0.02388895014356358
+        ],
+        "sample_count": 4000,
+        "window_s": 2e-08
+      },
+      "parameters": {
+        "length_nm": 50.0,
+        "lo_common_mode_v": 0.65,
+        "lo_vpp_per_leg": 0.4,
+        "m": 1,
+        "nf": 1,
+        "rf_common_mode_v": 0.0,
+        "rl_ohm": 500.0,
+        "switch_width_um": 80.0
+      },
+      "power_gain_db": -28.376519621503846,
+      "power_mw": 0.0,
+      "rf_node_gain_db": -17.92635924990971,
+      "single_tone": {
+        "completed_utc": "2026-11-13T00:31:25.946217+00:00",
+        "fund_vpk": [
+          9.587138838456461e-05
+        ],
+        "gain_db": [
+          -21.38681957814366
+        ],
+        "if_frequencies_hz": [
+          200000000.0
+        ],
+        "im3_frequencies_hz": [],
+        "im3_vpk": [],
+        "lo_diff_vpp": 0.7999368353633658,
+        "max_output_v": 0.008144291067626808,
+        "mean_outn_v": -0.0005744858040217988,
+        "mean_outp_v": -0.0005744833300749873,
+        "mean_rf_v": 0.00011548370839173666,
+        "min_output_v": -0.008836821073259945,
+        "netlist": "netlists/generated/passive_scout_22.scs",
+        "netlist_sha256": "7214adf61186dc9fad1957da7ea7b1e7682d66c9da9425b49ec4304b7cf46b45",
+        "open_peak_v": 0.0011246826503806982,
+        "pin_dbm": -55,
+        "power_gain_db": [
+          -28.376519621503846
+        ],
+        "power_mw": 0.0,
+        "raw_file_sha256": "ac341217d06994c64fd9740835d473b7cf30505863fbc5497f5671f18ab01b05",
+        "rf_node_gain_db": [
+          -17.92635924990971
+        ],
+        "rf_node_vpk": [
+          0.0007551043623383793
+        ],
+        "sample_count": 4000,
+        "window_s": 2e-08
+      }
+    },
+    {
+      "compression_at_minus25_dbm_db": -0.21121489418715456,
+      "gain_db": -29.941871374394804,
+      "kind": "passive",
+      "large_signal": {
+        "completed_utc": "2026-11-13T00:31:34.084554+00:00",
+        "fund_vpk": [
+          0.0011601046609322637
+        ],
+        "gain_db": [
+          -29.73065648020765
+        ],
+        "if_frequencies_hz": [
+          200000000.0
+        ],
+        "im3_frequencies_hz": [],
+        "im3_vpk": [],
+        "lo_diff_vpp": 0.7999368353633657,
+        "max_output_v": 0.02789601542922168,
+        "mean_outn_v": -0.00019224789391805337,
+        "mean_outp_v": -0.00019223614094926821,
+        "mean_rf_v": 3.906711152386655e-05,
+        "min_output_v": -0.02751340859485029,
+        "netlist": "netlists/generated/passive_scout_large_23.scs",
+        "netlist_sha256": "6be5fb8a3a6eb55a8150e9009ef9cb7528d9d23b7fe3ff4e6fc7a5d561001b81",
+        "open_peak_v": 0.03556558820077846,
+        "pin_dbm": -25,
+        "power_gain_db": [
+          -36.72035652356784
+        ],
+        "power_mw": 0.0,
+        "raw_file_sha256": "2227d6bbe8d64410d68b5f508d15720152b60a6d0cc6aeeea4a531b7d83202b9",
+        "rf_node_gain_db": [
+          -26.02324320680626
+        ],
+        "rf_node_vpk": [
+          0.02320915516374113
+        ],
+        "sample_count": 4000,
+        "window_s": 2e-08
+      },
+      "parameters": {
+        "length_nm": 50.0,
+        "lo_common_mode_v": 0.7,
+        "lo_vpp_per_leg": 0.4,
+        "m": 1,
+        "nf": 1,
+        "rf_common_mode_v": 0.0,
+        "rl_ohm": 500.0,
+        "switch_width_um": 80.0
+      },
+      "power_gain_db": -36.931571417754995,
+      "power_mw": 0.0,
+      "rf_node_gain_db": -26.23232286324871,
+      "single_tone": {
+        "completed_utc": "2026-11-13T00:31:27.222473+00:00",
+        "fund_vpk": [
+          3.580440219337248e-05
+        ],
+        "gain_db": [
+          -29.941871374394804
+        ],
+        "if_frequencies_hz": [
+          200000000.0
+        ],
+        "im3_frequencies_hz": [],
+        "im3_vpk": [],
+        "lo_diff_vpp": 0.7999368353633657,
+        "max_output_v": 0.005072086138006178,
+        "mean_outn_v": -0.0001377331091686977,
+        "mean_outp_v": -0.0001377204886563893,
+        "mean_rf_v": 2.818147503259123e-05,
+        "min_output_v": -0.006597205927230879,
+        "netlist": "netlists/generated/passive_scout_23.scs",
+        "netlist_sha256": "d0cc6f790fc33d0937c77be9636e45e11efdd274052e685fdc50879d04870290",
+        "open_peak_v": 0.0011246826503806982,
+        "pin_dbm": -55,
+        "power_gain_db": [
+          -36.931571417754995
+        ],
+        "power_mw": 0.0,
+        "raw_file_sha256": "0fb70a2e3968080a815a5ea0a8d44832195be5c0a738d35a9f60368e979ad353",
+        "rf_node_gain_db": [
+          -26.23232286324871
+        ],
+        "rf_node_vpk": [
+          0.0007337575282960851
+        ],
+        "sample_count": 4000,
+        "window_s": 2e-08
+      }
+    },
+    {
+      "compression_at_minus25_dbm_db": -0.15766245826173275,
+      "gain_db": -37.86651955779364,
+      "kind": "passive",
+      "large_signal": {
+        "completed_utc": "2026-11-13T00:31:46.333303+00:00",
+        "fund_vpk": [
+          0.0004630065561899247
+        ],
+        "gain_db": [
+          -37.708857099531905
+        ],
+        "if_frequencies_hz": [
+          200000000.0
+        ],
+        "im3_frequencies_hz": [],
+        "im3_vpk": [],
+        "lo_diff_vpp": 0.7999368353633657,
+        "max_output_v": 0.02526988010392223,
+        "mean_outn_v": -5.251681447190913e-05,
+        "mean_outp_v": -5.2485997196306727e-05,
+        "mean_rf_v": 1.136490937012124e-05,
+        "min_output_v": -0.02565690033275892,
+        "netlist": "netlists/generated/passive_scout_large_24.scs",
+        "netlist_sha256": "4915e34531538e661bdeef33e942c4f1997ed7d0ed889d23772a1aecf7c6cc48",
+        "open_peak_v": 0.03556558820077846,
+        "pin_dbm": -25,
+        "power_gain_db": [
+          -44.69855714289209
+        ],
+        "power_mw": 0.0,
+        "raw_file_sha256": "46b4c0e412543fe441115d9324487882997a63f90f82b8fdde72ebba77272d73",
+        "rf_node_gain_db": [
+          -33.80260833112355
+        ],
+        "rf_node_vpk": [
+          0.0226838912864544
+        ],
+        "sample_count": 4000,
+        "window_s": 2e-08
+      },
+      "parameters": {
+        "length_nm": 50.0,
+        "lo_common_mode_v": 0.75,
+        "lo_vpp_per_leg": 0.4,
+        "m": 1,
+        "nf": 1,
+        "rf_common_mode_v": 0.0,
+        "rl_ohm": 500.0,
+        "switch_width_um": 80.0
+      },
+      "power_gain_db": -44.85621960115382,
+      "power_mw": 0.0,
+      "rf_node_gain_db": -33.95831152492765,
+      "single_tone": {
+        "completed_utc": "2026-11-13T00:31:39.620828+00:00",
+        "fund_vpk": [
+          1.4378183361858363e-05
+        ],
+        "gain_db": [
+          -37.86651955779364
+        ],
+        "if_frequencies_hz": [
+          200000000.0
+        ],
+        "im3_frequencies_hz": [],
+        "im3_vpk": [],
+        "lo_diff_vpp": 0.7999368353633657,
+        "max_output_v": 0.003249543547698268,
+        "mean_outn_v": -3.683627978617897e-05,
+        "mean_outp_v": -3.6841817165138665e-05,
+        "mean_rf_v": 8.273402559143203e-06,
+        "min_output_v": -0.004726911306761086,
+        "netlist": "netlists/generated/passive_scout_24.scs",
+        "netlist_sha256": "83a88e6ff6e9e0e1a16beffe41989bda2c293c6b787973b6524142695fb56dd0",
+        "open_peak_v": 0.0011246826503806982,
+        "pin_dbm": -55,
+        "power_gain_db": [
+          -44.85621960115382
+        ],
+        "power_mw": 0.0,
+        "raw_file_sha256": "f7d1a64cbc9002005927634792a45148d96dce09a62b664c1777204957404fdf",
+        "rf_node_gain_db": [
+          -33.95831152492765
+        ],
+        "rf_node_vpk": [
+          0.0007171658382271836
+        ],
+        "sample_count": 4000,
+        "window_s": 2e-08
+      }
+    }
+  ]
+}

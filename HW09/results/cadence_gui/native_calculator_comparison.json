@@ -1,0 +1,98 @@
+{
+  "schema_version": 1,
+  "origin": "independent_native_Cadence_calculator_comparison",
+  "source_audit": "cadence/gui_exports/native_calculator_audit.tsv",
+  "source_audit_sha256": "00ad4219cc8389b8489a27393927db097ef84d5e616ebe90a8d12c45c06466dc",
+  "expected_check_input": "cadence/gui_exports/native_plot_input_results.json",
+  "expected_check_input_sha256": "f17be6fecdbd5f9940ad9b09292b788500ab889d8a4624b91bfea1942437c632",
+  "source_run_id": "cadence_gui_ab6a7104f23d",
+  "unique_measurement_count": 88,
+  "DFT_grid_records": 46,
+  "calibration": [
+    [
+      "4000",
+      "2e-08",
+      "0.99999999999999922"
+    ],
+    [
+      "20000",
+      "9.9999999999999995e-08",
+      "1.0000000000001565"
+    ]
+  ],
+  "comparison_tolerance": {
+    "absolute_v": 1e-09,
+    "relative": 0.0001,
+    "criterion": "abs(native-coherent) <= absolute_v + relative*abs(coherent)",
+    "passed": true,
+    "interpretation": "Cross-implementation comparison criterion; simulator voltage abstol does not guarantee Fourier-amplitude accuracy."
+  },
+  "amplitudes_modified": false,
+  "metric_tables_modified": false,
+  "methods_note": "Native ViVA DFTs use the requested endpoint-excluding coherent grids and interpolate stored waveform samples. The independent table analysis projects the nearest saved strobe samples directly. Linear interpolation of the actual PSF reproduces the tested weak-bin differences to sub-picovolt residuals. Native measured amplitudes are retained unchanged; the mixed tolerance is a cross-implementation check, not an accuracy guarantee from simulator abstol.",
+  "recorded_DFT_grids_verified": true,
+  "circuits": {
+    "active": {
+      "max_strong_relative_difference": 1.9150338053506867e-08,
+      "max_all_amplitude_absolute_difference_v": 4.971882142101869e-10,
+      "max_all_im3_absolute_difference_v": 4.795754604796764e-10,
+      "max_all_im3_relative_difference": 0.0003929089764169552,
+      "max_all_im3_amplitude_difference_db": 0.003413434635439003,
+      "max_accepted_im3_relative_difference": 7.502763370177797e-05,
+      "max_accepted_im3_amplitude_difference_db": 0.0006517061944317071,
+      "native_accepted_iip3_dbm": [
+        -2.713469031335896,
+        -2.71765243012054
+      ],
+      "native_minus_coherent_accepted_iip3_db": [
+        -7.588706186556493e-05,
+        6.82357512529208e-05
+      ],
+      "maximum_accepted_pointwise_iip3_difference_db": 0.00032590235776552845
+    },
+    "passive": {
+      "max_strong_relative_difference": 1.60783972786022e-08,
+      "max_all_amplitude_absolute_difference_v": 6.17974114805811e-11,
+      "max_all_im3_absolute_difference_v": 6.17974114805811e-11,
+      "max_all_im3_relative_difference": 0.00035533202562985493,
+      "max_all_im3_amplitude_difference_db": 0.0030858265454541305,
+      "max_accepted_im3_relative_difference": 2.4845891289155883e-05,
+      "max_accepted_im3_amplitude_difference_db": 0.00021581135072069267,
+      "native_accepted_iip3_dbm": [
+        -5.470760664573098,
+        -5.47245393639709
+      ],
+      "native_minus_coherent_accepted_iip3_db": [
+        2.9763691545170445e-05,
+        -2.6309269904878363e-05
+      ],
+      "maximum_accepted_pointwise_iip3_difference_db": 0.00010790764983426016
+    }
+  },
+  "resampling_diagnostic": [
+    {
+      "test": "active_two_tone_00",
+      "role": "iip3_im3_high",
+      "native_amplitude_v": 1.5211228879860997e-07,
+      "nearest_strobe_amplitude_v": 1.5217207857424182e-07,
+      "linear_resampled_amplitude_v": 1.5211260627061962e-07,
+      "native_minus_linear_resampled_v": -3.1747200965096804e-13
+    },
+    {
+      "test": "active_two_tone_02",
+      "role": "iip3_im3_high",
+      "native_amplitude_v": 3.0368737753824387e-06,
+      "nearest_strobe_amplitude_v": 3.0371016419319446e-06,
+      "linear_resampled_amplitude_v": 3.0368741163589643e-06,
+      "native_minus_linear_resampled_v": -3.409765256129631e-13
+    },
+    {
+      "test": "passive_two_tone_00",
+      "role": "iip3_im3_high",
+      "native_amplitude_v": 3.2999626876727445e-08,
+      "nearest_strobe_amplitude_v": 3.298790521754521e-08,
+      "linear_resampled_amplitude_v": 3.299959857175229e-08,
+      "native_minus_linear_resampled_v": 2.8304975154644238e-14
+    }
+  ]
+}

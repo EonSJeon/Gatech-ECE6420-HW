@@ -1,0 +1,42 @@
+{
+  "captured_utc": "2026-11-13T04:24:58.710097+00:00",
+  "purpose": "After root GUI presentation-only label/export helper",
+  "files": [
+    {
+      "path": "cadence/HW09_Mixers/active_tb/schematic/sch.oa",
+      "sha256": "0d55027f21771849c43c338f9b8c1b683602f3a167bece6f13ba42ccc27893aa",
+      "size": 36332,
+      "mtime_utc": "2026-11-13T04:23:18.276777+00:00"
+    },
+    {
+      "path": "cadence/HW09_Mixers/passive_tb/schematic/sch.oa",
+      "sha256": "8572a0a35c816773ed7fa1604d9bd93c816426e35c45d4ebab9034bafc2d13bf",
+      "size": 35068,
+      "mtime_utc": "2026-11-13T04:23:18.394778+00:00"
+    },
+    {
+      "path": "cadence/active_gui_testbench.png",
+      "sha256": "3d3eadc4508540734fdcd22bdf0ced7065634654872b3c857fd40b25938abde9",
+      "size": 508291,
+      "mtime_utc": "2026-11-13T04:23:20.937784+00:00"
+    },
+    {
+      "path": "cadence/active_gui_core.png",
+      "sha256": "57b5a9802e0058154783f6feadb8fad60c11187f8b350763939cef13f2906032",
+      "size": 169539,
+      "mtime_utc": "2026-11-13T04:23:21.787786+00:00"
+    },
+    {
+      "path": "cadence/passive_gui_testbench.png",
+      "sha256": "1decf0bc1564e6c792e308ccc13d2dc147b890c9bc07c2d802e704410ee254b7",
+      "size": 513719,
+      "mtime_utc": "2026-11-13T04:23:23.195790+00:00"
+    },
+    {
+      "path": "cadence/passive_gui_core.png",
+      "sha256": "928e41606487e60a5e7016f2538bc7f5b55955ddd7240ff82b41a25f11be6a03",
+      "size": 124649,
+      "mtime_utc": "2026-11-13T04:23:23.961792+00:00"
+    }
+  ]
+}

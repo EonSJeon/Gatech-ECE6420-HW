@@ -1,0 +1,16 @@
+{
+  "fetched_utc": "2026-11-13T04:00:51.136284+00:00",
+  "remote_host": "gt-ece",
+  "remote_directory": "/nethome/sjeon84/Gatech-ECE6420/HW09",
+  "paths": [
+    "cadence",
+    "simulation/cadence_gui",
+    "cds.lib",
+    "ade_native_paths.tsv"
+  ],
+  "source_push": false,
+  "simulator_invoked": false,
+  "remote_visual_outputs_imported": false,
+  "delete_used": false,
+  "lock_pattern_excluded": "*.cdslck*"
+}
