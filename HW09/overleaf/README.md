@@ -1,19 +1,13 @@
-# Editable HW09 Overleaf source
+# HW09 IEEE conference source
 
-This folder is the local work tree for [the HW09 Overleaf project](https://www.overleaf.com/project/6af68c3c1b2af4608fb66bfd). The report compares active and passive single-balanced mixers using Cadence Spectre results from native Virtuoso schematics and ADE.
+This folder is synchronized with [the HW09 Overleaf project](https://www.overleaf.com/project/6af68c3c1b2af4608fb66bfd). Open `main.tex` with pdfLaTeX. The supplied `conference-latex-template_10-17-19.zip` provides the unchanged `IEEEtran.cls`; the report uses its `conference` defaults for paper size, margins, fonts and two columns.
 
-Open `main.tex` as the main document in Overleaf and select **pdfLaTeX**. Keep the folder structure so section and figure references resolve. Standard LaTeX fonts and packages are used.
+The paper begins directly with circuit configuration, measurement definitions and simulation results. It has no abstract, introduction, conclusion, citations or bibliography. Schematics span both columns when needed for labels; plots and the three compact comparison tables use one column. All fourteen measured schematic/plot images remain the original day-mode exports. The two supplied topology images are preserved unchanged.
 
-Edit `main.tex`, `macros.tex`, and `sections/user_discussion.tex` freely. These files are preserved on regeneration. The data-derived `sections/generated_*.tex`, figure files, and `build_manifest.json` are refreshed by `../tools/build_cadence_tex.py`. Put persistent discussion and formatting changes in the preserved files.
+The comments in `sections/generated_design.tex` and `sections/generated_active.tex` answer the output-capacitance and finger-count questions. The 10-fF output capacitors are an explicit, shared testbench load assumption. The connection tables and repeated metric prose were removed. Full run records and hashes stay in the machine-readable build and result records.
 
-The opening reproduces the supplied Fig. 6.15 and Fig. 6.42 images and states that the passive and active cores follow these topologies directly. These uploaded PNGs are preserved and recorded under `supplied_figures` in the build manifest. The report has no citations or bibliography.
+`main.tex`, `macros.tex`, and `sections/user_discussion.tex` are preserved on later regeneration. Data-derived sections are composed by `../tools/ieee_report.py` through `../tools/build_cadence_tex.py`. Update the composition template for editorial changes that must survive regeneration. The build manifest records the class, image and measurement hashes. Source packaging includes the verified class file.
 
-The report uses twelve native ViVA GUI plot exports and two full-testbench schematic exports from native `hiExportImage`. All fourteen figures use day mode for readability. A footnote in the report explains that the default night-mode exports were difficult to read. The two full schematic figures use landscape pages. Exact device dimensions, component values, connections, source settings, and measurement conventions are listed in the report.
-
-Figure generation and binding are documented in `../cadence/README.md` and `../cadence/VIVA_README.md`. The current images are the original native day-mode exports restored byte for byte from source history; their original export receipts and electrical snapshots are retained. `exportnight.il` is a historical alternate appearance and is not used for the report. Figure hashes and native export evidence are recorded in `build_manifest.json`.
-
-Git synchronization is manual in both directions through `../tools/overleaf_sync.py`, as documented in `../README.md`. Pull before editing or regeneration, then review and push the source changes. Pull accepts a clean fast-forward; push checks for newer Overleaf edits and uses an ordinary non-force push. Existing macOS Keychain authentication is reused. No password or token is saved in this project.
-
-The separate Git metadata is in ignored `HW09/.local/overleaf-git`; there is no `.git` file or directory here. The parent repository tracks these source files independently. Compiled PDFs and LaTeX scratch files are ignored.
+Pull before editing or regeneration with `../tools/overleaf_sync.py`; review and explicitly push the result. Existing macOS Keychain authentication is reused. Git metadata is kept separately in ignored `HW09/.local/overleaf-git`, and the parent repository tracks ordinary source files.
 
 Connection verification: this line was added in the Overleaf web editor to verify that a Git pull receives online edits in HW09/overleaf.

@@ -16,7 +16,7 @@ from build_cadence_tex import validate
 
 ROOT=Path(__file__).resolve().parents[1]
 INPUT=re.compile(r"\\(?:input|include)\s*\{([^{}]+)\}")
-FIGURE=re.compile(r"\\(?:reportfigure|nativecorefigure|nativetestbenchfigure)\s*\{([^{}]+)\}|\\includegraphics(?:\[[^\]]*\])?\s*\{([^{}]+)\}")
+FIGURE=re.compile(r"\\(?:reportfigure|schematicfigure)\s*\{([^{}]+)\}|\\includegraphics(?:\[[^\]]*\])?\s*\{([^{}]+)\}")
 SECRET=re.compile(r"-----BEGIN (?:RSA |EC |OPENSSH )?PRIVATE KEY-----|\b(?:sk-proj-|sk-)[A-Za-z0-9_-]{20,}|\bgh[pousr]_[A-Za-z0-9]{30,}|\bAKIA[A-Z0-9]{16}\b|\bxox[baprs]-[A-Za-z0-9-]{20,}")
 
 
@@ -38,7 +38,7 @@ def collect_source(source):
         if path.is_symlink():raise ValueError("Source tree contains a symbolic link: "+str(path.relative_to(source)))
         if path.name in {".env",".remote.env","id_rsa","id_ed25519"} or path.suffix in {".key",".pem"}:
             raise ValueError("Credential-like file found in source tree")
-    selected={checked(name) for name in ("main.tex","macros.tex","README.md","build_manifest.json")}
+    selected={checked(name) for name in ("main.tex","macros.tex","README.md","build_manifest.json","IEEEtran.cls")}
     pending=[source/"main.tex",source/"macros.tex"];seen=set()
     while pending:
         path=pending.pop()
@@ -68,8 +68,12 @@ def collect_source(source):
         if path.suffix.lower()==".png":
             evidence=manifest.get("figures",{}).get(path.name) or manifest.get("supplied_figures",{}).get(path.name)
             if not evidence or digest(path)!=evidence.get("sha256"):raise ValueError("Figure differs from the generated data-derived source")
+        elif path.name=="IEEEtran.cls":
+            evidence=manifest.get("document_class",{})
+            if evidence.get("path")!="IEEEtran.cls" or digest(path)!=evidence.get("sha256"):
+                raise ValueError("Supplied conference class differs from the build evidence")
         elif SECRET.search(path.read_text()):raise ValueError("Credential-like content found in source text; nothing packaged")
-        if relative not in {"main.tex","macros.tex","README.md","build_manifest.json"} and not (relative.startswith("sections/") and path.suffix==".tex") and not (relative.startswith("figures/") and path.suffix.lower()==".png"):
+        if relative not in {"main.tex","macros.tex","README.md","build_manifest.json","IEEEtran.cls"} and not (relative.startswith("sections/") and path.suffix==".tex") and not (relative.startswith("figures/") and path.suffix.lower()==".png"):
             raise ValueError("File outside source whitelist")
     return sorted(selected)
 

@@ -1,10 +1,11 @@
 {
-  "generated_utc": "2026-11-13T19:02:29.866764+00:00",
+  "generated_utc": "2026-11-13T20:08:21.619722+00:00",
   "origin": "verified_cadence_ade_gui_tex_source",
   "run_id": "cadence_gui_ab6a7104f23d",
   "gui_results_sha256": "2e338d97a1dc3d196e8af5c87401875f556bc9819e01f23743583838e1afe41f",
   "actual_manifest_sha256": "707954d32f1861b776b3789e8ea1351a1b7f80780b5b82d7e69a460d88349321",
-  "builder_sha256": "a17557123476d704255af562403b0ee1c3613ef6d1397be5fda426d66876415e",
+  "builder_sha256": "25809bf959f1ec88ab5d119eca6d485da2b5e6cdcb303d4b72273f309db9b706",
+  "editorial_template_sha256": "02b4acbe8cb3efd0422799655fe209baf80754751bc6e09fb13cd825bef2879a",
   "figures": {
     "active_compression.png": {
       "source": "cadence/gui_exports/active_compression.png",
@@ -54,11 +55,11 @@
       "source": "cadence/gui_exports/passive_twotone_spectrum.png",
       "sha256": "3c12b5ee7ec87a6ced41636717dae1cb8ae6a87dfc9e4aded68dd55703c5d750"
     },
-    "active_gui_testbench.png": {
+    "active_schematic.png": {
       "source": "cadence/active_gui_testbench.png",
       "sha256": "3d3eadc4508540734fdcd22bdf0ced7065634654872b3c857fd40b25938abde9"
     },
-    "passive_gui_testbench.png": {
+    "passive_schematic.png": {
       "source": "cadence/passive_gui_testbench.png",
       "sha256": "1decf0bc1564e6c792e308ccc13d2dc147b890c9bc07c2d802e704410ee254b7"
     }
@@ -74,6 +75,14 @@
       "path": "figures/Fig6.42.png",
       "sha256": "851e1d8bc5dba2e7e92a8b5949c0c1a66ae7a373391a5e496c13aa385d56f255"
     }
+  },
+  "document_class": {
+    "path": "IEEEtran.cls",
+    "sha256": "c972aca108fda004c3514d63658e02816da2e54d9a1451e870b9bd970e003f55",
+    "options": [
+      "conference"
+    ],
+    "source": "overleaf/conference-latex-template_10-17-19.zip"
   },
   "schematic_figure_evidence": [
     {
@@ -1200,11 +1209,21 @@
     "generated_design.tex",
     "generated_methods.tex",
     "generated_passive.tex",
-    "generated_provenance.tex"
+    "generated_results.tex"
   ],
   "preserved_template_files": [
     "macros.tex",
     "main.tex",
     "sections/user_discussion.tex"
-  ]
+  ],
+  "editorial_responses": {
+    "load_capacitance": "Explicit equal 10-fF testbench loads; not a required value or a universal convention.",
+    "finger_count": "Explained in source comments; multiplier and finger count are distinct.",
+    "removed": "Duplicated connection tables, repeated metric prose, operator provenance, and display-origin terminology.",
+    "excluded_sections": [
+      "abstract",
+      "introduction",
+      "conclusion"
+    ]
+  }
 }

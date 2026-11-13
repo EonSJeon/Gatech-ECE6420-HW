@@ -1,0 +1,100 @@
+% Data-derived report section; editorial comments are preserved in this template.
+\section{Simulation Results}
+Table~\ref{tab:performance} compares the circuits at 200~MHz IF. The passive
+conversion loss is the negative of the signed gain entry. The active mixer
+trades DC power for conversion gain and lower loaded noise figure. The
+passive mixer avoids a DC transconductance bias, but its finite switch
+conductance and limited LO swing reduce signal transfer. Its small
+compression advantage does not imply a higher third-order intercept;
+compression and intermodulation characterize different nonlinear behavior.
+
+\begin{table}[!t]
+\caption{Performance at 200 MHz IF}
+\label{tab:performance}
+\centering\footnotesize
+\setlength{\tabcolsep}{4pt}
+\begin{tabularx}{\columnwidth}{@{}Xrr@{}}
+\toprule
+Parameter & Active & Passive \\
+\midrule
+Voltage gain $G_V$ (dB) & 8.57 & -5.98 \\
+Transducer gain $G_T$ (dB) & 1.58 & -12.96 \\
+Loaded SSB NF (dB) & 11.15 & 16.69 \\
+Loaded DSB NF (dB) & 8.12 & 13.71 \\
+IIP3 (dBm/tone) & -2.72 & -5.47 \\
+Input P1dB (dBm) & $-15.55\pm0.08$ & $-15.08\pm0.08$ \\
+Core DC power (mW) & 0.685 & 0 \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\subsection{Waveforms and Spectra}
+The active output extrema are 0.622 and 1.010~V; capacitive LO feedthrough
+can briefly push an output above the DC supply. The shared source node of
+the LO pair spans 0.196--0.305~V. These settled extrema are more informative
+for headroom than the static bias solution alone. The passive outputs span
+approximately $-22.9$ to 22.2~mV. The differential output spectra show the
+200~MHz IF together with out-of-band feedthrough.
+
+
+\reportfigure{active_transient.png}{Active mixer: settled RF input and differential output, including feedthrough.}{fig:active-transient}
+
+\reportfigure{active_spectrum.png}{Active mixer: differential output spectrum at $-55$~dBm input; full-band and IF views, with 50~MHz DFT bins.}{fig:active-spectrum}
+
+\reportfigure{passive_transient.png}{Passive mixer: settled RF input and differential output, including feedthrough.}{fig:passive-transient}
+
+\reportfigure{passive_spectrum.png}{Passive mixer: differential output spectrum at $-55$~dBm input; full-band and IF views, with 50~MHz DFT bins.}{fig:passive-spectrum}
+
+\subsection{Compression, Intermodulation and Convergence}
+The compression sweeps and two-tone plots use available source power per
+tone. The horizontal compression reference is the mean of the first three
+low-power gains minus 1~dB. The accepted cubic interval resolves both IM3
+products above numerical residuals. Table~\ref{tab:checks} summarizes slope
+and convergence checks; the dominant numerical sensitivity in this campaign
+is the active mixer's tighter-repeat IIP3 change.
+
+\begin{table}[!t]
+\caption{Extraction and convergence checks}
+\label{tab:checks}
+\centering\footnotesize
+\setlength{\tabcolsep}{4pt}
+\begin{tabularx}{\columnwidth}{@{}Xrr@{}}
+\toprule
+Parameter & Active & Passive \\
+\midrule
+Fundamental slope (mean) & 0.996 & 0.992 \\
+IM3 slope (mean) & 3.061 & 2.984 \\
+IM3/residual margin (dB) & 35.6 & 44.7 \\
+Tighter-repeat $|\Delta\mathrm{IIP3}|$ (dB) & 0.052 & 0.0036 \\
+Longer-window $|\Delta G_V|$ (dB) & $3.43\times10^{-9}$ & $3.01\times10^{-7}$ \\
+Last sideband $|\Delta\mathrm{NF}|$ (dB) & $1.31\times10^{-11}$ & $3.79\times10^{-9}$ \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\reportfigure{active_compression.png}{Active mixer: conversion gain versus input power and the 1~dB compression threshold.}{fig:active-compression}
+
+\reportfigure{active_iip3.png}{Active mixer: IF fundamentals and IM3 products versus input power per tone. Slopes are checked over $-40$ to $-30$~dBm.}{fig:active-iip3}
+
+\reportfigure{active_twotone_spectrum.png}{Active mixer: two-tone spectrum at $-35$~dBm per tone, with 190/210~MHz fundamentals and 170/230~MHz IM3 products.}{fig:active-twotone_spectrum}
+
+\reportfigure{passive_compression.png}{Passive mixer: conversion gain versus input power and the 1~dB compression threshold.}{fig:passive-compression}
+
+\reportfigure{passive_iip3.png}{Passive mixer: IF fundamentals and IM3 products versus input power per tone. Slopes are checked over $-40$ to $-30$~dBm.}{fig:passive-iip3}
+
+\reportfigure{passive_twotone_spectrum.png}{Passive mixer: two-tone spectrum at $-35$~dBm per tone, with 190/210~MHz fundamentals and 170/230~MHz IM3 products.}{fig:passive-twotone_spectrum}
+
+\reportfigure{active_noise.png}{Active mixer: loaded SSB and DSB noise figure with 63 folded sidebands; transistor and branch-load noise are included.}{fig:active-noise}
+
+\reportfigure{passive_noise.png}{Passive mixer: loaded SSB and DSB noise figure with 63 folded sidebands; transistor and branch-load noise are included.}{fig:passive-noise}
+
+\subsection{Loaded Noise Figure}
+The noise plots show the 63-sideband Spectre SSB and DSB results. Explicit
+source-noise normalization agrees within $8.31\times10^{-5}$~dB. The last
+sideband changes are negligible compared with the reported precision.
+The passive circuit's lack of core DC power does not eliminate the noise
+penalty of conversion loss and branch loading.
+
+The comparison is for the stated nominal schematic models, common output
+loads and ideal external sources. Layout parasitics, process variation and
+LO-driver circuitry are outside the simulated circuit boundary.

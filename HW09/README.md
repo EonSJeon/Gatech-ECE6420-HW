@@ -13,6 +13,8 @@ From the repository root, the first command fetches/imports/checks existing GUI 
 
 `HW09/overleaf` is also the work tree for [the HW09 Overleaf project](https://www.overleaf.com/project/6af68c3c1b2af4608fb66bfd). Run `HW09/.venv/bin/python HW09/tools/overleaf_sync.py pull` before editing or regenerating, and explicitly run `push --message "Update HW09 source"` after review. `status` is local-only; `status --refresh` checks the remote. Git metadata stays in ignored `HW09/.local/overleaf-git`, so the parent repository keeps tracking ordinary source files. Pull is fast-forward only, and push refuses new remote commits or divergence. See the source-folder README for commands and conflict behavior; notebook Run All never pushes automatically.
 
+The maintained report uses the supplied IEEE conference template, starts directly with circuit and measurement sections, and includes the simulation results in two columns. It has no abstract, introduction, conclusion, or bibliography. The TeX comments answer the output-load and finger-count questions; report composition is maintained in `tools/ieee_report.py`.
+
 ## Legacy standalone Python baseline
 
 This project implements the two supplied circuit topologies as parameterized Spectre netlists. Run the Python API or notebook locally; the school server runs Spectre and numerical analysis. Numerical traces, generated netlists, and logs return to this same workspace. Figures and the PDF are created locally. FFT plots use stems.

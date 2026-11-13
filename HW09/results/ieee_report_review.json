@@ -1,0 +1,50 @@
+{
+  "verified_utc": "2026-11-13T20:13:02.912884+00:00",
+  "overleaf_commit": "15cb2f98b948a5ee454447ad22fc9b50ede655b9",
+  "user_annotated_commit": "7fbf224",
+  "document_class": "IEEEtran[conference]",
+  "template_evidence": "results/ieee_template_source.json",
+  "class_sha256": "c972aca108fda004c3514d63658e02816da2e54d9a1451e870b9bd970e003f55",
+  "class_modified": false,
+  "margins_fonts_columns": "IEEE conference defaults",
+  "abstract": false,
+  "introduction": false,
+  "conclusion": false,
+  "citations": 0,
+  "bibliography": false,
+  "body_and_caption_forbidden_terms": 0,
+  "comparison_tables": 3,
+  "source_images": 16,
+  "image_bytes_unchanged": true,
+  "measurement_bytes_unchanged": true,
+  "regression_tests_passed": 37,
+  "source_package_files": 27,
+  "editorial_responses": {
+    "output_load": "10 fF per branch is an explicit common testbench load, not a problem requirement or a universal convention. Explained in body and source comments.",
+    "finger_count": "Finger count and complete-device multiplier are distinct; explained only in source comments as requested.",
+    "connection_table": "Redundant terminal-connection tables omitted for both circuits.",
+    "repeated_metrics": "Repeated per-metric prose omitted; tradeoffs discussed qualitatively.",
+    "terminology": "Removed GUI and Native from report prose, headings, captions, comments and schematic filenames.",
+    "run_provenance": "Moved out of the paper; existing machine-readable evidence retained.",
+    "title_author": "User title HW09: Single-Balanced Mixer Design and author Sangeon Jeon retained."
+  },
+  "preview": {
+    "compiled_through": "Overleaf web GUI",
+    "pages": 5,
+    "errors": 0,
+    "warnings": 0,
+    "overfull_boxes": 0,
+    "underfull_vbox_info_entries": 1,
+    "reviewed_pages": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "figures_reviewed": 15,
+    "source_images_reviewed": 16,
+    "clipping_or_overlap_observed": false,
+    "compiled_pdf_downloaded": false
+  }
+}

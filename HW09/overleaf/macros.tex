@@ -1,24 +1,13 @@
-\usepackage[T1]{fontenc}
-\usepackage{lmodern}
-\usepackage[a4paper,margin=20mm]{geometry}
 \usepackage{amsmath,amssymb,graphicx,booktabs,tabularx,array}
-\usepackage{caption,placeins,seqsplit,pdflscape}
 \usepackage[hidelinks]{hyperref}
 \graphicspath{{figures/}}
-\setlength{\parindent}{0pt}
-\setlength{\parskip}{5pt}
-\newcommand{\hash}[1]{{\ttfamily\scriptsize\seqsplit{#1}}}
 \newcommand{\reportfigure}[3]{%
-  \begin{figure}[htbp]\centering
-  \includegraphics[width=\linewidth,height=.40\textheight,keepaspectratio]{#1}
-  \caption{#2}\label{#3}\end{figure}}
-\newcommand{\nativecorefigure}[3]{%
-  \begin{figure}[p]\centering
-  \includegraphics[width=\linewidth,height=.74\textheight,keepaspectratio]{#1}
-  \caption{#2}\label{#3}\end{figure}}
-\newcommand{\nativetestbenchfigure}[3]{%
-  \clearpage\begin{landscape}\thispagestyle{plain}
-  \begin{figure}[p]\centering
-  \includegraphics[width=.95\linewidth,height=.72\paperwidth,keepaspectratio]{#1}
-  \caption{#2}\label{#3}\end{figure}
-  \clearpage\end{landscape}\clearpage}
+  \begin{figure}[!tb]\centering
+  \includegraphics[width=.94\columnwidth]{#1}
+  \caption{#2}\label{#3}
+  \end{figure}}
+\newcommand{\schematicfigure}[3]{%
+  \begin{figure*}[!t]\centering
+  \includegraphics[width=.84\textwidth]{#1}
+  \caption{#2}\label{#3}
+  \end{figure*}}

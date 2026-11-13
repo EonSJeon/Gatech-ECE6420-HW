@@ -1,0 +1,9 @@
+{
+  "source": "overleaf/conference-latex-template_10-17-19.zip",
+  "source_sha256": "4c0539eed7bd4221d026382a56c57ec1668c55a8ca72b581f7a28654401dedc9",
+  "class_member": "Conference-LaTeX-template_10-17-19/IEEEtran.cls",
+  "class_path": "overleaf/IEEEtran.cls",
+  "class_sha256": "c972aca108fda004c3514d63658e02816da2e54d9a1451e870b9bd970e003f55",
+  "margins_fonts_columns": "Unmodified conference defaults",
+  "preserved_user_upload_commit": "7fbf224"
+}
