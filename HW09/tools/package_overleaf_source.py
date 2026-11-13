@@ -17,7 +17,6 @@ from build_cadence_tex import validate
 ROOT=Path(__file__).resolve().parents[1]
 INPUT=re.compile(r"\\(?:input|include)\s*\{([^{}]+)\}")
 FIGURE=re.compile(r"\\(?:reportfigure|nativecorefigure|nativetestbenchfigure)\s*\{([^{}]+)\}|\\includegraphics(?:\[[^\]]*\])?\s*\{([^{}]+)\}")
-BIB=re.compile(r"\\bibliography\s*\{([^{}]+)\}")
 SECRET=re.compile(r"-----BEGIN (?:RSA |EC |OPENSSH )?PRIVATE KEY-----|\b(?:sk-proj-|sk-)[A-Za-z0-9_-]{20,}|\bgh[pousr]_[A-Za-z0-9]{30,}|\bAKIA[A-Z0-9]{16}\b|\bxox[baprs]-[A-Za-z0-9-]{20,}")
 
 
@@ -39,7 +38,7 @@ def collect_source(source):
         if path.is_symlink():raise ValueError("Source tree contains a symbolic link: "+str(path.relative_to(source)))
         if path.name in {".env",".remote.env","id_rsa","id_ed25519"} or path.suffix in {".key",".pem"}:
             raise ValueError("Credential-like file found in source tree")
-    selected={checked(name) for name in ("main.tex","macros.tex","references.bib","README.md","build_manifest.json")}
+    selected={checked(name) for name in ("main.tex","macros.tex","README.md","build_manifest.json")}
     pending=[source/"main.tex",source/"macros.tex"];seen=set()
     while pending:
         path=pending.pop()
@@ -61,18 +60,16 @@ def collect_source(source):
             if ref.suffix.lower()!=".png" or not ref.read_bytes().startswith(b"\x89PNG\r\n\x1a\n"):
                 raise ValueError("Only local PNG figures may be packaged")
             selected.add(ref)
-        for names in BIB.findall(text):
-            if names!="references":raise ValueError("Put bibliography entries in the maintained references.bib")
     manifest=json.loads((source/"build_manifest.json").read_text())
     if manifest.get("origin")!="verified_cadence_ade_gui_tex_source" or manifest.get("compiled_pdf") is not False:
         raise ValueError("Expected verified source-only build manifest")
     for path in selected:
         relative=path.relative_to(source).as_posix()
         if path.suffix.lower()==".png":
-            evidence=manifest.get("figures",{}).get(path.name)
+            evidence=manifest.get("figures",{}).get(path.name) or manifest.get("supplied_figures",{}).get(path.name)
             if not evidence or digest(path)!=evidence.get("sha256"):raise ValueError("Figure differs from the generated data-derived source")
         elif SECRET.search(path.read_text()):raise ValueError("Credential-like content found in source text; nothing packaged")
-        if relative not in {"main.tex","macros.tex","references.bib","README.md","build_manifest.json"} and not (relative.startswith("sections/") and path.suffix==".tex") and not (relative.startswith("figures/") and path.suffix.lower()==".png"):
+        if relative not in {"main.tex","macros.tex","README.md","build_manifest.json"} and not (relative.startswith("sections/") and path.suffix==".tex") and not (relative.startswith("figures/") and path.suffix.lower()==".png"):
             raise ValueError("File outside source whitelist")
     return sorted(selected)
 

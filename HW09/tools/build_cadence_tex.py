@@ -3,8 +3,9 @@
 
 This tool never compiles a PDF, invokes a simulator, or uploads files. Complete
 GUI results and unchanged provenance files are required before any output write.
-Generated sections/figures are refreshed; main.tex, macros.tex, references.bib,
-and sections/user_discussion.tex are preserved unless --refresh-template is used.
+Generated sections/native figures are refreshed; main.tex, macros.tex, and
+sections/user_discussion.tex are preserved unless --refresh-template is used.
+User-supplied topology images are preserved and recorded separately.
 """
 from __future__ import annotations
 import argparse
@@ -113,6 +114,16 @@ def validate_schematic_figures(root,native):
             if sha(inside(root,extra["source"]))!=extra["sha256"]:raise ValueError("Native symbol geometry changed")
 
 
+def validate_topology_figures(root):
+    supplied={}
+    for name in ("Fig6.15.png","Fig6.42.png"):
+        path=inside(root,"overleaf/figures/"+name)
+        if not path.read_bytes().startswith(b"\x89PNG\r\n\x1a\n"):
+            raise ValueError("Expected user-supplied topology PNG: "+name)
+        supplied[name]={"origin":"user_supplied_topology","path":"figures/"+name,"sha256":sha(path)}
+    return supplied
+
+
 def validate(root):
     path=inside(root,"results/cadence_gui_results.json")
     result=json.loads(path.read_text())
@@ -189,12 +200,13 @@ def validate(root):
     if result.get("plot_figure_mode")=="cadence_gui_export":
         from cadence_gui_figures import validate as validate_gui_plots
         validate_gui_plots(root,result)
+    validate_topology_figures(root)
     return result,baseline,path
 
 
 MAIN=r"""\documentclass[10pt,a4paper]{article}
 \input{macros}
-\title{Single-Balanced Mixer Design\\\large ECE6420: Native Virtuoso and ADE Results}
+\title{Single-Balanced Mixer Design}
 \author{}
 \date{}
 \begin{document}
@@ -205,8 +217,6 @@ MAIN=r"""\documentclass[10pt,a4paper]{article}
 \input{sections/generated_methods}
 \input{sections/user_discussion}
 \input{sections/generated_provenance}
-\bibliographystyle{ieeetr}
-\bibliography{references}
 \end{document}
 """
 
@@ -236,17 +246,6 @@ MACROS=r"""\usepackage[T1]{fontenc}
   \clearpage\end{landscape}\clearpage}
 """
 
-BIB=r"""@book{razavi2012,
- author={Behzad Razavi}, title={{RF Microelectronics}}, edition={2},
- publisher={Prentice Hall}, year={2012},
- note={Chapter 6; Figures 6.15(b) and 6.42}
-}
-@misc{hw09,
- author={{Georgia Institute of Technology}},
- title={{ECE6420 HW9: Mixer Design}}, howpublished={Course assignment},
- note={Assignment supplied in the maintained HW09 project}
-}
-"""
 
 
 def build(root,refresh_template=False):
@@ -299,14 +298,21 @@ def build(root,refresh_template=False):
         row=data["circuits"][kind].get("metrics",{})
         gain={"conversion_loss_db":"voltage_gain_db","power_conversion_loss_db":"power_gain_db"}.get(key)
         return row[key] if key in row else -row[gain] if gain and gain in row else None
-    d=[r"\section{Design requirements and measured comparison}",
-       r"The two circuits implement single-balanced downconversion at the assignment RF/LO/IF frequencies. The results below compare an active current-switching mixer and a passive switching mixer simulated in Cadence Spectre from native Virtuoso schematics through ADE.\cite{hw09,razavi2012}\footnote{All figures were exported from the native Cadence GUI in day mode because the default night-mode exports were difficult to read.}"]
+    supplied=validate_topology_figures(root)
+    d=[r"\section{Mixer topologies and design requirements}",
+       r"The active mixer follows the single-balanced topology shown in Fig.~6.42, and the passive mixer follows the NMOS implementation shown in Fig.~6.15(b). Both core topologies are implemented directly, without changing their circuit structure, in native Virtuoso schematics and simulated with Cadence Spectre through ADE.\footnote{The Cadence schematic and simulation figures were exported in day mode because the default night-mode exports were difficult to read.}",
+       r"\begin{figure}[htbp]\centering"+"\n"+
+       r"\begin{minipage}[c]{.60\linewidth}\centering\includegraphics[width=\linewidth]{Fig6.15.png}\end{minipage}\hfill"+"\n"+
+       r"\begin{minipage}[c]{.36\linewidth}\centering\includegraphics[width=\linewidth]{Fig6.42.png}\end{minipage}"+"\n"+
+       r"\caption{Topologies used for the passive (left, Fig.~6.15) and active (right, Fig.~6.42) mixer cores.}\label{fig:mixer-topologies}"+"\n"+
+       r"\end{figure}\FloatBarrier"]
     d.append(table(["Constraint","Implemented condition"],[
         ["Technology / supply",r"NCSU 45 nm CMOS; $V_{DD}="+str(common["vdd_v"])+r"\,\mathrm{V}$; installed minimum $L=50\,\mathrm{nm}$"],
         ["RF / LO / IF",number(common["rf_hz"]/1e9)+" / "+number(common["lo_hz"]/1e9)+r" GHz / "+number(common["if_hz"]/1e6)+" MHz"],
         ["LO constraint",r"Each leg: "+number(lo)+r" Vpp (active/passive); differential: "+number([2*x for x in lo])+r" Vpp. Both are strictly below 1 Vpp."],
         ["Source / load",r"$R_s="+str(common["rs_ohm"])+r"\,\Omega$; equal branch loads; $C_L="+str(common["load_cap_f"]*1e15)+r"\,\mathrm{fF}$ per output."],
     ],"lX"))
+    d.append(r"\subsection{Measured comparison}")
     keys=[("voltage_gain_db","Differential voltage gain (dB)"),("conversion_loss_db","Voltage conversion loss (dB)"),
           ("power_gain_db","Transducer power gain (dB)"),("power_conversion_loss_db","Transducer power loss (dB)"),
           ("ssb_nf_db","Loaded SSB NF (dB)"),("dsb_nf_db","Loaded DSB NF (dB)"),
@@ -413,11 +419,11 @@ def build(root,refresh_template=False):
         if captures:rows.append([kind.capitalize()+" screenshot capture",tex("; ".join(spec["capture_app"]+", "+spec["capture_utc"] for spec in captures))])
     provenance.append(table(["Evidence","Recorded source"],[[tex(label),found] for label,found in rows],"lX"))
     provenance.append("Several measurement analyses can share one physical native job. All actual netlist/log/PSF paths and per-file hashes remain in the machine-readable GUI results JSON. This source project also includes a build manifest recording the local figure hashes.")
-    provenance.append(r"Scope: nominal schematic-level NCSU devices and ideal external sources. Layout parasitics, process corners, Monte Carlo, and LO-driver noise/power are outside this comparison. The assignment and textbook topologies are cited in \cite{hw09,razavi2012}.")
+    provenance.append(r"Scope: nominal schematic-level NCSU devices and ideal external sources. Layout parasitics, process corners, Monte Carlo, and LO-driver noise/power are outside this comparison.")
     sections["generated_provenance.tex"]="\n\n".join(provenance)
     for name,body in sections.items():
         (output/"sections"/name).write_text("% Generated from verified actual GUI data; regenerated by build_cadence_tex.py.\n"+body+"\n")
-    templates={"main.tex":MAIN,"macros.tex":MACROS,"references.bib":BIB,
+    templates={"main.tex":MAIN,"macros.tex":MACROS,
                "sections/user_discussion.tex":"% Editable discussion: preserved on later generation.\n% Add your interpretation, edits, or course-specific formatting here.\n"}
     for name,content in templates.items():
         path=output/name
@@ -442,7 +448,7 @@ def build(root,refresh_template=False):
     record={"generated_utc":datetime.now(timezone.utc).isoformat(),"origin":"verified_cadence_ade_gui_tex_source",
             "run_id":result["run_id"],"gui_results_sha256":sha(result_path),
             "actual_manifest_sha256":result["source_manifest_sha256"],
-            "builder_sha256":sha(Path(__file__)),"figures":copied,
+            "builder_sha256":sha(Path(__file__)),"figures":copied,"supplied_figures":supplied,
             "schematic_figure_evidence":result["native_schematic_figures"],
             "plot_figure_mode":result["plot_figure_mode"],
             "numerical_plot_evidence":result.get("numerical_plot_figures",[]),

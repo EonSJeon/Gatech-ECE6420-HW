@@ -7,17 +7,17 @@
   "git_metadata": ".local/overleaf-git",
   "automatic_sync": false,
   "credential_storage": "Existing macOS osxkeychain helper reused; no project credential file",
-  "verified_utc": "2026-11-13T18:37:56.225872+00:00",
-  "head": "a4c6bdcd0f516095cea24a83f5892de71b4bc68f",
-  "remote_head": "a4c6bdcd0f516095cea24a83f5892de71b4bc68f",
+  "verified_utc": "2026-11-13T19:05:21.690225+00:00",
+  "head": "a77786765fff7c79135c52748d9ddde02c668607",
+  "remote_head": "a77786765fff7c79135c52748d9ddde02c668607",
   "local_to_overleaf_commit": "d64be79c4130ae8784acd13e999146dbf2d72e66",
   "overleaf_to_local_commit": "f36e8e61faed6813f9e4525f3099ea4918a1f7c2",
   "roundtrip_file": "overleaf/README.md",
   "roundtrip_sha256": "0e5f3dd045d28f1480e83b900e99ec2517c98da7848b43f0cf4d9f0d001dada9",
   "roundtrip_method": "A source-folder commit was pushed with ordinary Git; an additional README line was edited through the Overleaf web GUI and received with a fast-forward-only pull.",
-  "latest_local_to_overleaf_commit": "a4c6bdcd0f516095cea24a83f5892de71b4bc68f",
-  "current_readme_sha256": "5c74de2844e03fccb1932c3c0c70c5236828aa666348767204cc1a92fa6abba3",
-  "build_manifest_sha256": "77228bfb10bd5e00748aa0673f5a2fb4f6afd383b19eb48745c5427cddc35f45",
+  "latest_local_to_overleaf_commit": "a77786765fff7c79135c52748d9ddde02c668607",
+  "current_readme_sha256": "89ad088f7f1a9829fca4d3a43dd3c9e1d37d383f1648acff14119f5c5ae0e781",
+  "build_manifest_sha256": "d74b2a783cbf8db33df80ba00d86e5e59929f2ed0deabfcef6bf82adc5394931",
   "gui_results_sha256": "2e338d97a1dc3d196e8af5c87401875f556bc9819e01f23743583838e1afe41f",
   "native_figure_counts": {
     "schematics": 2,
@@ -31,22 +31,21 @@
   },
   "overleaf_preview_review": {
     "compiled_through": "Overleaf web GUI",
-    "pages": 15,
+    "pages": 16,
     "errors": 0,
     "warnings": 0,
     "other_log_entries": 0,
     "report_content_reviewed_pages": [
       1,
-      2,
-      5,
-      12,
-      15
+      16
     ],
-    "all_native_daytime_figure_hashes_verified": 14,
+    "native_daytime_figures_preserved": 14,
+    "uploaded_topology_images_visually_reviewed": 2,
     "readability_footnote_verified": true,
+    "references_section_absent": true,
     "compiled_pdf_downloaded": false
   },
-  "previous_source_commit": "10d2a4ec5933acf3a5b7f83aa407283392dca9cb",
+  "previous_source_commit": "a4c6bdcd0f516095cea24a83f5892de71b4bc68f",
   "figure_theme": "native day mode; white native ViVA and schematic exports",
   "preserved_overleaf_user_commit": "36f406e",
   "native_dark_export": {
@@ -63,11 +62,16 @@
     "pages": 15,
     "errors": 0,
     "warnings": 0,
-    "other_log_entries": 1,
+    "other_log_entries": 0,
     "report_content_reviewed_pages": [
-      1
+      1,
+      2,
+      5,
+      12,
+      15
     ],
-    "native_figures_unchanged_from_previous_visual_review": 14,
+    "all_native_daytime_figure_hashes_verified": 14,
+    "readability_footnote_verified": true,
     "compiled_pdf_downloaded": false
   },
   "report_content_cleanup": {
@@ -95,5 +99,28 @@
     "figure_count": 14,
     "metrics_unchanged": true,
     "original_export_receipts_restored": true
+  },
+  "topology_opening": {
+    "preserved_user_upload_commit": "049fba7",
+    "passive_topology": "Fig. 6.15(b)",
+    "active_topology": "Fig. 6.42",
+    "supplied_images": {
+      "Fig6.15.png": {
+        "origin": "user_supplied_topology",
+        "path": "figures/Fig6.15.png",
+        "sha256": "f0609437a6d279748eee2c43a2eae1cae908b37fe569e89fc16e52d9e723c0b3"
+      },
+      "Fig6.42.png": {
+        "origin": "user_supplied_topology",
+        "path": "figures/Fig6.42.png",
+        "sha256": "851e1d8bc5dba2e7e92a8b5949c0c1a66ae7a373391a5e496c13aa385d56f255"
+      }
+    },
+    "citations": 0,
+    "bibliography_files": 0,
+    "total_source_images": 16,
+    "regression_tests_passed": 37,
+    "simulation_data_unchanged": true,
+    "synchronized_commit": "a77786765fff7c79135c52748d9ddde02c668607"
   }
 }

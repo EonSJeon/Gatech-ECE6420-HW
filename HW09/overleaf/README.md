@@ -4,7 +4,9 @@ This folder is the local work tree for [the HW09 Overleaf project](https://www.o
 
 Open `main.tex` as the main document in Overleaf and select **pdfLaTeX**. Keep the folder structure so section and figure references resolve. Standard LaTeX fonts and packages are used.
 
-Edit `main.tex`, `macros.tex`, `references.bib`, and `sections/user_discussion.tex` freely. These files are preserved on regeneration. The data-derived `sections/generated_*.tex`, figure files, and `build_manifest.json` are refreshed by `../tools/build_cadence_tex.py`. Put persistent discussion and formatting changes in the preserved files.
+Edit `main.tex`, `macros.tex`, and `sections/user_discussion.tex` freely. These files are preserved on regeneration. The data-derived `sections/generated_*.tex`, figure files, and `build_manifest.json` are refreshed by `../tools/build_cadence_tex.py`. Put persistent discussion and formatting changes in the preserved files.
+
+The opening reproduces the supplied Fig. 6.15 and Fig. 6.42 images and states that the passive and active cores follow these topologies directly. These uploaded PNGs are preserved and recorded under `supplied_figures` in the build manifest. The report has no citations or bibliography.
 
 The report uses twelve native ViVA GUI plot exports and two full-testbench schematic exports from native `hiExportImage`. All fourteen figures use day mode for readability. A footnote in the report explains that the default night-mode exports were difficult to read. The two full schematic figures use landscape pages. Exact device dimensions, component values, connections, source settings, and measurement conventions are listed in the report.
 

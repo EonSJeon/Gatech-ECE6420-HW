@@ -1,10 +1,10 @@
 {
-  "generated_utc": "2026-11-13T18:34:15.090248+00:00",
+  "generated_utc": "2026-11-13T19:02:29.866764+00:00",
   "origin": "verified_cadence_ade_gui_tex_source",
   "run_id": "cadence_gui_ab6a7104f23d",
   "gui_results_sha256": "2e338d97a1dc3d196e8af5c87401875f556bc9819e01f23743583838e1afe41f",
   "actual_manifest_sha256": "707954d32f1861b776b3789e8ea1351a1b7f80780b5b82d7e69a460d88349321",
-  "builder_sha256": "17d5eb23a972ec94578027e005e0ab28f19989e0159ca65d521afe2f1350ac33",
+  "builder_sha256": "a17557123476d704255af562403b0ee1c3613ef6d1397be5fda426d66876415e",
   "figures": {
     "active_compression.png": {
       "source": "cadence/gui_exports/active_compression.png",
@@ -61,6 +61,18 @@
     "passive_gui_testbench.png": {
       "source": "cadence/passive_gui_testbench.png",
       "sha256": "1decf0bc1564e6c792e308ccc13d2dc147b890c9bc07c2d802e704410ee254b7"
+    }
+  },
+  "supplied_figures": {
+    "Fig6.15.png": {
+      "origin": "user_supplied_topology",
+      "path": "figures/Fig6.15.png",
+      "sha256": "f0609437a6d279748eee2c43a2eae1cae908b37fe569e89fc16e52d9e723c0b3"
+    },
+    "Fig6.42.png": {
+      "origin": "user_supplied_topology",
+      "path": "figures/Fig6.42.png",
+      "sha256": "851e1d8bc5dba2e7e92a8b5949c0c1a66ae7a373391a5e496c13aa385d56f255"
     }
   },
   "schematic_figure_evidence": [
@@ -1193,7 +1205,6 @@
   "preserved_template_files": [
     "macros.tex",
     "main.tex",
-    "references.bib",
     "sections/user_discussion.tex"
   ]
 }
